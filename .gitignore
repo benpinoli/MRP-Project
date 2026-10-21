@@ -2,6 +2,9 @@
 /.archive
 *test*.py
 
+# CSVs
+docs/project_purpose/bjhxhtdt8qioylul.csv
+
 # Scratch
 *scratch*.py
 /data
@@ -221,4 +224,4 @@ __marimo__/
 # macOS
 .DS_Store
 
-test.ipynb
+test.ipynb/docs/project_purpose/bjhxhtdt8qioylul.csv
