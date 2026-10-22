@@ -1,0 +1,5 @@
+# Research-only dependencies; existing project uv.lock locks numpy/matplotlib.
+# Exact installed package environment is archived in each run/environment.json.
+numpy==2.3.2
+matplotlib==3.10.5
+jsonschema==4.25.1

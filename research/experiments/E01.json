@@ -1,0 +1,47 @@
+{
+  "id": "E01",
+  "version": "2.0.0",
+  "methodology_version": "2.0.0",
+  "status": "executed_with_validation_limitations",
+  "exploratory": true,
+  "config": "configs/samsung_e01.json",
+  "run_id": "samsung_E01_20261022T064759_477554Z",
+  "hypothesis_ids": [
+    "H0",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7"
+  ],
+  "scope": "Raw-price discount only through 2026-10-20; adjustment formula and indexed panel deferred",
+  "outputs": [
+    "discount_history.png",
+    "discount_history.svg",
+    "DATA_QUALITY_REPORT.md",
+    "summary.json",
+    "overlap_revision_summary.json",
+    "manifest.json"
+  ],
+  "observations": [
+    "O006",
+    "O007",
+    "O008"
+  ],
+  "finding": "Time-varying positive preferred discount; no economic driver or causal value of votes identified",
+  "contradictory_evidence": [
+    "One code-5 common observation has volume/high/low, contrary to a simple no-trading interpretation; excluded by status"
+  ],
+  "inconclusive": [
+    "Independent historical close validation incomplete",
+    "Missing weekdays not classified without official calendar",
+    "No hypothesis about economic drivers tested"
+  ],
+  "next_action": "Independent calendar/quote/row conflict reconciliation; adjustment formula confirmation. Factor models recorded for later user-directed work.",
+  "models_or_backtests_run": false,
+  "superseded_run_ids": [
+    "samsung_E01_20261022T062205_061875Z"
+  ]
+}

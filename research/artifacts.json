@@ -1,0 +1,1705 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-10-22T07:09:37.693590+00:00",
+  "artifacts": [
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/code_snapshot/pyproject.toml",
+      "sha256": "fa9be498708ab832f9d63e23a6d24bf572988db7af5a3b897ba168391043c769",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/code_snapshot/research/requirements.txt",
+      "sha256": "8f7e3f18ccf17878087d65c22023f4223d33ceaacb25b541dbcc52a19af79e9f",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/code_snapshot/scripts/run_samsung_e01.py",
+      "sha256": "9cb1693179fcaa8eefd702ee517c5b1d255cc7574cf7c5929b2075e79b51ca59",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/code_snapshot/src/samsung_research/__init__.py",
+      "sha256": "c7f091a496ebde8235a01961066520d12f0d389f786623fc2355db2d8762d92c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/code_snapshot/src/samsung_research/e01.py",
+      "sha256": "58c572d748153fbd5555a7061814c1a5eb033a378a959e7e4d5d171fbd559251",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/code_snapshot/tests/check_samsung_e01.py",
+      "sha256": "2660e7b56d6e9906b71481af84a2102cdc2aec24ec156fb1701a8d7cbde99454",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/code_snapshot/uv.lock",
+      "sha256": "09a2c825bd9b1d4dfd718e1b8358d2b9fc1e3024b6ebafd73dbcf0b2c6dd09aa",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/config.json",
+      "sha256": "8a4a0e97339d06cf94ec0e6c7d89d016baaa782e89bc955536a1ad39dd22bde4",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/DATA_QUALITY_REPORT.md",
+      "sha256": "f8bc631f517fe76ee060743fec93bf271fd697324b18ca2bec0aa4b1b30b7871",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/discontinuity_review.csv",
+      "sha256": "83784587e0c758e137b16de4127f3642f5217a12d79bfe28ff8b08000dbf4faf",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/discount_and_indexed_prices.png",
+      "sha256": "9679fc913c704d787c74cddb469b84c021c22cf07248e3593534b7ec7f61e418",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/discount_and_indexed_prices.svg",
+      "sha256": "548c1e1bb4a9ee27da8e79d9f1aaf4c8f14ab80ac60523c07f53da448945dde6",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/discount_history.png",
+      "sha256": "6d53b84d92951ec1ba84cf35eed59098ee6623165a489e212a354e7ba97d96eb",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/discount_history.svg",
+      "sha256": "441cce3b5b0dc007c96030c4d6cedc841a4d07a65abac432c065a3e23e3e0281",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/environment.json",
+      "sha256": "21412ddd3af215620fcb23e458c09bad43b28aa256f56c084eb5e97ab5ec9467",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/factor_events.json",
+      "sha256": "e63cdfb8fa4ba4e14f6cc4f95357d9e4e2eae62d982dea1a0ef2bfb599c110bf",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/field_coverage.csv",
+      "sha256": "e8de9a95c317fff12c8299872c750fc92e6c48700a0bec8d559b6a7ed19b599c",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/issue_inventory.csv",
+      "sha256": "ee38b323902f79c30ee6da6f16cbb6f6557ce1ffd31795ddbfc30c445ca7dbd6",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/methodology.json",
+      "sha256": "7dd7003a39d46bc24e2783e46b922f94dae9d945c31193f98a9ceccf507af221",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/METHODOLOGY.md",
+      "sha256": "4227e241f62db5bc12dbc65cdf372e56f5b8144b68167f1f0ea8df97df116476",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/methodology_schema.json",
+      "sha256": "28705c584a6f65a0b2e29870e1ad55e3cc39a08e8890c4d195a63ac47a83812f",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/normalized_market.csv",
+      "sha256": "ea7209652d433411a1a3eddaccb500c3c0227b65d7f339eed9dd3b754f1508f6",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/paired_daily.csv",
+      "sha256": "c705383e228b517534c3ff420208d71c7490dd3c066200b7f0f070e805f845d2",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/source_inventory.json",
+      "sha256": "7898955776170b5238ed2e1ae50d52701d568bb7798ed1c8e71f91f90591036e",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/split_window.csv",
+      "sha256": "be8a8172487a0ce4050ce560313d1c8bc905b95f273aad97768e55018335f0fa",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/summary.json",
+      "sha256": "73665c5101d9902f619514017722fe9497c44aa6912e9a0223523398ede82b5d",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/unclassified_absent_weekdays.csv",
+      "sha256": "8445882f8461bb5f001f26bc852321c9f18c5f5803a6364493b3f7089385bf26",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/worktree.patch",
+      "sha256": "33f4336ee670494912e93f351f356c03d746b293012a3daee193c9cc01994eb0",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T061948_834365Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T061948_834365Z/manifest.json",
+      "category": "manifest",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/code_snapshot/pyproject.toml",
+      "sha256": "fa9be498708ab832f9d63e23a6d24bf572988db7af5a3b897ba168391043c769",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/code_snapshot/research/requirements.lock",
+      "sha256": "d2dbe9c4b2133b70ed23ec8a2ccc99c34ff31534abe20af31a919be7b16ce589",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/code_snapshot/research/requirements.txt",
+      "sha256": "8f7e3f18ccf17878087d65c22023f4223d33ceaacb25b541dbcc52a19af79e9f",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/code_snapshot/scripts/run_samsung_e01.py",
+      "sha256": "9cb1693179fcaa8eefd702ee517c5b1d255cc7574cf7c5929b2075e79b51ca59",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/code_snapshot/src/samsung_research/__init__.py",
+      "sha256": "c7f091a496ebde8235a01961066520d12f0d389f786623fc2355db2d8762d92c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/code_snapshot/src/samsung_research/e01.py",
+      "sha256": "8eda74e23883ccd7e6f8b0b2a14bed34fc6ae8206e798c1c7d3081e406bec3dc",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/code_snapshot/tests/check_samsung_e01.py",
+      "sha256": "2660e7b56d6e9906b71481af84a2102cdc2aec24ec156fb1701a8d7cbde99454",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/code_snapshot/uv.lock",
+      "sha256": "09a2c825bd9b1d4dfd718e1b8358d2b9fc1e3024b6ebafd73dbcf0b2c6dd09aa",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/config.json",
+      "sha256": "8a4a0e97339d06cf94ec0e6c7d89d016baaa782e89bc955536a1ad39dd22bde4",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/DATA_QUALITY_REPORT.md",
+      "sha256": "ac25b12f189b1031c8ca1b8d18e0875d0d75109f9379c526a40822b19fe7414c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/discontinuity_review.csv",
+      "sha256": "83784587e0c758e137b16de4127f3642f5217a12d79bfe28ff8b08000dbf4faf",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/discount_and_indexed_prices.png",
+      "sha256": "fb9aedab322bdb1039b922c6dc3d623b9a7bb21679fead8614412aa38580fa88",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/discount_and_indexed_prices.svg",
+      "sha256": "18f2d25d5ba73094e9f9485406da63081f9330ea226d4b5c5583740558cbe66f",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/discount_history.png",
+      "sha256": "69ba45973249b8af710d74382daf15e8e7ec2f33694d735a3047b5fec3a9d029",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/discount_history.svg",
+      "sha256": "29c031f42354cfcc541636095fb9d993e4955f9b9f6a871e9705ac8b4208acd2",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/environment.json",
+      "sha256": "21412ddd3af215620fcb23e458c09bad43b28aa256f56c084eb5e97ab5ec9467",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/factor_events.json",
+      "sha256": "e63cdfb8fa4ba4e14f6cc4f95357d9e4e2eae62d982dea1a0ef2bfb599c110bf",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/field_coverage.csv",
+      "sha256": "e8de9a95c317fff12c8299872c750fc92e6c48700a0bec8d559b6a7ed19b599c",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/issue_inventory.csv",
+      "sha256": "ee38b323902f79c30ee6da6f16cbb6f6557ce1ffd31795ddbfc30c445ca7dbd6",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/methodology.json",
+      "sha256": "7dd7003a39d46bc24e2783e46b922f94dae9d945c31193f98a9ceccf507af221",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/METHODOLOGY.md",
+      "sha256": "4227e241f62db5bc12dbc65cdf372e56f5b8144b68167f1f0ea8df97df116476",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/methodology_schema.json",
+      "sha256": "28705c584a6f65a0b2e29870e1ad55e3cc39a08e8890c4d195a63ac47a83812f",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/normalized_market.csv",
+      "sha256": "ea7209652d433411a1a3eddaccb500c3c0227b65d7f339eed9dd3b754f1508f6",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/paired_daily.csv",
+      "sha256": "c705383e228b517534c3ff420208d71c7490dd3c066200b7f0f070e805f845d2",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/source_inventory.json",
+      "sha256": "7898955776170b5238ed2e1ae50d52701d568bb7798ed1c8e71f91f90591036e",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/split_window.csv",
+      "sha256": "be8a8172487a0ce4050ce560313d1c8bc905b95f273aad97768e55018335f0fa",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/summary.json",
+      "sha256": "73665c5101d9902f619514017722fe9497c44aa6912e9a0223523398ede82b5d",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/unclassified_absent_weekdays.csv",
+      "sha256": "8445882f8461bb5f001f26bc852321c9f18c5f5803a6364493b3f7089385bf26",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/validation.txt",
+      "sha256": "0e5b7510d6e1b1ab1408352270c28d59f4b1b99626d150dc2e7883a5ac75d3f9",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/worktree.patch",
+      "sha256": "33f4336ee670494912e93f351f356c03d746b293012a3daee193c9cc01994eb0",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T062205_061875Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T062205_061875Z/manifest.json",
+      "category": "manifest",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/code_snapshot/pyproject.toml",
+      "sha256": "fa9be498708ab832f9d63e23a6d24bf572988db7af5a3b897ba168391043c769",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/code_snapshot/research/requirements.lock",
+      "sha256": "d2dbe9c4b2133b70ed23ec8a2ccc99c34ff31534abe20af31a919be7b16ce589",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/code_snapshot/research/requirements.txt",
+      "sha256": "8f7e3f18ccf17878087d65c22023f4223d33ceaacb25b541dbcc52a19af79e9f",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/code_snapshot/scripts/run_samsung_e01.py",
+      "sha256": "9cb1693179fcaa8eefd702ee517c5b1d255cc7574cf7c5929b2075e79b51ca59",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/code_snapshot/src/samsung_research/__init__.py",
+      "sha256": "c7f091a496ebde8235a01961066520d12f0d389f786623fc2355db2d8762d92c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/code_snapshot/src/samsung_research/e01.py",
+      "sha256": "afbdb071f6c3072e8b4e85b4b6697a42634eeb2ce62fbf92a814162995d7b7d8",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/code_snapshot/tests/check_samsung_e01.py",
+      "sha256": "e6a1710f6e5ef6779076df6645b04016a51cbd75d58b1fa90b498e5f8db081a8",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/code_snapshot/uv.lock",
+      "sha256": "09a2c825bd9b1d4dfd718e1b8358d2b9fc1e3024b6ebafd73dbcf0b2c6dd09aa",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/config.json",
+      "sha256": "04f8e7267d6d723c26a30fbcaab6c90632e3ca3553973686de9b58bf8221b27c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/DATA_QUALITY_REPORT.md",
+      "sha256": "69eafbc5bf7e4e6b2f6e5a833ebf7c5494362eec066e104687853dafe7990d43",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/discontinuity_review.csv",
+      "sha256": "4cb0a95e269b1e679da67062412851a2756f9d4d3a9149eb3656d641b404554b",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/discount_history.png",
+      "sha256": "936baa4162d770d3a632b58be179cb8cfbafd517b19e0434717db7d20cbfe031",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/discount_history.svg",
+      "sha256": "7193ffba1d63e5686c5d2b4f7da892ba0976aa9920e059cd93e0fc3d75a57f3e",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/environment.json",
+      "sha256": "21412ddd3af215620fcb23e458c09bad43b28aa256f56c084eb5e97ab5ec9467",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/factor_events.json",
+      "sha256": "e63cdfb8fa4ba4e14f6cc4f95357d9e4e2eae62d982dea1a0ef2bfb599c110bf",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/field_coverage.csv",
+      "sha256": "9e60a731019149c9b1330822201478a70876e54b78954ed3eb9d7248a0652515",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/issue_inventory.csv",
+      "sha256": "ba95df104aaa5f12d1dce5bdf6aa045d60420ca5d08a98d36e71463ab8754479",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/methodology.json",
+      "sha256": "03a745da9024d2472f003d38183bafb9457c7198e4e72717330a9670caf1925e",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/METHODOLOGY.md",
+      "sha256": "a2ae4ae71727546f55cc9e1274360c6a13b795448c380f9078c640bb070cdb2a",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/methodology_schema.json",
+      "sha256": "ec3677eab66687d2f14f90a7fcc1d6c74690b83cc5e1e2ce65c332d1d6e00f40",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/normalized_market.csv",
+      "sha256": "3b9e3dcdc411232e289b0dbd79cac409b886aca7db9a36552b2d7f077123b4fe",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/overlap_revision_summary.json",
+      "sha256": "0db2af9e61cb6baa5a7ae1965c19ce372b286b63afc8e2dbbe9cd9599c16702d",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/paired_daily.csv",
+      "sha256": "52d85f72950a56f6e60975e02f6c4983ef9da0b469d07791ee337a477cc0bdfc",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/source_inventory.json",
+      "sha256": "25aeb11e84b82d06fdd457810afb16b32108af680d7b91bdbb8a96c5a3436212",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/split_window.csv",
+      "sha256": "e49711033817cc72c01c820c54ba9a810848d87e1ab29b0f7013fe9394dd14e2",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/summary.json",
+      "sha256": "e3ea5898af0d4701488909dbc9e2c7b8096f9ba606f6854a512f6abcb5617444",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/unclassified_absent_weekdays.csv",
+      "sha256": "8445882f8461bb5f001f26bc852321c9f18c5f5803a6364493b3f7089385bf26",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/validation.txt",
+      "sha256": "5a2f2a154fb49b8e5bfc20b9262a9f9d786c2625480fbab5cf9080cc6c2a39f5",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/worktree.patch",
+      "sha256": "33f4336ee670494912e93f351f356c03d746b293012a3daee193c9cc01994eb0",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/WRDS_VENDOR_DEFINITIONS.md",
+      "sha256": "11e69ea52b78ea3ba833fd569efe13c4b69d52fc873fb3e4bedde016bacb8a49",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "samsung_E01_20261022T064759_477554Z",
+      "experiment_id": "E01",
+      "path": "runs/samsung_E01_20261022T064759_477554Z/manifest.json",
+      "category": "manifest",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/episodes/flagged_discount_windows.png",
+      "sha256": "7cdb46f879b813d807a0ae4a5814659885a75fd53d35b026c6b764e4e17ddd71",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/episodes/flagged_discount_windows.svg",
+      "sha256": "f5600d6fd4ce2358b73cd67dfae09dfe7a2bad7c392afb27c0620fc558b4952d",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/episodes/flagged_episode_comparison.csv",
+      "sha256": "11512fbb065e9df7094a82e1e05ed5281a7907da79024b330d9270fb00426554",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/episodes/REVIEW.md",
+      "sha256": "3d3e514491d8d7eadf9320a8bd8a54b234f050f40bf8dcc1118d93cfb00f0b28",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/episodes/source_rows_around_flags.csv",
+      "sha256": "0cabb982d94f153aaae9e6bdaaf2dfd9cd89ea769a60355a83379bb074051445",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/01_discount_history.png",
+      "sha256": "7750e22455bb3bfe8420c5e0ac42ae5464c3cde98408678d5499943ca257638d",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/01_discount_history.svg",
+      "sha256": "b1cbdaf0bc1bf1ae550812076d52795cc45a3abc1e2632ae01838dd04d4cd7a4",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/02_annual_distributions.png",
+      "sha256": "061c23f283b73f3eb4bd0d666725ecbd844d0b8044def8683f0347c3a148d36b",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/02_annual_distributions.svg",
+      "sha256": "5fae04c6bf973e99daded0718f8c5e229cbeebda44c9371cd99f38d384be2421",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/03_daily_discount_changes.png",
+      "sha256": "f54f27940b4766764d29ab02441371706584128b910c0ae785452c313eca4733",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/03_daily_discount_changes.svg",
+      "sha256": "317ebe7bad2b9b68b6f39b84d3b21c9ef1a4bf821405ce3419962f0910c6bc9b",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/04_raw_closes_since_2019.png",
+      "sha256": "928ace1e789c16b664b2663830b40dbce0f8080d10281363e2c7e7253fd40a2e",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/04_raw_closes_since_2019.svg",
+      "sha256": "e77c3b2bdf3ec3ee07f15960f3fbd0d7584f167b8b613b11b1cb5c57deb14a30",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/05_trading_activity.png",
+      "sha256": "0b04d551056e4358e6a2fe2be63629d7c114909c97373b768de53b8d87d5d53f",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/05_trading_activity.svg",
+      "sha256": "0eaefc8d3a124ca10289dfce4b0cfdd3d1ade0a10ae4e53ef02fb4f9636c8669",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/06_rolling_discount_volatility.png",
+      "sha256": "2a96542c9a154b8b72f06a92e9487663d1d1669abc281b9a5b07835a8c4a4c6f",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/main/06_rolling_discount_volatility.svg",
+      "sha256": "7832d5ef3b48e5bd96d3972887455a40cb17a47cf0b3a9c52cd7f2d803076999",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/01_discount_history.png",
+      "sha256": "2b24a19f9feda87f3fc9e0b489eea6bf0296539a3de7cfcd9110dea51738f5b6",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/01_discount_history.svg",
+      "sha256": "d34581237418f1483a65fd47a0bcd0fcb9632b7e0858ba02004c9fdd4dd81ded",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/02_annual_distributions.png",
+      "sha256": "f31907b92f69118783fd7adc19960ab6cada70a1a3ebd6d09190b0e39d2e7cfc",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/02_annual_distributions.svg",
+      "sha256": "b1f0bd4805733612689ddceeae9efdbbe6e580eb9bf8329bedab7019c837685d",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/03_daily_discount_changes.png",
+      "sha256": "a941e787298b9598248584f118833f61b72d5ec1ea93baf8f4cb6674e7cc1454",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/03_daily_discount_changes.svg",
+      "sha256": "df3c7c53a064a51f2765f8f5954781e9215491dd95ec382783b4e86a8c7744e6",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/04_raw_closes_since_2019.png",
+      "sha256": "3f8cea9237a96561412dccf893b846fa54a39781ef412f9cd2acc8abe0caa0fc",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/04_raw_closes_since_2019.svg",
+      "sha256": "e3d6d2789be1f515b95588b9e02b24d16336e976c98d790fb28f65ba9e63368b",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/05_trading_activity.png",
+      "sha256": "11ecee9c8c77e746a03cb78db308850b91b5972512ef32ac83cad3ef9442cd6e",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/05_trading_activity.svg",
+      "sha256": "d991481a408466a11da0ea1a9aac5a57e61d53f14c135baed3cc8e69aff0da9a",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/06_rolling_discount_volatility.png",
+      "sha256": "1f643de11ef0034341e055476fa54d2f73fc9813cc99a6c4904c08c342a45378",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/figures/sensitivity/06_rolling_discount_volatility.svg",
+      "sha256": "30cfb12f25af6cb102094cf5293fb3ba31722bf0bdc3959f5a25da49cb731052",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/environment.json",
+      "sha256": "8865e693e4fa60ee39103b543e7b86920a06750bd8f9701c45f83f609c444eb8",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/METHODOLOGY.md",
+      "sha256": "603e7b8545d4c65b11362ef96be4025cd9d5270e59eb80a483203d5c15c44649",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/configs/samsung_descriptive.json",
+      "sha256": "36362a2738aeaaae7d891215905274a3bd2bc01cac96eae0129943aea85feee5",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/configs/samsung_e01.json",
+      "sha256": "04f8e7267d6d723c26a30fbcaab6c90632e3ca3553973686de9b58bf8221b27c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/docs/METHODOLOGY.md",
+      "sha256": "603e7b8545d4c65b11362ef96be4025cd9d5270e59eb80a483203d5c15c44649",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/methodology/methodology.json",
+      "sha256": "4d488138497b9556e2556f9e9ca1dc61fb90466670be84f44c05a1f9ec343926",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/methodology/schema.json",
+      "sha256": "ec3677eab66687d2f14f90a7fcc1d6c74690b83cc5e1e2ce65c332d1d6e00f40",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/pyproject.toml",
+      "sha256": "fa9be498708ab832f9d63e23a6d24bf572988db7af5a3b897ba168391043c769",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/research/requirements.lock",
+      "sha256": "d2dbe9c4b2133b70ed23ec8a2ccc99c34ff31534abe20af31a919be7b16ce589",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/research/source_inventory.json",
+      "sha256": "25aeb11e84b82d06fdd457810afb16b32108af680d7b91bdbb8a96c5a3436212",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/scripts/run_samsung_descriptive.py",
+      "sha256": "1bcf1bed42e5aed9fd352bbcd90b6944471105d2c3b70d8e1ac33fb2c119b738",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/src/samsung_research/__init__.py",
+      "sha256": "c7f091a496ebde8235a01961066520d12f0d389f786623fc2355db2d8762d92c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/src/samsung_research/descriptive.py",
+      "sha256": "ddbaf4a45c26ad7e44ed257bd80f46be873f4b05dab30bb089a2238e02aab8bb",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/src/samsung_research/e01.py",
+      "sha256": "afbdb071f6c3072e8b4e85b4b6697a42634eeb2ce62fbf92a814162995d7b7d8",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/src/samsung_research/navigation.py",
+      "sha256": "902c4da209694b6d4dc4379183d32863d5be237740a7188f2ffab7abe61fb4d1",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/tests/check_descriptive.py",
+      "sha256": "5b37a6e89383f98a367e81d4c00fb3f8f081cb62ebb2383c4e3546a1efe6fc5e",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/tests/check_samsung_e01.py",
+      "sha256": "e6a1710f6e5ef6779076df6645b04016a51cbd75d58b1fa90b498e5f8db081a8",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/snapshot/uv.lock",
+      "sha256": "09a2c825bd9b1d4dfd718e1b8358d2b9fc1e3024b6ebafd73dbcf0b2c6dd09aa",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/source_inventory.json",
+      "sha256": "25aeb11e84b82d06fdd457810afb16b32108af680d7b91bdbb8a96c5a3436212",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/validation.txt",
+      "sha256": "182e3bca7d6e02bb2e27ebdbbe18a36c359cafc3facfae3cf64c7361bc537082",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/provenance/worktree.patch",
+      "sha256": "33f4336ee670494912e93f351f356c03d746b293012a3daee193c9cc01994eb0",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/README.md",
+      "sha256": "ea9004de78011c4427e72d17f150ec8af7904400629f89e5091d289d10cee75c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/tables/annual_distributions.csv",
+      "sha256": "e2368453a324ec4242a08c997c16db2718836228ddfc84cd9ace1c3275acee44",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/tables/field_coverage.csv",
+      "sha256": "9e60a731019149c9b1330822201478a70876e54b78954ed3eb9d7248a0652515",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/tables/flagged_dates.csv",
+      "sha256": "4294259602dcabc3bbe050a9702613b0f1b2772d00355978c393953373a18224",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/tables/issue_inventory.csv",
+      "sha256": "ba95df104aaa5f12d1dce5bdf6aa045d60420ca5d08a98d36e71463ab8754479",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/tables/largest_changes.csv",
+      "sha256": "7cb5f97fe2414ebdb3a35b6869f4477088f2c60cd13952f06a94ef484d6890fc",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/tables/measures_main.csv",
+      "sha256": "e920e158e7770dee66608c8a258530700ae5e75a66974a089cca1082792638c9",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/tables/measures_sensitivity.csv",
+      "sha256": "de2cc788ffbf8245cedd8f0a3264709cdb352aa942cd352afdead6fe20a6d129",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/tables/raw_quality.json",
+      "sha256": "e3ea5898af0d4701488909dbc9e2c7b8096f9ba606f6854a512f6abcb5617444",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/tables/summary.json",
+      "sha256": "72c5d9667fc6f7e3eb062a4f52b5be520d3159b6e54b534b886c4f09c3979c1a",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070352_803683Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070352_803683Z/manifest.json",
+      "category": "manifest",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/episodes/flagged_discount_windows.png",
+      "sha256": "fe663fb171f86c526b6ec5b480a22b5352ed2c8143df71979c8100fa8d4e1a35",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/episodes/flagged_discount_windows.svg",
+      "sha256": "7c3eef6cf16592cb6e3442826d8d5fd8b02ba4499be5e3eaa26dea10eba0cc61",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/episodes/flagged_episode_comparison.csv",
+      "sha256": "11512fbb065e9df7094a82e1e05ed5281a7907da79024b330d9270fb00426554",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/episodes/REVIEW.md",
+      "sha256": "3d3e514491d8d7eadf9320a8bd8a54b234f050f40bf8dcc1118d93cfb00f0b28",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/episodes/source_rows_around_flags.csv",
+      "sha256": "0cabb982d94f153aaae9e6bdaaf2dfd9cd89ea769a60355a83379bb074051445",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/01_discount_history.png",
+      "sha256": "e105b5ff4a90c86e27d111ffc35c8454b990fed92276e2ab81e0c5d1e96828ef",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/01_discount_history.svg",
+      "sha256": "2704a5b5c9a8dcadd3d19db1155163108e2930a27dc173cb92bb115c3714461a",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/02_annual_distributions.png",
+      "sha256": "53c904e88f6559d02fca4e1abe813bdd10b5ac9742b2b5e381943b3731ec256c",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/02_annual_distributions.svg",
+      "sha256": "ceaeab7bc3b8997adea10f72bdf949638be835815d5ea667ddd281081b4ab72b",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/03_daily_discount_changes.png",
+      "sha256": "e35f33cf78652b50564080ac76f99ebab3f276b85f76015eaae6d2d23e6a50e7",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/03_daily_discount_changes.svg",
+      "sha256": "45c18ac5cebae385791426ba1499f97f13f4dc838f12c40b2e318a2d945f8b6c",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/04_raw_closes_since_2019.png",
+      "sha256": "7ba9e2d53c7b1dc3c55d16f352b23bff85328a94eeb37470f4e85bd04e1d9070",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/04_raw_closes_since_2019.svg",
+      "sha256": "3bae97b2d17a00ba881d90e3933f33bfca0136ba317ac78bf42f8e4f730de78c",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/05_trading_activity.png",
+      "sha256": "9f7b2b4a60d27db0b5706a18097315be042bf618ae7de9f6b8a6f608fe6e13db",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/05_trading_activity.svg",
+      "sha256": "c3f58755736e63ecf3f80e1234834a2199dd02039d7b50f04a18267c5bd077fb",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/06_rolling_discount_volatility.png",
+      "sha256": "dd8dbcdec08892970b30b3481971d86f1404e12d67a4ad33f14fe145ea54f1bc",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/06_rolling_discount_volatility.svg",
+      "sha256": "eb900aa3411191398b5fe140c6e4a3730d850c133113a5539f9572c14436e961",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/01_discount_history.png",
+      "sha256": "1d5065e01c65c4fc69c34b36d0c5d5554f85d26e92e85fc19110ca6f01b35b5d",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/01_discount_history.svg",
+      "sha256": "70d45bb8c46084eea1ccbc92fa5411df3d11d13090ac13bb98328d834f042608",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/02_annual_distributions.png",
+      "sha256": "a4bfc16d15f1d7d4fda37b05b2eb28c7ed1fdab0ef2466aeffd000bc72a31f2f",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/02_annual_distributions.svg",
+      "sha256": "cfff7c85f3801a6e9fece344f1e4e5edea39046f6c58f90d3f88d68f007963c3",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/03_daily_discount_changes.png",
+      "sha256": "bb120e51c6321cc8b5794a7bea03a09f09bb050e89ec17c73fa7fbf26f2b8f28",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/03_daily_discount_changes.svg",
+      "sha256": "8b57d3da380a72f4ac9468b6299b9e48c12b7f4ceed6cb2df0b28afa0fe447b5",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/04_raw_closes_since_2019.png",
+      "sha256": "ae86a0158ad03e4266b6f5d23c03f5215d3faf07d19303d4d3cb28f8503294ae",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/04_raw_closes_since_2019.svg",
+      "sha256": "d21e597065355f252a2ec00f16e98dc0cdf20c7cec2df9927d0567f21c9577cc",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/05_trading_activity.png",
+      "sha256": "5157c3d9f6f01ac1c25b41ae131cf91b231cad0b66eda89833d34722b33c144b",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/05_trading_activity.svg",
+      "sha256": "afec97e04b2d031b6b7b3eb591662bf80f7932997b0a442f3beb8dcdf1253ee5",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/06_rolling_discount_volatility.png",
+      "sha256": "a3e8c8248e4778dd3c757f399b8c4d1f8bdcc87c7f87de5fe8c7122f364e3f8a",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/06_rolling_discount_volatility.svg",
+      "sha256": "79aba01b1d54bb9c0a9b082df7465d1049209ccc121e2d861e44a5100e8a2d00",
+      "category": "figure",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/environment.json",
+      "sha256": "8865e693e4fa60ee39103b543e7b86920a06750bd8f9701c45f83f609c444eb8",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/METHODOLOGY.md",
+      "sha256": "bf07603f6036b09d7693fa17fae6960d6731f0003ce4aee0fc08005e64fb41d1",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/configs/samsung_descriptive.json",
+      "sha256": "36362a2738aeaaae7d891215905274a3bd2bc01cac96eae0129943aea85feee5",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/configs/samsung_e01.json",
+      "sha256": "04f8e7267d6d723c26a30fbcaab6c90632e3ca3553973686de9b58bf8221b27c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/docs/METHODOLOGY.md",
+      "sha256": "bf07603f6036b09d7693fa17fae6960d6731f0003ce4aee0fc08005e64fb41d1",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/methodology/methodology.json",
+      "sha256": "a243f4790fdcef397da9e91f4f67b9f38c5545d820e87b9f63fac50e936c254f",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/methodology/schema.json",
+      "sha256": "ec3677eab66687d2f14f90a7fcc1d6c74690b83cc5e1e2ce65c332d1d6e00f40",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/pyproject.toml",
+      "sha256": "fa9be498708ab832f9d63e23a6d24bf572988db7af5a3b897ba168391043c769",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/research/requirements.lock",
+      "sha256": "d2dbe9c4b2133b70ed23ec8a2ccc99c34ff31534abe20af31a919be7b16ce589",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/research/source_inventory.json",
+      "sha256": "25aeb11e84b82d06fdd457810afb16b32108af680d7b91bdbb8a96c5a3436212",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/scripts/run_samsung_descriptive.py",
+      "sha256": "1bcf1bed42e5aed9fd352bbcd90b6944471105d2c3b70d8e1ac33fb2c119b738",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/src/samsung_research/__init__.py",
+      "sha256": "c7f091a496ebde8235a01961066520d12f0d389f786623fc2355db2d8762d92c",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/src/samsung_research/descriptive.py",
+      "sha256": "bc62c810576a432b0e5aa66b23810b513aa6dd417fc7750d3834657d4801eac1",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/src/samsung_research/e01.py",
+      "sha256": "afbdb071f6c3072e8b4e85b4b6697a42634eeb2ce62fbf92a814162995d7b7d8",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/src/samsung_research/navigation.py",
+      "sha256": "70b168849a43aad97c4cefc849ee01990a44081f0cad90498fa0385eaa08dc75",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/tests/check_descriptive.py",
+      "sha256": "5b37a6e89383f98a367e81d4c00fb3f8f081cb62ebb2383c4e3546a1efe6fc5e",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/tests/check_samsung_e01.py",
+      "sha256": "e6a1710f6e5ef6779076df6645b04016a51cbd75d58b1fa90b498e5f8db081a8",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/snapshot/uv.lock",
+      "sha256": "09a2c825bd9b1d4dfd718e1b8358d2b9fc1e3024b6ebafd73dbcf0b2c6dd09aa",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/source_inventory.json",
+      "sha256": "25aeb11e84b82d06fdd457810afb16b32108af680d7b91bdbb8a96c5a3436212",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/validation.txt",
+      "sha256": "168f42cf2ea1165ff8f4c84662c3dd20a7e060282b6706d3a43644a58d6a05f1",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/provenance/worktree.patch",
+      "sha256": "33f4336ee670494912e93f351f356c03d746b293012a3daee193c9cc01994eb0",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/README.md",
+      "sha256": "a4a9439693cd1ae4b18fdd2b5dfff87798adf43cc84be9c4f5687a6ad88bd491",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/tables/annual_distributions.csv",
+      "sha256": "e2368453a324ec4242a08c997c16db2718836228ddfc84cd9ace1c3275acee44",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/tables/field_coverage.csv",
+      "sha256": "9e60a731019149c9b1330822201478a70876e54b78954ed3eb9d7248a0652515",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/tables/flagged_dates.csv",
+      "sha256": "4294259602dcabc3bbe050a9702613b0f1b2772d00355978c393953373a18224",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/tables/issue_inventory.csv",
+      "sha256": "ba95df104aaa5f12d1dce5bdf6aa045d60420ca5d08a98d36e71463ab8754479",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/tables/largest_changes.csv",
+      "sha256": "7cb5f97fe2414ebdb3a35b6869f4477088f2c60cd13952f06a94ef484d6890fc",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/tables/measures_main.csv",
+      "sha256": "e920e158e7770dee66608c8a258530700ae5e75a66974a089cca1082792638c9",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/tables/measures_sensitivity.csv",
+      "sha256": "de2cc788ffbf8245cedd8f0a3264709cdb352aa942cd352afdead6fe20a6d129",
+      "category": "table",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/tables/raw_quality.json",
+      "sha256": "e3ea5898af0d4701488909dbc9e2c7b8096f9ba606f6854a512f6abcb5617444",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/tables/summary.json",
+      "sha256": "72c5d9667fc6f7e3eb062a4f52b5be520d3159b6e54b534b886c4f09c3979c1a",
+      "category": "documentation/provenance",
+      "status": "completed_with_documented_validation_limitations"
+    },
+    {
+      "run_id": "20261022T070701_403388Z",
+      "experiment_id": "EP01",
+      "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/manifest.json",
+      "category": "manifest",
+      "status": "completed_with_documented_validation_limitations"
+    }
+  ]
+}

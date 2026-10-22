@@ -1,0 +1,283 @@
+{
+  "version": "3.0.0",
+  "updated_at": "2026-10-22",
+  "scope": "Samsung descriptive pack; no causal vote valuation or factor regressions",
+  "hypotheses": [
+    {
+      "id": "H0",
+      "parent": null,
+      "claim": "Measurement artifacts can produce apparent discount changes",
+      "mechanism": "Carried quotes, mismatched classes, splits and event treatment distort ratios",
+      "expected_sign": "Ambiguous",
+      "predictions": [
+        "Some apparent observations fail status checks",
+        "Split-adjusted prices avoid mechanical split jumps"
+      ],
+      "required_data": [
+        "raw closes",
+        "price status",
+        "adjustment factors",
+        "independent quotes/calendar"
+      ],
+      "identification_risks": [
+        "Vendor flags can conflict with volume",
+        "Correct arithmetic cannot validate vendor quotes"
+      ],
+      "evidence_ids": [
+        "O002",
+        "O003",
+        "O005",
+        "O006",
+        "O007",
+        "O_EP01_20261022T070352_803683Z",
+        "O_EP01_20261022T070352_803683Z_FLAGS",
+        "O_EP01_20261022T070701_403388Z",
+        "O_EP01_20261022T070701_403388Z_FLAGS"
+      ],
+      "experiment_ids": [
+        "E01",
+        "EP01"
+      ],
+      "status": "testing",
+      "confidence": "Vendor meanings supplied; row-level conflict/calendar/quotes unresolved; adjustment formula deferred. No causal inference.",
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22",
+      "supersession_history": [],
+      "artifact_refs": [
+        {
+          "run_id": "20261022T070701_403388Z",
+          "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/README.md",
+          "purpose": "descriptive motivation; not a causal test"
+        }
+      ]
+    },
+    {
+      "id": "H1",
+      "parent": null,
+      "claim": "Votes and control affect class-relative prices",
+      "mechanism": "Minority votes may become pivotal",
+      "expected_sign": "Event dependent",
+      "predictions": [
+        "Discount changes around independently identified control events"
+      ],
+      "required_data": [
+        "governance events",
+        "ownership blocks",
+        "class terms"
+      ],
+      "identification_risks": [
+        "Simultaneous cash-flow and demand news"
+      ],
+      "evidence_ids": [],
+      "experiment_ids": [
+        "E10"
+      ],
+      "status": "proposed",
+      "confidence": "Not tested by E01; price gap alone cannot identify voting value",
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22",
+      "supersession_history": []
+    },
+    {
+      "id": "H2",
+      "parent": null,
+      "claim": "Cash-flow and legal rights contribute to relative pricing",
+      "mechanism": "Different dividend and contingent rights change economic payoffs",
+      "expected_sign": "Depends on actual terms and event",
+      "predictions": [
+        "Class-relative prices respond to entitlement and dividend changes"
+      ],
+      "required_data": [
+        "dated articles",
+        "dividend events",
+        "conversion/redemption terms"
+      ],
+      "identification_risks": [
+        "Ex-dividend mechanics",
+        "Liquidity"
+      ],
+      "evidence_ids": [
+        "O003"
+      ],
+      "experiment_ids": [
+        "E08"
+      ],
+      "status": "proposed",
+      "confidence": "Issuer split disclosure describes rights differences; no effect tested",
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22",
+      "supersession_history": []
+    },
+    {
+      "id": "H3",
+      "parent": null,
+      "claim": "Worse relative preferred liquidity can accompany larger discounts",
+      "mechanism": "Higher trading costs reduce demand for preferred shares",
+      "expected_sign": "Preferred relative trading costs up, discount up",
+      "predictions": [
+        "Relative spreads or price-impact proxies covary with discount"
+      ],
+      "required_data": [
+        "quotes",
+        "traded value",
+        "volume",
+        "float"
+      ],
+      "identification_risks": [
+        "Discount affects trading activity",
+        "Proxies differ from execution costs"
+      ],
+      "evidence_ids": [
+        "O_EP01_20261022T070352_803683Z",
+        "O_EP01_20261022T070701_403388Z"
+      ],
+      "experiment_ids": [
+        "E03",
+        "EP01"
+      ],
+      "status": "proposed",
+      "confidence": "Trading activity plotted only; volume ratio does not establish relative liquidity; liquidity hypothesis untested",
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22",
+      "supersession_history": [],
+      "artifact_refs": [
+        {
+          "run_id": "20261022T070701_403388Z",
+          "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/README.md",
+          "purpose": "descriptive motivation; not a causal test"
+        }
+      ]
+    },
+    {
+      "id": "H4",
+      "parent": null,
+      "claim": "Investor clientele and flows influence class-relative pricing",
+      "mechanism": "Different demand and access across classes",
+      "expected_sign": "Relative preferred demand up, discount may narrow",
+      "predictions": [
+        "Relative buying accompanies class-relative repricing"
+      ],
+      "required_data": [
+        "class flows",
+        "ownership",
+        "index events"
+      ],
+      "identification_risks": [
+        "Investors react to discount changes"
+      ],
+      "evidence_ids": [],
+      "experiment_ids": [
+        "E09",
+        "E10"
+      ],
+      "status": "proposed",
+      "confidence": "Not tested",
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22",
+      "supersession_history": []
+    },
+    {
+      "id": "H5",
+      "parent": null,
+      "claim": "Limited arbitrage allows class-price gaps to persist",
+      "mechanism": "Borrow costs, inventory and legal short constraints limit correction",
+      "expected_sign": "Direction depends on expensive class and short leg",
+      "predictions": [
+        "Gaps persist more under comparable tight-borrow states"
+      ],
+      "required_data": [
+        "class borrow fees",
+        "inventory",
+        "eligibility history"
+      ],
+      "identification_risks": [
+        "Fees react to demand",
+        "Absent fee is not free borrow"
+      ],
+      "evidence_ids": [],
+      "experiment_ids": [
+        "E04",
+        "E05"
+      ],
+      "status": "proposed",
+      "confidence": "Not tested; no lending analysis executed",
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22",
+      "supersession_history": []
+    },
+    {
+      "id": "H6",
+      "parent": null,
+      "claim": "Class-specific corporate actions and supply influence pricing",
+      "mechanism": "Repurchase, cancellation and float changes affect demand and liquidity",
+      "expected_sign": "Ambiguous because supply and liquidity channels may differ",
+      "predictions": [
+        "Relative execution intensity accompanies relative repricing"
+      ],
+      "required_data": [
+        "class repurchases",
+        "treasury",
+        "cancellations",
+        "float"
+      ],
+      "identification_risks": [
+        "Management responds to an existing gap",
+        "Buybacks do not imply cancellation"
+      ],
+      "evidence_ids": [],
+      "experiment_ids": [
+        "E06",
+        "E07"
+      ],
+      "status": "proposed",
+      "confidence": "Not tested; split validation is a measurement check",
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22",
+      "supersession_history": []
+    },
+    {
+      "id": "H7",
+      "parent": null,
+      "claim": "Market state and shared demand affect discounts",
+      "mechanism": "Valuation, stress and common class demand change relative pricing",
+      "expected_sign": "Unresolved",
+      "predictions": [
+        "Discount behavior differs across documented market/fundamental states"
+      ],
+      "required_data": [
+        "market returns",
+        "publication-dated fundamentals",
+        "other pairs"
+      ],
+      "identification_risks": [
+        "Common price mechanically enters discount and valuation",
+        "Persistent levels correlate spuriously"
+      ],
+      "evidence_ids": [
+        "O004",
+        "O007",
+        "O008",
+        "O_EP01_20261022T070352_803683Z",
+        "O_EP01_20261022T070701_403388Z"
+      ],
+      "experiment_ids": [
+        "E02",
+        "E11",
+        "E13",
+        "EP01"
+      ],
+      "status": "proposed",
+      "confidence": "Annual distributions and discount-change instability described; no market/factor driver or cause estimated",
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22",
+      "supersession_history": [],
+      "artifact_refs": [
+        {
+          "run_id": "20261022T070701_403388Z",
+          "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/README.md",
+          "purpose": "descriptive motivation; not a causal test"
+        }
+      ]
+    }
+  ]
+}

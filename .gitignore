@@ -5,6 +5,10 @@
 # CSVs
 docs/project_purpose/bjhxhtdt8qioylul.csv
 
+# Licensed WRDS raw extracts and local research outputs (do not publish)
+/docs/reference/data/samsung_data/
+/runs/
+
 # Scratch
 *scratch*.py
 /data

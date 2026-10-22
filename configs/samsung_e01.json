@@ -1,0 +1,37 @@
+{
+  "id": "samsung_e01",
+  "version": "2.0.0",
+  "raw_path": "docs/reference/data/samsung_data/samsung_2005-20261020.csv",
+  "output_root": "runs",
+  "methodology_path": "methodology/methodology.json",
+  "gvkey": "104604",
+  "exchange": "248",
+  "currency": "KRW",
+  "classes": {
+    "preferred": {
+      "iid": "01W",
+      "isin": "KR7005931001",
+      "ticker": "005935",
+      "tpci": "1"
+    },
+    "common": {
+      "iid": "02W",
+      "isin": "KR7005930003",
+      "ticker": "005930",
+      "tpci": "0"
+    }
+  },
+  "accepted_price_status": [
+    "10"
+  ],
+  "carried_price_status": [
+    "5"
+  ],
+  "required_quotation_unit": 1.0,
+  "jump_discount_pp": 5.0,
+  "long_gap_days": 10,
+  "split_first_trading_date": "2018-05-04",
+  "source_id": "wrds_samsung_daily_v2",
+  "adjusted_prices_enabled": false,
+  "previous_raw_path": "docs/reference/data/samsung_data/samsung_05-26.csv"
+}

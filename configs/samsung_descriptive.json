@@ -1,0 +1,10 @@
+{
+  "id": "samsung_descriptive", "version": "1.0.0", "experiment_id": "EP01",
+  "pair_config": "configs/samsung_e01.json",
+  "output_root": "runs/samsung/EP01_descriptive",
+  "recent_start": "2019-01-01", "window_sessions": 20, "ddof": 1,
+  "top_changes": 10, "episode_radius_sessions": 10,
+  "sensitivity": "Exclude all flagged dates on the original session grid; never close gaps or recompute changes across removed dates",
+  "session_policy": "Observed local session proxy: at least one class has eligible price. Dates absent both and both-carried rows are not assumed trading sessions. Independent calendar remains unavailable.",
+  "flag_policy": "Large discount changes >5pp and adjacent-valid intervals >10 days from quality audit; carried code with positive volume; asymmetric source rows; weekdays absent both. Corporate split marker is context, not an exclusion flag. Top-ten display highlights are not automatic exclusions."
+}

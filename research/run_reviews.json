@@ -1,0 +1,11 @@
+{
+  "20261022T070352_803683Z": {
+    "status": "superseded for episode gap display",
+    "note": "Initial pack numerics are retained. Visual inspection found the local 2017 episode line bridged carried/missing dates. Corrected in methodology 3.0.1 and a fresh run; other main/sensitivity plots were visually checked."
+  },
+  "20261022T070701_403388Z": {
+    "status": "verified",
+    "note": "All six main/sensitivity layouts inspected; corrected episode plot inspected. Independent saved-output arithmetic and local links verified; raw unchanged. Remaining quote/calendar flags are not resolved.",
+    "verified_at": "2026-10-22T07:09:37.675044+00:00"
+  }
+}

@@ -1,0 +1,16 @@
+name: Samsung research validation
+on:
+  push:
+    paths: ['src/samsung_research/**', 'scripts/run_samsung_e01.py', 'tests/check_*.py', 'methodology/**', 'docs/METHODOLOGY.md', 'configs/samsung_e01.json', 'research/requirements.lock', '.github/workflows/samsung-research.yml']
+  pull_request:
+    paths: ['src/samsung_research/**', 'scripts/run_samsung_e01.py', 'tests/check_*.py', 'methodology/**', 'docs/METHODOLOGY.md', 'configs/samsung_e01.json', 'research/requirements.lock', '.github/workflows/samsung-research.yml']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r research/requirements.lock
+      - run: python -m unittest discover -s tests -p 'check_*.py'
