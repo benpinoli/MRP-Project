@@ -228,4 +228,9 @@ __marimo__/
 # macOS
 .DS_Store
 
+# Licensed regression inputs, local cluster settings and isolated environment.
+/data/regression/
+/slurm/cluster.env.sh
+/.venv-rg/
+
 test.ipynb/docs/project_purpose/bjhxhtdt8qioylul.csv

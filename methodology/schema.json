@@ -85,7 +85,12 @@
     },
     "models": {
       "type": "array",
-      "maxItems": 0
+      "items": {
+        "allOf": [
+          { "$ref": "#/$defs/entry" },
+          { "required": ["formula", "outcome", "unit", "sample", "timing", "inference", "configuration", "limitations"] }
+        ]
+      }
     },
     "figures": {
       "type": "array",

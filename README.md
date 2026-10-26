@@ -1,5 +1,7 @@
 # Silver Fund Quant
 
+Samsung common/preferred research: start at the [discount regression hub](docs/regressions/README.md) for the repository/data review, literature map, methodology, factor dictionary, data contracts and Slurm runbook. Regressions are prepared for cluster execution; no empirical fit has been run in this setup.
+
 A quantitative finance library for the BYU Silver Fund quant team. Provides tools for data loading, portfolio optimization, backtesting, performance analysis, and signal research — all built on Polars DataFrames.
 
 ## Installation

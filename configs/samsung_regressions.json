@@ -1,0 +1,44 @@
+{
+  "id": "samsung_RG",
+  "version": "1.0.0",
+  "status": "prepared_not_executed",
+  "author": "Codex research assistant",
+  "expected_raw_sha256": "c64a9cdbba02ee7d70cd3fa4b0af14e0540d0beab70d3d55132f333fb11ba8bb",
+  "inputs": {
+    "ep01_run": "runs/samsung/EP01_descriptive/20261022T070701_403388Z",
+    "factors": "data/regression/raw/barra/factors.csv",
+    "factor_timing": "data/regression/metadata/factor_timing.csv",
+    "factor_calendar": "data/regression/metadata/factor_calendar.csv",
+    "sessions": "data/regression/metadata/sessions.csv",
+    "barra_metadata": "data/regression/metadata/barra.json",
+    "mechanisms": "data/regression/staged/mechanisms.csv",
+    "mechanisms_metadata": "data/regression/metadata/mechanisms.json"
+  },
+  "factor_names": ["USSLOWL_COUNTRY", "USSLOWL_BETA", "USSLOWL_VALUE", "USSLOWL_SIZE", "USSLOWL_MOMENTUM", "USSLOWL_LIQUIDTY", "USSLOWL_RESVOL", "USSLOWL_LEVERAGE", "USSLOWL_DIVYILD", "USSLOWL_PROFIT", "USSLOWL_SEMICOND"],
+  "mechanism_columns": ["spread_diff", "log_turnover_ratio", "retail_weight_diff", "foreign_flow_diff", "common_borrow_fee", "buyback_diff", "incremental_dividend"],
+  "min_observations": 252,
+  "observations_per_parameter": 20,
+  "max_condition": 100000000,
+  "hac_lags": [5, 20, 60],
+  "windows": [
+    {"id": "full", "start": "2005-01-03", "end": "2026-10-20"},
+    {"id": "2005_2014", "start": "2005-01-03", "end": "2014-12-31"},
+    {"id": "2015_2019", "start": "2015-01-01", "end": "2019-12-31"},
+    {"id": "2020_2026", "start": "2020-01-01", "end": "2026-10-20"}
+  ],
+  "models": [
+    {"id": "B00", "outcome": "dd_pp", "barra": false, "columns": ["lag_discount"], "hypothesis_ids": ["H7"], "kind": "baseline"},
+    {"id": "B01", "outcome": "dd_pp", "barra": true, "columns": [], "hypothesis_ids": ["H7"], "kind": "factor_association"},
+    {"id": "B02", "outcome": "dg", "barra": true, "columns": [], "hypothesis_ids": ["H7"], "kind": "factor_association"},
+    {"id": "B03", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount"], "hypothesis_ids": ["H7"], "kind": "dynamic_association"},
+    {"id": "B04", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount", "lag_activity"], "hypothesis_ids": ["H3", "H7"], "kind": "activity_association"},
+    {"id": "L01", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount", "lag_retail_weight_diff", "lag_log_turnover_ratio", "lag_incremental_dividend"], "hypothesis_ids": ["H2", "H3", "H4"], "kind": "PC19_adaptation_not_replication"},
+    {"id": "M01", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount", "lag_spread_diff", "lag_log_turnover_ratio"], "hypothesis_ids": ["H3"], "kind": "mechanism"},
+    {"id": "M02", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount", "lag_retail_weight_diff", "lag_foreign_flow_diff"], "hypothesis_ids": ["H4"], "kind": "mechanism"},
+    {"id": "M03", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount", "lag_common_borrow_fee"], "hypothesis_ids": ["H5"], "kind": "mechanism"},
+    {"id": "M04", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount", "lag_buyback_diff", "lag_incremental_dividend"], "hypothesis_ids": ["H2", "H6"], "kind": "mechanism"},
+    {"id": "J01", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount", "lag_spread_diff", "lag_log_turnover_ratio", "lag_retail_weight_diff", "lag_foreign_flow_diff", "lag_common_borrow_fee", "lag_buyback_diff", "lag_incremental_dividend"], "hypothesis_ids": ["H2", "H3", "H4", "H5", "H6", "H7"], "kind": "joint_exploratory"},
+    {"id": "X01", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount", "lag_spread_diff", "lag_common_borrow_fee"], "interaction": ["lag_spread_diff", "lag_common_borrow_fee"], "hypothesis_ids": ["H3", "H5"], "kind": "proposed_extension"},
+    {"id": "X02", "outcome": "dd_pp", "barra": true, "columns": ["lag_discount", "lag_retail_weight_diff"], "interaction": ["lag_retail_weight_diff", "F_USSLOWL_SEMICOND"], "hypothesis_ids": ["H4", "H7"], "kind": "proposed_extension"}
+  ]
+}

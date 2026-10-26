@@ -1,0 +1,15 @@
+{
+  "model_id": null,
+  "geography": null,
+  "currency": null,
+  "currency_justification": null,
+  "units": null,
+  "vintage": null,
+  "timing_source": null,
+  "session_source": null,
+  "calendar_source": null,
+  "calendar_start": null,
+  "calendar_end": null,
+  "reviewed": false,
+  "allow_us_sensitivity": false
+}

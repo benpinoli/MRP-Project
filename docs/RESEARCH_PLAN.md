@@ -1,5 +1,9 @@
 # Samsung common and preferred research plan
 
+## Active scope — 2026-10-26
+
+The user has authorized regression planning and cluster infrastructure. Start at the [central regression hub](regressions/README.md), which supersedes the earlier descriptive-only stopping instructions below. The new stage includes discount-change models, Barra controls, literature replications/adaptations and economic mechanism extensions. Code and Slurm jobs are prepared; empirical fitting awaits SSH and verified cluster inputs. Historical milestones and archived outputs remain unchanged.
+
 ## Current completed milestone
 
 Methodology 3.0.1: [EP01 descriptive figure pack](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/README.md).

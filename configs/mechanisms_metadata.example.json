@@ -1,0 +1,11 @@
+{
+  "columns": {
+    "spread_diff": {
+      "formula": "(askP-bidP)/midP - (askC-bidC)/midC; synchronized valid quotes",
+      "unit": "decimal spread difference",
+      "source": null,
+      "vintage_policy": null,
+      "available_by_close_reviewed": false
+    }
+  }
+}

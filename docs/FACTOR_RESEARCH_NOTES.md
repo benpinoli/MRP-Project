@@ -1,5 +1,7 @@
 # Factor regression preparation
 
+Current stage (2026-10-26): see the [regression hub](regressions/README.md), [Barra methodology](regressions/METHODOLOGY.md) and [cluster runbook](regressions/CLUSTER.md). The following October 22 notes are retained as historical loader findings; regression infrastructure is now authorized and prepared, with fitting deferred to the school cluster.
+
 Updated 2026-10-22. User confirms Barra-factor access through this repository.
 This session inspected local documentation and implementation only; no factor
 regression, factor-data download, or data-coverage query has run.
