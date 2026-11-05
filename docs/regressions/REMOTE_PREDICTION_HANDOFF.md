@@ -1,5 +1,7 @@
 # Remote Samsung prediction research handoff
 
+**November 5 continuation instruction:** Read [Continue the existing SSH research](CONTINUE_REMOTE_RESEARCH.md). The user requires iterative inspection, hypothesis revision, new data acquisition where useful, and successive justified tests. A completed first batch or weak forecast does not finish the research program. That continuation instruction supersedes earlier batch-level stopping language here and in the companion plan.
+
 In the **remote** VS Code SSH workspace, pull the latest `main` without discarding existing work:
 
 ```bash

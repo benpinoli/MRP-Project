@@ -1,5 +1,7 @@
 # Samsung discount prediction: adaptive implementation plan
 
+**Scope update, November 5, 2026:** Follow [CONTINUE_REMOTE_RESEARCH.md](CONTINUE_REMOTE_RESEARCH.md). Completing the shortlist below is a checkpoint, not completion of the broader program. Inspect the outcomes, update the hypothesis tree, acquire additional accessible data when justified, and execute the next evidence-based batch. Keep previously viewed holdouts labeled as viewed and distinguish exploratory follow-up from genuinely new validation.
+
 Date: 2026-11-05 UTC. Owner: research HEAD; implementation: coder; independent review: inspector. Status: planning complete; empirical execution awaits authenticated SSH. This is a prospective workflow, not a report of new findings.
 
 ## Scope and precedence
