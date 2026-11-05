@@ -1,0 +1,49 @@
+{
+  "inputs": {
+    "validation_predictions": [
+      "runs/samsung/prediction_v2_15055275/predictions.csv",
+      "2e04f111a1b46023dc552098d0b4303df66bf862def56ceee1417e026549caef"
+    ],
+    "validation_refits": [
+      "runs/samsung/prediction_v2_15055275/refits.json",
+      "0d46b37249ad645808f53be5494017c7802bbdbd17c00c19c06ec79a8d5d1c73"
+    ],
+    "final_predictions": [
+      "runs/samsung/prediction_final_15055345/predictions.csv",
+      "14eea105126e8a736c5a30b5abef186b901d1b3942e10ef01e2a7f7cc381aa87"
+    ],
+    "final_refits": [
+      "runs/samsung/prediction_final_15055345/refits.json",
+      "033f196aa1a9b47713c99e45ca40d624753e4ffdfba04fedd4d1653e2ec81ecd"
+    ],
+    "grid": [
+      "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/tables/measures_main.csv",
+      "e920e158e7770dee66608c8a258530700ae5e75a66974a089cca1082792638c9"
+    ],
+    "raw": [
+      "src/sf_quant/data/samsung_2005-20261020.csv",
+      "c64a9cdbba02ee7d70cd3fa4b0af14e0540d0beab70d3d55132f333fb11ba8bb"
+    ]
+  },
+  "model": "H1",
+  "alpha": 100,
+  "horizons": [
+    1,
+    5,
+    20
+  ],
+  "local_window": 252,
+  "quantiles": [
+    0.5,
+    0.9
+  ],
+  "extreme_quantile": 0.99,
+  "scope": "Exploratory historical development; all 2015-2026 results previously viewed; future unexposed data required",
+  "candidates": [
+    "D1",
+    "R756"
+  ],
+  "window_proxy_origins": 756,
+  "minimum_training": 252,
+  "family": "H1"
+}

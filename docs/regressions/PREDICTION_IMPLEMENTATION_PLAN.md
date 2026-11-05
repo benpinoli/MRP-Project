@@ -2,7 +2,7 @@
 
 **Scope update, November 5, 2026:** Follow [CONTINUE_REMOTE_RESEARCH.md](CONTINUE_REMOTE_RESEARCH.md). Completing the shortlist below is a checkpoint, not completion of the broader program. Inspect the outcomes, update the hypothesis tree, acquire additional accessible data when justified, and execute the next evidence-based batch. Keep previously viewed holdouts labeled as viewed and distinguish exploratory follow-up from genuinely new validation.
 
-Date: 2026-11-05 UTC. Owner: research HEAD; implementation: coder; independent review: inspector. Status: planning complete; empirical execution awaits authenticated SSH. This is a prospective workflow, not a report of new findings.
+Date: 2026-11-05 UTC. Owner: research HEAD; implementation: coder; independent review: inspector. Status: first remote execution checkpoint complete; locked shortlist evaluated and independently reviewed with no reliable primary forecasting gain. That result is retained as provenance while the broader research loop continues under the scope update above.
 
 ## Scope and precedence
 
@@ -88,3 +88,39 @@ Reprioritize only with a recorded trigger: verified accessible mechanism data ca
 Finish when the smallest qualified history/activity experiment, feasible prioritized input blocks, locked evaluation and independent inspection are complete, including a legitimate baseline victory. Deliver reproducible remote run paths/job IDs, hashes, tested code, split/feature availability audit, forecast metrics/uncertainty, exclusion/patch ledger, inspector verdict and concrete remaining data needs. Do not call prediction successful unless the locked primary challenger improves baseline errors with uncertainty and stability disclosed.
 
 Close an unavailable branch after one scoped inventory and one reasonable authorized acquisition route identify a concrete dependency; name the missing source, field, availability metadata or access step. SSH authentication currently blocks empirical work but does not turn missing results into nulls. Do not repeat failed authentication, invent paths, or substitute local empirical execution. Resume at batch A when authenticated access is available.
+
+
+## Remote execution checkpoint — 2026-11-05 UTC
+
+Head verified login03, repository `/home/bpinoli/MRP/MRP-Project`, revision `5c6f79091c00204da5f86b87a69648b4cdd67fe0`. `git status --short` recorded existing staged/untracked work; `git pull --ff-only origin main` succeeded (already up to date). Work is preserved. The top-level site file is the required symlink to `/apps/instructions_for_ai_agents/BYU_ORC_AGENTS.md`; all seven applicable reference guides read. No restricted-data indicators appeared in this financial research inventory.
+
+Team requests: Head `/root/research_head` requested `gpt-6.1-sol`, medium; Coder `/root/research_head/coder` and independent Inspector `/root/research_head/inspector` each requested `gpt-6.1-terra`, medium, fork_turns=none. These are verified from successful spawn requests. Runtime agent state reports roles/status only and does not expose model/reasoning metadata; do not claim stronger runtime verification. No further research agents permitted. Coder owns new forecast code/config/tests/jobs/runs; Inspector owns inspection artifacts; Head owns this plan, ledger, decisions and final report.
+
+The expected EP01 path is absent. Actual reusable pack: `runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z`; raw source `src/sf_quant/data/samsung_2005-20261020.csv`, registered SHA256 `c64a9cdbba02ee7d70cd3fa4b0af14e0540d0beab70d3d55132f333fb11ba8bb`. Existing completed retrospective run: `runs/samsung/RG/20261103T010848_30613`, with prepared source hashes and frozen configuration. Other bounded inventory: `20261103T010838_25471`, `20261103T021451Z_coefficient_stability`, setup run. Inspector independently reconciles these, not stale CLUSTER.md claims of no runs.
+
+Available module choices include python/3.11 and python/3.12. Existing configured Python `/home/bpinoli/MRP/MRP-Project/.venv-rg/bin/python`; configured account `bhb35`; no partition requested. Forecast jobs use one CPU, one node, 4GB, 30 minutes maximum and bounded threads. Head centrally checks scheduler at least 60 seconds apart. Initial user queue was empty. Default sandbox initialization fails before shell execution (`bwrap` temporary directory); approved escalation is used for narrow authorized commands.
+
+**Before fitting, Head freezes** train through 2014-12-31, validation folds 2015–2017 / 2018–2020 / 2021–2023, final test from 2024-01-01 through verified coverage. Candidate families and alphas remain the table above, horizons 1/5/20, monthly expanding refits, strict matured labels. Session counts refer to preserved EP01 observed-session proxy, not independently verified exchange sessions. Prior full-history descriptive/retrospective access means final test is not historically unseen. Closing price/volume finalization clocks and historical vendor vintages remain unverified; origin is after Korean close and completion of vendor fields, not same-auction execution.
+
+Next checkpoint: Inspector batch A mapping/hash/calendar verdict; Coder synthetic fixtures and validation in Slurm; Inspector batch B; Head lock; one final evaluation; Inspector batch C. Holdout target-performance summaries remain sealed until the lock.
+
+### Validation selection convention clarified before corrected validation / final test
+
+The first exploratory validation job `15055217` completed in 55 seconds, peak batch RSS 273460K. Preserve it, but do not use its end-of-run source digest as proof of executed source: the module was edited while it ran. This is a reproducibility defect, not evidence of forecast leakage. A corrected immutable snapshot must be reviewed and rerun. No final test performance was inspected.
+
+Apply the already registered equal-fold MAE criterion concretely: compute each fold's paired MAE(Z0) minus MAE(candidate) on exactly the candidate origins, then average the three fold differences. The 0.5% tie tolerance uses the correspondingly paired mean fold baseline MAE. Eligibility requires beating persistence in at least two folds and no >5% MAE deterioration in the remaining fold. Prefer the simplest eligible family within tolerance of the best: Z0, A0, A1, H1, V1, in this order. A0 remains the direct-AR comparator even if it is not selected. Within a ridge family, prefer alpha=100 over 10 over 1 over 0.1 when differences are within tolerance; this is a parsimony convention, not a significance statement or proof that 100 is best. The exact alpha tie ordering is clarified after exploratory validation; disclose this validation adaptivity. The final target-loss holdout remains sealed and no hyperparameters will change based on it.
+
+Inspector batch A accepted conditionally. Endpoint-valid multi-session cumulative labels remain main per predeclared plan; strict sensitivity excludes any missing/flagged proxy observation over the entire interval and reports matched baselines. Unknown exchange sessions remain a limitation of both. No episode deletion is chosen to improve validation.
+
+### Batch B decision and final lock
+
+Corrected validation job `15055275` completed exit 0 in 58 seconds, peak batch RSS 291264K. Independent Inspector reproduced selected metrics to 3.1e-16 and four sampled ridge refits/scalers to 1.2e-16, with all training endpoints strictly before refit origins and validation labels ending by 2023-12-28. D10 selects H1 alpha=100 for all three horizons, with equal-fold paired MAE gains 0.015178 / 0.043822 / 0.028659 percentage points versus persistence. Activity V1 has no material incremental validation improvement. Horizon-20 fold 2 worsens RMSE (1.7184 versus 1.6993) despite MAE gain; this limits stability, rather than justifying post-hoc redesign.
+
+V2 numerical source/config remained unchanged, but an unused summary module and checksum manifest entries were added during execution; preserve the before/after log and disclose this provenance limitation. Final execution uses a separate immutable directory `runs/samsung/prediction_final_freeze`, manifest SHA256 `cbac3801f3f1cce5a3d60a2f49eb9dba6bc2d02ff98ddbe230d050522599d9af`. Head created exclusive lock `runs/samsung/prediction_final_lock.json`, SHA256 `d41f724a64bcc893621cfa97c6d74e2c2bc3d458a1c8140c9d444a682782a26f`, after Inspector B signoff and before final-test target losses. One final evaluation authorized; features, alpha, refit policy and bootstrap remain fixed.
+
+Moving-block confidence intervals use the full ordered proxy grid with missing eligibility, 2,000 draws, seed 20261105, block max(20,2h) and 60, without circular wrapping. They condition on already estimated forecasts and selected models, omit tuning/estimation uncertainty, and rely on approximate stationarity. Strict sensitivity masks evaluation intervals only and does not retrain on masked historical flags. Stronger real-time and tradability claims remain unsupported.
+
+
+### Completion checkpoint
+
+Final job15055345 completed exit0 in29s, peak batch RSS199976K. InspectorC independently verified metrics/arithmetic/maturity/refits/hashes and bootstrap. Primary gain .000725pp vs persistence has95%block20 interval[−.009182,.011332], below AR point estimate;20-session worsens materially. No further fitting or holdout reuse. Final report PREDICTION_RESEARCH_REPORT.md and exact resume PREDICTION_RESUME.md; all A/B/C complete. Optional provenance-dependent mechanism branches remain untested, not null.

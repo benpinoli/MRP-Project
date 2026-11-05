@@ -1,0 +1,36 @@
+{
+  "scope": "Descriptive full-history D1 fits at cutoff; previously viewed history, not fresh predictive evidence; HAC20 approximate",
+  "cutoff": "2026-10-20",
+  "prospective_start": "2026-11-06",
+  "horizons": [
+    1,
+    5,
+    20
+  ],
+  "inputs": {
+    "grid": {
+      "path": "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/tables/measures_main.csv",
+      "sha256": "e920e158e7770dee66608c8a258530700ae5e75a66974a089cca1082792638c9"
+    },
+    "raw": {
+      "path": "src/sf_quant/data/samsung_2005-20261020.csv",
+      "sha256": "c64a9cdbba02ee7d70cd3fa4b0af14e0540d0beab70d3d55132f333fb11ba8bb"
+    }
+  },
+  "protocol": {
+    "family": "expanding OLS intercept + current q(t)-q(t-1)",
+    "refit": "monthly; train only labels with end strictly before first forecast origin",
+    "primary_horizon": 1,
+    "secondary_horizons": [
+      5,
+      20
+    ],
+    "prospective_start": "2026-11-06",
+    "prospective_origins": 252,
+    "benchmarks": [
+      "zero change persistence",
+      "expanding OLS intercept + q"
+    ],
+    "data_rules": "Fresh raw extract must match class mapping, units and schema, include calendar/source checks, log actual retrieval and availability timestamps and immutable hash before each forecast; no backdating or current-vintage replay as real time. No automatic fetch or scheduler."
+  }
+}

@@ -1,30 +1,481 @@
 {
   "schema_version": "1.0",
-  "updated_utc": "2026-11-05",
-  "status": "planning_only_ssh_authentication_dependency",
+  "updated_utc": "2026-11-05T16:16:05.704138+00:00",
+  "status": "stopped_at_user_request_for_immediate_push_review",
   "plan": "docs/regressions/PREDICTION_IMPLEMENTATION_PLAN.md",
   "execution_constraint": "All empirical data research and fitting on authorized school compute through SSH; no local empirical runs.",
-  "forecast": {"origin": "Korean close t, subject to actual field finalization", "discount": "q=100*(1-preferred/common)", "target": "q[t+h]-q[t]", "unit": "percentage_points", "primary_horizon": 1, "secondary_horizons": [5, 20]},
+  "forecast": {
+    "origin": "Korean close t, subject to actual field finalization",
+    "discount": "q=100*(1-preferred/common)",
+    "target": "q[t+h]-q[t]",
+    "unit": "percentage_points",
+    "primary_horizon": 1,
+    "secondary_horizons": [
+      5,
+      20
+    ]
+  },
   "hypotheses": [
-    {"id": "P01", "priority": 1, "status": "awaiting_remote_inventory", "mechanism": "Discount persistence, reversal, momentum and price discovery", "forecast_test": "Chronological history models vs zero-change and direct AR benchmarks", "signed_prediction": "Estimate sign in training; reversal and continuation compete", "rival": "Stale quotes and asynchronous class price discovery", "required_inputs": ["paired valid raw closes", "preserved session grid", "quote flags", "source manifests"], "downgrade_trigger": "No stable same-origin validation improvement", "evidence": [], "blocker": "SSH keyboard-interactive authentication", "next_action": "Verify remote EP01 inputs and construct origin/target audit"},
-    {"id": "P02", "priority": 2, "status": "conditional_on_available_fields", "mechanism": "Class demand and constrained arbitrage", "forecast_test": "Incremental activity then verified flow/liquidity block vs same-origin history baseline", "signed_prediction": "Common-relative demand may widen discount; relative liquidity/funding sign conditional", "rival": "Volume response to price moves, rather than predictive demand", "required_inputs": ["positive class volume for initial activity test", "turnover/flows/spreads/borrow for stronger mechanism claims"], "downgrade_trigger": "Activity adds no validation gain or timing/units cannot be verified", "evidence": [], "blocker": "Actual remote coverage unverified", "next_action": "Inventory volume and provenance without requiring unavailable mechanisms"},
-    {"id": "P03", "priority": 3, "status": "conditional_on_known_calendar", "mechanism": "Dividend and corporate-action arithmetic / clientele", "forecast_test": "Known-at-origin event/calendar features and arithmetic sensitivity", "signed_prediction": "Equal cash ex-dividend drop mechanically widens percentage discount when common exceeds preferred; demand response separate", "rival": "Mechanical ratio movement mistaken for sentiment", "required_inputs": ["ex/record/payment dates distinguished", "first announcement dates", "class cash amounts", "split/action verification"], "downgrade_trigger": "Calendar was not public by origin or too few independent events", "evidence": ["docs/regressions/B04_CAUSAL_MECHANISM_CANDIDATES.md"], "blocker": "Forecast-time calendar provenance unverified", "next_action": "Inspect existing acquisition outputs on remote storage before further acquisition"},
-    {"id": "P04", "priority": 4, "status": "conditional_on_availability_metadata", "mechanism": "Global risk, FX and semiconductor state through class-specific transmission", "forecast_test": "Small timestamp-qualified external block conditional on history/activity", "signed_prediction": "No universal sign; common-relative demand channel must be demonstrated separately", "rival": "Style covariance or misaligned US/Korean intervals", "required_inputs": ["source returns/state", "availability timestamps", "units/currency/geography", "revision policy"], "downgrade_trigger": "No point-in-time qualification or stable incremental validation gain", "evidence": [], "blocker": "Remote inputs and timing unverified", "next_action": "Inventory accessible existing inputs; exclude contemporaneous future returns"},
-    {"id": "P05", "priority": 5, "status": "event_dependent", "mechanism": "Voting/governance value and class-specific supply", "forecast_test": "Dated known-at-origin event features only if sufficient independent events", "signed_prediction": "Preferred-relative repurchases can narrow; common-relative support can widen; float/liquidity effects may offset", "rival": "Concurrent payout/earnings news and endogenous repurchase execution", "required_inputs": ["announcement timestamps", "class quantities", "authorization vs execution vs cancellation", "float denominators"], "downgrade_trigger": "Sparse events, confounded timing or unknown release dates", "evidence": [], "blocker": "Event count and provenance unverified", "next_action": "Use existing issuer records first; retain sparse events as descriptive cases"}
+    {
+      "id": "P01",
+      "priority": 1,
+      "status": "evaluated_no_robust_final_improvement",
+      "mechanism": "Discount persistence, reversal, momentum and price discovery",
+      "forecast_test": "Chronological history models vs zero-change and direct AR benchmarks",
+      "signed_prediction": "Estimate sign in training; reversal and continuation compete",
+      "rival": "Stale quotes and asynchronous class price discovery",
+      "required_inputs": [
+        "paired valid raw closes",
+        "preserved session grid",
+        "quote flags",
+        "source manifests"
+      ],
+      "downgrade_trigger": "No stable same-origin validation improvement",
+      "evidence": [
+        "runs/samsung/prediction_final_15055345/metrics.csv",
+        "runs/samsung/prediction_final_15055345/uncertainty.csv",
+        "docs/regressions/PREDICTION_INSPECTION.md"
+      ],
+      "blocker": null,
+      "next_action": "Preserve original result; D1exploratoryreversal follow-up archived underP06, futuredata required",
+      "decision": "Retain persistence benchmark; primary gain tiny/uncertain and below AR; secondary20-session deteriorates"
+    },
+    {
+      "id": "P02",
+      "priority": 2,
+      "status": "tested_activity_range_proxies_no_material_increment_true_liquidity_untested",
+      "mechanism": "Class demand and constrained arbitrage",
+      "forecast_test": "Incremental activity then verified flow/liquidity block vs same-origin history baseline",
+      "signed_prediction": "Common-relative demand may widen discount; relative liquidity/funding sign conditional",
+      "rival": "Volume response to price moves, rather than predictive demand",
+      "required_inputs": [
+        "positive class volume for initial activity test",
+        "turnover/flows/spreads/borrow for stronger mechanism claims"
+      ],
+      "downgrade_trigger": "Activity adds no validation gain or timing/units cannot be verified",
+      "evidence": [
+        "runs/samsung/prediction_v2_15055275/metrics.csv",
+        "docs/regressions/PREDICTION_INPUT_AUDIT.md",
+        "runs/samsung/continuation_gh_15055999"
+      ],
+      "blocker": "Actual spreads/flows/borrow/free-float availability unverified",
+      "next_action": "New dated class spread/flow/borrow/float needed, no proxy sweep",
+      "decision": "V1level andG2surprise/range add no stablematerialprimaryincrement; trueflow/spread untested"
+    },
+    {
+      "id": "P03",
+      "priority": 3,
+      "status": "known_calendar_proxy_tested_no_increment_actual_payout_mechanism_untested",
+      "mechanism": "Dividend and corporate-action arithmetic / clientele",
+      "forecast_test": "Known-at-origin event/calendar features and arithmetic sensitivity",
+      "signed_prediction": "Equal cash ex-dividend drop mechanically widens percentage discount when common exceeds preferred; demand response separate",
+      "rival": "Mechanical ratio movement mistaken for sentiment",
+      "required_inputs": [
+        "ex/record/payment dates distinguished",
+        "first announcement dates",
+        "class cash amounts",
+        "split/action verification"
+      ],
+      "downgrade_trigger": "Calendar was not public by origin or too few independent events",
+      "evidence": [
+        "docs/regressions/B04_CAUSAL_MECHANISM_CANDIDATES.md",
+        "docs/regressions/PREDICTION_INPUT_AUDIT.md",
+        "runs/samsung/continuation_gh_15055999/calendar_coverage.csv"
+      ],
+      "blocker": "Forecast-time calendar provenance unverified",
+      "next_action": "Verified dated announcement/exdate/classcashamount dataset needed",
+      "decision": "C2QE/YEproxyfailsmaterialprimarygain; actualannouncements/exdates remain unqualified"
+    },
+    {
+      "id": "P04",
+      "priority": 4,
+      "status": "tested_delayed_public_block_no_increment",
+      "mechanism": "Global risk, FX and semiconductor state through class-specific transmission",
+      "forecast_test": "Small timestamp-qualified external block conditional on history/activity",
+      "signed_prediction": "No universal sign; common-relative demand channel must be demonstrated separately",
+      "rival": "Style covariance or misaligned US/Korean intervals",
+      "required_inputs": [
+        "source returns/state",
+        "availability timestamps",
+        "units/currency/geography",
+        "revision policy"
+      ],
+      "downgrade_trigger": "No point-in-time qualification or stable incremental validation gain",
+      "evidence": [
+        "docs/regressions/PREDICTION_INPUT_AUDIT.md",
+        "data/regression/raw/prediction_external_20261105/manifest.json",
+        "runs/samsung/continuation_f_15055873"
+      ],
+      "blocker": "Historical current-vintage revisions and exact release clocks not fully audited; use delayed proxies with explicit limitations",
+      "next_action": "No lag/feature retuning; only new qualified mechanism input could reopen",
+      "decision": "F4worsensallprimarydevelopmentfolds; exactblockrejected, globalclasschannelnotdisproven"
+    },
+    {
+      "id": "P05",
+      "priority": 5,
+      "status": "untested_input_qualification_dependency",
+      "mechanism": "Voting/governance value and class-specific supply",
+      "forecast_test": "Dated known-at-origin event features only if sufficient independent events",
+      "signed_prediction": "Preferred-relative repurchases can narrow; common-relative support can widen; float/liquidity effects may offset",
+      "rival": "Concurrent payout/earnings news and endogenous repurchase execution",
+      "required_inputs": [
+        "announcement timestamps",
+        "class quantities",
+        "authorization vs execution vs cancellation",
+        "float denominators"
+      ],
+      "downgrade_trigger": "Sparse events, confounded timing or unknown release dates",
+      "evidence": [
+        "docs/regressions/PREDICTION_INPUT_AUDIT.md"
+      ],
+      "blocker": "Event count and provenance unverified",
+      "next_action": "Supply qualified historical dated input and reserve fresh evaluation dates before adding this branch"
+    },
+    {
+      "id": "P06",
+      "priority": 1,
+      "status": "development_reversal_supported_primary_transfer_unconfirmed_future_archived",
+      "mechanism": "Local reversal versus drifting discount equilibrium/global expanding calibration",
+      "chain": "Changing class-demand equilibrium makes expanding q coefficient/intercept stale; local latest-change adjustment may remain",
+      "signed_prediction": "Latest-change reversal negative; locally fitted q adjustment may reduce signed forecast bias",
+      "rival": "No stable signal or stale/asynchronous closes",
+      "distinguishing_prediction": "D1 without q outperforms global H1; rolling R756 improves A0 when equilibrium shifts",
+      "evidence": [
+        "runs/samsung/prediction_final_15055345/stability.csv",
+        "runs/samsung/continuation_d_15055723",
+        "runs/samsung/continuation_e_15055790",
+        "runs/samsung/continuation_i_15056072/candidate.json"
+      ],
+      "next_action": "Execute frozenfutureprotocol after asofsource/issuance implementation, no interimselection",
+      "decision": "D1developmentwins; primaryexposedgainuncertain, R756contradicted; h5secondarycandidate only"
+    },
+    {
+      "id": "P07",
+      "priority": 5,
+      "status": "deferred_low_training_diagnostic_support",
+      "mechanism": "Nonlinear adjustment at local discount extremes",
+      "chain": "Arbitrage or attention activates at unusually wide/narrow local discount",
+      "signed_prediction": "More reversal beyond extreme deviations if true; competing trend-continuation open",
+      "rival": "Spurious global level effect or realized-volatility concentration",
+      "distinguishing_prediction": "Training-only standardized extremity predicts residual direction beyond local linear level",
+      "evidence": [
+        "runs/samsung/continuation_d_15055723/diagnostic_summary.csv"
+      ],
+      "next_action": "Advance only if D shows stable development-state evidence",
+      "decision": "Weak development localdiscount residual correlations; avoid forced nonlinear sweep"
+    }
   ],
   "decisions": [
-    {"id": "D01", "decision": "Prediction usefulness has priority; causal identification remains separate", "reason": "Current user research objective", "status": "active"},
-    {"id": "D02", "decision": "Current workflow supersedes exhaustive episode audit in older coefficient-stability brief", "reason": "User prefers simple documented patches and continued progress for isolated bad observations", "status": "active"},
-    {"id": "D03", "decision": "No local empirical execution or repeated SSH authentication attempts", "reason": "User mandates SSH compute; supervisor coordinating keyboard-interactive access", "status": "active"},
-    {"id": "D04", "decision": "Bound candidate search, reserve final test and purge unmatured/overlapping labels", "reason": "Prevent leakage and holdout mining", "status": "pending_remote_split_lock"},
-    {"id": "D05", "decision": "Batch A inventory, B validation/code, C locked evaluation each receive separate inspector review", "reason": "Independent review throughout research, direct coder defect feedback", "status": "active"},
-    {"id": "D06", "decision": "Existing historical descriptive and coefficient evidence means final forecasting test is not fully historically unseen", "reason": "Prior viewing must be disclosed even if candidate forecast losses are uninspected", "status": "active"}
+    {
+      "id": "D01",
+      "decision": "Prediction usefulness has priority; causal identification remains separate",
+      "reason": "Current user research objective",
+      "status": "active"
+    },
+    {
+      "id": "D02",
+      "decision": "Current workflow supersedes exhaustive episode audit in older coefficient-stability brief",
+      "reason": "User prefers simple documented patches and continued progress for isolated bad observations",
+      "status": "active"
+    },
+    {
+      "id": "D03",
+      "decision": "No local empirical execution or repeated SSH authentication attempts",
+      "reason": "User mandates SSH compute; supervisor coordinating keyboard-interactive access",
+      "status": "active"
+    },
+    {
+      "id": "D04",
+      "decision": "Bound candidate search, reserve final test and purge unmatured/overlapping labels",
+      "reason": "Prevent leakage and holdout mining",
+      "status": "split_and_initial_registry_frozen_before_fitting"
+    },
+    {
+      "id": "D05",
+      "decision": "Batch A inventory, B validation/code, C locked evaluation each receive separate inspector review",
+      "reason": "Independent review throughout research, direct coder defect feedback",
+      "status": "active"
+    },
+    {
+      "id": "D06",
+      "decision": "Existing historical descriptive and coefficient evidence means final forecasting test is not fully historically unseen",
+      "reason": "Prior viewing must be disclosed even if candidate forecast losses are uninspected",
+      "status": "active"
+    },
+    {
+      "id": "D07",
+      "decision": "Use located hash-validated EP01 pack and existing configured environment, preserving raw and prior runs",
+      "reason": "Expected laptop pack path absent; actual completed remote runs identify existing source",
+      "status": "active"
+    },
+    {
+      "id": "D08",
+      "decision": "Close optional P03/P04/P05 branches as untested for current bounded run; execute qualified history/activity shortlist",
+      "reason": "Scoped existing inventory and issuer acquisition route lack historical origin-qualified event panel; Barra explicitly PIT-invalid",
+      "status": "active"
+    },
+    {
+      "id": "D09",
+      "decision": "Preserve job15055217 as exploratory; corrected validation must execute immutable pre-submission source/config snapshot",
+      "reason": "In-flight source edits make end-of-run digest unreliable for executed code",
+      "status": "fix_now_before_holdout_lock"
+    },
+    {
+      "id": "D10",
+      "decision": "Equal fold paired absolute MAE gain, registered0.5% tie tolerance, family simplicity Z0/A0/A1/H1/V1; ridge alpha ties prefer100/10/1/.1",
+      "reason": "Concrete selection arithmetic clarified on validation only; alpha tie convention added after exploratory validation and disclosed",
+      "status": "active_before_corrected_validation_and_test"
+    },
+    {
+      "id": "D11",
+      "decision": "Lock H1 alpha100 for h1/5/20 and authorize one final evaluation",
+      "reason": "Independent B reproduced selection, same-origin metrics and matured training; h20 RMSE weakness disclosed; V1 no material incremental validation gain",
+      "status": "locked_before_test",
+      "artifact": "runs/samsung/prediction_final_lock.json"
+    },
+    {
+      "id": "D12",
+      "decision": "Complete bounded handoff with no convincing forecast improvement; retain persistence benchmark and do not tune on exposed test",
+      "reason": "Inspector C independently confirms tiny uncertain primary gain below AR, secondary deterioration,2026 instability",
+      "status": "final",
+      "report": "docs/regressions/PREDICTION_RESEARCH_REPORT.md"
+    },
+    {
+      "id": "D13",
+      "decision": "Prior first-batch completion is checkpoint; continue ranked exploratory research under new user scope",
+      "reason": "CONTINUE_REMOTE_RESEARCH.md; all prior final dates remain exposed",
+      "status": "active"
+    },
+    {
+      "id": "D14",
+      "decision": "Run only D1 latest-change reversal and R756 local-level calibration in E; defer nonlinear extreme sweep",
+      "reason": "Dresidual/regime evidence motivates local reversal/global calibration rivalry; localdiscount residual correlations weak",
+      "status": "active_before_Efit"
+    },
+    {
+      "id": "D15",
+      "decision": "Advance Fexternal then predeclared G2/C2 activity-range/calendar blocks; no R756 retuning",
+      "reason": "ReviewedErejects rolling calibration, source data and cheap independent features feasible",
+      "status": "active_before_new_fits"
+    },
+    {
+      "id": "D16",
+      "decision": "After finalIarchive stop current autonomouscycle for independently reviewed lowexpectedvalue of further same-data search; program remainsopen",
+      "reason": "D/E/F/G-H investigated feasible ranked blocks; true mechanism inputs unavailable/unqualified and local nonlinear evidence weak; further adaptive search risks overfit",
+      "status": "final_after_independent_I_review",
+      "evidence": "docs/regressions/PREDICTION_CONTINUATION_INSPECTION.md"
+    },
+    {
+      "id": "D17",
+      "decision": "Futureprotocolcompanion addsH1baseline,current-predictor-only monthly refit selection,actualavailability/hashlogging andNov06+reservedcohort",
+      "reason": "ImmutableIarchive intentionallyunchanged; companion resolves futureissuance and comparator requirements before futuredata",
+      "status": "frozen_before_future_outcomes",
+      "artifact": "docs/regressions/PREDICTION_FUTURE_PROTOCOL.md"
+    },
+    {
+      "id": "D18",
+      "decision": "When stuck return to an accurate expandable economic hypothesis tree; branch-specific exhaustion does not close unrelated mechanisms",
+      "reason": "Explicit user clarification; preserve rejected branches and distinguish true mechanisms from failed proxies",
+      "status": "active",
+      "artifact": "docs/regressions/PREDICTION_MECHANISM_TREE.json"
+    }
   ],
   "batches": [
-    {"id": "A", "status": "blocked_on_ssh_authentication", "artifacts": [], "review": "Initial protocol independently reviewed; remote data unreviewed", "next_action": "Authenticated remote inventory, hashes, field/timing audit"},
-    {"id": "B", "status": "not_started", "artifacts": [], "review": "pending", "next_action": "Chronological validation and code/alignment review; freeze final lock"},
-    {"id": "C", "status": "not_started", "artifacts": [], "review": "pending", "next_action": "Once-locked evaluation, uncertainty and independent interpretation"}
+    {
+      "id": "A",
+      "status": "independently_reviewed_conditional_pass",
+      "artifacts": [
+        "runs/samsung/RG/20261103T010848_30613/prepared/inputs.json",
+        "docs/regressions/PREDICTION_INSPECTION.md",
+        "docs/regressions/PREDICTION_INPUT_AUDIT.md"
+      ],
+      "review": "Inspector verified mapping/hash/units and source coefficients; proxy calendar and vendor vintage limitations accepted",
+      "next_action": "Inspector independently validates mapping/hashes/calendar and retrospective reconciliation"
+    },
+    {
+      "id": "B",
+      "status": "independently_reviewed_locked",
+      "artifacts": [
+        "runs/samsung/prediction_v1_15055217"
+      ],
+      "review": "Inspector reproduced D10 shortlist,metrics,4ridge refits/scalers; no pre-lock defects. H20 RMSE instability disclosed.",
+      "next_action": "One locked final evaluation"
+    },
+    {
+      "id": "C",
+      "status": "completed_independently_reviewed",
+      "artifacts": [
+        "runs/samsung/prediction_final_15055345",
+        "docs/regressions/PREDICTION_RESEARCH_REPORT.md",
+        "docs/regressions/PREDICTION_INSPECTION.md"
+      ],
+      "review": "Inspector C verified metrics,arithmetic,maturity,4refits,all frozen hashes,representative bootstrap; no material defect",
+      "next_action": "Archive completed result; only fresh dates/input qualification justify new research"
+    },
+    {
+      "id": "D",
+      "status": "completed_independently_reviewed",
+      "job_id": 15055723,
+      "artifacts": [
+        "runs/samsung/continuation_d_15055723"
+      ],
+      "review": "Threshold maturity,coefficient scale,metrics reproduced; not solely extremes; weak localmean structure",
+      "next_action": "Eauthorized D1/R756"
+    },
+    {
+      "id": "E",
+      "status": "completed_independently_reviewed",
+      "artifacts": [
+        "runs/samsung/continuation_e_15055790"
+      ],
+      "review": "Six refits,metrics,maturity reproduced; D1developmentpasses butprimarytransfertiny; R756unstable",
+      "next_action": "Ffixedexternalblock; Gactivity/range+Ccalendar predeclared",
+      "job_id": 15055790
+    },
+    {
+      "id": "F",
+      "status": "completed_independently_reviewed",
+      "artifacts": [
+        "runs/samsung/continuation_f_15055873"
+      ],
+      "review": "Sixmatchedrefits,sourceages,maturity reproduced; F4primaryloses3/3developmentfolds",
+      "next_action": "G-Hfixedactivity/calendar blocks",
+      "job_id": 15055873
+    },
+    {
+      "id": "G-H",
+      "status": "completed_independently_reviewed",
+      "job_id": 15055999,
+      "artifacts": [
+        "runs/samsung/continuation_gh_15055999"
+      ],
+      "review": "Nine refits,maturity,calendar rules reproduced; both primaryblocks failincrementgate",
+      "next_action": "Iuncertainty/futurearchive then evidence-backed cycle pause"
+    },
+    {
+      "id": "I",
+      "status": "completed_independently_reviewed",
+      "artifacts": [
+        "runs/samsung/continuation_i_15056072",
+        "docs/regressions/PREDICTION_FUTURE_PROTOCOL.md"
+      ],
+      "review": "Independent OLS/grid-HAC coefficients<=2.3e-16,SE<=7e-17; all matured labels; futurecompanion includesH1/current-onlyrefits",
+      "next_action": "Qualifiednewasofdata and inspected issuance logger before reserved cohort; no more same-data fits",
+      "job_id": 15056072
+    },
+    {
+      "id": "J",
+      "status": "staged_only_not_submitted_user_requested_push",
+      "artifacts": [
+        "src/samsung_research/issuer_event_descriptive.py",
+        "configs/prediction_continuation/issuer_events_j_v1.json",
+        "tests/check_issuer_event_descriptive.py",
+        "docs/regressions/SAMSUNG_ISSUER_EVENT_MANIFEST.json"
+      ],
+      "job_id": null,
+      "review": "Two synthetic checks pass; independent public-source/schema arithmetic reconciliation passed; no empirical outputs",
+      "next_action": "Another agent reviews tree/sources; resume only after user steering"
+    }
   ],
-  "planning_review": {"status": "pending_written_artifact_review", "reviewer": "/root/research_head/inspector", "findings": []},
-  "remaining_dependency": {"type": "remote_session_handoff", "host": "ssh.rc.byu.edu", "observed_result": "Local noninteractive SSH denied; user subsequently authenticated in VS Code SSH, which this Codex session cannot inherit", "required_action": "User starts remote Codex using REMOTE_PREDICTION_HANDOFF.md; remote team discovers actual repo/data paths", "empirical_jobs_started": false}
+  "planning_review": {
+    "status": "completed_independent_A_B_C",
+    "reviewer": "/root/research_head/inspector",
+    "findings": [
+      "No reliable primary final gain; h20 underperforms",
+      "Proxy-session and vendor availability/vintage limitations",
+      "Predetermined omission policy preserves raw; no isolated-date hunt",
+      "Initial provenance issues corrected in immutable final run"
+    ]
+  },
+  "remaining_dependency": {
+    "required_for_current_completion": null,
+    "optional_future_dependencies": [
+      "Independent historical KRX calendar",
+      "Vendor field finalization and revision vintages",
+      "Origin-qualified class spreads/flows/borrow or announcement/action panel",
+      "Fresh unexposed evaluation dates after any new model selection"
+    ],
+    "jobs": [
+      {
+        "id": 15055217,
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed_seconds": 55
+      },
+      {
+        "id": 15055275,
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed_seconds": 58
+      },
+      {
+        "id": 15055345,
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed_seconds": 29
+      }
+    ],
+    "current_cycle_stop_reason": "Prior same-data model-sweep assessment was branch-specific and superseded as a blanket stopping rationale; new issuer-event source qualification is executable",
+    "future_research_dependencies": [
+      "Genuine as-of Samsung raw extract beyond2026-10-20 with actualreceipt/availability/vintage archive",
+      "Implement and inspect future ingestion/issuance logger before reserved outcomes",
+      "Dated class spreads/flows/borrow/float or first-public dividend/exdate/supply/governance panel",
+      "IndependenthistoricalKRXcalendar; historicalrevision/finalizationproof still unavailable"
+    ],
+    "continuation_jobs": [
+      {
+        "id": 15055723,
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed_seconds": 14
+      },
+      {
+        "id": 15055790,
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed_seconds": 29
+      },
+      {
+        "id": 15055873,
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed_seconds": 28
+      },
+      {
+        "id": 15055999,
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed_seconds": 49
+      },
+      {
+        "id": 15056072,
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed_seconds": 16
+      }
+    ],
+    "live_jobs": []
+  },
+  "execution_environment": {
+    "host": "login03",
+    "repo": "/home/bpinoli/MRP/MRP-Project",
+    "revision": "5c6f79091c00204da5f86b87a69648b4cdd67fe0",
+    "git_pull": "--ff-only origin main; already up to date",
+    "python": "/home/bpinoli/MRP/MRP-Project/.venv-rg/bin/python",
+    "account": "bhb35",
+    "ep01": "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
+    "runtime_model_introspection": "unavailable; successful explicit spawn requests verified",
+    "continuation_revision": "c83ecae456babb9ec08ba1605e2ebd73124d4bdb",
+    "preserved_backup": "stash@{0}; do not drop"
+  },
+  "continuation_plan": "docs/regressions/PREDICTION_CONTINUATION_PLAN.md",
+  "continuation_report": "docs/regressions/PREDICTION_CONTINUATION_REPORT.md",
+  "future_protocol": "docs/regressions/PREDICTION_FUTURE_PROTOCOL.md",
+  "mechanism_tree": "docs/regressions/PREDICTION_MECHANISM_TREE.json",
+  "mechanism_tree_readable": "docs/regressions/PREDICTION_MECHANISM_TREE.md",
+  "mechanism_tree_branch_count": 40,
+  "mechanism_tree_family_count": 9,
+  "source_qualification": "docs/regressions/ONLINE_DATA_QUALIFICATION.md",
+  "issuer_event_manifest": "docs/regressions/SAMSUNG_ISSUER_EVENT_MANIFEST.json",
+  "latest_checkpoint": "docs/regressions/HYPOTHESIS_TREE_SOURCE_CHECKPOINT.md"
 }

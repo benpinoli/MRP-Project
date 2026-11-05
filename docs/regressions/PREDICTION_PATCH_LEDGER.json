@@ -1,0 +1,103 @@
+{
+  "source": "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/tables/measures_main.csv",
+  "raw_unchanged": true,
+  "new_raw_corrections": [],
+  "policy": "No future interpolation, backfilled announcements, invented outcomes, price winsorization, or deletion based on unusual valid moves. Endpoint-valid multi-session cumulative targets remain main; strict sensitivity requires all valid/unflagged proxy observations. Unknown actual KRX sessions remain unresolved.",
+  "records": [
+    {
+      "date": "2007-11-16",
+      "kind": "invalid_paired_discount",
+      "method": "Keep proxy row with missing q; exclude endpoint labels and affected trailing windows; no price interpolation"
+    },
+    {
+      "date": "2008-04-30",
+      "kind": "invalid_paired_discount",
+      "method": "Keep proxy row with missing q; exclude endpoint labels and affected trailing windows; no price interpolation"
+    },
+    {
+      "date": "2008-09-22",
+      "kind": "invalid_paired_discount",
+      "method": "Keep proxy row with missing q; exclude endpoint labels and affected trailing windows; no price interpolation"
+    },
+    {
+      "date": "2009-05-25",
+      "kind": "invalid_paired_discount",
+      "method": "Keep proxy row with missing q; exclude endpoint labels and affected trailing windows; no price interpolation"
+    },
+    {
+      "date": "2009-08-31",
+      "kind": "invalid_paired_discount",
+      "method": "Keep proxy row with missing q; exclude endpoint labels and affected trailing windows; no price interpolation"
+    },
+    {
+      "date": "2009-09-25",
+      "kind": "invalid_paired_discount",
+      "method": "Keep proxy row with missing q; exclude endpoint labels and affected trailing windows; no price interpolation"
+    },
+    {
+      "date": "2007-11-16",
+      "kind": "existing_EP01_review_flag",
+      "method": "Retain main if valid; strict interval sensitivity excludes any interval containing flag; not treated as confirmed price error"
+    },
+    {
+      "date": "2008-04-30",
+      "kind": "existing_EP01_review_flag",
+      "method": "Retain main if valid; strict interval sensitivity excludes any interval containing flag; not treated as confirmed price error"
+    },
+    {
+      "date": "2008-09-22",
+      "kind": "existing_EP01_review_flag",
+      "method": "Retain main if valid; strict interval sensitivity excludes any interval containing flag; not treated as confirmed price error"
+    },
+    {
+      "date": "2008-11-28",
+      "kind": "existing_EP01_review_flag",
+      "method": "Retain main if valid; strict interval sensitivity excludes any interval containing flag; not treated as confirmed price error"
+    },
+    {
+      "date": "2008-12-01",
+      "kind": "existing_EP01_review_flag",
+      "method": "Retain main if valid; strict interval sensitivity excludes any interval containing flag; not treated as confirmed price error"
+    },
+    {
+      "date": "2015-10-30",
+      "kind": "existing_EP01_review_flag",
+      "method": "Retain main if valid; strict interval sensitivity excludes any interval containing flag; not treated as confirmed price error"
+    },
+    {
+      "date": "2017-10-10",
+      "kind": "existing_EP01_review_flag",
+      "method": "Retain main if valid; strict interval sensitivity excludes any interval containing flag; not treated as confirmed price error"
+    },
+    {
+      "date": "2007-11-16",
+      "kind": "nonpositive_or_missing_activity_ratio",
+      "method": "Missing log activity; complete-case V1 branch; no zero filling"
+    },
+    {
+      "date": "2008-04-30",
+      "kind": "nonpositive_or_missing_activity_ratio",
+      "method": "Missing log activity; complete-case V1 branch; no zero filling"
+    },
+    {
+      "date": "2008-09-22",
+      "kind": "nonpositive_or_missing_activity_ratio",
+      "method": "Missing log activity; complete-case V1 branch; no zero filling"
+    },
+    {
+      "date": "2009-05-25",
+      "kind": "nonpositive_or_missing_activity_ratio",
+      "method": "Missing log activity; complete-case V1 branch; no zero filling"
+    },
+    {
+      "date": "2009-08-31",
+      "kind": "nonpositive_or_missing_activity_ratio",
+      "method": "Missing log activity; complete-case V1 branch; no zero filling"
+    },
+    {
+      "date": "2009-09-25",
+      "kind": "nonpositive_or_missing_activity_ratio",
+      "method": "Missing log activity; complete-case V1 branch; no zero filling"
+    }
+  ]
+}

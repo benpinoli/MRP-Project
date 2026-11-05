@@ -1,0 +1,15 @@
+{
+  "ep01": "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
+  "raw": "src/sf_quant/data/samsung_2005-20261020.csv",
+  "raw_sha256": "c64a9cdbba02ee7d70cd3fa4b0af14e0540d0beab70d3d55132f333fb11ba8bb",
+  "initial_train_end": "2014-12-31",
+  "validation_folds": [["2015-01-01", "2017-12-31"], ["2018-01-01", "2020-12-31"], ["2021-01-01", "2023-12-31"]],
+  "test_start": "2024-01-01",
+  "horizons": [1, 5, 20],
+  "alphas": [0.1, 1, 10, 100],
+  "families": {"Z0": [], "A0": ["q"], "A1": ["q", "d1"], "H1": ["q", "d1", "d5", "d20", "vol20"], "V1": ["q", "d1", "d5", "d20", "vol20", "activity"]},
+  "origin": "after Korean close and vendor field finalization; historical finalization time unverified",
+  "grid": "EP01 observed-session proxy, no independent session calendar",
+  "maturity": "label end strictly before monthly refit origin",
+  "minimum_training": 252
+}

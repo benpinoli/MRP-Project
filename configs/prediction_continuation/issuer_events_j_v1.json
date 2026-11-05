@@ -1,0 +1,9 @@
+{
+ "source_directory":"data/regression/raw/samsung_events_20261105",
+ "horizons":[1,5,20],
+ "inputs":{
+  "events":{"path":"data/regression/raw/samsung_events_20261105/events.json","sha256":"8aa0f35a94da1605905932770e1cd42e1558d36504bd5b539330030b81715a7a"},
+  "grid":{"path":"runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/tables/measures_main.csv","sha256":"e920e158e7770dee66608c8a258530700ae5e75a66974a089cca1082792638c9"},
+  "raw":{"path":"src/sf_quant/data/samsung_2005-20261020.csv","sha256":"c64a9cdbba02ee7d70cd3fa4b0af14e0540d0beab70d3d55132f333fb11ba8bb"}
+ }
+}
