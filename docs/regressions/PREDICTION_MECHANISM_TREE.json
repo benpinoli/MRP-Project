@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0",
-  "updated_utc": "2026-11-05T16:14:53.819334+00:00",
-  "purpose": "Accurate expandable mechanism tree; when stuck return to a real branch, rival, missing observation and next test. Size is welcome when grounded; not a feature-combination search.",
+  "schema_version": "2.0.0",
+  "updated_utc": "2026-11-05",
+  "purpose": "Rank slow structural mechanisms and distinguish what sets the gap, moves it, and allows it to persist",
   "status_vocabulary": [
     "supported",
     "contradicted",
     "unresolved",
     "untested"
   ],
-  "status_rule": "Status always qualified by status_scope. Supported arithmetic/contract is not causal/predictive success. Rejected designs preserved, proxy nulls do not null their parent mechanism.",
+  "status_rule": "Historical status and scope are preserved. Use long_horizon_status for the active question; daily forecasting failures do not refute long-run mechanisms.",
   "root": "Samsung common/preferred discount q=100(1-P/C); positive change widens",
   "families": {
     "BENCH": "Statistical adjustment and forecast benchmarks",
@@ -105,7 +105,7 @@
     },
     "result_2025": {
       "url": "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84465/",
-      "availability": "2025-10-02 reported aggregate July9\u2013September29 actual acquisitions. Known on reporting date, not allocable to daily execution."
+      "availability": "2025-10-02 reported aggregate July9–September29 actual acquisitions. Known on reporting date, not allocable to daily execution."
     },
     "dividend_2025": {
       "url": "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84277/",
@@ -114,7 +114,7 @@
     "fx": {
       "url": "https://www.federalreserve.gov/releases/h10/",
       "path": "data/regression/raw/prediction_external_20261105/manifest.json",
-      "availability": "Latest revised historical FX; weekly release hiatus2006\u2013Jan2009. Tested delayed current-vintage block, not certified PIT."
+      "availability": "Latest revised historical FX; weekly release hiatus2006–Jan2009. Tested delayed current-vintage block, not certified PIT."
     },
     "vix_rates": {
       "urls": [
@@ -135,490 +135,283 @@
     "gdr_monthly": {
       "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2024_Half_Interim_Report.pdf",
       "availability": "Credential-free issuer monthly GDR high/low/average/volume, published after period; not matched daily closes."
+    },
+    "long_cm05": {
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001103943",
+      "availability": "Chay and Moon 2005: journal record/abstract, not verified full tables",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
+    },
+    "long_ck99": {
+      "url": "https://www.acsu.buffalo.edu/~keechung/JCF.PDF",
+      "availability": "Chung and Kim 1999: author-hosted full paper",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
+    },
+    "long_od07": {
+      "url": "https://ba-odegaard.no/publications/abf/index.html",
+      "availability": "Odegaard 2007: author summary and linked supplementary results",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
+    },
+    "long_pc19": {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1566014117302315",
+      "availability": "Park et al. 2019: abstract/previous transcription; current full-text retrieval denied",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
+    },
+    "long_sv97": {
+      "url": "https://web.stanford.edu/~piazzesi/Reading/ShleiferVishny1997.pdf",
+      "availability": "Shleifer and Vishny 1997: full original paper",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
+    },
+    "long_fd99": {
+      "url": "https://www.nber.org/papers/w6572",
+      "availability": "Froot and Dabora: original abstract via search; direct page retrieval denied",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
+    },
+    "long_bc11": {
+      "url": "https://www.ecgi.global/sites/default/files/working_papers/documents/SSRN-id1881657.pdf",
+      "availability": "Bigelli and Croci 2011 working version, not final 2013 numerical estimates",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
+    },
+    "long_pj05": {
+      "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp465.pdf",
+      "availability": "Pajuste 2005: full ECB working paper",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
+    },
+    "long_samsung15": {
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-shareholder-return-plan",
+      "availability": "Dated October 29 2015 issuer policy announcement, not proof of its price effects",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
+    },
+    "long_samsung17": {
+      "url": "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.70985/",
+      "availability": "Dated October 31 2017 issuer policy announcement, not proof of its price effects",
+      "reviewed_date": "2026-11-05",
+      "synthesis": "docs/regressions/LONG_HORIZON_LITERATURE.md"
     }
   },
   "nodes": [
     {
-      "id": "B01",
-      "parent": "BENCH",
-      "title": "Persistence / no predictable change",
-      "mechanism_chain": "Persistent discount makes zero-change a competitive forecast",
-      "expected_sign": "Zero expected change",
-      "timing": "One to20proxy sessions",
-      "distinguishing_prediction": "Challenger reduces same-origin loss beyond persistence, not only in-sample fit",
-      "nearest_rival": "Weak changing signal and forecast estimation noise",
+      "id": "S06",
+      "parent": "SUPPLY",
+      "title": "Cumulative public-share supply and liquidity feedback",
+      "mechanism_chain": "Years of class-specific issuance, repurchases, treasury holdings and strategic ownership change the shares available to investors and the capacity to trade them",
+      "expected_sign": "Preferred scarcity/support may narrow; impaired preferred trading capacity may widen. Measure both, not a universal sign.",
       "data_fields": [
-        "q",
-        "origin/target dates",
-        "forecast hashes"
+        "class issued/outstanding shares",
+        "treasury shares",
+        "strategic and locked holdings",
+        "documented public float",
+        "actual cumulative class actions",
+        "relative trading costs/capacity"
       ],
-      "data_availability": "Existing qualified conditional history",
-      "status": "supported",
-      "status_scope": "Competitive benchmark; not evidence every mechanism is absent",
+      "distinguishing_prediction": "Persistent discount changes align with documented relative public supply and cost/capacity changes, beyond issuer share-count headlines",
+      "nearest_rival": "Management targets an existing discount; ownership shifts rather than supply cause the repricing",
       "evidence_source_ids": [
-        "prices",
-        "forecast"
+        "long_cm05",
+        "long_samsung15"
       ],
-      "evidence_paths": [
-        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
-        [
-          "runs/samsung/prediction_final_15055345",
-          "runs/samsung/continuation_d_15055723",
-          "runs/samsung/continuation_e_15055790",
-          "runs/samsung/continuation_f_15055873",
-          "runs/samsung/continuation_gh_15055999"
-        ]
-      ],
-      "failure_reason": "Original H1 primary gain tiny/uncertain; benchmark retained",
-      "next_discriminating_test": "Keep Z0 in every branch and future cohort",
-      "priority": "reference",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "B02",
-      "parent": "BENCH",
-      "title": "Global or rolling equilibrium adjustment",
-      "mechanism_chain": "A stable discount equilibrium would pull extreme levels back",
-      "expected_sign": "Negative q slope conditional on stable equilibrium",
-      "timing": "Days/months; must survive regimes",
-      "distinguishing_prediction": "Expanding/rolling level anchor improves forecasts and signed calibration across periods",
-      "nearest_rival": "Structural drift, omitted class demand, spurious persistent levels",
-      "data_fields": [
-        "q history",
-        "regime dates"
-      ],
-      "data_availability": "A0/H1 and R756 tested",
-      "status": "contradicted",
-      "status_scope": "Specific stable global/756-row predictive designs, not all equilibrium models",
-      "evidence_source_ids": [
-        "forecast"
-      ],
-      "evidence_paths": [
-        [
-          "runs/samsung/prediction_final_15055345",
-          "runs/samsung/continuation_d_15055723",
-          "runs/samsung/continuation_e_15055790",
-          "runs/samsung/continuation_f_15055873",
-          "runs/samsung/continuation_gh_15055999"
-        ]
-      ],
-      "failure_reason": "R756 loses most development folds and all exposed horizons; stationarity sensitivity unstable",
-      "next_discriminating_test": "Reopen only with a dated equilibrium/state variable; retain rejected R756",
-      "priority": "low_same_data",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "B03",
-      "parent": "BENCH",
-      "title": "Local short-horizon reversal",
-      "mechanism_chain": "Transient relative price pressure or staggered discovery reverses part of latest gap move",
-      "expected_sign": "Negative d1 coefficient",
-      "timing": "One/five sessions; decay with horizon",
-      "distinguishing_prediction": "D1 forecast gain transfers to genuinely unexposed cohort and class catch-up pattern",
-      "nearest_rival": "Bid-ask/auction effects, stale closes, mechanical cash changes",
-      "data_fields": [
-        "q_t",
-        "q_t-1",
-        "as-of receipt",
-        "class price moves"
-      ],
-      "data_availability": "D1 tested; new causal channel fields partly absent",
-      "status": "unresolved",
-      "status_scope": "Development support; primary exposed transfer unconfirmed; h5 secondary exploratory",
-      "evidence_source_ids": [
-        "forecast",
-        "reversal"
-      ],
-      "evidence_paths": [
-        [
-          "runs/samsung/prediction_final_15055345",
-          "runs/samsung/continuation_d_15055723",
-          "runs/samsung/continuation_e_15055790",
-          "runs/samsung/continuation_f_15055873",
-          "runs/samsung/continuation_gh_15055999"
-        ],
-        "https://users.nber.org/~confer/2004/mmsu04/goyal.pdf"
-      ],
-      "failure_reason": "Not a confirmed predictor; no cost/executable-price validation",
-      "next_discriminating_test": "Reserve future cohort and separately discriminate common-led vs preferred-led changes",
-      "priority": "active",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "B04",
-      "parent": "BENCH",
-      "title": "State-dependent nonlinear adjustment",
-      "mechanism_chain": "Arbitrage/attention may activate only at unusually large local dislocations",
-      "expected_sign": "Reversal may strengthen at extreme local deviations; trend continuation competes",
-      "timing": "Days/weeks",
-      "distinguishing_prediction": "Training-only local extremity predicts residual direction beyond linear adjustment",
-      "nearest_rival": "Global level drift, sparse outliers, adaptive threshold search",
-      "data_fields": [
-        "trailing local q distribution",
-        "sufficient extreme episodes"
-      ],
-      "data_availability": "Existing prices, weak residual-state evidence",
-      "status": "unresolved",
-      "status_scope": "Deferred; not tested/null",
-      "evidence_source_ids": [
-        "forecast"
-      ],
-      "evidence_paths": [
-        [
-          "runs/samsung/prediction_final_15055345",
-          "runs/samsung/continuation_d_15055723",
-          "runs/samsung/continuation_e_15055790",
-          "runs/samsung/continuation_f_15055873",
-          "runs/samsung/continuation_gh_15055999"
-        ]
-      ],
-      "failure_reason": "Weak local-discount residual correlations; arbitrary threshold sweep low value",
-      "next_discriminating_test": "Advance one economic threshold only if stable development diagnostics or new state data justify it",
-      "priority": "deferred",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "M01",
-      "parent": "MEASURE",
-      "title": "Invalid or carried quote / missing calendar",
-      "mechanism_chain": "Ineligible quote or missing true session creates false relative change",
-      "expected_sign": "Either sign, often followed by apparent reversal",
-      "timing": "Daily endpoints",
-      "distinguishing_prediction": "Effect concentrates in source-status/calendar defects and disappears under documented valid masks",
-      "nearest_rival": "Valid unusual move or actual market suspension",
-      "data_fields": [
-        "PRCSTD",
-        "QUNIT",
-        "KRX sessions",
-        "quote receipt"
-      ],
-      "data_availability": "Source status/masks present; independent complete calendar absent",
-      "status": "unresolved",
-      "status_scope": "Six invalid rows handled cheaply; calendar limitation persists",
-      "evidence_source_ids": [
-        "prices"
-      ],
-      "evidence_paths": [
-        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z"
-      ],
-      "failure_reason": "Do not delete valid extremes or infer every missing weekday is a session",
-      "next_discriminating_test": "Acquire independent sessions; keep raw and omit affected labels without bridging",
-      "priority": "audit",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "M02",
-      "parent": "MEASURE",
-      "title": "Class mapping / split / units",
-      "mechanism_chain": "Wrong issue, scale or unequal corporate action creates artificial premium",
-      "expected_sign": "Either; simultaneous equal split cancels q",
-      "timing": "Action boundary",
-      "distinguishing_prediction": "Identity and exact q/return decomposition hold; raw leg-return split removed",
-      "nearest_rival": "Real class repricing",
-      "data_fields": [
-        "ISIN/iid/ticker",
-        "KRW/QUNIT",
-        "split ratio/action date"
-      ],
-      "data_availability": "Both class50:1 event2018-05-04 verified; full action taxonomy incomplete",
-      "status": "supported",
-      "status_scope": "Verified mapping/current units and equal split identity; not complete historical action audit",
-      "evidence_source_ids": [
-        "prices",
-        "gdr_split"
-      ],
-      "evidence_paths": [
-        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.71265/"
-      ],
-      "failure_reason": "Known event does not license an unverified full adjustment formula",
-      "next_discriminating_test": "Mask split transitions in raw class-return features; never invent adjusted total returns",
-      "priority": "audit",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "M03",
-      "parent": "MEASURE",
-      "title": "Equal-cash ex-dividend ratio arithmetic",
-      "mechanism_chain": "Equal cash subtraction preserves absolute gap but lowers common denominator",
-      "expected_sign": "Widening when C>P and equal positive cash",
-      "timing": "Ex-dividend price adjustment",
-      "distinguishing_prediction": "Exact counterfactual q change matches accounting identity even with no investor response",
-      "nearest_rival": "Clientele response or announcement surprise",
-      "data_fields": [
-        "C/P pre-event",
-        "dC/dP",
-        "verified ex-date",
-        "record/payment distinct"
-      ],
-      "data_availability": "Cash amounts/page dates accessible; ex-date panel not yet qualified",
-      "status": "supported",
-      "status_scope": "Mathematical identity only; empirical dividend mechanism untested",
-      "evidence_source_ids": [
-        "prices",
-        "dividend_2025"
-      ],
-      "evidence_paths": [
-        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84277/"
-      ],
-      "failure_reason": "Final announced amount after record date cannot be a past predictor",
-      "next_discriminating_test": "Validate symbolic/synthetic identity; qualify dated cash/ex events before observed attribution",
-      "priority": "high_source",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "M04",
-      "parent": "MEASURE",
-      "title": "Asynchronous class price discovery",
-      "mechanism_chain": "Common incorporates news first, preferred adjusts later",
-      "expected_sign": "Common-led widening then narrowing; signs reverse for declines",
-      "timing": "Close t to next sessions",
-      "distinguishing_prediction": "At same d1, common-led versus preferred-led move predicts different subsequent class catch-up",
-      "nearest_rival": "Shared market beta/news or temporary preferred sell pressure",
-      "data_fields": [
-        "matched class closes/returns",
-        "quote timestamps",
-        "volume",
-        "split mask"
-      ],
-      "data_availability": "Raw classes present; exact trade clocks absent",
+      "next_discriminating_test": "Build a quarterly 2005-onward class supply/ownership bridge, split-adjusted, and compare supply and trading-capacity paths before fitting",
+      "timing": "Quarters and years; 2/5/10-year scenarios",
+      "data_availability": "Source route identified; longitudinal Samsung panel not yet reconstructed",
       "status": "untested",
-      "status_scope": "Feasible conditional price-leg discrimination, not proof of staleness",
-      "evidence_source_ids": [
-        "prices",
-        "reversal"
-      ],
+      "status_scope": "Long-horizon mechanism not empirically tested",
       "evidence_paths": [
-        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
-        "https://users.nber.org/~confer/2004/mmsu04/goyal.pdf"
+        "docs/regressions/LONG_HORIZON_LITERATURE.md"
       ],
-      "failure_reason": "Both legs plus d1 are constrained; unverified same-auction execution forbidden",
-      "next_discriminating_test": "Predeclare one independent common-move signal beside d1; audit algebraic redundancy first",
-      "priority": "feasible_existing",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "failure_reason": "No new empirical test in this reorganization",
+      "priority": "LH1",
+      "causal_status": "Hypothesis, not an identified Samsung effect",
+      "historical_priority": "long_horizon",
+      "research_track": "LH1",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Reconstruct supply and cost histories jointly; distinguish scarcity/support from deteriorating ability to trade and management responding to the gap.",
+      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity."
     },
     {
-      "id": "M05",
-      "parent": "MEASURE",
-      "title": "Closing-auction / tick / execution pressure",
-      "mechanism_chain": "Auction imbalance or relative price discreteness moves reported closes temporarily",
-      "expected_sign": "Temporary widening/narrowing, next-open reversal",
-      "timing": "Close-to-open rather than full daily",
-      "distinguishing_prediction": "Gap signal stronger in auction/last-trade than synchronized midquotes",
-      "nearest_rival": "Information arrival and liquidity compensation",
+      "id": "S01",
+      "parent": "SUPPLY",
+      "title": "Relative buyback authorization dose",
+      "mechanism_chain": "Announced class demand/support differs by fraction of available class shares",
+      "expected_sign": "Preferred-relative dose can narrow; equal issued fractions need not differ",
+      "timing": "First public authorization, not daily execution",
+      "distinguishing_prediction": "Response varies with P-minus-C target/float and surprise",
+      "nearest_rival": "Signaling, earnings news, equal fractional programs",
       "data_fields": [
-        "auction imbalance",
-        "bid/ask",
-        "last-trade timestamps",
-        "tick rules"
+        "class targets/KRW budget",
+        "date",
+        "prior issued/treasury/free float"
       ],
-      "data_availability": "Not in current raw close/high-low extract",
+      "data_availability": "Credential-free dated issuer pages qualified; float absent",
       "status": "untested",
-      "status_scope": "Cannot infer from unchanged price or daily range alone",
+      "status_scope": "Initial target fractions nearly equal; issued denominator not float",
       "evidence_source_ids": [
-        "prices",
-        "liquidity"
-      ],
-      "evidence_paths": [
-        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
-        "https://www.acsu.buffalo.edu/~keechung/MGF743/Readings/M1%20Amihud%20Mendelson%201986%20JFE%20Asset%20pricing.pdf"
-      ],
-      "failure_reason": "No synchronized executable quote panel",
-      "next_discriminating_test": "Qualify auction/quote data and compare executable mid/close effects",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "M06",
-      "parent": "MEASURE",
-      "title": "Actual preferred contractual rights",
-      "mechanism_chain": "Nonvoting noncumulative cash premium and equal liquidation rank shape claims",
-      "expected_sign": "Depends on cash/vote state, not generic US senior fixed coupon",
-      "timing": "Rights changes and payout shortfalls",
-      "distinguishing_prediction": "Interpret events using historical issue terms, not US preferred-stock assumptions",
-      "nearest_rival": "Incorrect seniority/guaranteed dividend narrative",
-      "data_fields": [
-        "dated articles/prospectus",
-        "par value",
-        "contingent voting provisions"
-      ],
-      "data_availability": "2024/25 issuer terms available; history incomplete",
-      "status": "supported",
-      "status_scope": "Documented contemporary rights only",
-      "evidence_source_ids": [
-        "rights",
+        "buyback_2024",
+        "buyback_2025",
         "listing"
       ],
       "evidence_paths": [
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84235/",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84416/",
         "https://www.samsung.com/global/ir/stock-information/listing-Info/"
       ],
-      "failure_reason": "Current terms cannot automatically cover2005",
-      "next_discriminating_test": "Version historical class terms at each event; retain unknowns",
-      "priority": "audit",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "failure_reason": "Small connected programs; target quantities can be price-derived estimates",
+      "next_discriminating_test": "Build issuer manifest and compute exact/rounded-issued dose before sparse event description",
+      "priority": "LH1",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "executable_public",
+      "research_track": "LH1",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Reconstruct supply and cost histories jointly; distinguish scarcity/support from deteriorating ability to trade and management responding to the gap.",
+      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity."
     },
     {
-      "id": "D01",
-      "parent": "DEMAND",
-      "title": "Retail clientele / individual imbalance",
-      "mechanism_chain": "Relative individual buying supports one class and noise-trader risk changes required compensation",
-      "expected_sign": "Preferred-relative net buying tends to narrow; risk compensation can offset",
-      "timing": "Flow at t, next sessions only after release",
-      "distinguishing_prediction": "Actual class individual buy-sell imbalance adds beyond price/activity and has sensible channel",
-      "nearest_rival": "Price-induced trading, retail weight without signed demand",
+      "id": "S02",
+      "parent": "SUPPLY",
+      "title": "Actual relative repurchase execution",
+      "mechanism_chain": "Issuer purchases remove tradable shares/absorb selling and support class price",
+      "expected_sign": "Preferred-relative execution can narrow, offset by lost liquidity",
+      "timing": "Daily execution if known; aggregate result only after report",
+      "distinguishing_prediction": "Actual dated class execution differs from authorization and predicts later pressure",
+      "nearest_rival": "Informed buyback timing, price-induced realized share count",
       "data_fields": [
-        "class individual buy/sell shares or KRW",
-        "total volume denominator",
-        "published_at"
+        "daily contracts/shares",
+        "reported_at",
+        "float/turnover denominator"
       ],
-      "data_availability": "KRX menus login; public extract not obtained",
+      "data_availability": "Aggregate executions accessible; no daily allocation",
       "status": "untested",
-      "status_scope": "V1/G2 volume null does not test investor identity",
+      "status_scope": "Oct2 result is not July daily information",
       "evidence_source_ids": [
-        "retail_paper",
-        "sentiment_paper",
-        "krx"
+        "first_result",
+        "result_2025"
       ],
       "evidence_paths": [
-        "https://www.sciencedirect.com/science/article/abs/pii/S1566014117302315",
-        "https://pdfs.semanticscholar.org/41f7/597f43dd2a9da9497215f182e5ae6322b5fd.pdf",
-        "runs/samsung/source_qualification_20261105/README.md"
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84305/",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84465/"
       ],
-      "failure_reason": "Exact denominator/counting and publication timestamps unavailable",
-      "next_discriminating_test": "Acquire authenticated-permitted export or official free alternative; use prior float/turnover normalization",
-      "priority": "high_information_access",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "failure_reason": "No daily execution panel or historical float",
+      "next_discriminating_test": "Record aggregate window/result publication separately; never spread total equally across days",
+      "priority": "LH1",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "executable_public_aggregate",
+      "research_track": "LH1",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Reconstruct supply and cost histories jointly; distinguish scarcity/support from deteriorating ability to trade and management responding to the gap.",
+      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity."
     },
     {
-      "id": "D02",
-      "parent": "DEMAND",
-      "title": "Foreign investor class allocation",
-      "mechanism_chain": "Foreign capital/mandates reallocate common versus preferred; FX may alter demand",
-      "expected_sign": "Preferred-relative foreign net buying narrows; common inflow widens",
-      "timing": "Published flow -> later forecast",
-      "distinguishing_prediction": "Relative signed foreign flow predicts q conditional on FX and local prices",
-      "nearest_rival": "Ownership changes from corporate actions or common firm news",
+      "id": "S03",
+      "parent": "SUPPLY",
+      "title": "Treasury cancellation versus market float",
+      "mechanism_chain": "Retiring already-held treasury alters issued count but is not a new market purchase",
+      "expected_sign": "No automatic new demand/float withdrawal; signaling/right effects conditional",
+      "timing": "Decision versus actual cancellation distinct",
+      "distinguishing_prediction": "Cancellation response differs from purchase period; outstanding and treasury reconcile",
+      "nearest_rival": "Double-counted buyback pressure or changing denominators",
       "data_fields": [
-        "foreign buy/sell by class",
-        "KRW value",
-        "float",
-        "availability"
+        "exact class cancellation",
+        "issued/treasury before/after",
+        "decision/effective dates"
       ],
-      "data_availability": "KRX route gated; no current direct flow panel",
+      "data_availability": "Feb18 decision/exact issued accessible; execution confirmation later",
       "status": "untested",
-      "status_scope": "Delayed FX-only F4 is not a foreign-flow test",
+      "status_scope": "One linked program, not independent repurchase event",
       "evidence_source_ids": [
-        "krx",
-        "fx"
+        "cancel",
+        "first_result"
       ],
       "evidence_paths": [
-        "runs/samsung/source_qualification_20261105/README.md",
-        "data/regression/raw/prediction_external_20261105/manifest.json"
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84318/",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84305/"
       ],
-      "failure_reason": "No observation of investor-specific demand",
-      "next_discriminating_test": "Qualify true flow and as-of timing, not ownership difference alone",
-      "priority": "high_information_access",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "failure_reason": "Treasury already outside tradable float; effective date subject change",
+      "next_discriminating_test": "Reconcile issuer balance sheet and label scheduled versus confirmed dates",
+      "priority": "LH1",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "executable_public",
+      "research_track": "LH1",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Reconstruct supply and cost histories jointly; distinguish scarcity/support from deteriorating ability to trade and management responding to the gap.",
+      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity."
     },
     {
-      "id": "D03",
-      "parent": "DEMAND",
-      "title": "Institutional benchmark demand",
-      "mechanism_chain": "Mandates/index weights concentrate institutional buying in a class",
-      "expected_sign": "Common-directed demand widens; preferred-directed narrows",
-      "timing": "Announcement/rebalance windows",
-      "distinguishing_prediction": "Class-specific index surprise and institution flow align with relative response",
-      "nearest_rival": "Expected index change or earnings news",
+      "id": "S04",
+      "parent": "SUPPLY",
+      "title": "Employee treasury grants / disposal",
+      "mechanism_chain": "Common-only grants or treasury disposal can increase potential market supply and change incentives",
+      "expected_sign": "Common-relative selling can narrow q; lockups/incentives can offset",
+      "timing": "Grant announcement, transfer, unlock, sale separate",
+      "distinguishing_prediction": "Class-specific transferable supply, not total compensation value, aligns with q",
+      "nearest_rival": "Employee retention news, locked shares or common business news",
       "data_fields": [
-        "dated index membership/weights",
-        "announcement/implementation",
-        "institution flow"
+        "class quantities",
+        "decision/transfer/unlock dates",
+        "sale restrictions"
       ],
-      "data_availability": "No historical qualified panel",
+      "data_availability": "Issuer public policies/actions accessible, dated full panel incomplete",
       "status": "untested",
-      "status_scope": "No proxy model establishes mandate channel",
+      "status_scope": "Grant is not automatically immediate free float/selling",
       "evidence_source_ids": [
-        "krx",
-        "retail_paper"
+        "policy",
+        "buyback_2025"
       ],
       "evidence_paths": [
-        "runs/samsung/source_qualification_20261105/README.md",
-        "https://www.sciencedirect.com/science/article/abs/pii/S1566014117302315"
+        "https://www.samsung.com/global/ir/stock-information/shareholder-return/",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84416/"
       ],
-      "failure_reason": "Current index membership not a historical universe",
-      "next_discriminating_test": "Acquire dated benchmark event with matching flows and known implementation",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "failure_reason": "No assumed immediate sale or unannounced future grants",
+      "next_discriminating_test": "Build dated grants with lockups and class quantities; compare with acquisition/cancellation",
+      "priority": "LH1",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "high_source",
+      "research_track": "LH1",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Reconstruct supply and cost histories jointly; distinguish scarcity/support from deteriorating ability to trade and management responding to the gap.",
+      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity."
     },
     {
-      "id": "D04",
-      "parent": "DEMAND",
-      "title": "Attention / sentiment allocation",
-      "mechanism_chain": "Attention/risk-taking changes marginal class selection and transient pressure",
-      "expected_sign": "Common attention may widen; preferred attention narrows",
-      "timing": "Short run, possible reversal",
-      "distinguishing_prediction": "Independent dated attention/individual imbalance separates sentiment from price response",
-      "nearest_rival": "Sentiment proxy mechanically constructed from past returns",
+      "id": "S05",
+      "parent": "SUPPLY",
+      "title": "Class issuance / float and conversion rights",
+      "mechanism_chain": "New class shares or transfer restrictions change relative supply and entitlements",
+      "expected_sign": "Class-relative dilution/support sign depends on price and rights",
+      "timing": "Authorization/subscription/listing dates",
+      "distinguishing_prediction": "Verified class-specific issuance creates distinct supply shock",
+      "nearest_rival": "Common equity-price changes mistaken for debt/equity or issuance",
       "data_fields": [
-        "attention/news timestamps",
-        "retail imbalance",
-        "turnover/RSI definitions"
+        "new shares",
+        "subscription terms",
+        "free float",
+        "conversion rules"
       ],
-      "data_availability": "Price-derived indicators possible; external investor data absent",
-      "status": "unresolved",
-      "status_scope": "RSI/volume are candidate proxies, not identified sentiment",
-      "evidence_source_ids": [
-        "sentiment_paper",
-        "forecast"
-      ],
-      "evidence_paths": [
-        "https://pdfs.semanticscholar.org/41f7/597f43dd2a9da9497215f182e5ae6322b5fd.pdf",
-        [
-          "runs/samsung/prediction_final_15055345",
-          "runs/samsung/continuation_d_15055723",
-          "runs/samsung/continuation_e_15055790",
-          "runs/samsung/continuation_f_15055873",
-          "runs/samsung/continuation_gh_15055999"
-        ]
-      ],
-      "failure_reason": "No arbitrary RSI-window sweep or in-sample significance claim",
-      "next_discriminating_test": "Use original paper definitions and independent class imbalance before claiming replication",
-      "priority": "conditional",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "D05",
-      "parent": "DEMAND",
-      "title": "Income clientele / tax treatment",
-      "mechanism_chain": "Income demand favors cheaper cash-yield claim; taxes alter net relative entitlement",
-      "expected_sign": "Preferred demand may narrow; heterogeneous tax/mandate signs conditional",
-      "timing": "Announcement, ex-date and investor-policy changes",
-      "distinguishing_prediction": "Class income-holder buying responds to actual net cash rights, not US yield-style return",
-      "nearest_rival": "Equal-cash arithmetic, rate exposure or broad style covariance",
-      "data_fields": [
-        "dated tax/client categories",
-        "net class payout",
-        "holder flow"
-      ],
-      "data_availability": "Issuer cash rights available; holder tax/flow absent",
+      "data_availability": "No qualified dated panel; current issued history partial",
       "status": "untested",
-      "status_scope": "Positive retrospective US DIVYILD is not Samsung payout causality",
+      "status_scope": "No assumption preferred converts freely into common",
       "evidence_source_ids": [
-        "rights",
-        "retail_paper",
-        "dividend_2025"
+        "listing",
+        "rights"
       ],
       "evidence_paths": [
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
-        "https://www.sciencedirect.com/science/article/abs/pii/S1566014117302315",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84277/"
+        "https://www.samsung.com/global/ir/stock-information/listing-Info/",
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf"
       ],
-      "failure_reason": "Tax status and investor identification not observed",
-      "next_discriminating_test": "Test actual payout/holder event with arithmetic benchmark",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "failure_reason": "Market-value D/E changes do not establish issuance",
+      "next_discriminating_test": "Identify actual issuer event before feature construction",
+      "priority": "LH1",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH1",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Reconstruct supply and cost histories jointly; distinguish scarcity/support from deteriorating ability to trade and management responding to the gap.",
+      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity."
     },
     {
       "id": "L01",
@@ -655,8 +448,670 @@
       ],
       "failure_reason": "G2 failed proxy increment, not liquidity mechanism",
       "next_discriminating_test": "Acquire quotes; compare matched cost state against activity",
-      "priority": "high_information_access",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH1",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "high_information_access",
+      "research_track": "LH1",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Reconstruct supply and cost histories jointly; distinguish scarcity/support from deteriorating ability to trade and management responding to the gap.",
+      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity."
+    },
+    {
+      "id": "D01",
+      "parent": "DEMAND",
+      "title": "Retail clientele / individual imbalance",
+      "mechanism_chain": "Relative individual buying supports one class and noise-trader risk changes required compensation",
+      "expected_sign": "Preferred-relative net buying tends to narrow; risk compensation can offset",
+      "timing": "Flow at t, next sessions only after release",
+      "distinguishing_prediction": "Actual class individual buy-sell imbalance adds beyond price/activity and has sensible channel",
+      "nearest_rival": "Price-induced trading, retail weight without signed demand",
+      "data_fields": [
+        "class individual buy/sell shares or KRW",
+        "total volume denominator",
+        "published_at"
+      ],
+      "data_availability": "KRX menus login; public extract not obtained",
+      "status": "untested",
+      "status_scope": "V1/G2 volume null does not test investor identity",
+      "evidence_source_ids": [
+        "retail_paper",
+        "sentiment_paper",
+        "krx"
+      ],
+      "evidence_paths": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S1566014117302315",
+        "https://pdfs.semanticscholar.org/41f7/597f43dd2a9da9497215f182e5ae6322b5fd.pdf",
+        "runs/samsung/source_qualification_20261105/README.md"
+      ],
+      "failure_reason": "Exact denominator/counting and publication timestamps unavailable",
+      "next_discriminating_test": "Acquire authenticated-permitted export or official free alternative; use prior float/turnover normalization",
+      "priority": "LH2",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "high_information_access",
+      "research_track": "LH2",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Separate ownership stocks from trading flows; compare durable class-relative ownership/access changes with discount regimes and comparable peers.",
+      "long_horizon_data": "Class-level quarterly/annual foreign and institutional holdings, holder concentration, retail participation, index/mandate histories and dated eligibility rules."
+    },
+    {
+      "id": "D02",
+      "parent": "DEMAND",
+      "title": "Foreign investor class allocation",
+      "mechanism_chain": "Foreign capital/mandates reallocate common versus preferred; FX may alter demand",
+      "expected_sign": "Preferred-relative foreign net buying narrows; common inflow widens",
+      "timing": "Published flow -> later forecast",
+      "distinguishing_prediction": "Relative signed foreign flow predicts q conditional on FX and local prices",
+      "nearest_rival": "Ownership changes from corporate actions or common firm news",
+      "data_fields": [
+        "foreign buy/sell by class",
+        "KRW value",
+        "float",
+        "availability"
+      ],
+      "data_availability": "KRX route gated; no current direct flow panel",
+      "status": "untested",
+      "status_scope": "Delayed FX-only F4 is not a foreign-flow test",
+      "evidence_source_ids": [
+        "krx",
+        "fx"
+      ],
+      "evidence_paths": [
+        "runs/samsung/source_qualification_20261105/README.md",
+        "data/regression/raw/prediction_external_20261105/manifest.json"
+      ],
+      "failure_reason": "No observation of investor-specific demand",
+      "next_discriminating_test": "Qualify true flow and as-of timing, not ownership difference alone",
+      "priority": "LH2",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "high_information_access",
+      "research_track": "LH2",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Separate ownership stocks from trading flows; compare durable class-relative ownership/access changes with discount regimes and comparable peers.",
+      "long_horizon_data": "Class-level quarterly/annual foreign and institutional holdings, holder concentration, retail participation, index/mandate histories and dated eligibility rules."
+    },
+    {
+      "id": "D03",
+      "parent": "DEMAND",
+      "title": "Institutional benchmark demand",
+      "mechanism_chain": "Mandates/index weights concentrate institutional buying in a class",
+      "expected_sign": "Common-directed demand widens; preferred-directed narrows",
+      "timing": "Announcement/rebalance windows",
+      "distinguishing_prediction": "Class-specific index surprise and institution flow align with relative response",
+      "nearest_rival": "Expected index change or earnings news",
+      "data_fields": [
+        "dated index membership/weights",
+        "announcement/implementation",
+        "institution flow"
+      ],
+      "data_availability": "No historical qualified panel",
+      "status": "untested",
+      "status_scope": "No proxy model establishes mandate channel",
+      "evidence_source_ids": [
+        "krx",
+        "retail_paper"
+      ],
+      "evidence_paths": [
+        "runs/samsung/source_qualification_20261105/README.md",
+        "https://www.sciencedirect.com/science/article/abs/pii/S1566014117302315"
+      ],
+      "failure_reason": "Current index membership not a historical universe",
+      "next_discriminating_test": "Acquire dated benchmark event with matching flows and known implementation",
+      "priority": "LH2",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH2",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Separate ownership stocks from trading flows; compare durable class-relative ownership/access changes with discount regimes and comparable peers.",
+      "long_horizon_data": "Class-level quarterly/annual foreign and institutional holdings, holder concentration, retail participation, index/mandate histories and dated eligibility rules."
+    },
+    {
+      "id": "D05",
+      "parent": "DEMAND",
+      "title": "Income clientele / tax treatment",
+      "mechanism_chain": "Income demand favors cheaper cash-yield claim; taxes alter net relative entitlement",
+      "expected_sign": "Preferred demand may narrow; heterogeneous tax/mandate signs conditional",
+      "timing": "Announcement, ex-date and investor-policy changes",
+      "distinguishing_prediction": "Class income-holder buying responds to actual net cash rights, not US yield-style return",
+      "nearest_rival": "Equal-cash arithmetic, rate exposure or broad style covariance",
+      "data_fields": [
+        "dated tax/client categories",
+        "net class payout",
+        "holder flow"
+      ],
+      "data_availability": "Issuer cash rights available; holder tax/flow absent",
+      "status": "untested",
+      "status_scope": "Positive retrospective US DIVYILD is not Samsung payout causality",
+      "evidence_source_ids": [
+        "rights",
+        "retail_paper",
+        "dividend_2025"
+      ],
+      "evidence_paths": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
+        "https://www.sciencedirect.com/science/article/abs/pii/S1566014117302315",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84277/"
+      ],
+      "failure_reason": "Tax status and investor identification not observed",
+      "next_discriminating_test": "Test actual payout/holder event with arithmetic benchmark",
+      "priority": "LH2",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH2",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Separate ownership stocks from trading flows; compare durable class-relative ownership/access changes with discount regimes and comparable peers.",
+      "long_horizon_data": "Class-level quarterly/annual foreign and institutional holdings, holder concentration, retail participation, index/mandate histories and dated eligibility rules."
+    },
+    {
+      "id": "D04",
+      "parent": "DEMAND",
+      "title": "Attention / sentiment allocation",
+      "mechanism_chain": "Attention/risk-taking changes marginal class selection and transient pressure",
+      "expected_sign": "Common attention may widen; preferred attention narrows",
+      "timing": "Short run, possible reversal",
+      "distinguishing_prediction": "Independent dated attention/individual imbalance separates sentiment from price response",
+      "nearest_rival": "Sentiment proxy mechanically constructed from past returns",
+      "data_fields": [
+        "attention/news timestamps",
+        "retail imbalance",
+        "turnover/RSI definitions"
+      ],
+      "data_availability": "Price-derived indicators possible; external investor data absent",
+      "status": "unresolved",
+      "status_scope": "RSI/volume are candidate proxies, not identified sentiment",
+      "evidence_source_ids": [
+        "sentiment_paper",
+        "forecast"
+      ],
+      "evidence_paths": [
+        "https://pdfs.semanticscholar.org/41f7/597f43dd2a9da9497215f182e5ae6322b5fd.pdf",
+        [
+          "runs/samsung/prediction_final_15055345",
+          "runs/samsung/continuation_d_15055723",
+          "runs/samsung/continuation_e_15055790",
+          "runs/samsung/continuation_f_15055873",
+          "runs/samsung/continuation_gh_15055999"
+        ]
+      ],
+      "failure_reason": "No arbitrary RSI-window sweep or in-sample significance claim",
+      "next_discriminating_test": "Use original paper definitions and independent class imbalance before claiming replication",
+      "priority": "LH2",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "conditional",
+      "research_track": "LH2",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Separate ownership stocks from trading flows; compare durable class-relative ownership/access changes with discount regimes and comparable peers.",
+      "long_horizon_data": "Class-level quarterly/annual foreign and institutional holdings, holder concentration, retail participation, index/mandate histories and dated eligibility rules."
+    },
+    {
+      "id": "G01",
+      "parent": "GOV",
+      "title": "Value of common votes / control contest",
+      "mechanism_chain": "More pivotal votes raise common control-related value",
+      "expected_sign": "Common voting value rising tends to widen",
+      "timing": "Control event announcement; may persist",
+      "distinguishing_prediction": "Gap responds around actual voting contest and ownership pivotality",
+      "nearest_rival": "Liquidity/flow or cash-right difference",
+      "data_fields": [
+        "dated blocks/affiliates",
+        "voting agreements",
+        "control events"
+      ],
+      "data_availability": "Original research and current structure; historical panel absent",
+      "status": "untested",
+      "status_scope": "Discount is not pure value of vote",
+      "evidence_source_ids": [
+        "vote_paper",
+        "rights"
+      ],
+      "evidence_paths": [
+        "https://www.acsu.buffalo.edu/~keechung/JCF.PDF",
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf"
+      ],
+      "failure_reason": "Repeated annual ownership is not independent daily news",
+      "next_discriminating_test": "Build a specific control episode and confound record",
+      "priority": "LH3",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH3",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Distinguish lower unequal-treatment risk from more effective minority votes; test the two potentially opposing channels with actual ownership states.",
+      "long_horizon_data": "Dated controller/affiliate blocks, independent blocks, agreements, succession/control events and effective legal/charter rules."
+    },
+    {
+      "id": "G02",
+      "parent": "GOV",
+      "title": "Minority protection / private benefits",
+      "mechanism_chain": "Governance reform changes extraction risk and relative control value",
+      "expected_sign": "Ambiguous: reduced private control value can narrow, improved equity rights can shift both",
+      "timing": "Reform proposal/decision/effectiveness",
+      "distinguishing_prediction": "Class response tracks actual rights and minority exposure",
+      "nearest_rival": "Unrelated restructuring/earnings or common market shock",
+      "data_fields": [
+        "reform legal text",
+        "announcement clock",
+        "class rights",
+        "ownership"
+      ],
+      "data_availability": "No dated qualified event panel",
+      "status": "untested",
+      "status_scope": "General governance narratives not tested",
+      "evidence_source_ids": [
+        "vote_paper",
+        "rights"
+      ],
+      "evidence_paths": [
+        "https://www.acsu.buffalo.edu/~keechung/JCF.PDF",
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf"
+      ],
+      "failure_reason": "No identified differential class transmission yet",
+      "next_discriminating_test": "Select verified class-relevant reform, not broad event hunt",
+      "priority": "LH3",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH3",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Distinguish lower unequal-treatment risk from more effective minority votes; test the two potentially opposing channels with actual ownership states.",
+      "long_horizon_data": "Dated controller/affiliate blocks, independent blocks, agreements, succession/control events and effective legal/charter rules."
+    },
+    {
+      "id": "G04",
+      "parent": "GOV",
+      "title": "Governance reform: cash protection versus effective minority votes",
+      "mechanism_chain": "Changes in rules/enforcement can reduce unequal treatment while separately changing whether common votes matter",
+      "expected_sign": "Better protection of nonvoting cash claims can narrow; greater common voting effectiveness can widen. Net sign is an empirical question.",
+      "data_fields": [
+        "dated legal/charter implementation",
+        "actual ownership blocks",
+        "minority voting relevance",
+        "credible enforcement/governance evidence",
+        "class rights"
+      ],
+      "distinguishing_prediction": "Persistent relative repricing differs by actual exposure to cash protection and control contestability rather than every governance headline having the same sign",
+      "nearest_rival": "Reforms improve total firm value equally, or investor access/payout changes coincide",
+      "evidence_source_ids": [
+        "long_ck99",
+        "long_od07",
+        "long_pj05"
+      ],
+      "next_discriminating_test": "Qualify relevant historical changes and reconstruct controller/independent blocks; distinguish firm-wide valuation from class-relative effects",
+      "timing": "Quarters and years; 2/5/10-year scenarios",
+      "data_availability": "Source route identified; longitudinal Samsung panel not yet reconstructed",
+      "status": "untested",
+      "status_scope": "Long-horizon mechanism not empirically tested",
+      "evidence_paths": [
+        "docs/regressions/LONG_HORIZON_LITERATURE.md"
+      ],
+      "failure_reason": "No new empirical test in this reorganization",
+      "priority": "LH3",
+      "causal_status": "Hypothesis, not an identified Samsung effect",
+      "historical_priority": "long_horizon",
+      "research_track": "LH3",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Distinguish lower unequal-treatment risk from more effective minority votes; test the two potentially opposing channels with actual ownership states.",
+      "long_horizon_data": "Dated controller/affiliate blocks, independent blocks, agreements, succession/control events and effective legal/charter rules."
+    },
+    {
+      "id": "G03",
+      "parent": "GOV",
+      "title": "Contingent preferred voting rights",
+      "mechanism_chain": "Dividend nonpayment or rights amendment may activate preferred votes",
+      "expected_sign": "If P gains voting relevance, narrowing conditional on significance",
+      "timing": "Trigger/notice/activation dates",
+      "distinguishing_prediction": "Price gap changes with actual rights activation relative to common",
+      "nearest_rival": "Payout news and distress confounding",
+      "data_fields": [
+        "historical contingent terms",
+        "trigger evidence",
+        "notices"
+      ],
+      "data_availability": "2025 prospectus describes provisions; no triggered event verified",
+      "status": "untested",
+      "status_scope": "No blanket no-vote or US seniority assumption",
+      "evidence_source_ids": [
+        "rights"
+      ],
+      "evidence_paths": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf"
+      ],
+      "failure_reason": "Provision existence is not event occurrence",
+      "next_discriminating_test": "Verify an actual historical trigger before empirical test",
+      "priority": "LH3",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH3",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Distinguish lower unequal-treatment risk from more effective minority votes; test the two potentially opposing channels with actual ownership states.",
+      "long_horizon_data": "Dated controller/affiliate blocks, independent blocks, agreements, succession/control events and effective legal/charter rules."
+    },
+    {
+      "id": "P05",
+      "parent": "PAYOUT",
+      "title": "Credibility and delivery of multi-year payout policy",
+      "mechanism_chain": "A durable, implemented cash-return commitment changes expected cash availability and the investor base of the classes",
+      "expected_sign": "Preferred income demand may narrow; direction is conditional on actual allocation and rights, not shared earnings alone",
+      "data_fields": [
+        "policy announcement and effective dates",
+        "promised cash-return framework",
+        "actual class cash distributions",
+        "cash generation and coverage",
+        "policy revisions",
+        "class holder composition"
+      ],
+      "distinguishing_prediction": "A sustained discount regime shift accompanies a credible policy and its delivery after separating common cash news and price-ratio arithmetic",
+      "nearest_rival": "Concurrent buybacks/control changes or a policy announced in response to existing undervaluation",
+      "evidence_source_ids": [
+        "long_bc11",
+        "long_samsung15",
+        "long_samsung17"
+      ],
+      "next_discriminating_test": "Reconstruct dated payout regimes and delivery over years; compare with relative share supply, ownership and peer changes",
+      "timing": "Quarters and years; 2/5/10-year scenarios",
+      "data_availability": "Source route identified; longitudinal Samsung panel not yet reconstructed",
+      "status": "untested",
+      "status_scope": "Long-horizon mechanism not empirically tested",
+      "evidence_paths": [
+        "docs/regressions/LONG_HORIZON_LITERATURE.md"
+      ],
+      "failure_reason": "No new empirical test in this reorganization",
+      "priority": "LH4",
+      "causal_status": "Hypothesis, not an identified Samsung effect",
+      "historical_priority": "long_horizon",
+      "research_track": "LH4",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Compare policy eras and delivery over quarters/years; separate cash received from terminal discount and remove mechanical yield/price-ratio explanations.",
+      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition."
+    },
+    {
+      "id": "P01",
+      "parent": "PAYOUT",
+      "title": "Differential announced cash rights",
+      "mechanism_chain": "Extra preferred cash entitlement improves relative payoff",
+      "expected_sign": "Larger unexpected preferred premium tends to narrow",
+      "timing": "First announcement, not record/payment date",
+      "distinguishing_prediction": "P-versus-C surprise cash change predicts response after mechanical benchmark",
+      "nearest_rival": "Price-derived yield, generic income sentiment",
+      "data_fields": [
+        "first-public dP/dC",
+        "expected payouts",
+        "ex/record/payment",
+        "class terms"
+      ],
+      "data_availability": "Jan31 page has dated DPS; comprehensive expectation/ex panel absent",
+      "status": "untested",
+      "status_scope": "Known annual par premium not a new surprise",
+      "evidence_source_ids": [
+        "rights",
+        "dividend_2025"
+      ],
+      "evidence_paths": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84277/"
+      ],
+      "failure_reason": "Jan31 announcement postdates Dec31 record",
+      "next_discriminating_test": "Build announcement-vintage panel; no backfilled amounts",
+      "priority": "LH4",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "high_source",
+      "research_track": "LH4",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Compare policy eras and delivery over quarters/years; separate cash received from terminal discount and remove mechanical yield/price-ratio explanations.",
+      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition."
+    },
+    {
+      "id": "P02",
+      "parent": "PAYOUT",
+      "title": "Common cash news with differential clientele",
+      "mechanism_chain": "Same-firm cash news moves classes differently through investor allocation",
+      "expected_sign": "No universal sign without class channel",
+      "timing": "Announcement and subsequent flow",
+      "distinguishing_prediction": "Equal-cash news plus actual investor reallocations explains q after ratio arithmetic",
+      "nearest_rival": "Common earnings news or mechanical price drop",
+      "data_fields": [
+        "cash surprise",
+        "announcement clock",
+        "class flows"
+      ],
+      "data_availability": "Sparse issuer decisions available; flows absent",
+      "status": "untested",
+      "status_scope": "Equal nominal payout alone does not imply differential news exposure",
+      "evidence_source_ids": [
+        "policy",
+        "retail_paper"
+      ],
+      "evidence_paths": [
+        "https://www.samsung.com/global/ir/stock-information/shareholder-return/",
+        "https://www.sciencedirect.com/science/article/abs/pii/S1566014117302315"
+      ],
+      "failure_reason": "No expectations/flow measure yet",
+      "next_discriminating_test": "Separate news response from ex-date cash arithmetic using qualified event panel",
+      "priority": "LH4",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "conditional",
+      "research_track": "LH4",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Compare policy eras and delivery over quarters/years; separate cash received from terminal discount and remove mechanical yield/price-ratio explanations.",
+      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition."
+    },
+    {
+      "id": "P04",
+      "parent": "PAYOUT",
+      "title": "Payout uncertainty / noncumulative claim",
+      "mechanism_chain": "Perceived payout cuts and contingent rights change clientele",
+      "expected_sign": "Conditional, not US fixed-dividend insurance sign",
+      "timing": "Unexpected policy changes or missed payouts",
+      "distinguishing_prediction": "Response tracks verified differential protection/rights and holder demand",
+      "nearest_rival": "Broad yield factor or false senior-preferred analogy",
+      "data_fields": [
+        "historical rights",
+        "payout expectations",
+        "shortfall announcements"
+      ],
+      "data_availability": "Current terms verified; shock panel absent",
+      "status": "untested",
+      "status_scope": "Generic senior fixed-coupon preferred interpretation rejected",
+      "evidence_source_ids": [
+        "rights",
+        "policy"
+      ],
+      "evidence_paths": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
+        "https://www.samsung.com/global/ir/stock-information/shareholder-return/"
+      ],
+      "failure_reason": "Common operating risk largely shared",
+      "next_discriminating_test": "Identify an actual dated rights/payout uncertainty shock before fitting",
+      "priority": "LH4",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH4",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Compare policy eras and delivery over quarters/years; separate cash received from terminal discount and remove mechanical yield/price-ratio explanations.",
+      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition."
+    },
+    {
+      "id": "P03",
+      "parent": "PAYOUT",
+      "title": "Known payout calendar versus generic seasonality",
+      "mechanism_chain": "Anticipated ex-date mechanics or trading clientele cluster on known calendar",
+      "expected_sign": "Equal positive cash mechanically widens; investor sign can differ",
+      "timing": "Known ex-date window, not arbitrary month-end",
+      "distinguishing_prediction": "Actual dated ex events outperform generic QE/YE placebo",
+      "nearest_rival": "Quarter-end trading, tax or year-end effects",
+      "data_fields": [
+        "known-at-origin ex-date",
+        "cash entitlement",
+        "exchange sessions"
+      ],
+      "data_availability": "C2generic calendar tested; actual ex-date history not qualified",
+      "status": "unresolved",
+      "status_scope": "C2 no material increment; not an actual dividend null",
+      "evidence_source_ids": [
+        "forecast",
+        "policy"
+      ],
+      "evidence_paths": [
+        [
+          "runs/samsung/prediction_final_15055345",
+          "runs/samsung/continuation_d_15055723",
+          "runs/samsung/continuation_e_15055790",
+          "runs/samsung/continuation_f_15055873",
+          "runs/samsung/continuation_gh_15055999"
+        ],
+        "https://www.samsung.com/global/ir/stock-information/shareholder-return/"
+      ],
+      "failure_reason": "Record dates and current policy not enough",
+      "next_discriminating_test": "Acquire verified ex/calendar and announcement timing; compare C2 placebos",
+      "priority": "LH4",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "high_source",
+      "research_track": "LH4",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Compare policy eras and delivery over quarters/years; separate cash received from terminal discount and remove mechanical yield/price-ratio explanations.",
+      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition."
+    },
+    {
+      "id": "S07",
+      "parent": "SUPPLY",
+      "title": "Credible class unification or rights equalization over years",
+      "mechanism_chain": "An implemented or credible future change in class structure alters expected terminal rights and the buyer base",
+      "expected_sign": "Toward the value of actual post-change entitlements; no automatic one-for-one conversion or zero discount assumption",
+      "data_fields": [
+        "issue-specific rights",
+        "actual proposals/announcements if present",
+        "approval incentives and control blocks",
+        "exchange terms",
+        "effective dates"
+      ],
+      "distinguishing_prediction": "Relative valuation changes with verifiable prospects and terms of equalization, rather than time passing alone",
+      "nearest_rival": "Speculation about a transaction that has no legal or economic path, or simultaneous firm-wide governance news",
+      "evidence_source_ids": [
+        "long_pj05",
+        "long_ck99"
+      ],
+      "next_discriminating_test": "Audit actual Samsung class terms and any documented structural proposal; absent evidence keep as a conditional 5/10-year scenario",
+      "timing": "Quarters and years; 2/5/10-year scenarios",
+      "data_availability": "Source route identified; longitudinal Samsung panel not yet reconstructed",
+      "status": "untested",
+      "status_scope": "Long-horizon mechanism not empirically tested",
+      "evidence_paths": [
+        "docs/regressions/LONG_HORIZON_LITERATURE.md"
+      ],
+      "failure_reason": "No new empirical test in this reorganization",
+      "priority": "LH5",
+      "causal_status": "Hypothesis, not an identified Samsung effect",
+      "historical_priority": "long_horizon",
+      "research_track": "LH5",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Audit a credible legal/economic convergence route before assigning it value; distinguish an actual change from a hypothetical scenario.",
+      "long_horizon_data": "Historical class terms, conversion/unification proposals or implementation if any, receipt ratios/venues, access and ownership restrictions."
+    },
+    {
+      "id": "X01",
+      "parent": "CROSS",
+      "title": "Same-class GDR/local parity",
+      "mechanism_chain": "Depositary conversion/arbitrage links same economic class across venues",
+      "expected_sign": "Local relative deviation may correct; discount sign depends class",
+      "timing": "Tradable overlapping/asynchronous sessions",
+      "distinguishing_prediction": "FX- and ratio-correct same-class basis predicts subsequent local gap",
+      "nearest_rival": "Unverified receipt ratio, fees, stale foreign close",
+      "data_fields": [
+        "dated GDR ratios",
+        "daily local/GDR prices",
+        "FX",
+        "fees",
+        "receipt clocks"
+      ],
+      "data_availability": "Current public quotes; full free historical matched panel unqualified",
+      "status": "untested",
+      "status_scope": "Current25-share ratio cannot be backfilled before2018",
+      "evidence_source_ids": [
+        "gdr_split",
+        "gdr_move",
+        "gdr_monthly"
+      ],
+      "evidence_paths": [
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.71265/",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84295/",
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2024_Half_Interim_Report.pdf"
+      ],
+      "failure_reason": "Preferred venue changes2025; historical bulk licensing unresolved",
+      "next_discriminating_test": "Qualify daily history/rights/venue/ratio before parity series",
+      "priority": "LH5",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "source_dependent",
+      "research_track": "LH5",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Audit a credible legal/economic convergence route before assigning it value; distinguish an actual change from a hypothetical scenario.",
+      "long_horizon_data": "Historical class terms, conversion/unification proposals or implementation if any, receipt ratios/venues, access and ownership restrictions."
+    },
+    {
+      "id": "X02",
+      "parent": "CROSS",
+      "title": "Cross-market price discovery",
+      "mechanism_chain": "London/Luxembourg trade after Korea conveys information before next Korea close",
+      "expected_sign": "Lagged class-specific foreign signal can predict local catch-up",
+      "timing": "Foreign close strictly before Korean origin",
+      "distinguishing_prediction": "Earlier foreign information adds after local past moves and FX",
+      "nearest_rival": "Same shared news or same-date future foreign prices",
+      "data_fields": [
+        "daily timestamps",
+        "class GDR prices/volumes",
+        "FX at comparable clock"
+      ],
+      "data_availability": "Issuer monthly summaries accessible only after period",
+      "status": "untested",
+      "status_scope": "Monthly max/mean is not an origin-safe daily close",
+      "evidence_source_ids": [
+        "gdr_monthly",
+        "gdr_move"
+      ],
+      "evidence_paths": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2024_Half_Interim_Report.pdf",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84295/"
+      ],
+      "failure_reason": "Daily historical public extract not established",
+      "next_discriminating_test": "Use actual receipt timestamps and former venue history; no monthly-stat backfill",
+      "priority": "LH5",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "source_dependent",
+      "research_track": "LH5",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Audit a credible legal/economic convergence route before assigning it value; distinguish an actual change from a hypothetical scenario.",
+      "long_horizon_data": "Historical class terms, conversion/unification proposals or implementation if any, receipt ratios/venues, access and ownership restrictions."
+    },
+    {
+      "id": "X03",
+      "parent": "CROSS",
+      "title": "Depositary friction / market segmentation",
+      "mechanism_chain": "Fees, creation/cancellation limits and venue transfer impede parity",
+      "expected_sign": "Persistent basis; q sign class dependent",
+      "timing": "Fee/rule change or venue migration",
+      "distinguishing_prediction": "Basis changes coincide with dated conversion friction rather than local fundamentals",
+      "nearest_rival": "Liquidity/FX or wrong receipt ratio",
+      "data_fields": [
+        "GDR fees/convertibility",
+        "custody rules",
+        "migration times"
+      ],
+      "data_availability": "Issuer prospectus and2025 migration public; historical details partial",
+      "status": "untested",
+      "status_scope": "Migration itself is not an exogenous class-value shock",
+      "evidence_source_ids": [
+        "rights",
+        "gdr_move"
+      ],
+      "evidence_paths": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84295/"
+      ],
+      "failure_reason": "No cost/executable arbitrage model",
+      "next_discriminating_test": "Audit one verified migration/rule event with matched prices",
+      "priority": "LH5",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "conditional",
+      "research_track": "LH5",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Audit a credible legal/economic convergence route before assigning it value; distinguish an actual change from a hypothetical scenario.",
+      "long_horizon_data": "Historical class terms, conversion/unification proposals or implementation if any, receipt ratios/venues, access and ownership restrictions."
     },
     {
       "id": "L02",
@@ -685,8 +1140,13 @@
       ],
       "failure_reason": "No licensed public fee source qualified",
       "next_discriminating_test": "Acquire lending terms; preserve missing inventory as missing, not zero",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH6",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH6",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Evaluate persistence and the cost/risk of corrective positions alongside each leading mechanism; a short-sale ban alone is not a measured borrowing cost.",
+      "long_horizon_data": "Lending/borrow availability and fees, applicable short-sale rules, funding conditions, holding costs and the existence or absence of a terminal event."
     },
     {
       "id": "L03",
@@ -715,8 +1175,13 @@
       ],
       "failure_reason": "Do not invent ban dates or treat market-wide rule as class-specific fee",
       "next_discriminating_test": "Qualify a policy episode and both class eligibility; use confound/lead checks",
-      "priority": "conditional",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH6",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "conditional",
+      "research_track": "LH6",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Evaluate persistence and the cost/risk of corrective positions alongside each leading mechanism; a short-sale ban alone is not a measured borrowing cost.",
+      "long_horizon_data": "Lending/borrow availability and fees, applicable short-sale rules, funding conditions, holding costs and the existence or absence of a terminal event."
     },
     {
       "id": "L04",
@@ -753,8 +1218,13 @@
       ],
       "failure_reason": "No direct funding exposure for pair",
       "next_discriminating_test": "Add independently measured constraint state before new interaction",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH6",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH6",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Evaluate persistence and the cost/risk of corrective positions alongside each leading mechanism; a short-sale ban alone is not a measured borrowing cost.",
+      "long_horizon_data": "Lending/borrow availability and fees, applicable short-sale rules, funding conditions, holding costs and the existence or absence of a terminal event."
     },
     {
       "id": "L05",
@@ -784,471 +1254,13 @@
       ],
       "failure_reason": "2016 start, corrections and2025 venue combination prevent blind stitching",
       "next_discriminating_test": "Obtain lawful timestamp-qualified export; lag by actual reporting calendar",
-      "priority": "high_information_access",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "P01",
-      "parent": "PAYOUT",
-      "title": "Differential announced cash rights",
-      "mechanism_chain": "Extra preferred cash entitlement improves relative payoff",
-      "expected_sign": "Larger unexpected preferred premium tends to narrow",
-      "timing": "First announcement, not record/payment date",
-      "distinguishing_prediction": "P-versus-C surprise cash change predicts response after mechanical benchmark",
-      "nearest_rival": "Price-derived yield, generic income sentiment",
-      "data_fields": [
-        "first-public dP/dC",
-        "expected payouts",
-        "ex/record/payment",
-        "class terms"
-      ],
-      "data_availability": "Jan31 page has dated DPS; comprehensive expectation/ex panel absent",
-      "status": "untested",
-      "status_scope": "Known annual par premium not a new surprise",
-      "evidence_source_ids": [
-        "rights",
-        "dividend_2025"
-      ],
-      "evidence_paths": [
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84277/"
-      ],
-      "failure_reason": "Jan31 announcement postdates Dec31 record",
-      "next_discriminating_test": "Build announcement-vintage panel; no backfilled amounts",
-      "priority": "high_source",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "P02",
-      "parent": "PAYOUT",
-      "title": "Common cash news with differential clientele",
-      "mechanism_chain": "Same-firm cash news moves classes differently through investor allocation",
-      "expected_sign": "No universal sign without class channel",
-      "timing": "Announcement and subsequent flow",
-      "distinguishing_prediction": "Equal-cash news plus actual investor reallocations explains q after ratio arithmetic",
-      "nearest_rival": "Common earnings news or mechanical price drop",
-      "data_fields": [
-        "cash surprise",
-        "announcement clock",
-        "class flows"
-      ],
-      "data_availability": "Sparse issuer decisions available; flows absent",
-      "status": "untested",
-      "status_scope": "Equal nominal payout alone does not imply differential news exposure",
-      "evidence_source_ids": [
-        "policy",
-        "retail_paper"
-      ],
-      "evidence_paths": [
-        "https://www.samsung.com/global/ir/stock-information/shareholder-return/",
-        "https://www.sciencedirect.com/science/article/abs/pii/S1566014117302315"
-      ],
-      "failure_reason": "No expectations/flow measure yet",
-      "next_discriminating_test": "Separate news response from ex-date cash arithmetic using qualified event panel",
-      "priority": "conditional",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "P03",
-      "parent": "PAYOUT",
-      "title": "Known payout calendar versus generic seasonality",
-      "mechanism_chain": "Anticipated ex-date mechanics or trading clientele cluster on known calendar",
-      "expected_sign": "Equal positive cash mechanically widens; investor sign can differ",
-      "timing": "Known ex-date window, not arbitrary month-end",
-      "distinguishing_prediction": "Actual dated ex events outperform generic QE/YE placebo",
-      "nearest_rival": "Quarter-end trading, tax or year-end effects",
-      "data_fields": [
-        "known-at-origin ex-date",
-        "cash entitlement",
-        "exchange sessions"
-      ],
-      "data_availability": "C2generic calendar tested; actual ex-date history not qualified",
-      "status": "unresolved",
-      "status_scope": "C2 no material increment; not an actual dividend null",
-      "evidence_source_ids": [
-        "forecast",
-        "policy"
-      ],
-      "evidence_paths": [
-        [
-          "runs/samsung/prediction_final_15055345",
-          "runs/samsung/continuation_d_15055723",
-          "runs/samsung/continuation_e_15055790",
-          "runs/samsung/continuation_f_15055873",
-          "runs/samsung/continuation_gh_15055999"
-        ],
-        "https://www.samsung.com/global/ir/stock-information/shareholder-return/"
-      ],
-      "failure_reason": "Record dates and current policy not enough",
-      "next_discriminating_test": "Acquire verified ex/calendar and announcement timing; compare C2 placebos",
-      "priority": "high_source",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "P04",
-      "parent": "PAYOUT",
-      "title": "Payout uncertainty / noncumulative claim",
-      "mechanism_chain": "Perceived payout cuts and contingent rights change clientele",
-      "expected_sign": "Conditional, not US fixed-dividend insurance sign",
-      "timing": "Unexpected policy changes or missed payouts",
-      "distinguishing_prediction": "Response tracks verified differential protection/rights and holder demand",
-      "nearest_rival": "Broad yield factor or false senior-preferred analogy",
-      "data_fields": [
-        "historical rights",
-        "payout expectations",
-        "shortfall announcements"
-      ],
-      "data_availability": "Current terms verified; shock panel absent",
-      "status": "untested",
-      "status_scope": "Generic senior fixed-coupon preferred interpretation rejected",
-      "evidence_source_ids": [
-        "rights",
-        "policy"
-      ],
-      "evidence_paths": [
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
-        "https://www.samsung.com/global/ir/stock-information/shareholder-return/"
-      ],
-      "failure_reason": "Common operating risk largely shared",
-      "next_discriminating_test": "Identify an actual dated rights/payout uncertainty shock before fitting",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "S01",
-      "parent": "SUPPLY",
-      "title": "Relative buyback authorization dose",
-      "mechanism_chain": "Announced class demand/support differs by fraction of available class shares",
-      "expected_sign": "Preferred-relative dose can narrow; equal issued fractions need not differ",
-      "timing": "First public authorization, not daily execution",
-      "distinguishing_prediction": "Response varies with P-minus-C target/float and surprise",
-      "nearest_rival": "Signaling, earnings news, equal fractional programs",
-      "data_fields": [
-        "class targets/KRW budget",
-        "date",
-        "prior issued/treasury/free float"
-      ],
-      "data_availability": "Credential-free dated issuer pages qualified; float absent",
-      "status": "untested",
-      "status_scope": "Initial target fractions nearly equal; issued denominator not float",
-      "evidence_source_ids": [
-        "buyback_2024",
-        "buyback_2025",
-        "listing"
-      ],
-      "evidence_paths": [
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84235/",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84416/",
-        "https://www.samsung.com/global/ir/stock-information/listing-Info/"
-      ],
-      "failure_reason": "Small connected programs; target quantities can be price-derived estimates",
-      "next_discriminating_test": "Build issuer manifest and compute exact/rounded-issued dose before sparse event description",
-      "priority": "executable_public",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "S02",
-      "parent": "SUPPLY",
-      "title": "Actual relative repurchase execution",
-      "mechanism_chain": "Issuer purchases remove tradable shares/absorb selling and support class price",
-      "expected_sign": "Preferred-relative execution can narrow, offset by lost liquidity",
-      "timing": "Daily execution if known; aggregate result only after report",
-      "distinguishing_prediction": "Actual dated class execution differs from authorization and predicts later pressure",
-      "nearest_rival": "Informed buyback timing, price-induced realized share count",
-      "data_fields": [
-        "daily contracts/shares",
-        "reported_at",
-        "float/turnover denominator"
-      ],
-      "data_availability": "Aggregate executions accessible; no daily allocation",
-      "status": "untested",
-      "status_scope": "Oct2 result is not July daily information",
-      "evidence_source_ids": [
-        "first_result",
-        "result_2025"
-      ],
-      "evidence_paths": [
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84305/",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84465/"
-      ],
-      "failure_reason": "No daily execution panel or historical float",
-      "next_discriminating_test": "Record aggregate window/result publication separately; never spread total equally across days",
-      "priority": "executable_public_aggregate",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "S03",
-      "parent": "SUPPLY",
-      "title": "Treasury cancellation versus market float",
-      "mechanism_chain": "Retiring already-held treasury alters issued count but is not a new market purchase",
-      "expected_sign": "No automatic new demand/float withdrawal; signaling/right effects conditional",
-      "timing": "Decision versus actual cancellation distinct",
-      "distinguishing_prediction": "Cancellation response differs from purchase period; outstanding and treasury reconcile",
-      "nearest_rival": "Double-counted buyback pressure or changing denominators",
-      "data_fields": [
-        "exact class cancellation",
-        "issued/treasury before/after",
-        "decision/effective dates"
-      ],
-      "data_availability": "Feb18 decision/exact issued accessible; execution confirmation later",
-      "status": "untested",
-      "status_scope": "One linked program, not independent repurchase event",
-      "evidence_source_ids": [
-        "cancel",
-        "first_result"
-      ],
-      "evidence_paths": [
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84318/",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84305/"
-      ],
-      "failure_reason": "Treasury already outside tradable float; effective date subject change",
-      "next_discriminating_test": "Reconcile issuer balance sheet and label scheduled versus confirmed dates",
-      "priority": "executable_public",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "S04",
-      "parent": "SUPPLY",
-      "title": "Employee treasury grants / disposal",
-      "mechanism_chain": "Common-only grants or treasury disposal can increase potential market supply and change incentives",
-      "expected_sign": "Common-relative selling can narrow q; lockups/incentives can offset",
-      "timing": "Grant announcement, transfer, unlock, sale separate",
-      "distinguishing_prediction": "Class-specific transferable supply, not total compensation value, aligns with q",
-      "nearest_rival": "Employee retention news, locked shares or common business news",
-      "data_fields": [
-        "class quantities",
-        "decision/transfer/unlock dates",
-        "sale restrictions"
-      ],
-      "data_availability": "Issuer public policies/actions accessible, dated full panel incomplete",
-      "status": "untested",
-      "status_scope": "Grant is not automatically immediate free float/selling",
-      "evidence_source_ids": [
-        "policy",
-        "buyback_2025"
-      ],
-      "evidence_paths": [
-        "https://www.samsung.com/global/ir/stock-information/shareholder-return/",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84416/"
-      ],
-      "failure_reason": "No assumed immediate sale or unannounced future grants",
-      "next_discriminating_test": "Build dated grants with lockups and class quantities; compare with acquisition/cancellation",
-      "priority": "high_source",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "S05",
-      "parent": "SUPPLY",
-      "title": "Class issuance / float and conversion rights",
-      "mechanism_chain": "New class shares or transfer restrictions change relative supply and entitlements",
-      "expected_sign": "Class-relative dilution/support sign depends on price and rights",
-      "timing": "Authorization/subscription/listing dates",
-      "distinguishing_prediction": "Verified class-specific issuance creates distinct supply shock",
-      "nearest_rival": "Common equity-price changes mistaken for debt/equity or issuance",
-      "data_fields": [
-        "new shares",
-        "subscription terms",
-        "free float",
-        "conversion rules"
-      ],
-      "data_availability": "No qualified dated panel; current issued history partial",
-      "status": "untested",
-      "status_scope": "No assumption preferred converts freely into common",
-      "evidence_source_ids": [
-        "listing",
-        "rights"
-      ],
-      "evidence_paths": [
-        "https://www.samsung.com/global/ir/stock-information/listing-Info/",
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf"
-      ],
-      "failure_reason": "Market-value D/E changes do not establish issuance",
-      "next_discriminating_test": "Identify actual issuer event before feature construction",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "G01",
-      "parent": "GOV",
-      "title": "Value of common votes / control contest",
-      "mechanism_chain": "More pivotal votes raise common control-related value",
-      "expected_sign": "Common voting value rising tends to widen",
-      "timing": "Control event announcement; may persist",
-      "distinguishing_prediction": "Gap responds around actual voting contest and ownership pivotality",
-      "nearest_rival": "Liquidity/flow or cash-right difference",
-      "data_fields": [
-        "dated blocks/affiliates",
-        "voting agreements",
-        "control events"
-      ],
-      "data_availability": "Original research and current structure; historical panel absent",
-      "status": "untested",
-      "status_scope": "Discount is not pure value of vote",
-      "evidence_source_ids": [
-        "vote_paper",
-        "rights"
-      ],
-      "evidence_paths": [
-        "https://www.acsu.buffalo.edu/~keechung/JCF.PDF",
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf"
-      ],
-      "failure_reason": "Repeated annual ownership is not independent daily news",
-      "next_discriminating_test": "Build a specific control episode and confound record",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "G02",
-      "parent": "GOV",
-      "title": "Minority protection / private benefits",
-      "mechanism_chain": "Governance reform changes extraction risk and relative control value",
-      "expected_sign": "Ambiguous: reduced private control value can narrow, improved equity rights can shift both",
-      "timing": "Reform proposal/decision/effectiveness",
-      "distinguishing_prediction": "Class response tracks actual rights and minority exposure",
-      "nearest_rival": "Unrelated restructuring/earnings or common market shock",
-      "data_fields": [
-        "reform legal text",
-        "announcement clock",
-        "class rights",
-        "ownership"
-      ],
-      "data_availability": "No dated qualified event panel",
-      "status": "untested",
-      "status_scope": "General governance narratives not tested",
-      "evidence_source_ids": [
-        "vote_paper",
-        "rights"
-      ],
-      "evidence_paths": [
-        "https://www.acsu.buffalo.edu/~keechung/JCF.PDF",
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf"
-      ],
-      "failure_reason": "No identified differential class transmission yet",
-      "next_discriminating_test": "Select verified class-relevant reform, not broad event hunt",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "G03",
-      "parent": "GOV",
-      "title": "Contingent preferred voting rights",
-      "mechanism_chain": "Dividend nonpayment or rights amendment may activate preferred votes",
-      "expected_sign": "If P gains voting relevance, narrowing conditional on significance",
-      "timing": "Trigger/notice/activation dates",
-      "distinguishing_prediction": "Price gap changes with actual rights activation relative to common",
-      "nearest_rival": "Payout news and distress confounding",
-      "data_fields": [
-        "historical contingent terms",
-        "trigger evidence",
-        "notices"
-      ],
-      "data_availability": "2025 prospectus describes provisions; no triggered event verified",
-      "status": "untested",
-      "status_scope": "No blanket no-vote or US seniority assumption",
-      "evidence_source_ids": [
-        "rights"
-      ],
-      "evidence_paths": [
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf"
-      ],
-      "failure_reason": "Provision existence is not event occurrence",
-      "next_discriminating_test": "Verify an actual historical trigger before empirical test",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "X01",
-      "parent": "CROSS",
-      "title": "Same-class GDR/local parity",
-      "mechanism_chain": "Depositary conversion/arbitrage links same economic class across venues",
-      "expected_sign": "Local relative deviation may correct; discount sign depends class",
-      "timing": "Tradable overlapping/asynchronous sessions",
-      "distinguishing_prediction": "FX- and ratio-correct same-class basis predicts subsequent local gap",
-      "nearest_rival": "Unverified receipt ratio, fees, stale foreign close",
-      "data_fields": [
-        "dated GDR ratios",
-        "daily local/GDR prices",
-        "FX",
-        "fees",
-        "receipt clocks"
-      ],
-      "data_availability": "Current public quotes; full free historical matched panel unqualified",
-      "status": "untested",
-      "status_scope": "Current25-share ratio cannot be backfilled before2018",
-      "evidence_source_ids": [
-        "gdr_split",
-        "gdr_move",
-        "gdr_monthly"
-      ],
-      "evidence_paths": [
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.71265/",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84295/",
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2024_Half_Interim_Report.pdf"
-      ],
-      "failure_reason": "Preferred venue changes2025; historical bulk licensing unresolved",
-      "next_discriminating_test": "Qualify daily history/rights/venue/ratio before parity series",
-      "priority": "source_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "X02",
-      "parent": "CROSS",
-      "title": "Cross-market price discovery",
-      "mechanism_chain": "London/Luxembourg trade after Korea conveys information before next Korea close",
-      "expected_sign": "Lagged class-specific foreign signal can predict local catch-up",
-      "timing": "Foreign close strictly before Korean origin",
-      "distinguishing_prediction": "Earlier foreign information adds after local past moves and FX",
-      "nearest_rival": "Same shared news or same-date future foreign prices",
-      "data_fields": [
-        "daily timestamps",
-        "class GDR prices/volumes",
-        "FX at comparable clock"
-      ],
-      "data_availability": "Issuer monthly summaries accessible only after period",
-      "status": "untested",
-      "status_scope": "Monthly max/mean is not an origin-safe daily close",
-      "evidence_source_ids": [
-        "gdr_monthly",
-        "gdr_move"
-      ],
-      "evidence_paths": [
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2024_Half_Interim_Report.pdf",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84295/"
-      ],
-      "failure_reason": "Daily historical public extract not established",
-      "next_discriminating_test": "Use actual receipt timestamps and former venue history; no monthly-stat backfill",
-      "priority": "source_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
-    },
-    {
-      "id": "X03",
-      "parent": "CROSS",
-      "title": "Depositary friction / market segmentation",
-      "mechanism_chain": "Fees, creation/cancellation limits and venue transfer impede parity",
-      "expected_sign": "Persistent basis; q sign class dependent",
-      "timing": "Fee/rule change or venue migration",
-      "distinguishing_prediction": "Basis changes coincide with dated conversion friction rather than local fundamentals",
-      "nearest_rival": "Liquidity/FX or wrong receipt ratio",
-      "data_fields": [
-        "GDR fees/convertibility",
-        "custody rules",
-        "migration times"
-      ],
-      "data_availability": "Issuer prospectus and2025 migration public; historical details partial",
-      "status": "untested",
-      "status_scope": "Migration itself is not an exogenous class-value shock",
-      "evidence_source_ids": [
-        "rights",
-        "gdr_move"
-      ],
-      "evidence_paths": [
-        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
-        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84295/"
-      ],
-      "failure_reason": "No cost/executable arbitrage model",
-      "next_discriminating_test": "Audit one verified migration/rule event with matched prices",
-      "priority": "conditional",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH6",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "high_information_access",
+      "research_track": "LH6",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Evaluate persistence and the cost/risk of corrective positions alongside each leading mechanism; a short-sale ban alone is not a measured borrowing cost.",
+      "long_horizon_data": "Lending/borrow availability and fees, applicable short-sale rules, funding conditions, holding costs and the existence or absence of a terminal event."
     },
     {
       "id": "R01",
@@ -1284,8 +1296,13 @@
       ],
       "failure_reason": "Factor names are not Samsung accounting or sentiment shocks",
       "next_discriminating_test": "Acquire class channel/qualified vintages before expanding risk features",
-      "priority": "conditional",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH7",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "conditional",
+      "research_track": "LH7",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Require a differential-class channel; compare complete economic cycles and peers rather than re-labeling US style returns as Samsung fundamentals.",
+      "long_horizon_data": "Quarterly cash generation/capital spending, industry state, rates/FX, and observed class-specific transmission variables."
     },
     {
       "id": "R02",
@@ -1320,8 +1337,13 @@
       ],
       "failure_reason": "Unverified Americas revenue/supply percentages are not inputs",
       "next_discriminating_test": "Choose known news and class-channel measurement before model",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH7",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH7",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Require a differential-class channel; compare complete economic cycles and peers rather than re-labeling US style returns as Samsung fundamentals.",
+      "long_horizon_data": "Quarterly cash generation/capital spending, industry state, rates/FX, and observed class-specific transmission variables."
     },
     {
       "id": "R03",
@@ -1358,8 +1380,13 @@
       ],
       "failure_reason": "Publication hiatus/revisions; latest historical values not PIT",
       "next_discriminating_test": "Use qualified actual flow; never shift NY noon value as if public at Korean close",
-      "priority": "conditional",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH7",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "conditional",
+      "research_track": "LH7",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Require a differential-class channel; compare complete economic cycles and peers rather than re-labeling US style returns as Samsung fundamentals.",
+      "long_horizon_data": "Quarterly cash generation/capital spending, industry state, rates/FX, and observed class-specific transmission variables."
     },
     {
       "id": "R04",
@@ -1396,8 +1423,13 @@
       ],
       "failure_reason": "No universal senior fixed-dividend duration story",
       "next_discriminating_test": "Qualify class clientele/funding channel before more rate transformations",
-      "priority": "conditional",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH7",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "conditional",
+      "research_track": "LH7",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Require a differential-class channel; compare complete economic cycles and peers rather than re-labeling US style returns as Samsung fundamentals.",
+      "long_horizon_data": "Quarterly cash generation/capital spending, industry state, rates/FX, and observed class-specific transmission variables."
     },
     {
       "id": "R05",
@@ -1434,8 +1466,384 @@
       ],
       "failure_reason": "Few crises and adaptive subperiod selection limit inference",
       "next_discriminating_test": "Predeclare stress definition only with observed differential channel and enough regimes",
-      "priority": "data_dependent",
-      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract"
+      "priority": "LH7",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "LH7",
+      "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
+      "long_horizon_next_action": "Require a differential-class channel; compare complete economic cycles and peers rather than re-labeling US style returns as Samsung fundamentals.",
+      "long_horizon_data": "Quarterly cash generation/capital spending, industry state, rates/FX, and observed class-specific transmission variables."
+    },
+    {
+      "id": "M01",
+      "parent": "MEASURE",
+      "title": "Invalid or carried quote / missing calendar",
+      "mechanism_chain": "Ineligible quote or missing true session creates false relative change",
+      "expected_sign": "Either sign, often followed by apparent reversal",
+      "timing": "Daily endpoints",
+      "distinguishing_prediction": "Effect concentrates in source-status/calendar defects and disappears under documented valid masks",
+      "nearest_rival": "Valid unusual move or actual market suspension",
+      "data_fields": [
+        "PRCSTD",
+        "QUNIT",
+        "KRX sessions",
+        "quote receipt"
+      ],
+      "data_availability": "Source status/masks present; independent complete calendar absent",
+      "status": "unresolved",
+      "status_scope": "Six invalid rows handled cheaply; calendar limitation persists",
+      "evidence_source_ids": [
+        "prices"
+      ],
+      "evidence_paths": [
+        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z"
+      ],
+      "failure_reason": "Do not delete valid extremes or infer every missing weekday is a session",
+      "next_discriminating_test": "Acquire independent sessions; keep raw and omit affected labels without bridging",
+      "priority": "FOUNDATION",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "audit",
+      "research_track": "FOUNDATION",
+      "long_horizon_status": "supporting measurement question",
+      "long_horizon_next_action": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity.",
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+    },
+    {
+      "id": "M02",
+      "parent": "MEASURE",
+      "title": "Class mapping / split / units",
+      "mechanism_chain": "Wrong issue, scale or unequal corporate action creates artificial premium",
+      "expected_sign": "Either; simultaneous equal split cancels q",
+      "timing": "Action boundary",
+      "distinguishing_prediction": "Identity and exact q/return decomposition hold; raw leg-return split removed",
+      "nearest_rival": "Real class repricing",
+      "data_fields": [
+        "ISIN/iid/ticker",
+        "KRW/QUNIT",
+        "split ratio/action date"
+      ],
+      "data_availability": "Both class50:1 event2018-05-04 verified; full action taxonomy incomplete",
+      "status": "supported",
+      "status_scope": "Verified mapping/current units and equal split identity; not complete historical action audit",
+      "evidence_source_ids": [
+        "prices",
+        "gdr_split"
+      ],
+      "evidence_paths": [
+        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.71265/"
+      ],
+      "failure_reason": "Known event does not license an unverified full adjustment formula",
+      "next_discriminating_test": "Mask split transitions in raw class-return features; never invent adjusted total returns",
+      "priority": "FOUNDATION",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "audit",
+      "research_track": "FOUNDATION",
+      "long_horizon_status": "documented foundation; historical completeness still scoped",
+      "long_horizon_next_action": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity.",
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+    },
+    {
+      "id": "M03",
+      "parent": "MEASURE",
+      "title": "Equal-cash ex-dividend ratio arithmetic",
+      "mechanism_chain": "Equal cash subtraction preserves absolute gap but lowers common denominator",
+      "expected_sign": "Widening when C>P and equal positive cash",
+      "timing": "Ex-dividend price adjustment",
+      "distinguishing_prediction": "Exact counterfactual q change matches accounting identity even with no investor response",
+      "nearest_rival": "Clientele response or announcement surprise",
+      "data_fields": [
+        "C/P pre-event",
+        "dC/dP",
+        "verified ex-date",
+        "record/payment distinct"
+      ],
+      "data_availability": "Cash amounts/page dates accessible; ex-date panel not yet qualified",
+      "status": "supported",
+      "status_scope": "Mathematical identity only; empirical dividend mechanism untested",
+      "evidence_source_ids": [
+        "prices",
+        "dividend_2025"
+      ],
+      "evidence_paths": [
+        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
+        "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84277/"
+      ],
+      "failure_reason": "Final announced amount after record date cannot be a past predictor",
+      "next_discriminating_test": "Validate symbolic/synthetic identity; qualify dated cash/ex events before observed attribution",
+      "priority": "FOUNDATION",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "high_source",
+      "research_track": "FOUNDATION",
+      "long_horizon_status": "documented foundation; historical completeness still scoped",
+      "long_horizon_next_action": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity.",
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+    },
+    {
+      "id": "M04",
+      "parent": "MEASURE",
+      "title": "Asynchronous class price discovery",
+      "mechanism_chain": "Common incorporates news first, preferred adjusts later",
+      "expected_sign": "Common-led widening then narrowing; signs reverse for declines",
+      "timing": "Close t to next sessions",
+      "distinguishing_prediction": "At same d1, common-led versus preferred-led move predicts different subsequent class catch-up",
+      "nearest_rival": "Shared market beta/news or temporary preferred sell pressure",
+      "data_fields": [
+        "matched class closes/returns",
+        "quote timestamps",
+        "volume",
+        "split mask"
+      ],
+      "data_availability": "Raw classes present; exact trade clocks absent",
+      "status": "untested",
+      "status_scope": "Feasible conditional price-leg discrimination, not proof of staleness",
+      "evidence_source_ids": [
+        "prices",
+        "reversal"
+      ],
+      "evidence_paths": [
+        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
+        "https://users.nber.org/~confer/2004/mmsu04/goyal.pdf"
+      ],
+      "failure_reason": "Both legs plus d1 are constrained; unverified same-auction execution forbidden",
+      "next_discriminating_test": "Predeclare one independent common-move signal beside d1; audit algebraic redundancy first",
+      "priority": "FOUNDATION",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "feasible_existing",
+      "research_track": "FOUNDATION",
+      "long_horizon_status": "supporting measurement question",
+      "long_horizon_next_action": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity.",
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+    },
+    {
+      "id": "M05",
+      "parent": "MEASURE",
+      "title": "Closing-auction / tick / execution pressure",
+      "mechanism_chain": "Auction imbalance or relative price discreteness moves reported closes temporarily",
+      "expected_sign": "Temporary widening/narrowing, next-open reversal",
+      "timing": "Close-to-open rather than full daily",
+      "distinguishing_prediction": "Gap signal stronger in auction/last-trade than synchronized midquotes",
+      "nearest_rival": "Information arrival and liquidity compensation",
+      "data_fields": [
+        "auction imbalance",
+        "bid/ask",
+        "last-trade timestamps",
+        "tick rules"
+      ],
+      "data_availability": "Not in current raw close/high-low extract",
+      "status": "untested",
+      "status_scope": "Cannot infer from unchanged price or daily range alone",
+      "evidence_source_ids": [
+        "prices",
+        "liquidity"
+      ],
+      "evidence_paths": [
+        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
+        "https://www.acsu.buffalo.edu/~keechung/MGF743/Readings/M1%20Amihud%20Mendelson%201986%20JFE%20Asset%20pricing.pdf"
+      ],
+      "failure_reason": "No synchronized executable quote panel",
+      "next_discriminating_test": "Qualify auction/quote data and compare executable mid/close effects",
+      "priority": "FOUNDATION",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "data_dependent",
+      "research_track": "FOUNDATION",
+      "long_horizon_status": "supporting measurement question",
+      "long_horizon_next_action": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity.",
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+    },
+    {
+      "id": "M06",
+      "parent": "MEASURE",
+      "title": "Actual preferred contractual rights",
+      "mechanism_chain": "Nonvoting noncumulative cash premium and equal liquidation rank shape claims",
+      "expected_sign": "Depends on cash/vote state, not generic US senior fixed coupon",
+      "timing": "Rights changes and payout shortfalls",
+      "distinguishing_prediction": "Interpret events using historical issue terms, not US preferred-stock assumptions",
+      "nearest_rival": "Incorrect seniority/guaranteed dividend narrative",
+      "data_fields": [
+        "dated articles/prospectus",
+        "par value",
+        "contingent voting provisions"
+      ],
+      "data_availability": "2024/25 issuer terms available; history incomplete",
+      "status": "supported",
+      "status_scope": "Documented contemporary rights only",
+      "evidence_source_ids": [
+        "rights",
+        "listing"
+      ],
+      "evidence_paths": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/Samsung_Final_Prospectus_20250210.pdf",
+        "https://www.samsung.com/global/ir/stock-information/listing-Info/"
+      ],
+      "failure_reason": "Current terms cannot automatically cover2005",
+      "next_discriminating_test": "Version historical class terms at each event; retain unknowns",
+      "priority": "FOUNDATION",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "audit",
+      "research_track": "FOUNDATION",
+      "long_horizon_status": "documented foundation; historical completeness still scoped",
+      "long_horizon_next_action": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity.",
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+    },
+    {
+      "id": "B01",
+      "parent": "BENCH",
+      "title": "Persistence / no predictable change",
+      "mechanism_chain": "Persistent discount makes zero-change a competitive forecast",
+      "expected_sign": "Zero expected change",
+      "timing": "One to20proxy sessions",
+      "distinguishing_prediction": "Challenger reduces same-origin loss beyond persistence, not only in-sample fit",
+      "nearest_rival": "Weak changing signal and forecast estimation noise",
+      "data_fields": [
+        "q",
+        "origin/target dates",
+        "forecast hashes"
+      ],
+      "data_availability": "Existing qualified conditional history",
+      "status": "supported",
+      "status_scope": "Competitive benchmark; not evidence every mechanism is absent",
+      "evidence_source_ids": [
+        "prices",
+        "forecast"
+      ],
+      "evidence_paths": [
+        "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z",
+        [
+          "runs/samsung/prediction_final_15055345",
+          "runs/samsung/continuation_d_15055723",
+          "runs/samsung/continuation_e_15055790",
+          "runs/samsung/continuation_f_15055873",
+          "runs/samsung/continuation_gh_15055999"
+        ]
+      ],
+      "failure_reason": "Original H1 primary gain tiny/uncertain; benchmark retained",
+      "next_discriminating_test": "Keep Z0 in every branch and future cohort",
+      "priority": "ARCHIVE",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "reference",
+      "research_track": "ARCHIVE",
+      "long_horizon_status": "archived short-horizon finding; no long-run inference",
+      "long_horizon_next_action": "Do not resume daily reversal/model selection under the active long-horizon objective. Preserve findings within their original scope.",
+      "long_horizon_data": "Preserved historical forecasts, reviews and run records."
+    },
+    {
+      "id": "B02",
+      "parent": "BENCH",
+      "title": "Global or rolling equilibrium adjustment",
+      "mechanism_chain": "A stable discount equilibrium would pull extreme levels back",
+      "expected_sign": "Negative q slope conditional on stable equilibrium",
+      "timing": "Days/months; must survive regimes",
+      "distinguishing_prediction": "Expanding/rolling level anchor improves forecasts and signed calibration across periods",
+      "nearest_rival": "Structural drift, omitted class demand, spurious persistent levels",
+      "data_fields": [
+        "q history",
+        "regime dates"
+      ],
+      "data_availability": "A0/H1 and R756 tested",
+      "status": "contradicted",
+      "status_scope": "Specific stable global/756-row predictive designs, not all equilibrium models",
+      "evidence_source_ids": [
+        "forecast"
+      ],
+      "evidence_paths": [
+        [
+          "runs/samsung/prediction_final_15055345",
+          "runs/samsung/continuation_d_15055723",
+          "runs/samsung/continuation_e_15055790",
+          "runs/samsung/continuation_f_15055873",
+          "runs/samsung/continuation_gh_15055999"
+        ]
+      ],
+      "failure_reason": "R756 loses most development folds and all exposed horizons; stationarity sensitivity unstable",
+      "next_discriminating_test": "Reopen only with a dated equilibrium/state variable; retain rejected R756",
+      "priority": "ARCHIVE",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "low_same_data",
+      "research_track": "ARCHIVE",
+      "long_horizon_status": "archived short-horizon finding; no long-run inference",
+      "long_horizon_next_action": "Do not resume daily reversal/model selection under the active long-horizon objective. Preserve findings within their original scope.",
+      "long_horizon_data": "Preserved historical forecasts, reviews and run records."
+    },
+    {
+      "id": "B03",
+      "parent": "BENCH",
+      "title": "Local short-horizon reversal",
+      "mechanism_chain": "Transient relative price pressure or staggered discovery reverses part of latest gap move",
+      "expected_sign": "Negative d1 coefficient",
+      "timing": "One/five sessions; decay with horizon",
+      "distinguishing_prediction": "D1 forecast gain transfers to genuinely unexposed cohort and class catch-up pattern",
+      "nearest_rival": "Bid-ask/auction effects, stale closes, mechanical cash changes",
+      "data_fields": [
+        "q_t",
+        "q_t-1",
+        "as-of receipt",
+        "class price moves"
+      ],
+      "data_availability": "D1 tested; new causal channel fields partly absent",
+      "status": "unresolved",
+      "status_scope": "Development support; primary exposed transfer unconfirmed; h5 secondary exploratory",
+      "evidence_source_ids": [
+        "forecast",
+        "reversal"
+      ],
+      "evidence_paths": [
+        [
+          "runs/samsung/prediction_final_15055345",
+          "runs/samsung/continuation_d_15055723",
+          "runs/samsung/continuation_e_15055790",
+          "runs/samsung/continuation_f_15055873",
+          "runs/samsung/continuation_gh_15055999"
+        ],
+        "https://users.nber.org/~confer/2004/mmsu04/goyal.pdf"
+      ],
+      "failure_reason": "Not a confirmed predictor; no cost/executable-price validation",
+      "next_discriminating_test": "Reserve future cohort and separately discriminate common-led vs preferred-led changes",
+      "priority": "ARCHIVE",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "active",
+      "research_track": "ARCHIVE",
+      "long_horizon_status": "archived short-horizon finding; no long-run inference",
+      "long_horizon_next_action": "Do not resume daily reversal/model selection under the active long-horizon objective. Preserve findings within their original scope.",
+      "long_horizon_data": "Preserved historical forecasts, reviews and run records."
+    },
+    {
+      "id": "B04",
+      "parent": "BENCH",
+      "title": "State-dependent nonlinear adjustment",
+      "mechanism_chain": "Arbitrage/attention may activate only at unusually large local dislocations",
+      "expected_sign": "Reversal may strengthen at extreme local deviations; trend continuation competes",
+      "timing": "Days/weeks",
+      "distinguishing_prediction": "Training-only local extremity predicts residual direction beyond linear adjustment",
+      "nearest_rival": "Global level drift, sparse outliers, adaptive threshold search",
+      "data_fields": [
+        "trailing local q distribution",
+        "sufficient extreme episodes"
+      ],
+      "data_availability": "Existing prices, weak residual-state evidence",
+      "status": "unresolved",
+      "status_scope": "Deferred; not tested/null",
+      "evidence_source_ids": [
+        "forecast"
+      ],
+      "evidence_paths": [
+        [
+          "runs/samsung/prediction_final_15055345",
+          "runs/samsung/continuation_d_15055723",
+          "runs/samsung/continuation_e_15055790",
+          "runs/samsung/continuation_f_15055873",
+          "runs/samsung/continuation_gh_15055999"
+        ]
+      ],
+      "failure_reason": "Weak local-discount residual correlations; arbitrary threshold sweep low value",
+      "next_discriminating_test": "Advance one economic threshold only if stable development diagnostics or new state data justify it",
+      "priority": "ARCHIVE",
+      "causal_status": "Not identified unless explicitly a mathematical identity or documented contract",
+      "historical_priority": "deferred",
+      "research_track": "ARCHIVE",
+      "long_horizon_status": "archived short-horizon finding; no long-run inference",
+      "long_horizon_next_action": "Do not resume daily reversal/model selection under the active long-horizon objective. Preserve findings within their original scope.",
+      "long_horizon_data": "Preserved historical forecasts, reviews and run records."
     }
   ],
   "legacy_hypothesis_map": {
@@ -1488,19 +1896,172 @@
     ]
   },
   "current_information_priority": [
-    "S01/S02/S03: credential-free dated issuer panel and arithmetic, sparse descriptive event analysis",
-    "D01/D02/L05: high information but actual KRX extracts gated/403; record route-specific blocker",
-    "M04: existing class-leg information feasible only after redundancy/action/timing audit",
-    "X01/X02: qualify former venue/ratio/free daily history before fitting",
-    "P01/P03: qualify true announcement/ex-date/entitlement history; do not substitute generic calendar or backfilled payouts"
+    "LH1: Public share supply and sustained trading capacity",
+    "LH2: Durable investor base, institutional demand and access",
+    "LH3: Control, minority rights and governance regimes",
+    "LH4: Multi-year payout policy, cash rights and income investors",
+    "LH5: Class structure, investor access and market integration",
+    "LH6: Cross-cutting constraints that allow a gap to last",
+    "LH7: Company and economic cycles through a class-specific channel"
   ],
   "search_rules": [
-    "Record status, nearest rival and observable discriminator before fitting",
-    "Rank expected information gain, feasibility and cost; not p-values",
-    "Chronological folds and all exposed-date limitations persist",
-    "Retain rejected branches and exact failure scope",
-    "A branch-specific low-value decision never closes every unrelated branch",
-    "No new credentials/payments/auth bypass or external contacts",
-    "Every substantive empirical batch gets independent inspection and simple logged omissions"
+    "Active scope is persistent discount level and structural change over 2/5/10 years, not next-session forecast error",
+    "Preserve stable IDs, historical evidence, negative findings and the scope of each finding",
+    "Measure at monthly/quarterly/annual frequencies appropriate to actual independent information",
+    "Count independent years, policy changes and ownership observations; overlapping endpoints are not independent experiments",
+    "Separate causes of a gap, triggers that change it, and constraints that sustain it",
+    "Test scarcity versus trading-capacity effects and cash-protection versus voting-effectiveness channels separately",
+    "No forced fixed equilibrium, zero terminal discount, assumed conversion or firm-wide cash-news explanation without a class channel",
+    "Reconstruct multi-year supply/ownership/payout histories rather than treating six recent disclosures as a complete study",
+    "Peer evidence must match class rights and distinguish company-specific from common market changes",
+    "Accessible-data proxies are labeled; a proxy null does not reject its parent mechanism",
+    "Preserve simple logged patches and recurring independent inspection; no new local empirical work or agent restart in this planning turn"
+  ],
+  "active_objective": "Explain persistent Samsung preferred-discount levels and structural changes over 2, 5 and 10 years",
+  "active_plan": "docs/regressions/LONG_HORIZON_RESEARCH_PLAN.md",
+  "literature_review": "docs/regressions/LONG_HORIZON_LITERATURE.md",
+  "base_tree_commit": "26e8957",
+  "horizon_years": [
+    2,
+    5,
+    10
+  ],
+  "observation_frequency": "Monthly prices, quarterly mechanisms, annual checks; preserve actual publication frequency",
+  "execution_status": "Agents on user-requested hold; planning/reorganization only; no new empirical results",
+  "research_tracks": [
+    {
+      "id": "LH1",
+      "rank": 1,
+      "title": "Public share supply and sustained trading capacity",
+      "nodes": [
+        "S06",
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "L01"
+      ],
+      "question": "Do years of relative supply and trading capacity explain persistent discount changes?",
+      "data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity.",
+      "test": "Reconstruct supply and cost histories jointly; distinguish scarcity/support from deteriorating ability to trade and management responding to the gap."
+    },
+    {
+      "id": "LH2",
+      "rank": 2,
+      "title": "Durable investor base, institutional demand and access",
+      "nodes": [
+        "D01",
+        "D02",
+        "D03",
+        "D05",
+        "D04"
+      ],
+      "question": "Who holds each class over years, and do changes in that investor base persistently reprice the classes?",
+      "data": "Class-level quarterly/annual foreign and institutional holdings, holder concentration, retail participation, index/mandate histories and dated eligibility rules.",
+      "test": "Separate ownership stocks from trading flows; compare durable class-relative ownership/access changes with discount regimes and comparable peers."
+    },
+    {
+      "id": "LH3",
+      "rank": 3,
+      "title": "Control, minority rights and governance regimes",
+      "nodes": [
+        "G01",
+        "G02",
+        "G04",
+        "G03"
+      ],
+      "question": "Does a sustained change in control or shareholder protection alter what common votes are worth?",
+      "data": "Dated controller/affiliate blocks, independent blocks, agreements, succession/control events and effective legal/charter rules.",
+      "test": "Distinguish lower unequal-treatment risk from more effective minority votes; test the two potentially opposing channels with actual ownership states."
+    },
+    {
+      "id": "LH4",
+      "rank": 4,
+      "title": "Multi-year payout policy, cash rights and income investors",
+      "nodes": [
+        "P05",
+        "P01",
+        "P02",
+        "P04",
+        "P03"
+      ],
+      "question": "Do credible sustained cash-return policies change relative demand and the holding outcome of the two classes?",
+      "data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition.",
+      "test": "Compare policy eras and delivery over quarters/years; separate cash received from terminal discount and remove mechanical yield/price-ratio explanations."
+    },
+    {
+      "id": "LH5",
+      "rank": 5,
+      "title": "Class structure, investor access and market integration",
+      "nodes": [
+        "S07",
+        "X01",
+        "X02",
+        "X03"
+      ],
+      "question": "What verified structural change could permanently reduce segmentation or equalize class rights?",
+      "data": "Historical class terms, conversion/unification proposals or implementation if any, receipt ratios/venues, access and ownership restrictions.",
+      "test": "Audit a credible legal/economic convergence route before assigning it value; distinguish an actual change from a hypothetical scenario."
+    },
+    {
+      "id": "LH6",
+      "rank": null,
+      "title": "Cross-cutting constraints that allow a gap to last",
+      "nodes": [
+        "L02",
+        "L03",
+        "L04",
+        "L05"
+      ],
+      "question": "Why can investors not cheaply maintain a position that closes the gap over years?",
+      "data": "Lending/borrow availability and fees, applicable short-sale rules, funding conditions, holding costs and the existence or absence of a terminal event.",
+      "test": "Evaluate persistence and the cost/risk of corrective positions alongside each leading mechanism; a short-sale ban alone is not a measured borrowing cost."
+    },
+    {
+      "id": "LH7",
+      "rank": null,
+      "title": "Company and economic cycles through a class-specific channel",
+      "nodes": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "question": "Do multi-year company or macro cycles alter class demand, payout credibility or trading capacity differently?",
+      "data": "Quarterly cash generation/capital spending, industry state, rates/FX, and observed class-specific transmission variables.",
+      "test": "Require a differential-class channel; compare complete economic cycles and peers rather than re-labeling US style returns as Samsung fundamentals."
+    },
+    {
+      "id": "FOUNDATION",
+      "rank": null,
+      "title": "Measurement and legal foundations",
+      "nodes": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06"
+      ],
+      "question": "Are the long-run price ratios, class rights and cash outcomes comparable?",
+      "data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates.",
+      "test": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity."
+    },
+    {
+      "id": "ARCHIVE",
+      "rank": null,
+      "title": "Archived daily forecasting questions",
+      "nodes": [
+        "B01",
+        "B02",
+        "B03",
+        "B04"
+      ],
+      "question": "What was learned in the earlier daily forecasting program?",
+      "data": "Preserved historical forecasts, reviews and run records.",
+      "test": "Do not resume daily reversal/model selection under the active long-horizon objective. Preserve findings within their original scope."
+    }
   ]
 }

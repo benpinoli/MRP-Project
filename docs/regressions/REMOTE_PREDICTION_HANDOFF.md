@@ -1,5 +1,7 @@
 # Remote Samsung prediction research handoff
 
+**Active scope changed November 5:** The user now prioritizes explaining the discount over **2, 5 and 10 years**, not tomorrow's discount. Read [LONG_HORIZON_RESEARCH_PLAN.md](LONG_HORIZON_RESEARCH_PLAN.md), [LONG_HORIZON_LITERATURE.md](LONG_HORIZON_LITERATURE.md) and the reorganized canonical tree first. Their scope and priorities supersede the daily forecasting instructions below and in the earlier continuation prompt. Agents are on user-requested hold during review; this file is not an instruction to restart them automatically.
+
 **November 5 continuation instruction:** Read [Continue the existing SSH research](CONTINUE_REMOTE_RESEARCH.md). The user requires iterative inspection, hypothesis revision, new data acquisition where useful, and successive justified tests. A completed first batch or weak forecast does not finish the research program. That continuation instruction supersedes earlier batch-level stopping language here and in the companion plan.
 
 In the **remote** VS Code SSH workspace, pull the latest `main` without discarding existing work:

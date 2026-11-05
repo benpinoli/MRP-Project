@@ -1,5 +1,7 @@
 # Immediate review checkpoint — hypothesis tree and online sources
 
+**Newer scope:** This records the earlier 40-branch checkpoint. The active tree now preserves those 40 IDs and adds four structural branches under [LONG_HORIZON_RESEARCH_PLAN.md](LONG_HORIZON_RESEARCH_PLAN.md). The next priority is a longitudinal supply/ownership/trading/payout/control history, not the six-event short-window study alone. No new empirical result is implied by this reorganization.
+
 Stopped new acquisition/fitting at the user's request for immediate push. No new Slurm job was submitted; no issuer event-window or forecast results were computed. Previous D–I jobs remain completed.
 
 - Canonical expanded tree: PREDICTION_MECHANISM_TREE.json, readable PREDICTION_MECHANISM_TREE.md —40branches/9families, status scoped, rejected designs preserved. Legacy ledger hypotheses map into this tree.

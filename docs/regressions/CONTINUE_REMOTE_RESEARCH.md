@@ -1,5 +1,7 @@
 # Continue the existing SSH research
 
+**Superseding user direction, November 5:** Continue the iterative research process below only under the active **2/5/10-year structural explanation** objective in [LONG_HORIZON_RESEARCH_PLAN.md](LONG_HORIZON_RESEARCH_PLAN.md). Use the reorganized tree and [literature synthesis](LONG_HORIZON_LITERATURE.md). Daily reversal, short-window forecast selection and the six-event daily study are no longer the lead research questions. The user has halted agents for review; do not restart them from this historical prompt alone.
+
 User clarification, November 5, 2026: a completed first forecast batch, one weak regression, or a baseline victory does not finish this research program. Continue to inspect outcomes, revise the hypothesis tree, formulate new evidence-based hypotheses, acquire additional accessible data online when needed, and test the next useful idea. This instruction supersedes any earlier stopping criterion that treated one evaluated shortlist as completion.
 
 ## Prompt for the existing remote Codex agent

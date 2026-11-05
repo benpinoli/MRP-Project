@@ -1,5 +1,7 @@
 # Prediction research resume
 
+**Current resume scope:** Start with [LONG_HORIZON_RESEARCH_PLAN.md](LONG_HORIZON_RESEARCH_PLAN.md), [LONG_HORIZON_LITERATURE.md](LONG_HORIZON_LITERATURE.md) and the reorganized tree. The user wants 2/5/10-year drivers and has held agents for review. The job records below are historical; do not resume daily forecast selection or submit prepared issuer batch J automatically.
+
 Repository `/home/bpinoli/MRP/MRP-Project`, BYU ORC login03. Read top-level AGENTS.md, `/apps/instructions_for_ai_agents/BYU_ORC_AGENTS.md`, applicable ai-docs, implementation plan, hypothesis ledger, input audit, patch ledger, inspection and final report before continuing. Preserve the existing staged/untracked work. Do not blindly recreate a run or resubmit a pending job.
 
 The original laptop EP01 path is absent; source pack is `runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z`. Config `configs/prediction/samsung_v1.json`; interpreter `.venv-rg/bin/python`; account bhb35; CPU-only, no partition, one node/core, 4GB, 10min. Raw data and all run artifacts remain local and ignored by Git.

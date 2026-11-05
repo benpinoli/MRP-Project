@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_utc": "2026-11-05T16:16:05.704138+00:00",
-  "status": "stopped_at_user_request_for_immediate_push_review",
+  "updated_utc": "2026-11-05",
+  "status": "long_horizon_reorganization_on_user_hold",
   "plan": "docs/regressions/PREDICTION_IMPLEMENTATION_PLAN.md",
   "execution_constraint": "All empirical data research and fitting on authorized school compute through SSH; no local empirical runs.",
   "forecast": {
@@ -13,7 +13,9 @@
     "secondary_horizons": [
       5,
       20
-    ]
+    ],
+    "active": false,
+    "scope": "Archived 1/5/20-session protocol; not the active user objective"
   },
   "hypotheses": [
     {
@@ -473,9 +475,33 @@
   "future_protocol": "docs/regressions/PREDICTION_FUTURE_PROTOCOL.md",
   "mechanism_tree": "docs/regressions/PREDICTION_MECHANISM_TREE.json",
   "mechanism_tree_readable": "docs/regressions/PREDICTION_MECHANISM_TREE.md",
-  "mechanism_tree_branch_count": 40,
+  "mechanism_tree_branch_count": 44,
   "mechanism_tree_family_count": 9,
   "source_qualification": "docs/regressions/ONLINE_DATA_QUALIFICATION.md",
   "issuer_event_manifest": "docs/regressions/SAMSUNG_ISSUER_EVENT_MANIFEST.json",
-  "latest_checkpoint": "docs/regressions/HYPOTHESIS_TREE_SOURCE_CHECKPOINT.md"
+  "latest_checkpoint": "docs/regressions/HYPOTHESIS_TREE_SOURCE_CHECKPOINT.md",
+  "active_plan": "docs/regressions/LONG_HORIZON_RESEARCH_PLAN.md",
+  "active_research": {
+    "objective": "Explain persistent Samsung preferred-discount levels and structural changes over 2, 5 and 10 years",
+    "horizon_years": [
+      2,
+      5,
+      10
+    ],
+    "literature_review": "docs/regressions/LONG_HORIZON_LITERATURE.md",
+    "research_tracks": [
+      "LH1",
+      "LH2",
+      "LH3",
+      "LH4",
+      "LH5",
+      "LH6",
+      "LH7",
+      "FOUNDATION",
+      "ARCHIVE"
+    ],
+    "empirical_status": "No new long-horizon tests; historical daily results retained with original scope",
+    "next_action": "After user resumption: monthly/quarterly discount map and longitudinal supply/ownership/cost/payout/control coverage matrix"
+  },
+  "historical_hypotheses_scope": "Existing P01-P07 entries record prior daily forecasting work, not current long-horizon mechanism verdicts"
 }

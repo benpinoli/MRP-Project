@@ -1,5 +1,7 @@
 # Reserved future evaluation protocol
 
+**Archived, not active:** The November 5 user direction prioritizes long-run explanation over 2, 5 and 10 years. See [LONG_HORIZON_RESEARCH_PLAN.md](LONG_HORIZON_RESEARCH_PLAN.md). Do not start this prospective daily forecast feed merely because it was previously specified. Preserve this protocol and prior exposure records for any separately authorized future forecasting study.
+
 Frozen after exploratory continuation on2026-11-05. This is a research readiness specification, not proof of usefulness, a forecast already issued, an operational feed, or an automated trading system. Read with the immutable Iarchive protocol; this companion explicitly includes lockedH1 and resolves future-origin/refit eligibility. No archived submitted snapshot is modified.
 
 Reserve forecast origins on/after2026-11-06, the first252 genuinely unexposed proxy origins meeting **current** predictor availability. Primary horizon1; horizons5/20 remain secondary, despite exploratory five-session D1 gains. Wait for all target endpoints to mature before the once-registered cohort evaluation. Prior2024–2026 results and observations before2026-11-06 remain exploratory; do not relabel them untouched.

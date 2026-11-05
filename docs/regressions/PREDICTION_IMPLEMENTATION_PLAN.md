@@ -1,5 +1,7 @@
 # Samsung discount prediction: adaptive implementation plan
 
+**Historical short-horizon plan:** The active user objective is now the discount over **2, 5 and 10 years**. Follow [LONG_HORIZON_RESEARCH_PLAN.md](LONG_HORIZON_RESEARCH_PLAN.md) and the reorganized tree. Preserve the results and definitions below; do not execute their daily-model queue as the current research priority.
+
 **Scope update, November 5, 2026:** Follow [CONTINUE_REMOTE_RESEARCH.md](CONTINUE_REMOTE_RESEARCH.md). Completing the shortlist below is a checkpoint, not completion of the broader program. Inspect the outcomes, update the hypothesis tree, acquire additional accessible data when justified, and execute the next evidence-based batch. Keep previously viewed holdouts labeled as viewed and distinguish exploratory follow-up from genuinely new validation.
 
 Date: 2026-11-05 UTC. Owner: research HEAD; implementation: coder; independent review: inspector. Status: first remote execution checkpoint complete; locked shortlist evaluated and independently reviewed with no reliable primary forecasting gain. That result is retained as provenance while the broader research loop continues under the scope update above.

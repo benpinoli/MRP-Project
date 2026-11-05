@@ -1,5 +1,7 @@
 # Literature replication ledger
 
+**Active literature synthesis:** [LONG_HORIZON_LITERATURE.md](LONG_HORIZON_LITERATURE.md) and [LONG_HORIZON_RESEARCH_PLAN.md](LONG_HORIZON_RESEARCH_PLAN.md) implement the November 5 shift to explaining 2/5/10-year discount levels and structural changes. The original replication notes below remain historical/reference material, not the active daily estimation queue.
+
 Checked 2026-10-26. Readable source evidence is separated from equations requiring licensed/full-text retrieval. No published table has been recreated yet. Samsung-only daily adaptations cannot reproduce original cross-sectional estimates.
 
 ## CK99 — ownership, control and voting shares
