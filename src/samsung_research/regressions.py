@@ -69,6 +69,16 @@ def boolean(series):
     return mapped.astype(bool)
 
 
+RESEARCH_MODES = {"strict_timestamp", "discount_only", "retrospective_us_barra"}
+
+
+def research_mode(config):
+    mode = config.get("research_mode", "strict_timestamp")
+    if mode not in RESEARCH_MODES:
+        raise ValueError(f"Unsupported research mode: {mode}")
+    return mode
+
+
 def align_factors(sessions, factors, timing, names, scale):
     """End-time bins; never use a future available row, carry or zero-fill."""
     ends = utc_column(timing.period_end_utc)
@@ -100,6 +110,32 @@ def align_factors(sessions, factors, timing, names, scale):
     return output, pd.DataFrame(mappings)
 
 
+def align_preceding_us_sessions(sessions, factors, names, scale):
+    """Date-only retrospective bins: [prior Korean date, current Korean date)."""
+    session_dates = pd.to_datetime(sessions.date, format="%Y-%m-%d", errors="raise")
+    factor_dates = pd.to_datetime(factors.date, format="%Y-%m-%d", errors="raise")
+    if not session_dates.is_monotonic_increasing or session_dates.duplicated().any():
+        raise ValueError("Korean session dates must strictly increase")
+    if not factor_dates.is_monotonic_increasing or factor_dates.duplicated().any():
+        raise ValueError("US factor dates must strictly increase")
+    values = factors[names].apply(numeric) * scale
+    output = pd.DataFrame(np.nan, index=sessions.index, columns=["F_" + x for x in names])
+    mappings = []
+    for i in range(1, len(sessions)):
+        selected = (factor_dates >= session_dates.iloc[i - 1]) & (factor_dates < session_dates.iloc[i])
+        if not selected.any():
+            mappings.append(dict(date=sessions.date.iloc[i], factor_date="", status="empty_bin",
+                                 prior_korean_date=sessions.date.iloc[i - 1]))
+            continue
+        for pos in np.flatnonzero(selected):
+            mappings.append(dict(date=sessions.date.iloc[i], factor_date=factors.date.iloc[pos],
+                                 status="preceding_us_session",
+                                 prior_korean_date=sessions.date.iloc[i - 1]))
+        block = values.loc[selected]
+        output.iloc[i] = block.sum(min_count=len(block)).to_numpy()
+    return output, pd.DataFrame(mappings)
+
+
 def outcomes(frame):
     q = numeric(frame.discount_pct)
     c, p = numeric(frame.common_raw_close), numeric(frame.preferred_raw_close)
@@ -121,14 +157,19 @@ def tasks(config):
 
 
 def readiness(repo, config):
-    required = ["factors", "factor_timing", "factor_calendar", "sessions", "barra_metadata"]
+    mode = research_mode(config)
+    required = {
+        "strict_timestamp": ["factors", "factor_timing", "factor_calendar", "sessions", "barra_metadata"],
+        "discount_only": [],
+        "retrospective_us_barra": ["factors", "factor_source_metadata"],
+    }[mode]
     paths = {k: resolve(repo, config["inputs"][k]) for k in required}
     pack = resolve(repo, config["inputs"]["ep01_run"])
     paths.update({"ep01_" + x: pack / x for x in ["manifest.json", "tables/measures_main.csv",
                  "tables/measures_sensitivity.csv", "provenance/source_inventory.json"]})
     return {"status": "files_present_metadata_not_yet_validated" if all(p.is_file() for p in paths.values()) else "blocked",
             "missing": [str(p) for p in paths.values() if not p.is_file()],
-            "task_count": len(tasks(config)), "empirical_models_run": False}
+            "research_mode": mode, "task_count": len(tasks(config)), "empirical_models_run": False}
 
 
 def prepare(repo, run, config):
@@ -139,6 +180,7 @@ def prepare(repo, run, config):
     write_json(out / "readiness.json", check)
     if check["missing"]:
         raise ValueError("Required input files missing; see prepared/readiness.json")
+    mode = research_mode(config)
     paths = {k: resolve(repo, v) for k, v in config["inputs"].items() if k != "ep01_run"}
     pack = resolve(repo, config["inputs"]["ep01_run"])
     manifest = read_json(pack / "manifest.json")
@@ -153,40 +195,61 @@ def prepare(repo, run, config):
     inventory = read_json(pack / "provenance/source_inventory.json")
     if not any(x.get("sha256") == config["expected_raw_sha256"] for x in inventory["sources"]):
         raise ValueError("EP01 inventory does not contain registered raw hash")
-    used.extend(p for p in paths.values() if p.is_file())
-    hashes = {str(p): digest(p) for p in used}
-    meta = read_json(paths["barra_metadata"])
-    needed = ["model_id", "geography", "currency", "vintage", "units", "timing_source", "session_source",
-              "calendar_source", "calendar_start", "calendar_end", "currency_justification"]
-    if any(not meta.get(k) for k in needed) or meta.get("reviewed") is not True:
-        raise ValueError("Complete and review Barra metadata before preparing")
-    if meta["geography"] not in ["Korea", "global_with_Korea", "US_sensitivity"]:
-        raise ValueError("Unsupported geography label")
-    if (any(n.startswith("USSLOWL_") for n in config["factor_names"]) or meta["geography"] == "US_sensitivity") and meta.get("allow_us_sensitivity") is not True:
-        raise ValueError("US factors require explicit sensitivity acknowledgement")
-    if meta["units"] not in ["percent", "decimal"]:
-        raise ValueError("Factor units must be percent or decimal")
-    factors = dated_csv(paths["factors"])
-    timing = dated_csv(paths["factor_timing"])
-    calendar = dated_csv(paths["factor_calendar"])
-    if factors.date.tolist() != calendar.date.tolist():
-        raise ValueError("Factor dates differ from independently expected source calendar")
-    if not len(calendar) or calendar.date.min() < meta["calendar_start"] or calendar.date.max() > meta["calendar_end"]:
-        raise ValueError("Factor calendar outside declared coverage")
-    sessions = dated_csv(paths["sessions"])
     main = dated_csv(pack / "tables/measures_main.csv")
     sensitivity = dated_csv(pack / "tables/measures_sensitivity.csv")
     if main.date.tolist() != sensitivity.date.tolist():
         raise ValueError("EP01 variants have different grids")
     session_mask = boolean(main.observed_session)
-    if main.loc[session_mask, "date"].tolist() != sessions.date.tolist():
-        raise ValueError("Session timestamp grid differs from EP01 proxy grid")
-    if meta["calendar_start"] > sessions.date.iloc[0] or meta["calendar_end"] < sessions.date.iloc[-1]:
-        raise ValueError("Factor calendar coverage must span the Korean sample")
-    aligned, mapping = align_factors(sessions, factors, timing, config["factor_names"],
-                                     .01 if meta["units"] == "percent" else 1.)
+    sessions = main.loc[session_mask, ["date"]].reset_index(drop=True)
+    meta = {"mode": mode}
+    if mode == "strict_timestamp":
+        meta = read_json(paths["barra_metadata"])
+        needed = ["model_id", "geography", "currency", "vintage", "units", "timing_source", "session_source",
+                  "calendar_source", "calendar_start", "calendar_end", "currency_justification"]
+        if any(not meta.get(k) for k in needed) or meta.get("reviewed") is not True:
+            raise ValueError("Complete and review Barra metadata before preparing")
+        if meta["geography"] not in ["Korea", "global_with_Korea", "US_sensitivity"]:
+            raise ValueError("Unsupported geography label")
+        if (any(n.startswith("USSLOWL_") for n in config["factor_names"]) or meta["geography"] == "US_sensitivity") and meta.get("allow_us_sensitivity") is not True:
+            raise ValueError("US factors require explicit sensitivity acknowledgement")
+        if meta["units"] not in ["percent", "decimal"]:
+            raise ValueError("Factor units must be percent or decimal")
+        factors = dated_csv(paths["factors"])
+        timing = dated_csv(paths["factor_timing"])
+        calendar = dated_csv(paths["factor_calendar"])
+        if factors.date.tolist() != calendar.date.tolist():
+            raise ValueError("Factor dates differ from independently expected source calendar")
+        if not len(calendar) or calendar.date.min() < meta["calendar_start"] or calendar.date.max() > meta["calendar_end"]:
+            raise ValueError("Factor calendar outside declared coverage")
+        sessions = dated_csv(paths["sessions"])
+        if main.loc[session_mask, "date"].tolist() != sessions.date.tolist():
+            raise ValueError("Session timestamp grid differs from EP01 proxy grid")
+        if meta["calendar_start"] > sessions.date.iloc[0] or meta["calendar_end"] < sessions.date.iloc[-1]:
+            raise ValueError("Factor calendar coverage must span the Korean sample")
+        aligned, mapping = align_factors(sessions, factors, timing, config["factor_names"],
+                                         .01 if meta["units"] == "percent" else 1.)
+    elif mode == "retrospective_us_barra":
+        meta = read_json(paths["factor_source_metadata"])
+        needed = ["model_id", "geography", "units", "date_convention", "date_convention_source",
+                  "scaling_convention", "scaling_source", "publication_timestamps", "revision_history"]
+        if any(k not in meta or meta[k] in [None, ""] for k in needed):
+            raise ValueError("Incomplete retrospective factor-source metadata")
+        if meta["geography"] != "US" or meta["units"] not in ["percent", "decimal"]:
+            raise ValueError("Retrospective mode requires US factors with declared units")
+        if meta["publication_timestamps"] != "unavailable" or meta["revision_history"] != "unavailable":
+            raise ValueError("Unknown publication/revision fields must remain explicitly unavailable")
+        if meta.get("point_in_time_forecasting_valid") is not False:
+            raise ValueError("Retrospective factors cannot claim point-in-time forecasting validity")
+        factors = dated_csv(paths["factors"])
+        aligned, mapping = align_preceding_us_sessions(
+            sessions, factors, config["factor_names"], .01 if meta["units"] == "percent" else 1.)
+    else:
+        aligned = pd.DataFrame(index=sessions.index)
+        mapping = pd.DataFrame(columns=["date", "factor_date", "status"])
+    used.extend(p for p in paths.values() if p.is_file())
+    hashes = {str(p): digest(p) for p in used}
     mechanism = None
-    if paths["mechanisms"].exists():
+    if "mechanisms" in paths and paths["mechanisms"].exists():
         mechanism = dated_csv(paths["mechanisms"])
         mechanism_meta = read_json(paths["mechanisms_metadata"])
         for column in mechanism.columns.drop("date"):
@@ -218,9 +281,10 @@ def prepare(repo, run, config):
         if digest(p) != before:
             raise ValueError(f"Input changed during preparation: {p}")
     write_json(out / "inputs.json", {"sha256": hashes, "panel_sha256": digest(out / "panel.csv"),
-               "ep01_run_id": manifest["run_id"], "barra": meta})
+               "ep01_run_id": manifest["run_id"], "research_mode": mode, "factor_source": meta})
     write_json(run / "tasks.json", tasks(config))
-    write_json(out / "readiness.json", {"status": "prepared_not_estimated", "rows_per_variant": len(sessions),
+    write_json(out / "readiness.json", {"status": "prepared_not_estimated", "research_mode": mode,
+               "rows_per_variant": len(sessions),
                "complete_rows_by_column": panel.groupby("variant").count().to_dict(),
                "alignment_status": mapping.status.value_counts().to_dict(), "empirical_models_run": False})
 

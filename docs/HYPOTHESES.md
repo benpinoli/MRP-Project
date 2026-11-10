@@ -12,15 +12,7 @@ Mechanism: Carried quotes, mismatched classes, splits and event treatment distor
 
 Competing/identification concerns: Vendor flags can conflict with volume; Correct arithmetic cannot validate vendor quotes.
 
-- EP01_F01: [main 01_discount_history.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/01_discount_history.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/01_discount_history.png)
-- EP01_F02: [main 02_annual_distributions.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/02_annual_distributions.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/02_annual_distributions.png)
-- EP01_F03: [main 03_daily_discount_changes.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/03_daily_discount_changes.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/03_daily_discount_changes.png)
-- EP01_F04: [main 04_raw_closes_since_2019.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/04_raw_closes_since_2019.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/04_raw_closes_since_2019.png)
-- EP01_F05: [main 05_trading_activity.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/05_trading_activity.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/05_trading_activity.png)
-- EP01_F06: [main 06_rolling_discount_volatility.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/06_rolling_discount_volatility.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/06_rolling_discount_volatility.png)
-- [EP01_F07 local flagged windows](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/episodes/flagged_discount_windows.png) · [inspection report](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/episodes/REVIEW.md)
-
-Evidence records: [O002](RESEARCH_LOG.md#o002), [O003](RESEARCH_LOG.md#o003), [O005](RESEARCH_LOG.md#o005), [O006](RESEARCH_LOG.md#o006), [O007](RESEARCH_LOG.md#o007), [O_EP01_20261022T070352_803683Z](RESEARCH_LOG.md#o_ep01_20261022t070352_803683z), [O_EP01_20261022T070352_803683Z_FLAGS](RESEARCH_LOG.md#o_ep01_20261022t070352_803683z_flags), [O_EP01_20261022T070701_403388Z](RESEARCH_LOG.md#o_ep01_20261022t070701_403388z), [O_EP01_20261022T070701_403388Z_FLAGS](RESEARCH_LOG.md#o_ep01_20261022t070701_403388z_flags)
+Evidence records: [O002](RESEARCH_LOG.md#o002), [O003](RESEARCH_LOG.md#o003), [O005](RESEARCH_LOG.md#o005), [O006](RESEARCH_LOG.md#o006), [O007](RESEARCH_LOG.md#o007), [O_EP01_20261022T070352_803683Z](RESEARCH_LOG.md#o_ep01_20261022t070352_803683z), [O_EP01_20261022T070352_803683Z_FLAGS](RESEARCH_LOG.md#o_ep01_20261022t070352_803683z_flags), [O_EP01_20261022T070701_403388Z](RESEARCH_LOG.md#o_ep01_20261022t070701_403388z), [O_EP01_20261022T070701_403388Z_FLAGS](RESEARCH_LOG.md#o_ep01_20261022t070701_403388z_flags), [O_EP01_20261026T131848_234484Z](RESEARCH_LOG.md#o_ep01_20261026t131848_234484z), [O_EP01_20261026T131848_234484Z_FLAGS](RESEARCH_LOG.md#o_ep01_20261026t131848_234484z_flags)
 
 Next: Independent price/calendar reconciliation; adjustments remain deferred.
 
@@ -56,9 +48,7 @@ Mechanism: Higher trading costs reduce demand for preferred shares
 
 Competing/identification concerns: Discount affects trading activity; Proxies differ from execution costs.
 
-- EP01_F05: [main 05_trading_activity.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/05_trading_activity.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/05_trading_activity.png)
-
-Evidence records: [O_EP01_20261022T070352_803683Z](RESEARCH_LOG.md#o_ep01_20261022t070352_803683z), [O_EP01_20261022T070701_403388Z](RESEARCH_LOG.md#o_ep01_20261022t070701_403388z)
+Evidence records: [O_EP01_20261022T070352_803683Z](RESEARCH_LOG.md#o_ep01_20261022t070352_803683z), [O_EP01_20261022T070701_403388Z](RESEARCH_LOG.md#o_ep01_20261022t070701_403388z), [O_EP01_20261026T131848_234484Z](RESEARCH_LOG.md#o_ep01_20261026t131848_234484z)
 
 Next: Acquire required inputs and specify the smallest descriptive test before estimation.
 
@@ -106,13 +96,7 @@ Mechanism: Valuation, stress and common class demand change relative pricing
 
 Competing/identification concerns: Common price mechanically enters discount and valuation; Persistent levels correlate spuriously.
 
-- EP01_F01: [main 01_discount_history.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/01_discount_history.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/01_discount_history.png)
-- EP01_F02: [main 02_annual_distributions.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/02_annual_distributions.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/02_annual_distributions.png)
-- EP01_F03: [main 03_daily_discount_changes.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/03_daily_discount_changes.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/03_daily_discount_changes.png)
-- EP01_F04: [main 04_raw_closes_since_2019.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/04_raw_closes_since_2019.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/04_raw_closes_since_2019.png)
-- EP01_F06: [main 06_rolling_discount_volatility.png](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/main/06_rolling_discount_volatility.png) · [sensitivity](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/figures/sensitivity/06_rolling_discount_volatility.png)
-
-Evidence records: [O004](RESEARCH_LOG.md#o004), [O007](RESEARCH_LOG.md#o007), [O008](RESEARCH_LOG.md#o008), [O_EP01_20261022T070352_803683Z](RESEARCH_LOG.md#o_ep01_20261022t070352_803683z), [O_EP01_20261022T070701_403388Z](RESEARCH_LOG.md#o_ep01_20261022t070701_403388z)
+Evidence records: [O004](RESEARCH_LOG.md#o004), [O007](RESEARCH_LOG.md#o007), [O008](RESEARCH_LOG.md#o008), [O_EP01_20261022T070352_803683Z](RESEARCH_LOG.md#o_ep01_20261022t070352_803683z), [O_EP01_20261022T070701_403388Z](RESEARCH_LOG.md#o_ep01_20261022t070701_403388z), [O_EP01_20261026T131848_234484Z](RESEARCH_LOG.md#o_ep01_20261026t131848_234484z)
 
 Next: Acquire required inputs and specify the smallest descriptive test before estimation.
 

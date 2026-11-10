@@ -1,0 +1,11 @@
+{
+ "inputs":{
+  "grid":{"path":"runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/tables/measures_main.csv","sha256":"e920e158e7770dee66608c8a258530700ae5e75a66974a089cca1082792638c9"},
+  "raw":{"path":"src/sf_quant/data/samsung_2005-20261020.csv","sha256":"c64a9cdbba02ee7d70cd3fa4b0af14e0540d0beab70d3d55132f333fb11ba8bb"},
+  "manifest":{"path":"runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/manifest.json","sha256":"a9ce2eaede5156039b3659983090875ccc231a057d19bf3b52d4207daee3626c"}
+ },
+ "minimum_valid_sessions":10,"minimum_valid_fraction":0.8,"last_complete_month":"2026-09",
+ "horizons_months":[24,60,120],"bins_pp":[10,20,30],"grid":"EP01 observed-session proxy; not independently verified KRX calendar",
+ "quarter_rule":"three qualified complete month means; quarter-end last-valid monthly endpoint sensitivity",
+ "notes":"2026-10 is trailing partial and retained only for descriptive illustration; no return, prediction or causal claim"
+}

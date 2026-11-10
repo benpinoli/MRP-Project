@@ -121,3 +121,8 @@ Completed [EP01 figure pack](../runs/samsung/EP01_descriptive/20261022T070352_80
 ## Descriptive pack 20261022T070701_403388Z
 
 Completed [EP01 figure pack](../runs/samsung/EP01_descriptive/20261022T070701_403388Z/README.md): six main/sensitivity graph pairs, flagged-episode inspection and exact tables. [Research log](RESEARCH_LOG.md) and [hypothesis tree](HYPOTHESES.md) link files. All return-based work and factors deferred. Raw source unchanged. Independent quotes/calendar and next-layer inputs remain open.
+
+
+## Descriptive pack 20261026T131848_234484Z
+
+Completed [EP01 figure pack](../runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/README.md): six main/sensitivity graph pairs, flagged-episode inspection and exact tables. [Research log](RESEARCH_LOG.md) and [hypothesis tree](HYPOTHESES.md) link files. All return-based work and factors deferred. Raw source unchanged. Independent quotes/calendar and next-layer inputs remain open.

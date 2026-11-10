@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-09",
+  "purpose": "Retrospective price-based baseline regressions for the three remaining core pairs; not NAV, fair value, causal, forecast, or trading models.",
+  "raw_dir": "data/acquisition/2026-11-09/core_pairs_raw",
+  "inputs": {
+    "global_daily": "core_pairs_compustat_global_daily.csv",
+    "global_company": "g_company.csv",
+    "global_security": "g_security.csv",
+    "global_security_history": "g_sec_history.csv",
+    "fred_krw": "DEXKOUS.csv",
+    "fred_twd": "DEXTAUS.csv",
+    "adr_crsp_2005_2025": "tsm_crsp_daily_2005_2025.csv",
+    "adr_crsp_2026": "tsm_crsp_daily_2026.csv",
+    "adr_compustat_na_2026": "tsm_compustat_na_daily_2026.csv",
+    "adr_crsp_names": "tsm_crsp_names.csv",
+    "fundamentals_annual": "sk_square_samsung_fire_fundamentals_annual.csv",
+    "fundamentals_quarterly": "sk_square_samsung_fire_fundamentals_quarterly.csv"
+  },
+  "pairs": [
+    {
+      "id": "sk_square_sk_hynix",
+      "left": {"gvkey": "350948", "iid": "01W", "name": "SK SQUARE CO LTD", "currency": "KRW"},
+      "right": {"gvkey": "204049", "iid": "01W", "name": "SK HYNIX INC", "currency": "KRW"},
+      "construction": "normalized_ratio"
+    },
+    {
+      "id": "samsung_fire_samsung_electronics",
+      "left": {"gvkey": "208765", "iid": "01W", "name": "SAMSUNG FIRE & MARINE INS", "currency": "KRW"},
+      "right": {"gvkey": "104604", "iid": "02W", "name": "SAMSUNG ELECTRONICS CO LTD", "currency": "KRW"},
+      "construction": "normalized_ratio"
+    },
+    {
+      "id": "tsmc_local_adr",
+      "local": {"gvkey": "201395", "iid": "01W", "name": "TAIWAN SEMICONDUCTOR MFG CO", "currency": "TWD"},
+      "adr": {"permno": "85442", "na_gvkey": "201395", "na_iid": "90", "currency": "USD"},
+      "common_shares_per_ads": 5,
+      "construction": "adr_premium"
+    }
+  ],
+  "sample": {"start": "2005-01-03", "end": "2026-11-06", "required_prcstd": 10},
+  "windows": [
+    {"id": "full", "start": "2005-01-03", "end": "2026-11-06"},
+    {"id": "2005_2014", "start": "2005-01-03", "end": "2014-12-31"},
+    {"id": "2015_2019", "start": "2015-01-01", "end": "2019-12-31"},
+    {"id": "2020_2026", "start": "2020-01-01", "end": "2026-11-06"}
+  ],
+  "hac_lags": [5, 20, 60],
+  "minimum_observations": 252
+}

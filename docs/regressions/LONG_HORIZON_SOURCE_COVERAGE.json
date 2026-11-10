@@ -1,0 +1,66 @@
+{
+  "updated_utc": "2026-11-05T17:26:18.284003+00:00",
+  "monthly_run": "runs/samsung/long_horizon_a_15068738",
+  "price_coverage": {
+    "qualified_months": 261,
+    "first": "2005-01",
+    "last_complete": "2026-09",
+    "partial_retained": "2026-10",
+    "complete_quarters": 87,
+    "overlapping_changes": {
+      "24months": 237,
+      "60months": 201,
+      "120months": 141
+    },
+    "anchored_nonoverlap": {
+      "24months": 10,
+      "60months": 4,
+      "120months": 2
+    }
+  },
+  "annual_downloads": {
+    "years": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "bytes": 60746632,
+    "manifest": "data/regression/raw/long_horizon_issuer_20261105/download_manifest.json",
+    "failed_2005_route": "HTTP403; browser primary facts available, no access workaround"
+  },
+  "historical_field_status": "Source availability is not extracted/verified numeric coverage. No annual field is filled daily. Publication dates unknown remain unknown.",
+  "systematic_concern": "Vendor preferred cshoc inDec2025 still822886700 vs issuer815974664 after confirmed cancellation; affected supply proxy branch paused pending reconciliation; no silent correction. Prices unaffected.",
+  "source_conflicts": [
+    {
+      "field": "2024treasuryshares",
+      "listing_common": 32700000,
+      "listing_preferred": 4500000,
+      "listing_asof": "yearlabel2024; exactdateunknown",
+      "annual_common": 29700000,
+      "annual_preferred": 4050000,
+      "annual_asof": "2024-12-31",
+      "annual_source": "2024_4Q_Interim_Report.pdf pp13\u201314",
+      "status": "Differentasof/definitionorsourceinconsistencyunresolved; datedannualfigureprimaryforfiscalend,competinglistingpreserved"
+    },
+    {
+      "field": "2025preferredissuedproxy",
+      "vendor": 822886700,
+      "issuer": 815974664,
+      "difference": 6912036,
+      "status": "Plausiblestalevendorcancellationadjustmentunverified; do notsilentlycorrect"
+    }
+  ]
+}

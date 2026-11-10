@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-02",
+  "purpose": "Descriptive USD price-return associations only; no NAV, forecasting, trading, or causal interpretation.",
+  "bundle_root": "data/prosus_tencent/prosus_tencent_data_bundle",
+  "output_root": "runs/prosus_tencent",
+  "sample": {
+    "start": "2019-09-11",
+    "end": "2026-09-30",
+    "require_prcstd": 10,
+    "require_exact_fx_dates": true,
+    "require_identical_interval_endpoints": true,
+    "exclude_adjustment_factor_changes": true,
+    "exclude_nonzero_split_fields": true,
+    "common_sample_across_designs": true
+  },
+  "securities": {
+    "prosus": {"gvkey": "333645", "iid": "02W", "issuer": "PROSUS NV", "currency": "EUR", "exchange": 104},
+    "tencent": {"gvkey": "270615", "iid": "01W", "issuer": "TENCENT HOLDINGS LTD", "currency": "HKD", "exchange": 170},
+    "naspers": {"gvkey": "206059", "iid": "02W", "issuer": "NASPERS LTD", "currency": "ZAR", "exchange": 177}
+  },
+  "relationships": [
+    {"id": "prosus_on_tencent", "dependent": "prosus", "explanatory": "tencent"},
+    {"id": "naspers_on_tencent", "dependent": "naspers", "explanatory": "tencent"},
+    {"id": "naspers_on_prosus", "dependent": "naspers", "explanatory": "prosus"}
+  ],
+  "markets": {
+    "europe": {"dataset": "euro_stoxx_50", "currency": "EUR"},
+    "hong_kong": {"dataset": "hang_seng", "currency": "HKD"}
+  },
+  "factor_blocks": {
+    "europe": "ff5_europe_daily_decimal.csv",
+    "asia_pacific_ex_japan": "ff5_asia_pacific_ex_japan_daily_decimal.csv"
+  },
+  "factor_columns": ["Mkt-RF", "SMB", "HML", "RMW", "CMA"],
+  "designs": {
+    "A": ["explanatory_excess_return"],
+    "B": ["explanatory_excess_return", "europe_market_usd_return", "hong_kong_market_usd_return"],
+    "C": ["explanatory_excess_return", "europe_market_usd_return", "hong_kong_market_usd_return", "europe_Mkt-RF", "europe_SMB", "europe_HML", "europe_RMW", "europe_CMA", "asia_pacific_ex_japan_Mkt-RF", "asia_pacific_ex_japan_SMB", "asia_pacific_ex_japan_HML", "asia_pacific_ex_japan_RMW", "asia_pacific_ex_japan_CMA"]
+  },
+  "uncertainty": {"primary_hac_lag": 5, "sensitivity_hac_lag": 20, "confidence_level": 0.95},
+  "sensitivities": {
+    "one_interval_lag": true,
+    "corporate_action_window_calendar_days": 5,
+    "events": [
+      {"date": "2020-10-19", "entity": "prosus", "label": "Prosus >10bp Yahoo/WRDS AJEXDI diagnostic discrepancy"},
+      {"date": "2022-01-20", "entity": "tencent", "label": "Tencent JD.com distribution ex-date"},
+      {"date": "2023-01-05", "entity": "tencent", "label": "Tencent Meituan distribution ex-date"},
+      {"date": "2023-09-13", "entity": "naspers", "label": "2023 cross-holding reorganisation Naspers action"},
+      {"date": "2023-09-14", "entity": "prosus", "label": "2023 cross-holding reorganisation Prosus action"},
+      {"date": "2025-10-01", "entity": "naspers", "label": "Naspers five-for-one share split"}
+    ]
+  },
+  "rolling": {"window_observations": 252, "step_observations": 21, "minimum_observations": 126}
+}

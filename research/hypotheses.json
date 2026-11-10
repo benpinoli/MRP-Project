@@ -32,7 +32,9 @@
         "O_EP01_20261022T070352_803683Z",
         "O_EP01_20261022T070352_803683Z_FLAGS",
         "O_EP01_20261022T070701_403388Z",
-        "O_EP01_20261022T070701_403388Z_FLAGS"
+        "O_EP01_20261022T070701_403388Z_FLAGS",
+        "O_EP01_20261026T131848_234484Z",
+        "O_EP01_20261026T131848_234484Z_FLAGS"
       ],
       "experiment_ids": [
         "E01",
@@ -45,8 +47,8 @@
       "supersession_history": [],
       "artifact_refs": [
         {
-          "run_id": "20261022T070701_403388Z",
-          "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/README.md",
+          "run_id": "20261026T131848_234484Z",
+          "path": "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/README.md",
           "purpose": "descriptive motivation; not a causal test"
         }
       ]
@@ -129,7 +131,8 @@
       ],
       "evidence_ids": [
         "O_EP01_20261022T070352_803683Z",
-        "O_EP01_20261022T070701_403388Z"
+        "O_EP01_20261022T070701_403388Z",
+        "O_EP01_20261026T131848_234484Z"
       ],
       "experiment_ids": [
         "E03",
@@ -142,8 +145,8 @@
       "supersession_history": [],
       "artifact_refs": [
         {
-          "run_id": "20261022T070701_403388Z",
-          "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/README.md",
+          "run_id": "20261026T131848_234484Z",
+          "path": "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/README.md",
           "purpose": "descriptive motivation; not a causal test"
         }
       ]
@@ -258,7 +261,8 @@
         "O007",
         "O008",
         "O_EP01_20261022T070352_803683Z",
-        "O_EP01_20261022T070701_403388Z"
+        "O_EP01_20261022T070701_403388Z",
+        "O_EP01_20261026T131848_234484Z"
       ],
       "experiment_ids": [
         "E02",
@@ -273,8 +277,8 @@
       "supersession_history": [],
       "artifact_refs": [
         {
-          "run_id": "20261022T070701_403388Z",
-          "path": "runs/samsung/EP01_descriptive/20261022T070701_403388Z/README.md",
+          "run_id": "20261026T131848_234484Z",
+          "path": "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/README.md",
           "purpose": "descriptive motivation; not a causal test"
         }
       ]

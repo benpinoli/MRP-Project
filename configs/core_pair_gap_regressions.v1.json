@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-09",
+  "purpose": "Retrospective B01-B04 normalized price-ratio sensitivity matching the Samsung regression design; not a NAV model, forecast, causal estimate, or trading test.",
+  "pair": {
+    "id": "prosus_tencent",
+    "numerator": {"gvkey": "333645", "iid": "02W", "name": "PROSUS NV", "currency": "EUR"},
+    "denominator": {"gvkey": "270615", "iid": "01W", "name": "TENCENT HOLDINGS LTD", "currency": "HKD"}
+  },
+  "inputs": {
+    "security_daily": "data/prosus_tencent/prosus_tencent_data_bundle/data/processed/wrds_security_daily_research.csv",
+    "fx": "data/prosus_tencent/prosus_tencent_data_bundle/data/raw/ecb_fx_daily_long.csv",
+    "factors": "data/regression/raw/barra/factors.csv",
+    "factor_metadata": "configs/us_barra_retrospective_metadata.v1.json"
+  },
+  "factor_names": ["USSLOWL_COUNTRY", "USSLOWL_BETA", "USSLOWL_VALUE", "USSLOWL_SIZE", "USSLOWL_MOMENTUM", "USSLOWL_LIQUIDTY", "USSLOWL_RESVOL", "USSLOWL_LEVERAGE", "USSLOWL_DIVYILD", "USSLOWL_PROFIT", "USSLOWL_SEMICOND"],
+  "sample": {"start": "2019-09-11", "end": "2026-09-30", "required_prcstd": 10},
+  "windows": [
+    {"id": "full", "start": "2019-09-11", "end": "2026-09-30"},
+    {"id": "2005_2014", "start": "2005-01-03", "end": "2014-12-31"},
+    {"id": "2015_2019", "start": "2015-01-01", "end": "2019-12-31"},
+    {"id": "2020_2026", "start": "2020-01-01", "end": "2026-09-30"}
+  ],
+  "models": [
+    {"id": "B01", "outcome": "dd_pp", "columns": []},
+    {"id": "B02", "outcome": "dg", "columns": []},
+    {"id": "B03", "outcome": "dd_pp", "columns": ["lag_discount"]},
+    {"id": "B04", "outcome": "dd_pp", "columns": ["lag_discount", "lag_activity"]}
+  ],
+  "hac_lags": [5, 20, 60],
+  "minimum_observations": 252,
+  "sensitivity_events": [
+    {"date": "2020-10-19", "entity": "prosus", "label": "documented vendor discrepancy"},
+    {"date": "2022-01-20", "entity": "tencent", "label": "JD.com distribution ex-date"},
+    {"date": "2023-01-05", "entity": "tencent", "label": "Meituan distribution ex-date"},
+    {"date": "2023-09-14", "entity": "prosus", "label": "cross-holding reorganisation"}
+  ],
+  "sensitivity_event_window_calendar_days": 5
+}

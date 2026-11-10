@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-09",
+  "purpose": "Generalization tests for securities named in LOOP Exceptions - Companies vF.xlsx. Price and return associations only; not fair value, causal identification, or an executable strategy.",
+  "assets_glob": "/home/bpinoli/groups/grp_quant/database/research/assets/assets_*.parquet",
+  "core_panel": "runs/core_pairs/baseline_20261109/panels.csv",
+  "sample_end": "2026-11-06",
+  "minimum_observations": 252,
+  "hac_lag": 20,
+  "corporate_action_return_discrepancy_pp": 3.0,
+  "rolling_window": 252,
+  "signal_z_threshold": 1.0,
+  "share_pairs": [
+    {"id": "alphabet_a_c", "left": "USA1LI1", "right": "USA1LI3", "left_label": "GOOGL", "right_label": "GOOG", "left_units_per_right": 1.0, "relationship": "dual_class"},
+    {"id": "berkshire_a_b", "left": "USABPA1", "right": "USABPA2", "left_label": "BRK.A", "right_label": "BRK.B", "left_units_per_right": 1500.0, "start_date": "2010-01-21", "relationship": "dual_class_post_50_for_1_b_split"},
+    {"id": "news_b_a", "left": "USBAZZ2", "right": "USBAZZ1", "left_label": "NWS", "right_label": "NWSA", "left_units_per_right": 1.0, "relationship": "dual_class"},
+    {"id": "fox_b_a", "left": "USBENC2", "right": "USBENC1", "left_label": "FOX", "right_label": "FOXA", "left_units_per_right": 1.0, "relationship": "dual_class"},
+    {"id": "liberty_broadband_a_c", "left": "USBCVJ1", "right": "USBCVK1", "left_label": "LBRDA", "right_label": "LBRDK", "left_units_per_right": 1.0, "relationship": "dual_class"},
+    {"id": "petrobras_common_preferred", "left": "USA4111", "right": "USA4112", "left_label": "PBR", "right_label": "PBR.A", "left_units_per_right": 1.0, "relationship": "common_preferred_adr"},
+    {"id": "volkswagen_common_preferred", "left": "USAOO72", "right": "USAOO74", "left_label": "VWAGY", "right_label": "VWAPY", "left_units_per_right": 1.0, "relationship": "common_preferred_adr_proxy"}
+  ],
+  "holdco_pairs": [
+    {"id": "liberty_broadband_charter", "holdco": "USBCVK1", "heldco": "USA9J31", "holdco_label": "LBRDK", "heldco_label": "CHTR"},
+    {"id": "brookfield_bn_bam", "holdco": "USAY8Y1", "heldco": "USBOMW1", "holdco_label": "BN", "heldco_label": "BAM", "start_date": "2022-12-12"},
+    {"id": "softbank_arm_proxy", "holdco": "USA10H1", "heldco": "USBPFC1", "holdco_label": "SFTBY", "heldco_label": "ARM"},
+    {"id": "prosus_tencent_proxy", "holdco": "USBEVH1", "heldco": "USAF4N1", "holdco_label": "PROSY", "heldco_label": "TCEHY"},
+    {"id": "naspers_prosus_proxy", "holdco": "USA5861", "heldco": "USBEVH1", "holdco_label": "NPSNY", "heldco_label": "PROSY"},
+    {"id": "investor_atlas_proxy", "holdco": "USBCEV1", "heldco": "USA5TY1", "holdco_label": "IVSBF", "heldco_label": "ATLKY"}
+  ],
+  "blocked_exact_tests": [
+    "Alibaba primary/ADR", "HDFC primary/ADR", "Shell primary/ADR", "Novo Nordisk primary/ADR",
+    "BYD A/H", "Ping An A/H", "Hyundai common/preferred", "Exor/Ferrari NAV",
+    "Industrivarden/Volvo NAV", "Roche voting/nonvoting local", "Volkswagen German local classes"
+  ]
+}

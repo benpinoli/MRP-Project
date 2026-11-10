@@ -1,0 +1,144 @@
+{
+  "purpose": "Long-horizon supply/ownership/payout source reconstruction; retrospective reports, publication timestamps not inferred",
+  "official_index": "https://www.samsung.com/global/ir/reports-disclosures/business-report/",
+  "index_access": "Public browser page accessible; direct urllibindex403; no retry or header modification",
+  "output_directory": "data/regression/raw/long_horizon_issuer_20261105",
+  "sources": [
+    {
+      "id": "issuer_2005",
+      "reporting_year": 2005,
+      "url": "https://www.samsung.com/us/smg/content/dam/samsung/us/aboutsamsung/2017/about-us-sustainability-report-and-policy-annual-report-2005-en.pdf",
+      "filename": "issuer_2005.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2010",
+      "reporting_year": 2010,
+      "url": "https://images.samsung.com/is/content/samsung/p5/uk/aboutsamsung/2017/pdf/about-us-sustainability-report-and-policy-annual-report-2010-en.pdf",
+      "filename": "issuer_2010.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2011",
+      "reporting_year": 2011,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2011_business_quarter04.pdf",
+      "filename": "issuer_2011.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2012",
+      "reporting_year": 2012,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2012_business_quarter04.pdf",
+      "filename": "issuer_2012.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2013",
+      "reporting_year": 2013,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2013_business_quarter04.pdf",
+      "filename": "issuer_2013.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2014",
+      "reporting_year": 2014,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2014_business_quarter04.pdf",
+      "filename": "issuer_2014.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2015",
+      "reporting_year": 2015,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2015_business_quarter04.pdf",
+      "filename": "issuer_2015.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2016",
+      "reporting_year": 2016,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/170331_2016_Business_Report_vF.pdf",
+      "filename": "issuer_2016.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2017",
+      "reporting_year": 2017,
+      "url": "https://images.samsung.com/is/content/samsung/p5/global/ir/docs/2017_business_quarter04.pdf",
+      "filename": "issuer_2017.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2018",
+      "reporting_year": 2018,
+      "url": "https://images.samsung.com/is/content/samsung/p5/global/ir/docs/2018_Business_Report_vF.pdf",
+      "filename": "issuer_2018.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2019",
+      "reporting_year": 2019,
+      "url": "https://images.samsung.com/is/content/samsung/p5/global/ir/docs/2019_Business_Report.pdf",
+      "filename": "issuer_2019.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2020",
+      "reporting_year": 2020,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2020_Business_Report.pdf",
+      "filename": "issuer_2020.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2021",
+      "reporting_year": 2021,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2021_4Q_Interim_Report_vF.pdf",
+      "filename": "issuer_2021.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2022",
+      "reporting_year": 2022,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2022-4q-Business-Report.pdf",
+      "filename": "issuer_2022.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2023",
+      "reporting_year": 2023,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2023_4Q_Interim_Report.pdf",
+      "filename": "issuer_2023.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2024",
+      "reporting_year": 2024,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2024_4Q_Interim_Report.pdf",
+      "filename": "issuer_2024.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    },
+    {
+      "id": "issuer_2025",
+      "reporting_year": 2025,
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_4Q_Interim_Report.pdf",
+      "filename": "issuer_2025.pdf",
+      "publication_date": null,
+      "source_route": "Actual official archive link2011\u20132025; independently identified official annual2005/2010"
+    }
+  ]
+}

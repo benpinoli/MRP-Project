@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "model_id": "USSLOWL_100",
+  "geography": "US",
+  "units": "percent",
+  "date_convention": "The vendor daily-factor-return row date is preserved as the source session label; it is not treated as a publication timestamp or exact return-period-end timestamp.",
+  "date_convention_source": "/home/bpinoli/groups/grp_quant/sf-data-pipelines/docs/BARRA.md and pipelines/barra_factors_flow.py",
+  "scaling_convention": "The school ingestion multiplies raw return by 100; sf_quant.load_factors documents and returns factor returns in percent, so regression preparation divides by 100.",
+  "scaling_source": "pipelines/barra_factors_flow.py and src/sf_quant/data/factors.py",
+  "publication_timestamps": "unavailable",
+  "revision_history": "unavailable",
+  "point_in_time_forecasting_valid": false,
+  "limitations": [
+    "Date labels do not verify publication clock time.",
+    "Revision and vintage history are unavailable.",
+    "Observed factor rows are not an independently verified complete US exchange calendar.",
+    "This mode is retrospective sensitivity analysis, not point-in-time forecasting evidence."
+  ]
+}

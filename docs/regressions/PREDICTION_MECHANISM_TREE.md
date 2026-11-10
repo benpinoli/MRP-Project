@@ -4,7 +4,7 @@ Active objective: understand persistent discount levels and structural change ov
 
 [Active research plan](LONG_HORIZON_RESEARCH_PLAN.md) · [Literature synthesis](LONG_HORIZON_LITERATURE.md) · [Canonical JSON](PREDICTION_MECHANISM_TREE.json)
 
-All original 40 IDs and scoped findings are retained. Four distinct long-run branches are added: cumulative public supply (S06), payout credibility (P05), opposing governance channels (G04), and credible class equalization (S07). No new empirical results are claimed. Agents remain on user-requested hold.
+All original 40 IDs and scoped findings are retained. Four distinct long-run branches are added: cumulative public supply (S06), payout credibility (P05), opposing governance channels (G04), and credible class equalization (S07). No new empirical results are claimed. Existing research team resumed under the latest user authorization; long-horizon execution ledger and source matrix record current progress.
 
 Historical evidence and current long-horizon status are different fields. A daily proxy/model failure is not a verdict on a structural mechanism. Supported arithmetic or documented rights are not proven causes of Samsung's long-run discount.
 
@@ -798,6 +798,45 @@ Original next-test note (subject to the active long-horizon task above): Advance
 
 Evidence/source keys: forecast; exact paths and access qualifications remain in the canonical JSON.
 
+## Core-pair extension checkpoint — November 9, 2026
+
+The remaining price-only B00 baselines are complete in `runs/core_pairs/baseline_20261109`; full results and audit details are in `CORE_PAIR_BASELINE_RESULTS.md`. HAC(20) lag-gap estimates are −0.01153 for SK Square/SK Hynix (p=0.0084, n=1,149), −0.00148 for Samsung Fire/Samsung Electronics common (p=0.130, n=5,203), and −0.06905 for TSMC local/ADR (p=4.15×10⁻²⁰, n=4,737). Adjusted R² values are only 0.56%, 0.06%, and 3.42%.
+
+Hypothesis interpretation is deliberately narrow. The SK Square and TSMC coefficients support only an in-sample statistical-adjustment description; they do not establish fair value, a forecast, or executable convergence. Samsung Fire provides no conventional full-window evidence of adjustment. TSMC remains compatible with several rivals—non-synchronous Taiwan/US closes, noon-New-York FX timing, liquidity, access, and limits to arbitrage—so no single cross-market mechanism is promoted. The Korean ownership, operating-business, payout, and balance-sheet branches remain untested because filings and commit `3666efa` are isolated observations rather than dated histories. Korean NAV regressions therefore remain pending.
+
+All raw exports retained their hashes and remain outside Git. The ADR source stitch passed the five-close overlap check, and missing CRSP-only fields were not imputed after the Compustat handoff.
+
+## Hypothesis-resolution checkpoint — November 9, 2026
+
+Slurm job `15204916` completed the four currently supported mechanism tests. The full design, coefficients, event paths, outcomes, and remaining gates are in `HYPOTHESIS_RESOLUTION_RESULTS_20261109.md`.
+
+- **S06/L01:** relative non-treasury supply has a strong univariate level association with annual discount, but the joint time/activity-controlled partial permutation p-value is 0.092 and the 15 annual first differences are null. From 2018–2023 the measured supply ratio is essentially constant while the discount spans 9.61 points. Supply alone is insufficient; true public float, ownership, spreads and depth remain absent.
+- **M04/B03:** a one-point widening is followed by preferred-over-common correction of 0.14%, 0.38%, and 0.53% over 1/5/20 sessions. Preferred catch-up is the dominant observed leg; common reversal is distinguishable only at five sessions. This remains exposed, close-to-close, and noncausal.
+- **S01/S02/S03/P01:** the recent repurchase programs are nearly class-proportional. The 2024 execution report precedes narrowing, while authorizations and the 2025 execution report precede widening over the reported conservative windows. Connected stages and endogenous timing prevent causal inference.
+- **TSMC extension:** both venues correct parity gaps. The Taiwan-close gap predicts a later ADR coefficient of −0.0451; the US-close gap predicts a next-Taiwan coefficient of +0.0612. Signs survive removal of the widest 10% of ADR spreads. This is price discovery, not executable arbitrage.
+
+The next highest-value source task is the reviewed annual payout-delivery panel. Korean ownership/NAV, borrow/shorting, Samsung GDR parity, and synchronized Korean quote/depth questions remain blocked.
+
+## LOOP-exception generalization checkpoint — November 9, 2026
+
+Slurm job `15208094` tests the non-Samsung workbook candidates currently represented by usable local assets. Full hypotheses, regressions, samples, outcomes, and limitations are in `LOOP_EXCEPTION_TEST_RESULTS_20261109.md`.
+
+- **B02/B03 — adjustment and forecasting:** five of seven US class/preferred pairs have a negative conventional-significance B00 coefficient, but adjusted R² is below 1.4% except Berkshire A/B (9.8%). Every expanding B00 beats a prior-252-session median-level forecast; only Berkshire and Liberty Broadband beat zero-change persistence, and Liberty's gain is about 0.2% in RMSE. General mean reversion is therefore supported as a descriptive pattern, not as a universal useful signal.
+- **M04 — correction leg:** all seven pairs show negative average relative movement after a one-point widening at 1/5/20 sessions. The right/relatively cheaper leg generally outperforms, but three pairs have 10 or fewer qualifying events and no causal microstructure channel is identified.
+- **L01 — liquidity:** wider combined spreads align with larger deviations for Alphabet, Berkshire, and Petrobras, the sign reverses for News, Fox/Liberty are weak, and Volkswagen quotes are unavailable. Liquidity is pair-specific; no universal sign is promoted.
+- **LOOP application test:** the quoted-spread diagnostic is positive for six estimable pairs, but borrow, dividends, taxes, locates, impact, and conversion costs are missing. It is not portfolio-performance evidence. Berkshire is the clearest next implementation candidate.
+- **Holdco exposure:** contemporaneous heldco betas range from 0.25 (Investor/Atlas) to about 1.00 (Naspers/Prosus). Only Liberty/Charter and SoftBank/Arm have conventional downside asymmetry. This answers exposure pass-through, not NAV discount.
+- **Common-factor rival:** PC1 explains 16.22% of seven US differential changes. Exact-calendar correlations with Samsung, SK Square, and TSMC are mostly near zero. A single global gap factor is not supported by this specification.
+- **Prosus/Tencent local sensitivity:** job `15208213` completes the staged B01–B04 normalized-gap design on 1,611 full-sample observations. Adjusted R² is 0.48%–0.71%; B03 lag-gap p=0.018 but q=0.634, B04 lag-gap p=0.071, and activity p=0.650. This is weak descriptive adjustment, not NAV or a forecast.
+
+Implications for the tree are scoped. B02 changes from a Samsung-specific rejected stable-equilibrium design to **heterogeneous across pairs**: the mechanism is strong for Berkshire, modest for Liberty, and not useful against persistence in five others. B03 gains broader descriptive support for local correction but remains noncausal and incompletely costed. L01 remains unresolved rather than supported or rejected globally. Holdco/NAV branches remain structurally blocked where dated holdings and liabilities are absent.
+
+## Still-required data checkpoint — November 9, 2026
+
+The actionable acquisition specification is in `STILL_REQUIRED_DATA_ACQUISITION_BRIEF_20261109.md`, with a Word version at `STILL_REQUIRED_DATA_ACQUISITION_BRIEF_20261109.docx`. Priority order is: (1) dated Korean ownership and point-in-time NAV histories, (2) exact local legs plus effective-dated identifiers and receipt ratios, (3) Exor/Ferrari and Industrivarden/Volvo NAV histories, (4) missing executable WRDS query provenance, and (5) borrow/execution data before any strategy claim. The current empirical checkpoint is preserved as `LOOP_EXCEPTION_CHECKPOINT_20261109.docx`.
+
+Acquisition does not change hypothesis status by itself. A branch advances only after identifier, coverage, action, timing, publication-vintage, and missing-field audits pass. Raw licensed exports remain byte-preserved and outside Git.
+
 ## Research discipline
 
 - Active scope is persistent discount level and structural change over 2/5/10 years, not next-session forecast error
@@ -811,3 +850,8 @@ Evidence/source keys: forecast; exact paths and access qualifications remain in 
 - Peer evidence must match class rights and distinguish company-specific from common market changes
 - Accessible-data proxies are labeled; a proxy null does not reject its parent mechanism
 - Preserve simple logged patches and recurring independent inspection; no new local empirical work or agent restart in this planning turn
+
+
+## Execution checkpoint
+
+LHA job15068738 completed and independently reviewed:261qualifiedmonths2005-01–2026-09,87completequarters;24/60/120month overlappingcounts237/201/141, anchorednonoverlap10/4/2. No causaldriverassigned. Source PDFs2010–2025 acquired;2005browserfactsverified butdirectdownload403. Reconstruction active under LONG_HORIZON_EXECUTION_LEDGER.json and LONG_HORIZON_SOURCE_COVERAGE.csv. Vendor2025preferredsharecount and issuer2024treasurytable discrepancies are explicitlyunresolved; pricehistoryunaffected.

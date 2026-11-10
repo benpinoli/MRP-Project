@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-09",
+  "purpose": "Predeclared mechanism-discrimination batch using already-qualified inputs; retrospective and exploratory, not causal or trading evidence.",
+  "inputs": {
+    "annual_supply": {"path": "runs/samsung/long_horizon_b_15069061/annual_supply_activity.csv", "sha256": "a3653a515f370b3e1af2c6d8d587cf0ea62b86389c1a30734ea6d3d41381e47d"},
+    "samsung_grid": {"path": "runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/tables/measures_main.csv", "sha256": "e920e158e7770dee66608c8a258530700ae5e75a66974a089cca1082792638c9"},
+    "samsung_raw": {"path": "src/sf_quant/data/samsung_2005-20261020.csv", "sha256": "c64a9cdbba02ee7d70cd3fa4b0af14e0540d0beab70d3d55132f333fb11ba8bb"},
+    "core_pair_panels": {"path": "runs/core_pairs/baseline_20261109/panels.csv", "sha256": "13277951b0d5f8cb291f435acf845bb2f914d8152871b14ebea05550af9706a5"},
+    "issuer_event_config": {"path": "configs/prediction_continuation/issuer_events_j_v1.json", "sha256": "763983bcc5ab7ff78e511cace9d39d15faf41ca0f8d90990d4dcdd9b338b7ec5"}
+  },
+  "annual": {
+    "permutations": 20000,
+    "seed": 20261109,
+    "stable_supply_start": 2018,
+    "stable_supply_end": 2023
+  },
+  "samsung_leg_adjustment": {
+    "signal": "current discount change in percentage points",
+    "horizons_sessions": [1, 5, 20],
+    "windows": [
+      {"id": "full", "start": "2005-01-03", "end": "2026-10-20"},
+      {"id": "2005_2014", "start": "2005-01-03", "end": "2014-12-31"},
+      {"id": "2015_2019", "start": "2015-01-01", "end": "2019-12-31"},
+      {"id": "2020_2026", "start": "2020-01-01", "end": "2026-10-20"}
+    ],
+    "minimum_observations": 252
+  },
+  "tsmc_price_discovery": {
+    "windows": [
+      {"id": "full", "start": "2005-01-03", "end": "2026-09-30"},
+      {"id": "2005_2014", "start": "2005-01-03", "end": "2014-12-31"},
+      {"id": "2015_2019", "start": "2015-01-01", "end": "2019-12-31"},
+      {"id": "2020_2026", "start": "2020-01-01", "end": "2026-09-30"}
+    ],
+    "hac_lag": 5,
+    "minimum_observations": 252,
+    "spread_exclusion_quantile": 0.9
+  }
+}

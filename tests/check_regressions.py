@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from samsung_research.regressions import (align_factors, collect, digest, fit_ols, fit_task, freeze,
+from samsung_research.regressions import (align_factors, align_preceding_us_sessions, collect, digest, fit_ols, fit_task, freeze,
     outcomes, prepare, read_json, tasks, utc_column, write_json)
 
 
@@ -64,6 +64,17 @@ class RegressionChecks(unittest.TestCase):
         factors.loc[1, "TEST"] = np.nan
         a, _ = align_factors(sessions, factors, timing, ["TEST"], .01)
         self.assertTrue(np.isnan(a.F_TEST.iloc[1]))
+
+    def test_retrospective_preceding_us_sessions_and_holidays(self):
+        sessions = pd.DataFrame({"date": ["2020-01-03", "2020-01-06", "2020-01-08", "2020-01-09"]})
+        factors = pd.DataFrame({"date": ["2020-01-03", "2020-01-06", "2020-01-07"],
+                                "TEST": [1.0, 2.0, 3.0]})
+        aligned, mapping = align_preceding_us_sessions(sessions, factors, ["TEST"], .01)
+        self.assertTrue(np.isnan(aligned.F_TEST.iloc[0]))
+        self.assertAlmostEqual(aligned.F_TEST.iloc[1], .01)
+        self.assertAlmostEqual(aligned.F_TEST.iloc[2], .05)
+        self.assertTrue(np.isnan(aligned.F_TEST.iloc[3]))
+        self.assertEqual(mapping.factor_date.tolist(), ["2020-01-03", "2020-01-06", "2020-01-07", ""])
 
     def test_ols_and_hac_against_independent_score_calculation(self):
         rng = np.random.default_rng(31)

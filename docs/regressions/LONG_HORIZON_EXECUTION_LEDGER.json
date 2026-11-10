@@ -1,0 +1,86 @@
+{
+  "active_objective": "Explain discount levels and sustained changes over2/5/10years",
+  "updated_utc": "2026-11-09",
+  "environment": {
+    "host": "login03",
+    "repo": "/home/bpinoli/MRP/MRP-Project",
+    "revision": "7cbcfda2f1aa786ebbf0009aaeef1ca2a45c0f83",
+    "research_python": ".venv-rg/bin/python",
+    "account": "bhb35",
+    "runtime_model_verification": "Accepted original explicit requests, no runtime introspection",
+    "git_policy": "preserve all dirty work; no stash/reset/push"
+  },
+  "batches": [
+    {
+      "id": "LHA",
+      "status": "completed_independently_reviewed",
+      "config": "configs/long_horizon/lha_v1.json",
+      "purpose": "Monthly/quarterly map and24/60/120month descriptive changes",
+      "independent_review": "Four syntheticchecks and Inspectorprefitpassed; last-valid endpoint staleness explicit",
+      "next_action": "LHBsource-extraction and annualjointpanel",
+      "job_id": 15068738,
+      "run": "runs/samsung/long_horizon_a_15068738",
+      "review": "261months/87quarters independentlyreproduced; overlap/nonoverlap237/201/141 vs10/4/2; no causal claims"
+    },
+    {
+      "id": "LHB-source",
+      "status": "ready_for_pdf_extraction",
+      "inputs": "data/regression/raw/long_horizon_issuer_20261105/extraction_inputs.json",
+      "source_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "purpose": "Page-marked source text before numeric extraction; no automated tableclaims",
+      "next_action": "Slurm PDF extraction then inspect annual share/treasury/ownership/payout fields"
+    },
+    {
+      "id": "LHB",
+      "status": "completed_independently_reviewed",
+      "job_id": 15069061,
+      "run": "runs/samsung/long_horizon_b_15069061",
+      "purpose": "Annual non-treasury share supply and relative activity panel",
+      "review": "17 joint years; non-treasury is not public float; volume proxy is not trading cost"
+    },
+    {
+      "id": "HR1",
+      "status": "completed_reviewed",
+      "job_id": 15204916,
+      "run": "runs/hypothesis_resolution/15204916/results",
+      "report": "docs/regressions/HYPOTHESIS_RESOLUTION_RESULTS_20261109.md",
+      "purpose": "Resolve currently testable supply/activity, price-leg, issuer-event, and TSMC timing questions"
+    }
+  ],
+  "source_coverage_matrix": "docs/regressions/LONG_HORIZON_SOURCE_COVERAGE.csv",
+  "decisions": [
+    {
+      "id": "LH-D01",
+      "decision": "Daily nulls do not identify multi-year structural mechanisms",
+      "status": "active"
+    },
+    {
+      "id": "LH-D02",
+      "decision": "Monthlyratio-before-mean,completequarter,exactcalendarhorizons,noIIDoverlapinference",
+      "status": "locked_before_LHA"
+    },
+    {
+      "id": "LH-D03",
+      "decision": "Firstpriorityjointnon-treasury supply/tradinghistory with competing scarcity/liquidity effects",
+      "status": "source_acquisition_active"
+    }
+  ],
+  "source_coverage_notes": "docs/regressions/LONG_HORIZON_SOURCE_COVERAGE.json"
+}

@@ -1,0 +1,11 @@
+{
+ "inputs":{
+  "raw":{"path":"src/sf_quant/data/samsung_2005-20261020.csv","sha256":"c64a9cdbba02ee7d70cd3fa4b0af14e0540d0beab70d3d55132f333fb11ba8bb"},
+  "grid":{"path":"runs/samsung/RG/20261026T131821Z_setup/EP01/20261026T131848_234484Z/tables/measures_main.csv","sha256":"e920e158e7770dee66608c8a258530700ae5e75a66974a089cca1082792638c9"},
+  "pair":{"path":"runs/samsung/RG/20261026T131821Z_setup/pair.json","sha256":"d274770c661372e32a1ed5b603df8e78a70e983433243bc62523cc3e1d79fe39"},
+  "issuer":{"path":"data/regression/raw/long_horizon_issuer_20261105/annual_share_counts_v1.json","sha256":"b1d230d060058b275e7138509a39e4d51db3415a9eba10fde1fbaf60485e3bc1"},
+  "annual_q":{"path":"runs/samsung/long_horizon_a_15068738/annual.csv","sha256":"f3577d44dc9d2185fd5c106a9a64955b7ecc43a63ddece8ccac49245872aafcc"}
+ },
+ "minimum_proxy_volume_coverage":0.8,"split_first_trading_date":"2018-05-04","split_factor":50,"last_complete_year":2025,
+ "scope":"Retrospective descriptive levels; source-issued minus treasury is not public float; end-year denominator is not average float; no causal inference or PIT claim"
+}
