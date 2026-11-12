@@ -69,3 +69,31 @@ Reconcile this package with the [November 9 inventory](../data_acquired/DATA_EXP
 Existing validated core/Samsung/Prosus regressions are independent of the nine new LOOP descriptor gaps. Continue only currently authorized work, with the established 2/5/10-year structural research scope and normal scheduler rules. For the nine new comparisons, resolve period-specific identity and unit gates, freeze exact verified identifiers, and explicitly record the released acquisition intervals before pulling full daily prices. Do not turn absent data into zero values or count blocked regressions as null findings.
 
 The package recovers saved Global daily query specification 7980223 and an existing TSM query-summary job ID 11890165 without rerunning either. Other original query provenance remains incomplete. Six new descriptor/event/metadata SQL files are not substitutes for missing original core SQL.
+
+## BYU receipt and validation — November 12, 2026
+
+The private transfer was received and verified at `data/acquisition/2026-11-11/wrds_descriptor_review/`. The separately delivered ZIP SHA-256 matched its delivery JSON, all 95 archive entries passed path/symlink safety checks, and every extracted file matched the delivered byte count and SHA-256. The separate workstation-named snapshot was preserved rather than overlaid. A private aggregate receipt and dated per-comparison decisions are stored inside the ignored bundle; no licensed row was added to Git.
+
+The portable review verified all six original export hashes and 805 raw rows before writing review output. Four synthetic checks passed. The reproduced aggregate decisions are 16 current local identities accepted, one inactive local identity accepted, six US receipts accepted, one historical ratio-basis record, and seven unresolved historical local records. No full historical panel is approved and no daily pull is released.
+
+The required default reviewer command exposed a packaging interaction: it rewrites two generated files under `identity_review/` that are also members of the immutable delivery inventory. The source/raw hashes passed first and no raw or prepared source changed. The two generated delivery files were restored byte-for-byte from the verified ZIP, the delivery inventory returned to zero mismatches, and the reviewer was rerun successfully with a separate ignored output directory, `ssh_identity_review_20261112/`. Future receipt validation should use a separate `--output` directory when the delivered review files are part of the package manifest.
+
+Existing server inputs were reconciled without reacquisition: all 17 November 9 core files match their baseline manifest, the Samsung source matches its registry hash, and the Prosus archive matches its checksum. Thirty-one of the 32 shared annual asset files still match the prior LOOP run by size. The shared `assets_2026.parquet` has been refreshed since that run; the old result remains tied to its immutable manifest, while any future run must freeze the new source metadata. No scheduler job was active or submitted during receipt validation.
+
+### Comparison-level acquisition decisions
+
+| Comparison | What can proceed | Remaining gate and next exact step |
+| --- | --- | --- |
+| Alibaba | Exact current Hong Kong and US receipt identities can enter a bounded identifier/ratio review. | Discover entitled historical identifier/current-span records and certify the dated matched-share ADS basis before releasing prices. |
+| HDFC | Reuse the accepted receipt history and documented split clocks. | Resolve two old local identifiers and the effective issue chain; preserve the July 14 local versus July 25 US 2011 ex-date separation. |
+| Shell | Reuse accepted receipt histories, inactive Shell B identity and the separate SHELWI transition record. | Resolve old Shell A, historical GBP/GBX scale and the July 20-versus-25 vendor start discrepancy; keep conditional January 31 trading separate. |
+| Novo Nordisk | Reuse the accepted receipt identity and verified split-trading clocks. | Resolve three old local identifiers and retain the 2007 vendor payment, ex-trading and issuer distribution dates as separate clocks. |
+| BYD | Freeze the current Shenzhen A and Hong Kong H identities; exclude the RMB counter. | Obtain effective-dated identifier, currency/unit and live-coverage history before a bounded A/H pull. |
+| Ping An | Freeze the current Shanghai A and Hong Kong H identities; exclude the RMB counter. | Obtain effective-dated identifier, currency/unit and live-coverage history before a bounded A/H pull. |
+| Hyundai | Freeze current common and three preferred identities for class-by-class review. | Verify historical class continuity, rights, metadata and the exact preferred comparison before prices or regressions. |
+| Roche | Reuse current voting/nonvoting identities and public March 2026 transition evidence. | Resolve the old ROG record and freeze separate pre/post ROP intervals before a daily pull. |
+| Volkswagen | Freeze the two current Xetra class identities; exclude Frankfurt/OTC substitutes. | Obtain effective-dated Xetra identifier, currency/unit and live-coverage history before prices. |
+
+The next common query is read-only catalog discovery for the entitled `SEC_IDHIST`/`SEC_IDCURRENT`-equivalent product described in `WRDS_DAILY_PRICES_AND_MAPPING_REQUEST_20261112.md`, followed by one separately reviewed issue/date interval at a time. Current-master acceptance alone does not authorize any of the nine daily panels.
+
+Independent completed regressions remain usable: Samsung B01–B04 and registered sensitivities, the three core-pair price/gap suites, Prosus/Tencent/Naspers return and normalized-gap models, and existing US share-class LOOP tests tied to their frozen inputs. The active structural interpretation remains the 2/5/10-year scope. Daily forecast selection and previously paused programs were not restarted.
