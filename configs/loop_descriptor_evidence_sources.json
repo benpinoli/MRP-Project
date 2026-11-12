@@ -1,0 +1,35 @@
+{
+  "shell_2005_listing": "https://www.sec.gov/Archives/edgar/data/85486/000115697305001194/u49094e425.htm",
+  "shell_2022_unification": {
+    "url": "https://shell.gcs-web.com/static-files/825bb652-0e90-4790-a3c5-9c401bf73781",
+    "format": "pdf"
+  },
+  "shell_lse_quote_units": "https://www.londonstockexchange.com/en/quote/equity/SHEL/shell-plc",
+  "novo_2007_nasdaq": "https://www.globenewswire.com/news-release/2007/11/23/76847/0/en/files/179236/0/novo%20nordisk%20-%20ny%20aktiestrrelse%20-%20uk.pdf",
+  "novo_2007_issuer_split": {
+    "url": "https://www.sec.gov/Archives/edgar/data/353278/000120864607000555/c97594.txt",
+    "format": "txt"
+  },
+  "novo_2014_nasdaq": {
+    "url": "https://attachment.news.eu.nasdaq.com/ac6b9fe9deb5f6653f61fb73c72752bea",
+    "format": "pdf"
+  },
+  "novo_2014_issuer_split": "https://www.globenewswire.com/news-release/2013/12/10/595738/0/en/Novo-Nordisk-A-S-Stock-split-information.html",
+  "novo_2023_nasdaq": "https://view.news.eu.nasdaq.com/view?id=b9823fdbabd855d92e2130eaf0fd73599&lang=en",
+  "novo_2023_issuer_split": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=166312",
+  "novo_2023_depositary_split": {
+    "url": "https://api.markitdigital.com/jpmadr-public/v1/cms/document?cmsId=b8e6af19336b45cc8b7fdf8538d778e5&sequenceNo=10",
+    "format": "pdf"
+  },
+  "hdfc_2011_nse_split": "https://archives.nseindia.com/content/circulars/faop18313.pdf",
+  "hdfc_2011_issuer_20f": "https://www.sec.gov/Archives/edgar/data/1144967/000119312511260793/d213702d20f.htm",
+  "hdfc_2019_nse_split": "https://nsearchives.nseindia.com/content/circulars/CMPT42091.pdf",
+  "hdfc_2019_occ_split": "https://www.miaxglobal.com/sites/default/files/alert-files/HDB_Split_45691.pdf",
+  "hdfc_2025_nse_bonus": "https://nsearchives.nseindia.com/content/circulars/FAOP69840.pdf",
+  "hdfc_2025_box_split": "https://boxexchange.com/assets/BOXOnnMemo207250.pdf",
+  "hdfc_issuer_receipt_terms": "https://www.hdfc.bank.in/about-us/investor-relations/adr",
+  "hkex_h_share_identifiers": "https://www.hkex.com.hk/-/media/HKEX_Common/Market/Indices/SCCEA/Documents/202601_EN_factsheet.pdf",
+  "hkex_shanghai_cross_listings": "https://www.hkex.com.hk/-/media/HKEX-Market/Services/Market-Data-Services/Real-Time-Data-Services/Market-Data-Promotions/Marketing-Programmes-on-Securities-Market-Data/Mainland-Market-Data-Collaboration-Programme/Market-Data-Collaboration-Stock-List--SSE-%2820180117%29.pdf",
+  "byd_shenzhen_listing": "https://static.cninfo.com.cn/finalpage/enpage/002594_2.pdf",
+  "hyundai_krx_class_identifiers": "https://kind.krx.co.kr/external/2026/09/17/000117/20260917000264/68155.htm"
+}

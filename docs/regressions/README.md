@@ -13,6 +13,8 @@ This is the central entry point for the next research stage. The user's October 
 | [Literature replication map](LITERATURE.md) | Published equations versus Samsung adaptations and missing inputs |
 | [Factor and mechanism dictionary](FACTORS.md) | Economic intuition, signs, exact proposed transformations and dependencies |
 | [Data contracts and layout](DATA.md) | Export schemas, timestamps, licensing, missingness and provenance |
+| [WRDS descriptor collection and SSH handoff](WRDS_DESCRIPTOR_HANDOFF_20261111.md) | Six new source exports, completed identity review, private transfer and remaining nine-pair gates |
+| [WRDS prompt for SSH agents](WRDS_SSH_AGENT_PROMPT_20261111.md) | Copyable receipt, validation and research-continuation instructions |
 | [Cluster runbook](CLUSTER.md) | Environment setup, Slurm submission, failures and result review |
 | [Cluster-side agent prompt](CLUSTER_AGENT_PROMPT.md) | Pasteable instructions for setup, verified submission and offline handoff |
 | [Machine-readable specifications](../../configs/samsung_regressions.json) | Executable model definitions, sample windows, factors and inference settings |
