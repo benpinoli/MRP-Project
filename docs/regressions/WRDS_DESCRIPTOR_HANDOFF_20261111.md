@@ -2,6 +2,8 @@
 
 The November 11 BYU/WRDS screen-control pass collected six source CSVs (805 rows), their exact generated SQL, a source manifest, and review evidence. This public repository contains the verification code and public search seeds. The licensed CSVs, row-level crosswalk and UI evidence travel separately to authorized BYU storage; they are not Git content.
 
+For the next acquisition, read the [November 12 exact daily-price and historical-mapping request](WRDS_DAILY_PRICES_AND_MAPPING_REQUEST_20261112.md). It adds the `sec_idhist`/identifier-package discovery step; the limited `g_sec_history` result does not establish that identifier histories are unavailable elsewhere. The original ZIP and its checksum remain unchanged.
+
 ## Collection directory and guide
 
 Canonical repository-relative directory after transfer:
