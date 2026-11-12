@@ -1,6 +1,15 @@
-# Samsung discount regression research hub
+# LOOP discount regression research hub
 
-Specification RG 1.0.0 · 2026-10-26 · owner: researcher · status: infrastructure prepared; no empirical regression run.
+Current checkpoint, November 12, 2026: the [long-horizon LOOP batch](LOOP_LONG_HORIZON_RESULTS_20261112.md)
+completed across all nine newly acquired comparisons. It contains 24/60/120-month
+linear models, matured-label retrospective forecast evaluations, and explicit
+negative and insufficient-history findings. No prospective predictive model is
+validated. Use the [active protocol](LOOP_LONG_HORIZON_PROTOCOL_20261112.md),
+[canonical hypothesis tree](PREDICTION_MECHANISM_TREE.json), and
+[evidence ledger](LOOP_RESEARCH_EVIDENCE_LEDGER.json).
+
+Historical infrastructure specification: RG 1.0.0, October 26, 2026. The sections
+below preserve that design and subsequent research navigation.
 
 This is the central entry point for the next research stage. The user's October 26 instruction supersedes the earlier descriptive-only stopping point. The observed narrowing and recent widening motivate hypotheses; they are not evidence of a particular cause. Preserve the descriptive runs and investigate changes without choosing a reversal date after seeing regression results.
 

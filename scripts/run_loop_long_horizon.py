@@ -221,7 +221,7 @@ def main():
         if digest(fx_path) != cfg['fx_sha256']:
             raise ValueError('Frozen FX input changed')
         inputs[cfg['fx_path']] = digest(fx_path)
-        raw_fx = pd.read_csv(fx_path)
+        raw_fx = pd.read_csv(fx_path, low_memory=False)
         if {'date', 'currency', 'foreign_units_per_EUR'} <= set(raw_fx):
             fx = raw_fx.pivot(index='date', columns='currency', values='foreign_units_per_EUR')
         else:
@@ -277,6 +277,8 @@ def main():
             'ratio_assumption': ratio if receipt else 1,
             'synchronized_close': False if receipt or comparison in ('byd', 'ping_an') else 'same_market_proxy'})
         daily_rows.append(data[['sample', 'date', 'discount_pp', 'activity']])
+        sample_checkpoint = {'status': 'running', 'sample': sample,
+            'config_sha256': digest(args.config), 'variants': {}}
         for variant, fraction in cfg['coverage_variants'].items():
             monthly = monthly_panel(data, outer, last_complete, fraction, cfg['minimum_monthly_observations'])
             monthly['sample'] = sample
@@ -284,8 +286,13 @@ def main():
             monthly_rows.append(monthly.reset_index())
             co, pr, st, cu = fit_forecast(monthly, cfg, sample, variant)
             coefficient_rows.extend(co); forecast_rows.extend(pr); status_rows.extend(st); current_rows.extend(cu)
+            sample_checkpoint['variants'][variant] = {'coefficients': co, 'forecasts': pr,
+                'model_status': st, 'candidate_future_forecasts': cu,
+                'monthly_csv': monthly.to_csv()}
+            save_json(out/(sample+'_checkpoint.json'), sample_checkpoint)
         # Each class gets a durable checkpoint before moving on.
-        save_json(out/(sample+'_checkpoint.json'), {'status': 'completed', 'sample': sample})
+        sample_checkpoint['status'] = 'completed'
+        save_json(out/(sample+'_checkpoint.json'), sample_checkpoint)
         save_json(out/'progress.json', {'status': 'running', 'completed_samples': [r['sample'] for r in coverage]})
     for name, rows in [('coefficients', coefficient_rows), ('forecasts', forecast_rows),
                        ('model_status', status_rows), ('candidate_future_forecasts', current_rows), ('coverage', coverage)]:

@@ -1,6 +1,6 @@
 {
   "active_objective": "Develop and test hypothesis-guided linear predictions of LOOP class-price discounts over 2, 5 and 10 years; preserve all prior scoped findings",
-  "updated_utc": "2026-11-12T18:09:32.958807+00:00",
+  "updated_utc": "2026-11-12T18:17:48.298485+00:00",
   "environment": {
     "host": "login03",
     "repo": "/home/bpinoli/MRP/MRP-Project",
@@ -65,8 +65,8 @@
     },
     {
       "id": "LOOP-LH1",
-      "status": "submitted",
-      "updated_utc": "2026-11-12T18:09:32.958807+00:00",
+      "status": "completed",
+      "updated_utc": "2026-11-12T18:17:48.298485+00:00",
       "config": "configs/loop_long_horizon_v1.json",
       "protocol": "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
       "purpose": "Monthly 24/60/120-month linear discount predictions with matured-label training and pragmatic cleaning",
@@ -81,7 +81,66 @@
       "authorization": "User November 12 go instruction; isolated bad days may be excluded; no paused job restart",
       "validated_predictive_model": false,
       "job_id": "15293344",
-      "run": "runs/loop_long_horizon/15293344"
+      "run": "runs/loop_long_horizon/15293344",
+      "results": {
+        "status": "completed",
+        "samples": 14,
+        "model_status_rows": 252,
+        "pseudo_oos_forecasts": 13695,
+        "completed_utc": "2026-11-12T18:11:14.599822+00:00"
+      },
+      "report": "docs/regressions/LOOP_LONG_HORIZON_RESULTS_20261112.md",
+      "verification": {
+        "verified_forecasts": 13695,
+        "max_prediction_reconstruction_difference": 3.353761712787673e-12,
+        "evaluation_rows_verified": 131,
+        "future_training_labels": 0,
+        "source_commit": "17bd49f",
+        "original_output_sha256": {
+          "alibaba_local_ADS_checkpoint.json": "d7f11a73042d8c756bd69ffb5d89464de099684b00929a8691b6fc389f4a81e9",
+          "byd_A_H_checkpoint.json": "1222e826402d36873371e8607c79165915e844813a6d3d0cba10ab0325f390cd",
+          "candidate_future_forecasts.csv": "9f77c3b17e77cf0eb9b53648da4899cfbafbcda59ede789283daffe78553ea7d",
+          "coefficients.csv": "37db8573804f321a0026dc0b1c84bad29706d8cbd24e341ffeb45f12bee234ab",
+          "coverage.csv": "c976fa6c13291d005f3c8ab7f739e601a7606730f53c6a16769f0b2958d00608",
+          "daily_gap_diagnostics.csv": "9140bd3bb0538e450a1e25963b450767471510d2c9fd9481a6162559be0f46dc",
+          "evaluation.csv": "a173ccaebe88e51a76947cf90b6c057f7f1558aedb957821d63a71da4c780437",
+          "forecasts.csv": "97b4428c58318b23daf21f404e7cb456e71bbd875f5312b612d7bc73e9bbf5b3",
+          "hdfc_local_ADS_checkpoint.json": "c699c1c06a006542accfd2bca3d997c5d0aedfa2e374d005460f3aa59e0153f2",
+          "hyundai_common_local_pref_1_checkpoint.json": "b4abed75f2f822247db980525c410afd633043e4654abe2290c8117ff1e3f99d",
+          "hyundai_common_local_pref_2_checkpoint.json": "61190403aa3ce6a25c3ed7026f3024dad2f9b83ce627acfb9fab920eb196902d",
+          "hyundai_common_local_pref_3_checkpoint.json": "d8df9bd71d1d0a990765b718dcd6ab55d93d36c4482c31b0a66604a55f8b486e",
+          "incremental_comparisons.csv": "dcafaeb661587eec05408bce55a9e5e16069420948c5610c90bb3be59f1dce32",
+          "model_status.csv": "11ba1bcc5332923e04ede5625fecaf41c480b3144dd5523115af86bd6bc5c57d",
+          "monthly.csv": "0b561c8749f8dd52734a46eb288b78f6a2d41625a9801727be7bb3d985ae817c",
+          "novo_nordisk_local_ADS_checkpoint.json": "0fdc17e4eee2a0fa9060652c55a9fd74cdedfb787b76df71786878e3d93280fd",
+          "ping_an_A_H_checkpoint.json": "99504b174e770e9dea7b27d424e041fe5dbcd2d2be16b09daa5288f780ae1a23",
+          "progress.json": "d2c7d664494ac163360898c2c651a170bb6ec0b29d377b29cd93b213f65081b7",
+          "provenance.json": "49bec6565d4bc44c4a0491346578f61214c25628815af05ca8b5b0e4a1284dba",
+          "roche_voting_Genussschein_checkpoint.json": "8b06ae19e130a35159db7241d49d585166f27e9872b5042ba0af4bea8ca1df7e",
+          "roche_voting_participation_checkpoint.json": "7dbe5be276b86ec5f681a4cec1a3b4a6f01261b2303ac8dbf6fafaf93f7116fd",
+          "shell_RDS_A_checkpoint.json": "c7fbe08b6232fdf43dfad4a73c46c647189e1895942fc0571a6d663ef0efa93f",
+          "shell_RDS_B_checkpoint.json": "6c4fdd3496f410b32a22f59f3687d7917eac6289bae9de5a90a7e99569ac3e5f",
+          "shell_SHEL_checkpoint.json": "2b42a2dd5368d7d453f8876658712aa73a7e55f2956713ca4ba3bba5c8819e28",
+          "volkswagen_ordinary_preferred_checkpoint.json": "d825492e77dfa04b2a28ffa5c66b41b129a9023f7ddba8b9965919fc62b641a8"
+        },
+        "source_inputs_unchanged": true,
+        "complete_class_checkpoints": 14,
+        "independent_agent_review": false,
+        "method": "Separate chronological mask and numpy least-squares reconstruction"
+      },
+      "scoped_findings": {
+        "baseline_24m_wins": 4,
+        "baseline_24m_comparisons": 11,
+        "baseline_60m_wins": 4,
+        "baseline_60m_comparisons": 11,
+        "activity_24m_increment_wins": 0,
+        "activity_24m_comparisons": 11,
+        "activity_60m_increment_wins": 8,
+        "activity_60m_comparisons": 11,
+        "120m_oos": "Insufficient history under declared matured-label training minimum",
+        "causal_mechanisms_rejected": false,
+        "validated_predictive_model": false
+      }
     }
   ],
   "source_coverage_matrix": "docs/regressions/LONG_HORIZON_SOURCE_COVERAGE.csv",
@@ -107,5 +166,6 @@
       "status": "authorized_2026-11-12"
     }
   ],
-  "source_coverage_notes": "docs/regressions/LONG_HORIZON_SOURCE_COVERAGE.json"
+  "source_coverage_notes": "docs/regressions/LONG_HORIZON_SOURCE_COVERAGE.json",
+  "environment_scope": "The environment block preserves the older Samsung setup; current LOOP input/code/config/environment records are in each run provenance.json"
 }

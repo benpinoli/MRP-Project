@@ -6,7 +6,7 @@ Develop and test hypothesis-guided linear predictions of LOOP class-price discou
 
 Historical Samsung/daily verdicts retain their original scope. New LOOP assessments are recorded separately; an activity proxy is not a causal liquidity test, and exposed-history backtests are not prospective validation.
 
-Current execution: LOOP-LH1 submitted; job 15293344
+Current execution: LOOP-LH1 completed; job 15293344
 
 ## LH1 Public share supply and sustained trading capacity
 
@@ -96,9 +96,11 @@ Nearest rival: Relative volatility and price-induced trading
 
 Next discriminating test: Acquire synchronized class bid/ask and depth or a reviewed cost proxy; retain annual activity result as a proxy null
 
-**LOOP LOOP-LH1:** submitted. Incremental relative-volume activity prediction is tested against a state model on identical origins. It does not establish causal liquidity costs.
+**LOOP LOOP-LH1:** completed. Incremental relative-volume activity prediction is tested against a state model on identical origins. It does not establish causal liquidity costs.
 
-Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344
+Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344, docs/regressions/LOOP_LONG_HORIZON_RESULTS_20261112.md
+
+Result within this batch: Activity worsens all 11 two-year same-origin state-model comparisons in both cleaning variants. It improves 8/11 five-year pragmatic comparisons, based on very few nonoverlapping spans; no causal liquidity verdict.
 
 ## LH2 Durable investor base, institutional demand and access
 
@@ -464,9 +466,11 @@ Nearest rival: Valid unusual move or actual market suspension
 
 Next discriminating test: Acquire independent sessions; keep raw and omit affected labels without bridging
 
-**LOOP LOOP-LH1:** submitted. Exploratory monthly samples exclude isolated bad rows; 50% observed-weekday coverage main and 80% sensitivity. No full calendar certification or future-price filling.
+**LOOP LOOP-LH1:** completed. Exploratory monthly samples exclude isolated bad rows; 50% observed-weekday coverage main and 80% sensitivity. No full calendar certification or future-price filling.
 
-Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344
+Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344, docs/regressions/LOOP_LONG_HORIZON_RESULTS_20261112.md
+
+Result within this batch: Pragmatic and strict baseline persistence-score signs agree in all 22 estimable sample/horizon comparisons; small cleaning differences do not explain the main mixed result.
 
 ### M02 Class mapping / split / units
 
@@ -480,9 +484,11 @@ Nearest rival: Real class repricing
 
 Next discriminating test: Mask split transitions in raw class-return features; never invent adjusted total returns
 
-**LOOP LOOP-LH1:** submitted. Preserve dated split exclusions, Shell class boundaries and Roche conversion. Cross-market matched-basis ratios and Shell quote scale remain explicit assumptions.
+**LOOP LOOP-LH1:** completed. Preserve dated split exclusions, Shell class boundaries and Roche conversion. Cross-market matched-basis ratios and Shell quote scale remain explicit assumptions.
 
-Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344
+Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344, docs/regressions/LOOP_LONG_HORIZON_RESULTS_20261112.md
+
+Result within this batch: Fourteen class-specific samples constructed across all nine comparisons using declared structural boundaries; FX/ratio/scale assumptions remain scoped.
 
 ### M03 Equal-cash ex-dividend ratio arithmetic
 
@@ -548,9 +554,11 @@ Nearest rival: Weak changing signal and forecast estimation noise
 
 Next discriminating test: Keep Z0 in every branch and future cohort
 
-**LOOP LOOP-LH1:** submitted. Persistence benchmark is mandatory at 24/60/120 calendar months; daily benchmark findings are not promoted to multi-year truth.
+**LOOP LOOP-LH1:** completed. Persistence benchmark is mandatory at 24/60/120 calendar months; daily benchmark findings are not promoted to multi-year truth.
 
-Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344
+Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344, docs/regressions/LOOP_LONG_HORIZON_RESULTS_20261112.md
+
+Result within this batch: Persistence beats LH-LEVEL in 7/11 two-year and 7/11 five-year comparisons; this rejects a universal advantage for the present linear correction design, not all possible prediction.
 
 ### B02 Global or rolling equilibrium adjustment
 
@@ -564,9 +572,11 @@ Nearest rival: Structural drift, omitted class demand, spurious persistent level
 
 Next discriminating test: Reopen only with a dated equilibrium/state variable; retain rejected R756
 
-**LOOP LOOP-LH1:** submitted. Nested linear discount-state models use only matured labels at each expanding origin; historical outcomes are exposed, ten-year evaluation may be infeasible.
+**LOOP LOOP-LH1:** completed. Nested linear discount-state models use only matured labels at each expanding origin; historical outcomes are exposed, ten-year evaluation may be infeasible.
 
-Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344
+Evidence: docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md, runs/loop_long_horizon/15293344, docs/regressions/LOOP_LONG_HORIZON_RESULTS_20261112.md
+
+Result within this batch: LH-LEVEL beats persistence in 4/11 at each evaluable horizon. Novo improves at both horizons; no feasible ten-year OOS evaluation. Results remain exposed-history exploratory evidence.
 
 ### B03 Local short-horizon reversal
 
@@ -604,4 +614,4 @@ Next discriminating test: Advance one economic threshold only if stable developm
 - Reconstruct multi-year supply/ownership/payout histories rather than treating six recent disclosures as a complete study
 - Peer evidence must match class rights and distinguish company-specific from common market changes
 - Accessible-data proxies are labeled; a proxy null does not reject its parent mechanism
-- Preserve simple logged patches and recurring independent inspection; no new local empirical work or agent restart in this planning turn
+- November 12 user authorization resumes new tree-guided 2/5/10-year research; checkpoint each batch, preserve exclusions and scoped negative results, and do not restart unrelated paused work

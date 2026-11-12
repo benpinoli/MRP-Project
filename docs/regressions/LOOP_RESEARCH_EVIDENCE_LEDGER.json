@@ -36,6 +36,78 @@
       ],
       "preserved_prior_findings": "Existing Samsung, core-pair, and US proxy results retain their original samples/horizons",
       "next_test": "Same-origin OOS benchmark and activity increments, coverage sensitivity, nonoverlapping information counts"
+    },
+    {
+      "batch_id": "LOOP-LH1",
+      "timestamp_utc": "2026-11-12T18:16:42.374898+00:00",
+      "status": "completed",
+      "job_id": "15293344",
+      "run": "runs/loop_long_horizon/15293344",
+      "supported": [
+        "Verified receipt controls; exact candidate date membership",
+        "All forecast arithmetic reconstructed with separate calendar-date training masks and numpy least squares"
+      ],
+      "not_established": [
+        "Required-return discount rates",
+        "Causal liquidity mechanism",
+        "Validated 2/5/10-year predictive model",
+        "Executable arbitrage"
+      ],
+      "preserved_prior_findings": "Existing Samsung, core-pair, and US proxy results retain their original samples/horizons",
+      "next_test": "Diagnose linear coefficient/regime instability and train-only fixed regularization before adding structural supply/ownership/payout histories; reserve prospective evidence",
+      "scoped_findings": {
+        "baseline_24m_wins": 4,
+        "baseline_24m_comparisons": 11,
+        "baseline_60m_wins": 4,
+        "baseline_60m_comparisons": 11,
+        "activity_24m_increment_wins": 0,
+        "activity_24m_comparisons": 11,
+        "activity_60m_increment_wins": 8,
+        "activity_60m_comparisons": 11,
+        "120m_oos": "Insufficient history under declared matured-label training minimum",
+        "causal_mechanisms_rejected": false,
+        "validated_predictive_model": false
+      },
+      "rejected_design_claims": [
+        "This linear discount-state model universally improves on persistence",
+        "Relative volume improves two-year forecasts beyond the frozen state model in this batch"
+      ]
+    },
+    {
+      "batch_id": "LOOP-LH1",
+      "timestamp_utc": "2026-11-12T18:17:48.298485+00:00",
+      "status": "completed",
+      "job_id": "15293344",
+      "run": "runs/loop_long_horizon/15293344",
+      "supported": [
+        "Verified receipt controls; exact candidate date membership",
+        "All forecast arithmetic reconstructed with separate calendar-date training masks and numpy least squares"
+      ],
+      "not_established": [
+        "Required-return discount rates",
+        "Causal liquidity mechanism",
+        "Validated 2/5/10-year predictive model",
+        "Executable arbitrage"
+      ],
+      "preserved_prior_findings": "Existing Samsung, core-pair, and US proxy results retain their original samples/horizons",
+      "next_test": "Diagnose linear coefficient/regime instability and train-only fixed regularization before adding structural supply/ownership/payout histories; reserve prospective evidence",
+      "scoped_findings": {
+        "baseline_24m_wins": 4,
+        "baseline_24m_comparisons": 11,
+        "baseline_60m_wins": 4,
+        "baseline_60m_comparisons": 11,
+        "activity_24m_increment_wins": 0,
+        "activity_24m_comparisons": 11,
+        "activity_60m_increment_wins": 8,
+        "activity_60m_comparisons": 11,
+        "120m_oos": "Insufficient history under declared matured-label training minimum",
+        "causal_mechanisms_rejected": false,
+        "validated_predictive_model": false
+      },
+      "rejected_design_claims": [
+        "This linear discount-state model universally improves on persistence",
+        "Relative volume improves two-year forecasts beyond the frozen state model in this batch"
+      ]
     }
   ]
 }

@@ -1,0 +1,253 @@
+sample,variant,model,horizon_months,tree_nodes,endpoint_labels,anchored_nonoverlap_labels,complete_model_rows,full_fit,pseudo_oos_forecasts,skipped_origins,adjusted_r_squared,standardized_condition,failure_reason
+alibaba_local_ADS,pragmatic,LH-LEVEL,24,B01;B02,58,3,58,estimated,0,58,0.4681528115766431,1.0,
+alibaba_local_ADS,pragmatic,LH-STATE,24,B01;B02,58,3,46,estimated,0,46,0.5628155318469819,2.4351051654343188,
+alibaba_local_ADS,pragmatic,LH-ACTIVITY,24,L01;B02,58,3,46,estimated,0,46,0.5524069619555598,2.717377811226799,
+alibaba_local_ADS,pragmatic,LH-LEVEL,60,B01;B02,22,0,22,not_estimable,0,22,,,"Insufficient observations: n=22, k=2"
+alibaba_local_ADS,pragmatic,LH-STATE,60,B01;B02,22,0,10,not_estimable,0,10,,,"Insufficient observations: n=10, k=3"
+alibaba_local_ADS,pragmatic,LH-ACTIVITY,60,L01;B02,22,0,10,not_estimable,0,10,,,"Insufficient observations: n=10, k=4"
+alibaba_local_ADS,pragmatic,LH-LEVEL,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+alibaba_local_ADS,pragmatic,LH-STATE,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+alibaba_local_ADS,pragmatic,LH-ACTIVITY,120,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+alibaba_local_ADS,strict,LH-LEVEL,24,B01;B02,56,3,56,estimated,0,56,0.5009259303783191,1.0000000000000002,
+alibaba_local_ADS,strict,LH-STATE,24,B01;B02,56,3,43,estimated,0,43,0.5949287506189286,2.4964038222295986,
+alibaba_local_ADS,strict,LH-ACTIVITY,24,L01;B02,56,3,43,estimated,0,43,0.5846972215944779,2.771421138121092,
+alibaba_local_ADS,strict,LH-LEVEL,60,B01;B02,21,0,21,not_estimable,0,21,,,"Insufficient observations: n=21, k=2"
+alibaba_local_ADS,strict,LH-STATE,60,B01;B02,21,0,10,not_estimable,0,10,,,"Insufficient observations: n=10, k=3"
+alibaba_local_ADS,strict,LH-ACTIVITY,60,L01;B02,21,0,10,not_estimable,0,10,,,"Insufficient observations: n=10, k=4"
+alibaba_local_ADS,strict,LH-LEVEL,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+alibaba_local_ADS,strict,LH-STATE,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+alibaba_local_ADS,strict,LH-ACTIVITY,120,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+byd_A_H,pragmatic,LH-LEVEL,24,B01;B02,158,6,158,estimated,99,59,0.5207383988275627,1.0000000000000007,
+byd_A_H,pragmatic,LH-STATE,24,B01;B02,158,6,146,estimated,87,59,0.5143211313189092,2.199682597992334,
+byd_A_H,pragmatic,LH-ACTIVITY,24,L01;B02,158,6,146,estimated,83,63,0.5109926645308676,2.44779002879793,
+byd_A_H,pragmatic,LH-LEVEL,60,B01;B02,122,2,122,estimated,27,95,0.6008036575567608,1.0000000000000002,
+byd_A_H,pragmatic,LH-STATE,60,B01;B02,122,2,110,estimated,15,95,0.6062092459344177,2.113439513822774,
+byd_A_H,pragmatic,LH-ACTIVITY,60,L01;B02,122,2,110,estimated,13,97,0.634076233068043,2.357241032462849,
+byd_A_H,pragmatic,LH-LEVEL,120,B01;B02,62,1,62,estimated,0,62,0.7778939919724117,1.0000000000000007,
+byd_A_H,pragmatic,LH-STATE,120,B01;B02,62,1,50,estimated,0,50,0.9121733191193395,2.4636545563119276,
+byd_A_H,pragmatic,LH-ACTIVITY,120,L01;B02,62,1,50,estimated,0,50,0.9104881350272158,2.7316301216819885,
+byd_A_H,strict,LH-LEVEL,24,B01;B02,127,4,127,estimated,72,55,0.4905869813485121,1.0,
+byd_A_H,strict,LH-STATE,24,B01;B02,127,4,114,estimated,60,54,0.48587483323159153,2.124969894028998,
+byd_A_H,strict,LH-ACTIVITY,24,L01;B02,127,4,114,estimated,56,58,0.4814619899821111,2.360916004916195,
+byd_A_H,strict,LH-LEVEL,60,B01;B02,98,0,98,estimated,13,85,0.6068233935989893,1.0,
+byd_A_H,strict,LH-STATE,60,B01;B02,98,0,84,estimated,4,80,0.6265389108152629,2.070208102446845,
+byd_A_H,strict,LH-ACTIVITY,60,L01;B02,98,0,84,estimated,0,84,0.6482172608217867,2.3108553246192645,
+byd_A_H,strict,LH-LEVEL,120,B01;B02,47,0,47,estimated,0,47,0.7425721912155674,1.0000000000000007,
+byd_A_H,strict,LH-STATE,120,B01;B02,47,0,37,estimated,0,37,0.908885434274241,2.4405037917868593,
+byd_A_H,strict,LH-ACTIVITY,120,L01;B02,47,0,37,not_estimable,0,37,,,"Insufficient observations: n=37, k=4"
+hdfc_local_ADS,pragmatic,LH-LEVEL,24,B01;B02,237,10,237,estimated,178,59,0.37365591168145584,1.0,
+hdfc_local_ADS,pragmatic,LH-STATE,24,B01;B02,237,10,225,estimated,166,59,0.4170552575562193,1.814667186090907,
+hdfc_local_ADS,pragmatic,LH-ACTIVITY,24,L01;B02,237,10,225,estimated,162,63,0.45407584505862464,1.8371037477835717,
+hdfc_local_ADS,pragmatic,LH-LEVEL,60,B01;B02,201,4,201,estimated,106,95,0.5060461903378419,1.0000000000000007,
+hdfc_local_ADS,pragmatic,LH-STATE,60,B01;B02,201,4,189,estimated,94,95,0.5048421129832987,1.810504013220593,
+hdfc_local_ADS,pragmatic,LH-ACTIVITY,60,L01;B02,201,4,189,estimated,90,99,0.5192907267591769,1.8479044743213837,
+hdfc_local_ADS,pragmatic,LH-LEVEL,120,B01;B02,141,2,141,estimated,0,141,0.7545558487693669,1.0000000000000002,
+hdfc_local_ADS,pragmatic,LH-STATE,120,B01;B02,141,2,129,estimated,0,129,0.8037802712174253,2.11367536996919,
+hdfc_local_ADS,pragmatic,LH-ACTIVITY,120,L01;B02,141,2,129,estimated,0,129,0.8177916487047767,2.137811264088334,
+hdfc_local_ADS,strict,LH-LEVEL,24,B01;B02,221,8,221,estimated,164,57,0.3776233841702241,1.0000000000000007,
+hdfc_local_ADS,strict,LH-STATE,24,B01;B02,221,8,203,estimated,147,56,0.4029018855156373,1.7881633510781911,
+hdfc_local_ADS,strict,LH-ACTIVITY,24,L01;B02,221,8,203,estimated,142,61,0.4386689909668804,1.8099320177940468,
+hdfc_local_ADS,strict,LH-LEVEL,60,B01;B02,188,4,188,estimated,96,92,0.513362706491338,1.0000000000000002,
+hdfc_local_ADS,strict,LH-STATE,60,B01;B02,188,4,171,estimated,81,90,0.49733746918668675,1.7787854024554604,
+hdfc_local_ADS,strict,LH-ACTIVITY,60,L01;B02,188,4,171,estimated,77,94,0.5080988581842785,1.8201265261824995,
+hdfc_local_ADS,strict,LH-LEVEL,120,B01;B02,132,2,132,estimated,0,132,0.7470674068684235,1.0000000000000004,
+hdfc_local_ADS,strict,LH-STATE,120,B01;B02,132,2,116,estimated,0,116,0.7876957292969957,2.060626677857427,
+hdfc_local_ADS,strict,LH-ACTIVITY,120,L01;B02,132,2,116,estimated,0,116,0.8018080800016492,2.093273046328351,
+hyundai_common_local_pref_1,pragmatic,LH-LEVEL,24,B01;B02,232,10,232,estimated,173,59,0.28475983570107766,1.0000000000000007,
+hyundai_common_local_pref_1,pragmatic,LH-STATE,24,B01;B02,232,10,217,estimated,158,59,0.42029281615564995,1.4070971477714742,
+hyundai_common_local_pref_1,pragmatic,LH-ACTIVITY,24,L01;B02,232,10,217,estimated,154,63,0.44366137577672426,1.6588659718438425,
+hyundai_common_local_pref_1,pragmatic,LH-LEVEL,60,B01;B02,199,4,199,estimated,107,92,0.7022001625475226,1.0000000000000007,
+hyundai_common_local_pref_1,pragmatic,LH-STATE,60,B01;B02,199,4,184,estimated,89,95,0.7441596874969405,1.3484864507282819,
+hyundai_common_local_pref_1,pragmatic,LH-ACTIVITY,60,L01;B02,199,4,184,estimated,85,99,0.791560411808549,1.5416103491714936,
+hyundai_common_local_pref_1,pragmatic,LH-LEVEL,120,B01;B02,139,2,139,estimated,0,139,0.6019179955958536,1.0000000000000002,
+hyundai_common_local_pref_1,pragmatic,LH-STATE,120,B01;B02,139,2,124,estimated,0,124,0.607510722402905,1.5938756444186588,
+hyundai_common_local_pref_1,pragmatic,LH-ACTIVITY,120,L01;B02,139,2,124,estimated,0,124,0.6073559182801733,2.104676252535279,
+hyundai_common_local_pref_1,strict,LH-LEVEL,24,B01;B02,226,9,226,estimated,167,59,0.2891327014700148,1.0000000000000004,
+hyundai_common_local_pref_1,strict,LH-STATE,24,B01;B02,226,9,209,estimated,150,59,0.425876739831617,1.3943680534210825,
+hyundai_common_local_pref_1,strict,LH-ACTIVITY,24,L01;B02,226,9,209,estimated,146,63,0.4450049228517323,1.6806087193033867,
+hyundai_common_local_pref_1,strict,LH-LEVEL,60,B01;B02,194,3,194,estimated,104,90,0.7098452819091932,1.0000000000000002,
+hyundai_common_local_pref_1,strict,LH-STATE,60,B01;B02,194,3,177,estimated,83,94,0.7534060852108535,1.3410789654220021,
+hyundai_common_local_pref_1,strict,LH-ACTIVITY,60,L01;B02,194,3,177,estimated,79,98,0.802694052712798,1.5519886745713352,
+hyundai_common_local_pref_1,strict,LH-LEVEL,120,B01;B02,135,1,135,estimated,0,135,0.6039498717995095,1.0000000000000002,
+hyundai_common_local_pref_1,strict,LH-STATE,120,B01;B02,135,1,119,estimated,0,119,0.6060474336882853,1.5649273598980706,
+hyundai_common_local_pref_1,strict,LH-ACTIVITY,120,L01;B02,135,1,119,estimated,0,119,0.6080360392865828,2.1046821406220806,
+hyundai_common_local_pref_2,pragmatic,LH-LEVEL,24,B01;B02,232,10,232,estimated,173,59,0.28938731647826066,1.0000000000000002,
+hyundai_common_local_pref_2,pragmatic,LH-STATE,24,B01;B02,232,10,217,estimated,158,59,0.41962502383453215,1.399284290260968,
+hyundai_common_local_pref_2,pragmatic,LH-ACTIVITY,24,L01;B02,232,10,217,estimated,154,63,0.4303613671158961,1.6042215520940502,
+hyundai_common_local_pref_2,pragmatic,LH-LEVEL,60,B01;B02,199,4,199,estimated,107,92,0.6966200955679793,1.0000000000000002,
+hyundai_common_local_pref_2,pragmatic,LH-STATE,60,B01;B02,199,4,184,estimated,89,95,0.7528228525239794,1.355445295767696,
+hyundai_common_local_pref_2,pragmatic,LH-ACTIVITY,60,L01;B02,199,4,184,estimated,85,99,0.7514671147474384,1.542312078497602,
+hyundai_common_local_pref_2,pragmatic,LH-LEVEL,120,B01;B02,139,2,139,estimated,0,139,0.5461831118939846,1.0000000000000004,
+hyundai_common_local_pref_2,pragmatic,LH-STATE,120,B01;B02,139,2,124,estimated,0,124,0.5650435534205214,1.5592575143902638,
+hyundai_common_local_pref_2,pragmatic,LH-ACTIVITY,120,L01;B02,139,2,124,estimated,0,124,0.5653181419399291,1.7551756285175542,
+hyundai_common_local_pref_2,strict,LH-LEVEL,24,B01;B02,226,9,226,estimated,167,59,0.29452917556779623,1.0000000000000002,
+hyundai_common_local_pref_2,strict,LH-STATE,24,B01;B02,226,9,209,estimated,150,59,0.42406426105824646,1.39477311757787,
+hyundai_common_local_pref_2,strict,LH-ACTIVITY,24,L01;B02,226,9,209,estimated,146,63,0.4325214985009467,1.6054647213092283,
+hyundai_common_local_pref_2,strict,LH-LEVEL,60,B01;B02,194,3,194,estimated,104,90,0.7030097352048071,1.0000000000000007,
+hyundai_common_local_pref_2,strict,LH-STATE,60,B01;B02,194,3,177,estimated,83,94,0.761595351374424,1.351697508851847,
+hyundai_common_local_pref_2,strict,LH-ACTIVITY,60,L01;B02,194,3,177,estimated,79,98,0.7603460933967566,1.524359029474833,
+hyundai_common_local_pref_2,strict,LH-LEVEL,120,B01;B02,135,1,135,estimated,0,135,0.5478406536408907,1.0000000000000002,
+hyundai_common_local_pref_2,strict,LH-STATE,120,B01;B02,135,1,119,estimated,0,119,0.5609502638866806,1.5280357451223856,
+hyundai_common_local_pref_2,strict,LH-ACTIVITY,120,L01;B02,135,1,119,estimated,0,119,0.5611191886362292,1.7017048552851037,
+hyundai_common_local_pref_3,pragmatic,LH-LEVEL,24,B01;B02,222,9,222,estimated,163,59,0.23877774179104494,1.0000000000000002,
+hyundai_common_local_pref_3,pragmatic,LH-STATE,24,B01;B02,222,9,210,estimated,151,59,0.3488542679958695,1.5034950244396956,
+hyundai_common_local_pref_3,pragmatic,LH-ACTIVITY,24,L01;B02,222,9,210,estimated,147,63,0.3794377785211436,1.5638863793119508,
+hyundai_common_local_pref_3,pragmatic,LH-LEVEL,60,B01;B02,186,3,186,estimated,91,95,0.6291988472639275,1.0000000000000002,
+hyundai_common_local_pref_3,pragmatic,LH-STATE,60,B01;B02,186,3,174,estimated,79,95,0.7077216184056261,1.4022370171242982,
+hyundai_common_local_pref_3,pragmatic,LH-ACTIVITY,60,L01;B02,186,3,174,estimated,75,99,0.7879441374274265,1.4096693298657186,
+hyundai_common_local_pref_3,pragmatic,LH-LEVEL,120,B01;B02,126,1,126,estimated,0,126,0.6038694083118534,1.0000000000000004,
+hyundai_common_local_pref_3,pragmatic,LH-STATE,120,B01;B02,126,1,114,estimated,0,114,0.610475736108517,1.7104299329928814,
+hyundai_common_local_pref_3,pragmatic,LH-ACTIVITY,120,L01;B02,126,1,114,estimated,0,114,0.6139139125189067,1.9710290043453793,
+hyundai_common_local_pref_3,strict,LH-LEVEL,24,B01;B02,217,8,217,estimated,158,59,0.2445074980548474,1.0,
+hyundai_common_local_pref_3,strict,LH-STATE,24,B01;B02,217,8,204,estimated,145,59,0.35271997172581626,1.5183698565558112,
+hyundai_common_local_pref_3,strict,LH-ACTIVITY,24,L01;B02,217,8,204,estimated,141,63,0.38046503232223194,1.5737226055016291,
+hyundai_common_local_pref_3,strict,LH-LEVEL,60,B01;B02,181,2,181,estimated,87,94,0.6336272100799174,1.0000000000000002,
+hyundai_common_local_pref_3,strict,LH-STATE,60,B01;B02,181,2,168,estimated,74,94,0.7209740147490757,1.4178363761387236,
+hyundai_common_local_pref_3,strict,LH-ACTIVITY,60,L01;B02,181,2,168,estimated,70,98,0.7966944820523227,1.4257092257059576,
+hyundai_common_local_pref_3,strict,LH-LEVEL,120,B01;B02,122,0,122,estimated,0,122,0.6103288974636525,1.0000000000000002,
+hyundai_common_local_pref_3,strict,LH-STATE,120,B01;B02,122,0,110,estimated,0,110,0.6182866801728522,1.713591652209818,
+hyundai_common_local_pref_3,strict,LH-ACTIVITY,120,L01;B02,122,0,110,estimated,0,110,0.6246330207829787,1.965317816925148,
+novo_nordisk_local_ADS,pragmatic,LH-LEVEL,24,B01;B02,235,10,235,estimated,176,59,0.48209434053244204,1.0,
+novo_nordisk_local_ADS,pragmatic,LH-STATE,24,B01;B02,235,10,223,estimated,164,59,0.4899934852972274,2.367495198998891,
+novo_nordisk_local_ADS,pragmatic,LH-ACTIVITY,24,L01;B02,235,10,223,estimated,160,63,0.4882333719623644,2.4560506412464975,
+novo_nordisk_local_ADS,pragmatic,LH-LEVEL,60,B01;B02,200,4,200,estimated,105,95,0.4361937082982281,1.0000000000000002,
+novo_nordisk_local_ADS,pragmatic,LH-STATE,60,B01;B02,200,4,187,estimated,92,95,0.4264418873157514,2.348356689217224,
+novo_nordisk_local_ADS,pragmatic,LH-ACTIVITY,60,L01;B02,200,4,187,estimated,88,99,0.43739912000496617,2.536049015523164,
+novo_nordisk_local_ADS,pragmatic,LH-LEVEL,120,B01;B02,140,2,140,estimated,0,140,0.49780296947212155,1.0,
+novo_nordisk_local_ADS,pragmatic,LH-STATE,120,B01;B02,140,2,127,estimated,0,127,0.5019519043356608,2.4964324491173895,
+novo_nordisk_local_ADS,pragmatic,LH-ACTIVITY,120,L01;B02,140,2,127,estimated,0,127,0.4993437082293646,2.586964690277699,
+novo_nordisk_local_ADS,strict,LH-LEVEL,24,B01;B02,212,10,212,estimated,154,58,0.48780920939520034,1.0,
+novo_nordisk_local_ADS,strict,LH-STATE,24,B01;B02,212,10,197,estimated,140,57,0.49471348206339727,2.3652592129261247,
+novo_nordisk_local_ADS,strict,LH-ACTIVITY,24,L01;B02,212,10,197,estimated,136,61,0.4927895494523775,2.442117461649105,
+novo_nordisk_local_ADS,strict,LH-LEVEL,60,B01;B02,184,4,184,estimated,93,91,0.4217123273225868,1.0,
+novo_nordisk_local_ADS,strict,LH-STATE,60,B01;B02,184,4,167,estimated,78,89,0.4242386872055285,2.3371273269184805,
+novo_nordisk_local_ADS,strict,LH-ACTIVITY,60,L01;B02,184,4,167,estimated,74,93,0.4321927615155563,2.5089262567952106,
+novo_nordisk_local_ADS,strict,LH-LEVEL,120,B01;B02,130,2,130,estimated,0,130,0.49600364744431746,1.0,
+novo_nordisk_local_ADS,strict,LH-STATE,120,B01;B02,130,2,116,estimated,0,116,0.4947018275080407,2.4328748275211605,
+novo_nordisk_local_ADS,strict,LH-ACTIVITY,120,L01;B02,130,2,116,estimated,0,116,0.4908875892296576,2.5258160407199672,
+ping_an_A_H,pragmatic,LH-LEVEL,24,B01;B02,208,8,208,estimated,151,57,0.3110674432827626,1.0,
+ping_an_A_H,pragmatic,LH-STATE,24,B01;B02,208,8,194,estimated,137,57,0.16930735218198645,1.6416541757959682,
+ping_an_A_H,pragmatic,LH-ACTIVITY,24,L01;B02,208,8,194,estimated,131,63,0.1723171913705851,1.9122076406970572,
+ping_an_A_H,pragmatic,LH-LEVEL,60,B01;B02,174,3,174,estimated,81,93,0.5928883418768447,1.0000000000000002,
+ping_an_A_H,pragmatic,LH-STATE,60,B01;B02,174,3,160,estimated,67,93,0.4706234394113942,1.4811833001106782,
+ping_an_A_H,pragmatic,LH-ACTIVITY,60,L01;B02,174,3,160,estimated,61,99,0.4889858561202116,1.7230871449265333,
+ping_an_A_H,pragmatic,LH-LEVEL,120,B01;B02,114,1,114,estimated,0,114,0.8483381919144619,1.0000000000000002,
+ping_an_A_H,pragmatic,LH-STATE,120,B01;B02,114,1,100,estimated,0,100,0.7911140873906389,1.4966299433985508,
+ping_an_A_H,pragmatic,LH-ACTIVITY,120,L01;B02,114,1,100,estimated,0,100,0.7923411741537686,1.7138145145837687,
+ping_an_A_H,strict,LH-LEVEL,24,B01;B02,161,6,161,estimated,108,53,0.30986094440459977,1.0000000000000002,
+ping_an_A_H,strict,LH-STATE,24,B01;B02,161,6,144,estimated,90,54,0.1535729704873241,1.6442239701620303,
+ping_an_A_H,strict,LH-ACTIVITY,24,L01;B02,161,6,144,estimated,86,58,0.1514916904696224,1.9320398626578912,
+ping_an_A_H,strict,LH-LEVEL,60,B01;B02,138,1,138,estimated,56,82,0.5791273680541107,1.0,
+ping_an_A_H,strict,LH-STATE,60,B01;B02,138,1,120,estimated,39,81,0.4638235399406685,1.4819221651839058,
+ping_an_A_H,strict,LH-ACTIVITY,60,L01;B02,138,1,120,estimated,35,85,0.4820768948892262,1.7011116982784305,
+ping_an_A_H,strict,LH-LEVEL,120,B01;B02,87,0,87,estimated,0,87,0.8523295869244445,1.0000000000000002,
+ping_an_A_H,strict,LH-STATE,120,B01;B02,87,0,72,estimated,0,72,0.8272474422445826,1.492725968934314,
+ping_an_A_H,strict,LH-ACTIVITY,120,L01;B02,87,0,72,estimated,0,72,0.8288176865852053,1.7228008183627868,
+roche_voting_Genussschein,pragmatic,LH-LEVEL,24,B01;B02,231,10,231,estimated,172,59,0.39213008510528924,1.0000000000000002,
+roche_voting_Genussschein,pragmatic,LH-STATE,24,B01;B02,231,10,219,estimated,160,59,0.4186081509711632,1.4245041539366836,
+roche_voting_Genussschein,pragmatic,LH-ACTIVITY,24,L01;B02,231,10,219,estimated,156,63,0.4259527636992124,1.7061842719775968,
+roche_voting_Genussschein,pragmatic,LH-LEVEL,60,B01;B02,195,4,195,estimated,100,95,0.5533631770625984,1.0,
+roche_voting_Genussschein,pragmatic,LH-STATE,60,B01;B02,195,4,183,estimated,88,95,0.5117979931080188,1.1010394484686716,
+roche_voting_Genussschein,pragmatic,LH-ACTIVITY,60,L01;B02,195,4,183,estimated,84,99,0.5331897129053728,2.8101700080467973,
+roche_voting_Genussschein,pragmatic,LH-LEVEL,120,B01;B02,135,2,135,estimated,0,135,0.733837498319651,1.0,
+roche_voting_Genussschein,pragmatic,LH-STATE,120,B01;B02,135,2,123,estimated,0,123,0.6648661445582028,1.2425743176997515,
+roche_voting_Genussschein,pragmatic,LH-ACTIVITY,120,L01;B02,135,2,123,estimated,0,123,0.6973567410165225,2.789263275466091,
+roche_voting_Genussschein,strict,LH-LEVEL,24,B01;B02,231,10,231,estimated,172,59,0.39213008510528924,1.0000000000000002,
+roche_voting_Genussschein,strict,LH-STATE,24,B01;B02,231,10,219,estimated,160,59,0.4186081509711632,1.4245041539366836,
+roche_voting_Genussschein,strict,LH-ACTIVITY,24,L01;B02,231,10,219,estimated,156,63,0.4259527636992124,1.7061842719775968,
+roche_voting_Genussschein,strict,LH-LEVEL,60,B01;B02,195,4,195,estimated,100,95,0.5533631770625984,1.0,
+roche_voting_Genussschein,strict,LH-STATE,60,B01;B02,195,4,183,estimated,88,95,0.5117979931080188,1.1010394484686716,
+roche_voting_Genussschein,strict,LH-ACTIVITY,60,L01;B02,195,4,183,estimated,84,99,0.5331897129053728,2.8101700080467973,
+roche_voting_Genussschein,strict,LH-LEVEL,120,B01;B02,135,2,135,estimated,0,135,0.733837498319651,1.0,
+roche_voting_Genussschein,strict,LH-STATE,120,B01;B02,135,2,123,estimated,0,123,0.6648661445582028,1.2425743176997515,
+roche_voting_Genussschein,strict,LH-ACTIVITY,120,L01;B02,135,2,123,estimated,0,123,0.6973567410165225,2.789263275466091,
+roche_voting_participation,pragmatic,LH-LEVEL,24,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+roche_voting_participation,pragmatic,LH-STATE,24,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+roche_voting_participation,pragmatic,LH-ACTIVITY,24,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+roche_voting_participation,pragmatic,LH-LEVEL,60,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+roche_voting_participation,pragmatic,LH-STATE,60,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+roche_voting_participation,pragmatic,LH-ACTIVITY,60,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+roche_voting_participation,pragmatic,LH-LEVEL,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+roche_voting_participation,pragmatic,LH-STATE,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+roche_voting_participation,pragmatic,LH-ACTIVITY,120,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+roche_voting_participation,strict,LH-LEVEL,24,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+roche_voting_participation,strict,LH-STATE,24,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+roche_voting_participation,strict,LH-ACTIVITY,24,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+roche_voting_participation,strict,LH-LEVEL,60,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+roche_voting_participation,strict,LH-STATE,60,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+roche_voting_participation,strict,LH-ACTIVITY,60,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+roche_voting_participation,strict,LH-LEVEL,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+roche_voting_participation,strict,LH-STATE,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+roche_voting_participation,strict,LH-ACTIVITY,120,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+shell_RDS_A,pragmatic,LH-LEVEL,24,B01;B02,174,7,174,estimated,115,59,0.39064334222606634,1.0000000000000002,
+shell_RDS_A,pragmatic,LH-STATE,24,B01;B02,174,7,162,estimated,103,59,0.3965428827499877,2.2954174768947353,
+shell_RDS_A,pragmatic,LH-ACTIVITY,24,L01;B02,174,7,162,estimated,99,63,0.39931799290674264,2.3750285579456114,
+shell_RDS_A,pragmatic,LH-LEVEL,60,B01;B02,138,2,138,estimated,43,95,0.009913235306110546,1.0000000000000002,
+shell_RDS_A,pragmatic,LH-STATE,60,B01;B02,138,2,126,estimated,31,95,-0.005635717113572358,2.5564147253080938,
+shell_RDS_A,pragmatic,LH-ACTIVITY,60,L01;B02,138,2,126,estimated,27,99,0.12087657638041338,2.6471996105604094,
+shell_RDS_A,pragmatic,LH-LEVEL,120,B01;B02,78,0,78,estimated,0,78,0.06686296229324673,1.0000000000000002,
+shell_RDS_A,pragmatic,LH-STATE,120,B01;B02,78,0,66,estimated,0,66,0.07241618078391221,2.2837974135252987,
+shell_RDS_A,pragmatic,LH-ACTIVITY,120,L01;B02,78,0,66,estimated,0,66,0.12149725529426803,2.4680525923716785,
+shell_RDS_A,strict,LH-LEVEL,24,B01;B02,174,7,174,estimated,115,59,0.39064334222606634,1.0000000000000002,
+shell_RDS_A,strict,LH-STATE,24,B01;B02,174,7,162,estimated,103,59,0.3965428827499877,2.2954174768947353,
+shell_RDS_A,strict,LH-ACTIVITY,24,L01;B02,174,7,162,estimated,99,63,0.39931799290674264,2.3750285579456114,
+shell_RDS_A,strict,LH-LEVEL,60,B01;B02,138,2,138,estimated,43,95,0.009913235306110546,1.0000000000000002,
+shell_RDS_A,strict,LH-STATE,60,B01;B02,138,2,126,estimated,31,95,-0.005635717113572358,2.5564147253080938,
+shell_RDS_A,strict,LH-ACTIVITY,60,L01;B02,138,2,126,estimated,27,99,0.12087657638041338,2.6471996105604094,
+shell_RDS_A,strict,LH-LEVEL,120,B01;B02,78,0,78,estimated,0,78,0.06686296229324673,1.0000000000000002,
+shell_RDS_A,strict,LH-STATE,120,B01;B02,78,0,66,estimated,0,66,0.07241618078391221,2.2837974135252987,
+shell_RDS_A,strict,LH-ACTIVITY,120,L01;B02,78,0,66,estimated,0,66,0.12149725529426803,2.4680525923716785,
+shell_RDS_B,pragmatic,LH-LEVEL,24,B01;B02,174,7,174,estimated,115,59,0.37264286530962265,1.0,
+shell_RDS_B,pragmatic,LH-STATE,24,B01;B02,174,7,162,estimated,103,59,0.5473663780518583,1.6861187516528346,
+shell_RDS_B,pragmatic,LH-ACTIVITY,24,L01;B02,174,7,162,estimated,99,63,0.5445484350730914,2.0277412114628315,
+shell_RDS_B,pragmatic,LH-LEVEL,60,B01;B02,138,2,138,estimated,43,95,0.6134386713105549,1.0000000000000002,
+shell_RDS_B,pragmatic,LH-STATE,60,B01;B02,138,2,126,estimated,31,95,0.6113248380732474,3.166702971234916,
+shell_RDS_B,pragmatic,LH-ACTIVITY,60,L01;B02,138,2,126,estimated,27,99,0.7302982393194799,3.258292085243592,
+shell_RDS_B,pragmatic,LH-LEVEL,120,B01;B02,78,0,78,estimated,0,78,0.14274860260773403,1.0,
+shell_RDS_B,pragmatic,LH-STATE,120,B01;B02,78,0,66,estimated,0,66,0.23705668389354317,2.998944600374922,
+shell_RDS_B,pragmatic,LH-ACTIVITY,120,L01;B02,78,0,66,estimated,0,66,0.712927162881853,3.407103873097888,
+shell_RDS_B,strict,LH-LEVEL,24,B01;B02,173,7,173,estimated,114,59,0.37382266289486676,1.0,
+shell_RDS_B,strict,LH-STATE,24,B01;B02,173,7,161,estimated,102,59,0.5507305099618092,1.690777951652205,
+shell_RDS_B,strict,LH-ACTIVITY,24,L01;B02,173,7,161,estimated,98,63,0.5479035514551371,2.0259253712529164,
+shell_RDS_B,strict,LH-LEVEL,60,B01;B02,137,2,137,estimated,42,95,0.6137461886597944,1.0,
+shell_RDS_B,strict,LH-STATE,60,B01;B02,137,2,125,estimated,30,95,0.6132480440643131,3.1783773610740687,
+shell_RDS_B,strict,LH-ACTIVITY,60,L01;B02,137,2,125,estimated,26,99,0.7311277622840817,3.268970312356971,
+shell_RDS_B,strict,LH-LEVEL,120,B01;B02,77,0,77,estimated,0,77,0.15651093840138242,1.0,
+shell_RDS_B,strict,LH-STATE,120,B01;B02,77,0,65,estimated,0,65,0.22741531690942107,3.05025113745854,
+shell_RDS_B,strict,LH-ACTIVITY,120,L01;B02,77,0,65,estimated,0,65,0.7116379372048993,3.413940832139735,
+shell_SHEL,pragmatic,LH-LEVEL,24,B01;B02,32,2,32,not_estimable,0,32,,,"Insufficient observations: n=32, k=2"
+shell_SHEL,pragmatic,LH-STATE,24,B01;B02,32,2,20,not_estimable,0,20,,,"Insufficient observations: n=20, k=3"
+shell_SHEL,pragmatic,LH-ACTIVITY,24,L01;B02,32,2,20,not_estimable,0,20,,,"Insufficient observations: n=20, k=4"
+shell_SHEL,pragmatic,LH-LEVEL,60,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+shell_SHEL,pragmatic,LH-STATE,60,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+shell_SHEL,pragmatic,LH-ACTIVITY,60,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+shell_SHEL,pragmatic,LH-LEVEL,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+shell_SHEL,pragmatic,LH-STATE,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+shell_SHEL,pragmatic,LH-ACTIVITY,120,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+shell_SHEL,strict,LH-LEVEL,24,B01;B02,32,2,32,not_estimable,0,32,,,"Insufficient observations: n=32, k=2"
+shell_SHEL,strict,LH-STATE,24,B01;B02,32,2,20,not_estimable,0,20,,,"Insufficient observations: n=20, k=3"
+shell_SHEL,strict,LH-ACTIVITY,24,L01;B02,32,2,20,not_estimable,0,20,,,"Insufficient observations: n=20, k=4"
+shell_SHEL,strict,LH-LEVEL,60,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+shell_SHEL,strict,LH-STATE,60,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+shell_SHEL,strict,LH-ACTIVITY,60,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+shell_SHEL,strict,LH-LEVEL,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=2"
+shell_SHEL,strict,LH-STATE,120,B01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=3"
+shell_SHEL,strict,LH-ACTIVITY,120,L01;B02,0,0,0,not_estimable,0,0,,,"Insufficient observations: n=0, k=4"
+volkswagen_ordinary_preferred,pragmatic,LH-LEVEL,24,B01;B02,238,10,238,estimated,179,59,0.41352634346214523,1.0,
+volkswagen_ordinary_preferred,pragmatic,LH-STATE,24,B01;B02,238,10,226,estimated,167,59,0.45156029369639195,1.6760842630235988,
+volkswagen_ordinary_preferred,pragmatic,LH-ACTIVITY,24,L01;B02,238,10,226,estimated,163,63,0.5484314612752932,2.591541406115606,
+volkswagen_ordinary_preferred,pragmatic,LH-LEVEL,60,B01;B02,202,4,202,estimated,107,95,0.8934294524352231,1.0000000000000002,
+volkswagen_ordinary_preferred,pragmatic,LH-STATE,60,B01;B02,202,4,190,estimated,95,95,0.8990562215929839,1.6765328161466815,
+volkswagen_ordinary_preferred,pragmatic,LH-ACTIVITY,60,L01;B02,202,4,190,estimated,91,99,0.9188357996765797,3.231351484839961,
+volkswagen_ordinary_preferred,pragmatic,LH-LEVEL,120,B01;B02,142,2,142,estimated,0,142,0.9429053050558194,1.0000000000000002,
+volkswagen_ordinary_preferred,pragmatic,LH-STATE,120,B01;B02,142,2,130,estimated,0,130,0.9515899533630704,1.6976442915102226,
+volkswagen_ordinary_preferred,pragmatic,LH-ACTIVITY,120,L01;B02,142,2,130,estimated,0,130,0.9521851731259903,3.3335138476759116,
+volkswagen_ordinary_preferred,strict,LH-LEVEL,24,B01;B02,238,10,238,estimated,179,59,0.41352634346214523,1.0,
+volkswagen_ordinary_preferred,strict,LH-STATE,24,B01;B02,238,10,226,estimated,167,59,0.45156029369639195,1.6760842630235988,
+volkswagen_ordinary_preferred,strict,LH-ACTIVITY,24,L01;B02,238,10,226,estimated,163,63,0.5484314612752932,2.591541406115606,
+volkswagen_ordinary_preferred,strict,LH-LEVEL,60,B01;B02,202,4,202,estimated,107,95,0.8934294524352231,1.0000000000000002,
+volkswagen_ordinary_preferred,strict,LH-STATE,60,B01;B02,202,4,190,estimated,95,95,0.8990562215929839,1.6765328161466815,
+volkswagen_ordinary_preferred,strict,LH-ACTIVITY,60,L01;B02,202,4,190,estimated,91,99,0.9188357996765797,3.231351484839961,
+volkswagen_ordinary_preferred,strict,LH-LEVEL,120,B01;B02,142,2,142,estimated,0,142,0.9429053050558194,1.0000000000000002,
+volkswagen_ordinary_preferred,strict,LH-STATE,120,B01;B02,142,2,130,estimated,0,130,0.9515899533630704,1.6976442915102226,
+volkswagen_ordinary_preferred,strict,LH-ACTIVITY,120,L01;B02,142,2,130,estimated,0,130,0.9521851731259903,3.3335138476759116,

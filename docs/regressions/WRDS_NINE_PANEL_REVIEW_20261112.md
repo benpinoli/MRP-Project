@@ -1,5 +1,11 @@
 # ORC receipt and nine-comparison review — November 12, 2026
 
+**Subsequent authorized research:** the user later authorized pragmatic cleaning
+and hypothesis-guided long-horizon regressions. The [completed LOOP research batch](LOOP_LONG_HORIZON_RESULTS_20261112.md)
+records the resulting exploratory fits and forecasts. The receipt-stage gates
+below remain the historical review decision; they do not override that later
+scoped authorization or imply that no subsequent regressions have run.
+
 Receipt verification and the requested panel review are complete. The private
 outputs define fourteen class-specific candidate samples across nine comparisons.
 They approve acquisition identities within the delivered dated intervals, subject

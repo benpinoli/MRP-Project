@@ -2,6 +2,8 @@
 import importlib.util
 from pathlib import Path
 import unittest
+import json
+import tempfile
 
 import numpy as np
 import pandas as pd
@@ -44,6 +46,17 @@ class HorizonChecks(unittest.TestCase):
         daily = denominator.iloc[:6].assign(discount_pp=10., activity=0.)
         self.assertTrue(lh.monthly_panel(daily, denominator, '2020-01', .5, 5).iloc[0].qualified)
         self.assertFalse(lh.monthly_panel(daily, denominator, '2020-01', .8, 5).iloc[0].qualified)
+
+    def test_durable_checkpoint_preserves_results_and_replaces_atomically(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp)/'checkpoint.json'
+            record = {'sample': 'synthetic', 'variants': {'main': {'forecasts': [{'prediction': 1.25}]}}}
+            lh.save_json(path, record)
+            self.assertEqual(json.loads(path.read_text()), record)
+            self.assertFalse(Path(str(path)+'.pending').exists())
+            record['status'] = 'completed'
+            lh.save_json(path, record)
+            self.assertEqual(json.loads(path.read_text())['status'], 'completed')
 
 
 if __name__ == '__main__':

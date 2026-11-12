@@ -1,5 +1,12 @@
 # Active plan: Samsung preferred discount over 2, 5 and 10 years
 
+**November 12 continuation:** the latest user authorization supersedes the old
+hold below and extends the objective to hypothesis-guided linear discount
+prediction across LOOP stocks. The [current protocol](LOOP_LONG_HORIZON_PROTOCOL_20261112.md)
+and [completed first batch](LOOP_LONG_HORIZON_RESULTS_20261112.md) govern execution.
+The structural mechanisms and historical findings below remain relevant; old
+planning-turn hold statements are historical, not a new approval requirement.
+
 User direction, November 5, 2026. This supersedes next-session forecast selection and daily-reversal work as the active research objective. Existing results, IDs, configurations and frozen runs remain historical evidence. No new empirical study has been executed as part of this reorganization. Agents are on user-requested hold pending review; do not restart agents or submit jobs merely because this plan exists.
 
 Read [the literature synthesis](LONG_HORIZON_LITERATURE.md) and [the reorganized tree](PREDICTION_MECHANISM_TREE.md). The filename retains its historical `PREDICTION_` prefix for compatibility; its active scope is now long-horizon explanation.
