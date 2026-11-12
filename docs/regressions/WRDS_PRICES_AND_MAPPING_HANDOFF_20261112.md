@@ -42,3 +42,11 @@ The Global form did not expose daily open price or ADR ratio fields. Do not manu
 ## Research scope
 
 The collected prices and historical identifiers support building the nine requested comparison panels: Alibaba, HDFC Bank, Shell, Novo Nordisk, BYD A/H, Ping An A/H, Hyundai common/preferred classes, Roche voting/nonvoting/participation, and Volkswagen ordinary/preferred. Release each security/date interval after its remaining checks. The prior validated regressions can proceed independently; ownership/NAV and intraday execution inputs remain separate requirements. Do not restart paused research jobs merely because this receipt exists.
+
+## ORC review completed
+
+The [November 12 ORC review](WRDS_NINE_PANEL_REVIEW_20261112.md) records verified
+receipt, reproduced audit controls, fourteen class-specific proposed samples,
+and remaining readiness gates. It adds the independently evidenced asynchronous
+BYD A/H 2025 share-basis window. No new regression or provider return splice was
+run, and no paused work was restarted.

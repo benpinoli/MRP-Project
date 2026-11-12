@@ -1,0 +1,26 @@
+{
+  "supplemental_transition_windows": [
+    {
+      "comparison": "byd",
+      "event": "2025 bonus and capitalisation issue: different A/H ex-dates",
+      "window_start_inclusive": "2025-06-10",
+      "window_end_exclusive": "2025-07-29",
+      "h_share_ex_date": "2025-06-10",
+      "a_share_ex_date": "2025-07-29",
+      "units_after_per_before_each_class": 3,
+      "h_evidence_url": "https://www.hkex.com.hk/News/Market-Communications/2025/250520news?sc_lang=en",
+      "a_evidence_url": "https://epaper.stcn.com/pic/202507/22/37e227d2c542dd4204dafd9319859879.pdf",
+      "decision": "Exclude the mismatched raw-share-basis window. Do not substitute the H payment date for its ex-date."
+    }
+  ],
+  "methodology_sources": {
+    "adjustment_and_returns": "https://wrds-www.wharton.upenn.edu/documents/1402/Compustat_Global_in_WRDS_the_basics.pptx",
+    "crsp_price_flags": "https://www.crsp.org/wp-content/uploads/appendix/FlagType_PC.html",
+    "crsp_return_duration_flags": "https://www.crsp.org/wp-content/uploads/appendix/FlagType_RD.html",
+    "research_precedent_for_prcstd_10_screen": "https://www.newyorkfed.org/medialibrary/media/research/conference/2022/global-research/presentations/6_Adams_Verdelhan_2022_FRBNY_Global_Research_Forum.pdf?sc_lang=en",
+    "roche_trading_transition": "https://www.roche.com/investors/updates/inv-update-2026-03-16"
+  },
+  "official_exchange_calendars_supplied": false,
+  "point_in_time_fx_supplied_in_this_snapshot": false,
+  "regression_execution_authorized_by_receipt": false
+}
