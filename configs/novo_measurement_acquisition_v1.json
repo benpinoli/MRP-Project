@@ -1,0 +1,77 @@
+{
+  "request_id": "NOVO-MEASUREMENT-1",
+  "registered_date": "2026-11-12",
+  "hypothesis_nodes": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "X01",
+    "X02",
+    "X03",
+    "B02"
+  ],
+  "exact_instruments": [
+    "Original qualified Copenhagen Novo B identity chain",
+    "Original qualified NYSE NVO receipt identity chain"
+  ],
+  "private_identifier_source": "Previously verified private crosswalk; no current-ticker substitution or licensed identifiers in public configuration",
+  "prehistory_provenance_interval": [
+    "1995-01-01",
+    "2004-12-31"
+  ],
+  "reuse_existing_prices": true,
+  "pilot_months": [
+    "2007-12",
+    "2014-03",
+    "2023-11",
+    "2025-03"
+  ],
+  "sessions_per_month": 5,
+  "session_selection": "First five common trading sessions from independently verified official/provider calendars, fixed before quote values are inspected; never replace a missing selected observation",
+  "selected_dates_status": "pending_calendar_source_verification; no official session dates claimed from filtered price membership",
+  "pilot_observation_count": 20,
+  "primary_clock": "Copenhagen official closing-auction event timestamp, with first-publication timestamp retained separately",
+  "NYSE_quote_rule": "Last eligible exact-receipt bid/ask at or before auction event time",
+  "FX_quote_rule": "USD per DKK bid/ask at or before same event time; preserve raw convention and invert bid/ask correctly if needed",
+  "maximum_quote_age_seconds": 60,
+  "historical_UTC_DST_evidence_required": true,
+  "required_source_fields": [
+    "source_venue_and_definition",
+    "dated_security_identity",
+    "currency_quote_unit",
+    "raw_adjustment_basis",
+    "event_utc",
+    "publication_utc",
+    "quote_utc",
+    "bid",
+    "ask",
+    "condition_flags",
+    "ordinary_shares_per_receipt",
+    "basis_effective_date",
+    "source_edition",
+    "retrieved_utc",
+    "source_hash_and_locator"
+  ],
+  "daily_source_reuse": "Existing qualified daily closes and ECB references provide asynchronous comparators only, not synchronized quotes",
+  "prohibited_substitutions": [
+    "OTC or Nasdaq predecessor receipt",
+    "today's exchange code as historical quote provenance",
+    "later NYSE daily close as event-time quote",
+    "ECB daily reference as a 60-second FX quote",
+    "sixth trading date replacing a missing selected pilot date"
+  ],
+  "entitlement_status": "Historical intraday equity and FX source access not yet verified; no purchase or external contact authorized by this configuration",
+  "new_price_intervals_admitted": 0,
+  "new_intraday_data_received": false,
+  "forecast_model_changes": 0,
+  "public_feasibility_review": "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md",
+  "documented_product_routes": {
+    "US_quote": "NYSE Daily TAQ individual participant quote records; BYU entitlement and date-specific schema/coverage unverified",
+    "local_closing_cross": "Nasdaq Nordic historical order/trade archive; December2007requires pre-INET archive confirmation, not todays INET format",
+    "FX_quote": "LSEG Tick History UTC time-and-sales bid/ask extraction; USD/DKK/contributor/date coverage and entitlement unverified"
+  },
+  "provider_documentation_is_not_observation_or_entitlement_evidence": true,
+  "connected_tool_search": "No relevant WRDS/historical-quote connector found in available directory search; Finances personal-account plugin is not demonstrated TAQ/FX coverage; no installation"
+}
