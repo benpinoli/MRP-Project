@@ -1,5 +1,15 @@
 # RG estimation methodology 1.1.0
 
+## Active LOOP long-horizon prediction extension November 12
+
+The active extension is the [two-to-ten-year LOOP protocol](LOOP_LONG_HORIZON_PROTOCOL_20261112.md),
+frozen in `configs/loop_long_horizon_v1.json`. It uses monthly discount changes
+at 24/60/120 calendar months, matured-label expanding linear forecasts, persistence
+benchmarks and explicit pragmatic/strict coverage variants. Isolated invalid days
+are excluded without blocking whole comparisons. The canonical tree and execution
+and evidence ledgers are updated after each batch. Historical RG and daily results
+below retain their original scope; no price-only model identifies a required return.
+
 ## Separately versioned research modes
 
 The original `strict_timestamp` mode is unchanged: it requires reviewed Barra metadata, an independent factor calendar, exact factor period-end/availability timestamps, and Korean close timestamps. `discount_only` runs B00 directly on the hash-validated EP01 observed-session grid and requires none of those factor inputs. `retrospective_us_barra` runs only B01–B04 and converts the documented percent-valued USSLOWL returns to decimals.

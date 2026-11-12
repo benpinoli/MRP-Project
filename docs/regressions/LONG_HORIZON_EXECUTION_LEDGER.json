@@ -1,6 +1,6 @@
 {
-  "active_objective": "Explain discount levels and sustained changes over2/5/10years",
-  "updated_utc": "2026-11-09",
+  "active_objective": "Develop and test hypothesis-guided linear predictions of LOOP class-price discounts over 2, 5 and 10 years; preserve all prior scoped findings",
+  "updated_utc": "2026-11-12T18:09:32.958807+00:00",
   "environment": {
     "host": "login03",
     "repo": "/home/bpinoli/MRP/MRP-Project",
@@ -62,6 +62,26 @@
       "run": "runs/hypothesis_resolution/15204916/results",
       "report": "docs/regressions/HYPOTHESIS_RESOLUTION_RESULTS_20261109.md",
       "purpose": "Resolve currently testable supply/activity, price-leg, issuer-event, and TSMC timing questions"
+    },
+    {
+      "id": "LOOP-LH1",
+      "status": "submitted",
+      "updated_utc": "2026-11-12T18:09:32.958807+00:00",
+      "config": "configs/loop_long_horizon_v1.json",
+      "protocol": "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+      "purpose": "Monthly 24/60/120-month linear discount predictions with matured-label training and pragmatic cleaning",
+      "tree_nodes": [
+        "M01",
+        "M02",
+        "B01",
+        "B02",
+        "L01"
+      ],
+      "review": "Synthetic calendar/aggregation/leakage checks; no independent-agent review claimed",
+      "authorization": "User November 12 go instruction; isolated bad days may be excluded; no paused job restart",
+      "validated_predictive_model": false,
+      "job_id": "15293344",
+      "run": "runs/loop_long_horizon/15293344"
     }
   ],
   "source_coverage_matrix": "docs/regressions/LONG_HORIZON_SOURCE_COVERAGE.csv",
@@ -80,6 +100,11 @@
       "id": "LH-D03",
       "decision": "Firstpriorityjointnon-treasury supply/tradinghistory with competing scarcity/liquidity effects",
       "status": "source_acquisition_active"
+    },
+    {
+      "id": "LH-D04",
+      "decision": "Prioritize results by excluding isolated invalid observations; no future backfill, no global block from local gaps; scope every prediction to its horizon and assumptions",
+      "status": "authorized_2026-11-12"
     }
   ],
   "source_coverage_notes": "docs/regressions/LONG_HORIZON_SOURCE_COVERAGE.json"

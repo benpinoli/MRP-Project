@@ -1,0 +1,85 @@
+{
+  "batch_id": "LOOP-LH1",
+  "frozen_date": "2026-11-12",
+  "objective": "Predict changes in observed class-price discounts over 24/60/120 calendar months; not a required-return discount-rate estimate",
+  "review_directory": "data/acquisition/2026-11-12/orc_completed_review_20261112_final",
+  "daily_membership_sha256": "dcdc4b43cf28d19906ec2efdab2df022818f0fc2bb81eb4b226c8b9fa77a6bb3",
+  "fx_path": "data/acquisition/2026-11-12/public_fx/ecb_reference_rates_2005_20261106.csv",
+  "fx_semantics": "Exact observed ECB daily references, foreign units per EUR; retrospective monthly price-gap definition, not synchronous executable parity",
+  "horizons_months": [
+    24,
+    60,
+    120
+  ],
+  "minimum_monthly_observations": 10,
+  "coverage_variants": {
+    "pragmatic": 0.5,
+    "strict": 0.8
+  },
+  "coverage_denominator": "Supplied weekday rows from earlier nine-panel outer calendar joins; not certified exchange sessions",
+  "last_complete_month_by_provider": {
+    "local": "2026-10",
+    "receipt": "2026-09"
+  },
+  "forecast_origin": "First calendar day after the completed feature month; assume monthly price/volume known then, original historical delivery vintages unavailable",
+  "models": [
+    {
+      "id": "LH-LEVEL",
+      "columns": [
+        "discount_pp"
+      ],
+      "tree_nodes": [
+        "B01",
+        "B02"
+      ],
+      "hypothesis": "Persistent relative-price states contain horizon-specific correction information beyond no change"
+    },
+    {
+      "id": "LH-STATE",
+      "columns": [
+        "discount_pp",
+        "trailing_12m_change"
+      ],
+      "tree_nodes": [
+        "B01",
+        "B02"
+      ],
+      "hypothesis": "A trailing state change adds information beyond the present discount; test without activity before attributing incremental activity value"
+    },
+    {
+      "id": "LH-ACTIVITY",
+      "columns": [
+        "discount_pp",
+        "activity",
+        "trailing_12m_change"
+      ],
+      "tree_nodes": [
+        "L01",
+        "B02"
+      ],
+      "hypothesis": "Relative trading activity adds information beyond current discount and trailing state; compare LH-ACTIVITY to LH-STATE on identical origins, not as a causal liquidity-cost test"
+    }
+  ],
+  "minimum_training_observations": 36,
+  "observations_per_parameter": 10,
+  "training_labels": "Strictly earlier origin months, with terminal month no later than the current completed feature month",
+  "benchmarks": [
+    "zero_change",
+    "training_mean_change"
+  ],
+  "inference": "Exploratory calendar-grid HAC(h) coefficients; no confirmatory p-values; report anchored nonoverlapping outcomes and dependence",
+  "evaluation": "Retrospective expanding pseudo-out-of-sample on common origins with training-only fit; all historical data exposed; no tuning on losses",
+  "structural_boundaries": {
+    "shell": "separate A/B/unified samples",
+    "roche": "separate Genussschein/participation samples"
+  },
+  "missing_data_policy": "Exclude isolated invalid daily prices; no future backfill, no interpolated labels, exact calendar endpoints and explicit missing months",
+  "known_limitations": [
+    "Historical venue continuity and vendor price-status dictionary incomplete",
+    "ADS ratios are documented matched-basis assumptions, not blanket interval certification",
+    "Cross-market close timestamps unsynchronized",
+    "No cashflow valuation identifies a required return",
+    "Pooled issuer causality and executable arbitrage not tested"
+  ],
+  "fx_sha256": "d163a4f2f5737f2b214ec6376e75723195a5f677a80a852e9416361d2ca433f3"
+}

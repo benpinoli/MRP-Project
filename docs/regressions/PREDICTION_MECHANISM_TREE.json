@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "updated_utc": "2026-11-09",
+  "updated_utc": "2026-11-12T18:09:32.958807+00:00",
   "purpose": "Rank slow structural mechanisms and distinguish what sets the gap, moves it, and allows it to persist",
   "status_vocabulary": [
     "supported",
@@ -464,7 +464,19 @@
       "research_track": "LH1",
       "long_horizon_status": "Annual activity proxy tested with null change association; true liquidity-cost channel unresolved",
       "long_horizon_next_action": "Reconstruct supply and cost histories jointly; distinguish scarcity/support from deteriorating ability to trade and management responding to the gap.",
-      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity."
+      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity.",
+      "loop_long_horizon_assessments": [
+        {
+          "batch_id": "LOOP-LH1",
+          "status": "submitted",
+          "scope": "Incremental relative-volume activity prediction is tested against a state model on identical origins. It does not establish causal liquidity costs.",
+          "evidence_paths": [
+            "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+            "runs/loop_long_horizon/15293344"
+          ],
+          "updated_utc": "2026-11-12T18:09:32.958807+00:00"
+        }
+      ]
     },
     {
       "id": "D01",
@@ -1519,7 +1531,19 @@
       "research_track": "FOUNDATION",
       "long_horizon_status": "Monthly/quarterly aggregation independently reviewed; external exchange calendar still unverified",
       "long_horizon_next_action": "Retain261qualifiedmonths/87quarters and explicitpartialOct2026; do not infer missing actual sessions",
-      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates.",
+      "loop_long_horizon_assessments": [
+        {
+          "batch_id": "LOOP-LH1",
+          "status": "submitted",
+          "scope": "Exploratory monthly samples exclude isolated bad rows; 50% observed-weekday coverage main and 80% sensitivity. No full calendar certification or future-price filling.",
+          "evidence_paths": [
+            "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+            "runs/loop_long_horizon/15293344"
+          ],
+          "updated_utc": "2026-11-12T18:09:32.958807+00:00"
+        }
+      ]
     },
     {
       "id": "M02",
@@ -1554,7 +1578,19 @@
       "research_track": "FOUNDATION",
       "long_horizon_status": "documented foundation; historical completeness still scoped",
       "long_horizon_next_action": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity.",
-      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates.",
+      "loop_long_horizon_assessments": [
+        {
+          "batch_id": "LOOP-LH1",
+          "status": "submitted",
+          "scope": "Preserve dated split exclusions, Shell class boundaries and Roche conversion. Cross-market matched-basis ratios and Shell quote scale remain explicit assumptions.",
+          "evidence_paths": [
+            "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+            "runs/loop_long_horizon/15293344"
+          ],
+          "updated_utc": "2026-11-12T18:09:32.958807+00:00"
+        }
+      ]
     },
     {
       "id": "M03",
@@ -1740,7 +1776,19 @@
       "research_track": "ARCHIVE",
       "long_horizon_status": "archived short-horizon finding; no long-run inference",
       "long_horizon_next_action": "Do not resume daily reversal/model selection under the active long-horizon objective. Preserve findings within their original scope.",
-      "long_horizon_data": "Preserved historical forecasts, reviews and run records."
+      "long_horizon_data": "Preserved historical forecasts, reviews and run records.",
+      "loop_long_horizon_assessments": [
+        {
+          "batch_id": "LOOP-LH1",
+          "status": "submitted",
+          "scope": "Persistence benchmark is mandatory at 24/60/120 calendar months; daily benchmark findings are not promoted to multi-year truth.",
+          "evidence_paths": [
+            "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+            "runs/loop_long_horizon/15293344"
+          ],
+          "updated_utc": "2026-11-12T18:09:32.958807+00:00"
+        }
+      ]
     },
     {
       "id": "B02",
@@ -1778,7 +1826,19 @@
       "research_track": "ARCHIVE",
       "long_horizon_status": "archived short-horizon finding; no long-run inference",
       "long_horizon_next_action": "Do not resume daily reversal/model selection under the active long-horizon objective. Preserve findings within their original scope.",
-      "long_horizon_data": "Preserved historical forecasts, reviews and run records."
+      "long_horizon_data": "Preserved historical forecasts, reviews and run records.",
+      "loop_long_horizon_assessments": [
+        {
+          "batch_id": "LOOP-LH1",
+          "status": "submitted",
+          "scope": "Nested linear discount-state models use only matured labels at each expanding origin; historical outcomes are exposed, ten-year evaluation may be infeasible.",
+          "evidence_paths": [
+            "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+            "runs/loop_long_horizon/15293344"
+          ],
+          "updated_utc": "2026-11-12T18:09:32.958807+00:00"
+        }
+      ]
     },
     {
       "id": "B03",
@@ -1934,8 +1994,8 @@
     "Accessible-data proxies are labeled; a proxy null does not reject its parent mechanism",
     "Preserve simple logged patches and recurring independent inspection; no new local empirical work or agent restart in this planning turn"
   ],
-  "active_objective": "Explain persistent Samsung preferred-discount levels and structural changes over 2, 5 and 10 years",
-  "active_plan": "docs/regressions/LONG_HORIZON_RESEARCH_PLAN.md",
+  "active_objective": "Develop and test hypothesis-guided linear predictions of LOOP class-price discounts over 2, 5 and 10 years; preserve all prior scoped findings",
+  "active_plan": "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
   "literature_review": "docs/regressions/LONG_HORIZON_LITERATURE.md",
   "base_tree_commit": "26e8957",
   "horizon_years": [
@@ -1944,7 +2004,7 @@
     10
   ],
   "observation_frequency": "Monthly prices, quarterly mechanisms, annual checks; preserve actual publication frequency",
-  "execution_status": "LHA and LHB completed/reviewed; hypothesis-resolution job 15204916 completed; source reconstruction and payout panel remain active",
+  "execution_status": "LOOP-LH1 submitted; job 15293344",
   "research_tracks": [
     {
       "id": "LH1",
@@ -2165,5 +2225,31 @@
       "Borrow, execution, tax, dividend, and conversion-cost inputs before strategy claims"
     ],
     "acceptance_gate": "Identifier, coverage, duplicates, currency, corporate-action, timing, publication-vintage, and missing-field audits must pass before a blocked branch becomes estimable; licensed raw data remain byte-preserved and outside Git."
+  },
+  "objective_history": [
+    {
+      "objective": "Explain persistent Samsung preferred-discount levels and structural changes over 2, 5 and 10 years",
+      "recorded_utc": "2026-11-12T18:09:01.463242+00:00"
+    }
+  ],
+  "loop_long_horizon_batch": {
+    "id": "LOOP-LH1",
+    "status": "submitted",
+    "updated_utc": "2026-11-12T18:09:32.958807+00:00",
+    "config": "configs/loop_long_horizon_v1.json",
+    "protocol": "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+    "purpose": "Monthly 24/60/120-month linear discount predictions with matured-label training and pragmatic cleaning",
+    "tree_nodes": [
+      "M01",
+      "M02",
+      "B01",
+      "B02",
+      "L01"
+    ],
+    "review": "Synthetic calendar/aggregation/leakage checks; no independent-agent review claimed",
+    "authorization": "User November 12 go instruction; isolated bad days may be excluded; no paused job restart",
+    "validated_predictive_model": false,
+    "job_id": "15293344",
+    "run": "runs/loop_long_horizon/15293344"
   }
 }

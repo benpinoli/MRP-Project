@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "batch_id": "LOOP-LH1",
+      "timestamp_utc": "2026-11-12T18:09:01.463242+00:00",
+      "status": "registered",
+      "job_id": null,
+      "run": null,
+      "supported": [
+        "Verified receipt controls; exact candidate date membership"
+      ],
+      "not_established": [
+        "Required-return discount rates",
+        "Causal liquidity mechanism",
+        "Validated 2/5/10-year predictive model",
+        "Executable arbitrage"
+      ],
+      "preserved_prior_findings": "Existing Samsung, core-pair, and US proxy results retain their original samples/horizons",
+      "next_test": "Same-origin OOS benchmark and activity increments, coverage sensitivity, nonoverlapping information counts"
+    },
+    {
+      "batch_id": "LOOP-LH1",
+      "timestamp_utc": "2026-11-12T18:09:32.958807+00:00",
+      "status": "submitted",
+      "job_id": "15293344",
+      "run": "runs/loop_long_horizon/15293344",
+      "supported": [
+        "Verified receipt controls; exact candidate date membership"
+      ],
+      "not_established": [
+        "Required-return discount rates",
+        "Causal liquidity mechanism",
+        "Validated 2/5/10-year predictive model",
+        "Executable arbitrage"
+      ],
+      "preserved_prior_findings": "Existing Samsung, core-pair, and US proxy results retain their original samples/horizons",
+      "next_test": "Same-origin OOS benchmark and activity increments, coverage sensitivity, nonoverlapping information counts"
+    }
+  ]
+}
