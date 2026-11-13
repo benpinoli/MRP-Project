@@ -1,0 +1,23 @@
+{
+  "batch_id": "LOOP-LH4",
+  "stage_directory": "data/acquisition/complete_transfer_v4_15308639",
+  "receipt_run": "runs/loop_long_horizon/v4_receipt_15308639",
+  "baseline_run": "runs/loop_long_horizon/15293344",
+  "stability_run": "runs/loop_long_horizon/v2_15307902",
+  "price_run": "runs/loop_long_horizon/v3_15308280",
+  "exception_trading_table": "runs/loop_exceptions/15208094/results/trading_sensitivity.csv",
+  "new_snapshot": "data/acquisition/2026-11-12/loop_public_report_additions",
+  "analysis": "Frozen diagnostic of existing price forecasts; no refitting, predictor/window/penalty selection or sample extension",
+  "diagnostics": [
+    "Compare model MSE against persistence and training-mean MSE on identical origins; identify mean-only wins and benchmark difficulty",
+    "Report features outside their own matured training ranges, conditional losses and current-discount extrapolation; do not exclude these origins",
+    "Flag forecast terminal discounts at or above100, incompatible with the positive-price ratio definition; retain all forecasts",
+    "Report concentration of squared prediction loss by fixed calendar origin-year cohorts, without treating overlapping cohorts as independent experiments",
+    "Translate legacy100-times-cumulative-log-score drawdown to100*expm1(log-score drawdown) as a geometric-index diagnostic, explicitly not funded strategy wealth; retain legacy peak convention and initial-loss limitation"
+  ],
+  "evidence_policy": "Preserve all616new facts, four separate report availability bounds and eight revision/source alerts. Unknown first-public dates remain unknown; no new structural predictor admitted.",
+  "price_policy": "Use all completed v3 expanding/rolling method comparisons on the saved matched origins; preserve actual calendar targets, quote/status/venue exclusions, split/receipt bases, FX/close limits and all failed origins",
+  "structural_gates": "Definitions, nominal/split-restated units, class/aggregate and voting/economic denominators, actual/proposed/interim/final payout status, first-publication/revision timing must qualify before forecasting use",
+  "trading_gates": "A paired log-return score is not a funded strategy log return. Same-close signal/fill, funding, borrow, dividend, tax, asymmetric conversion rights and costs require separate qualification before exploitation claims",
+  "validated_predictive_model": false
+}

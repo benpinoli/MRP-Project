@@ -1,0 +1,18 @@
+{
+  "batch_id": "LOOP-TREE-PRODUCTIVE-1",
+  "baseline_run": "runs/loop_long_horizon/15293344",
+  "reference_run": "runs/loop_long_horizon/v3_15308280",
+  "annual_source_panel": "data/acquisition/2026-11-12/productive_tree_regressions_v1/prepared/samsung_annual_delivery_panel.csv",
+  "annual_years": [2010, 2024],
+  "annual_minimum_changes": 10,
+  "minimum_training_observations": 36,
+  "observations_per_parameter": 10,
+  "rolling_training_origin_months": 120,
+  "ridge_penalty": 1.0,
+  "horizons_months": [24, 60],
+  "models": ["LH-LEVEL", "LH-STATE", "LH-ACTIVITY"],
+  "calendar_periods": [["through_2014", 0, 2014], ["2015_2019", 2015, 2019], ["2020_onward", 2020, 9999]],
+  "annual_special_sensitivity_excluded_outcome_years": [2020, 2021],
+  "new_price_intervals_admitted": 0,
+  "scope": "Existing-sample terminal-anchor comparison and retrospective annual payout/supply association; no mechanism or prospective validation"
+}

@@ -1,0 +1,93 @@
+{
+  "registry_id": "LOOP-PROSPECTIVE-2",
+  "status": "registered_unissued",
+  "registration_date": "2026-11-12",
+  "first_feature_month": "2026-12",
+  "last_feature_month": "2027-11",
+  "origin_cohorts": 12,
+  "primary_horizon_months": 24,
+  "secondary_horizons_months": [
+    60,
+    120
+  ],
+  "primary_comparison": "novo_nordisk_local_ADS",
+  "secondary_roster": [
+    "alibaba_local_ADS",
+    "byd_A_H",
+    "hdfc_local_ADS",
+    "hyundai_common_local_pref_1",
+    "hyundai_common_local_pref_2",
+    "hyundai_common_local_pref_3",
+    "ping_an_A_H",
+    "roche_voting_participation",
+    "shell_SHEL",
+    "volkswagen_ordinary_preferred"
+  ],
+  "retired_roster_exclusion": [
+    "shell_RDS_A",
+    "shell_RDS_B",
+    "roche_voting_Genussschein"
+  ],
+  "frozen_candidates": [
+    "original_LH_LEVEL_OLS",
+    "fixed_lambda1_ridge",
+    "single_positive_ratio_conditional_mean"
+  ],
+  "benchmarks": [
+    "zero_change",
+    "matured_training_mean_change",
+    "matured_training_mean_terminal_discount_minus_current_discount"
+  ],
+  "monthly_definition": "Original ratio-before-mean, complete calendar grid, pragmatic primary and strict sensitivity; no historical backfill or provider return splice",
+  "training": "Expanding; at least36usable matured labels and ten observations per parameter, including intercept; labels must also have been delivered by issuance",
+  "issuance_gate": "No forecast until exact identity/venue/basis gates and source-specific delivery-age limits are documented and the complete feature month actually received; do not infer first-of-month availability",
+  "delivery_age_limit_status": "unresolved_preissuance_gate; determine from authorized source documentation before opening new cohort data, not from losses",
+  "required_registry_fields": [
+    "feature_month",
+    "sample",
+    "method",
+    "horizon_months",
+    "actual_receipt_utc",
+    "issuance_utc",
+    "source_asof_hashes",
+    "code_config_hashes",
+    "feature_values",
+    "training_label_end_dates",
+    "training_delivery_hashes",
+    "fitted_parameters",
+    "prediction",
+    "all_benchmark_predictions",
+    "target_month",
+    "actual_issuance_to_target_lead",
+    "source_revision_status",
+    "missing_or_invalid_reason"
+  ],
+  "immutable_predictions": "Append-only issuance records locked before targets; never reconstruct after the fact. Preserve first received and revised input vintages separately",
+  "invalid_model_output": "Record nonfinite/nonpositive ratio or support-invalid output as an issuance failure for that candidate, not a substituted model or zero prediction",
+  "evaluation": "Primary Novo24-month anchor-versus-persistence MSE uses every own eligible issued origin, not an all-model intersection. Strict sensitivity separate; secondary paired common-model MSE plus native failures/coverage. No interim loss-driven changes; overlapping cohorts are dependent.",
+  "automation": "None authorized or scheduled; manual authorized ingestion only",
+  "forecasts_issued": 0,
+  "validated_predictive_model": false,
+  "supersedes": "configs/loop_prospective_cohort_v1.json",
+  "revision_reason": "Preissuance revision after registered LH5: Novo state methods did not beat the terminal anchor on exposed history; make anchor versus persistence the primary prospective contrast, retaining every candidate and benchmark",
+  "primary_loss_contrast": {
+    "sample": "novo_nordisk_local_ADS",
+    "horizon_months": 24,
+    "candidate": "matured_training_mean_terminal_discount_minus_current_discount",
+    "benchmark": "zero_change",
+    "coverage": "pragmatic",
+    "eligibility_mask": "All actually issued eligible primary anchor/persistence origins, independent of OLS/ridge/PPML fit or support failures"
+  },
+  "secondary_loss_contrasts": [
+    "terminal_anchor versus matured mean change",
+    "OLS, fixed ridge and positive mean versus terminal anchor",
+    "60/120-month and secondary active-class comparisons"
+  ],
+  "candidate_roster_policy": "Exact frozen primary plus secondary sample IDs; readiness is horizon-specific. Short histories remain blocked until the fixed maturity/coverage/source gates pass. No post-outcome additions or substitutions.",
+  "strict_coverage_role": "Prespecified primary-contrast sensitivity, separately reported",
+  "secondary_common_model_mask": "Supplementary intersection of successfully issued candidate/benchmark origins only; report all native coverage/failures and never use it to censor the primary anchor/persistence contrast",
+  "preissuance_peer_review_clarifications": [
+    "Freeze explicit exact sample IDs instead of a descriptive roster",
+    "Conditional-model failures cannot remove primary anchor/persistence origins"
+  ]
+}

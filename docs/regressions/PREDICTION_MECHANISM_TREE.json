@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "updated_utc": "2026-11-12T18:17:48.298485+00:00",
+  "updated_utc": "2026-11-13T03:55:37.851188+00:00",
   "purpose": "Rank slow structural mechanisms and distinguish what sets the gap, moves it, and allows it to persist",
   "status_vocabulary": [
     "supported",
@@ -105,7 +105,7 @@
     },
     "result_2025": {
       "url": "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84465/",
-      "availability": "2025-10-02 reported aggregate July9\u2013September29 actual acquisitions. Known on reporting date, not allocable to daily execution."
+      "availability": "2025-10-02 reported aggregate July9–September29 actual acquisitions. Known on reporting date, not allocable to daily execution."
     },
     "dividend_2025": {
       "url": "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84277/",
@@ -114,7 +114,7 @@
     "fx": {
       "url": "https://www.federalreserve.gov/releases/h10/",
       "path": "data/regression/raw/prediction_external_20261105/manifest.json",
-      "availability": "Latest revised historical FX; weekly release hiatus2006\u2013Jan2009. Tested delayed current-vintage block, not certified PIT."
+      "availability": "Latest revised historical FX; weekly release hiatus2006–Jan2009. Tested delayed current-vintage block, not certified PIT."
     },
     "vix_rates": {
       "urls": [
@@ -235,7 +235,30 @@
       "research_track": "LH1",
       "long_horizon_status": "Annual panel tested: simple supply-only explanation insufficient; ownership/liquidity channels unresolved",
       "long_horizon_next_action": "Audit annual issued/treasury/holder blocks and trade capacity; flagvendor2025P andissuer2024sourceconflicts before panel",
-      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity."
+      "long_horizon_data": "Quarterly class share counts, treasury/strategic holdings, executed actions, documented public float, and monthly trading costs/capacity.",
+      "loop_lh3_evidence": {
+        "status": "completed_verified",
+        "finding": "378 annual supply rows join descriptors; 1,512 field observations include 502 missing. Preserve four vendor/issuer basis exceptions, vintages, class/aggregate definitions and missing values; no new supply-mechanism verdict.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "historical_status_preserved": true
+      },
+      "loop_lh4_evidence": {
+        "status": "completed_verified",
+        "finding": "Definitions/nominal split bases, issued/net/treasury/aggregate holdings and vendor/issuer exceptions retained. Additional availability does not upgrade supply/ownership mechanisms.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+        "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "historical_status_preserved": true
+      },
+      "productive_batch_v1_evidence": {
+        "status": "completed_verified_scoped_evidence",
+        "finding": "Matched14change payout/supply regressions weak; publicfloat/ownership/costmechanisms unresolved.",
+        "report": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/tree_productive_15316412",
+        "historical_status_preserved": true,
+        "causal_status_not_upgraded": true
+      }
     },
     {
       "id": "S01",
@@ -478,7 +501,37 @@
           "updated_utc": "2026-11-12T18:17:48.298485+00:00",
           "result": "Activity worsens all 11 two-year same-origin state-model comparisons in both cleaning variants. It improves 8/11 five-year pragmatic comparisons, based on very few nonoverlapping spans; no causal liquidity verdict."
         }
-      ]
+      ],
+      "loop_lh2_evidence": {
+        "status": "completed_verified",
+        "finding": "Original OLS two-year activity loss reproduced; fixed ridge activity helps 4/11 pragmatic, 5/11 strict comparisons. Specification dependence, no causal liquidity verdict.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V2_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v2_15307902",
+        "historical_status_preserved": true
+      },
+      "loop_lh3_evidence": {
+        "status": "completed_verified",
+        "finding": "Rolling OLS activity improves 1/11 two-year matched state comparisons; ridge improves 4/11 pragmatic and 5/11 strict. Original expanding OLS negative activity result preserved, no causal liquidity verdict.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "historical_status_preserved": true
+      },
+      "loop_lh4_evidence": {
+        "status": "completed_verified",
+        "finding": "Analyst flags News negative combined-spread coefficient as estimand-dependent tension with a naive universal liquidity story, not a causal result or established literature contradiction.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+        "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "historical_status_preserved": true
+      },
+      "productive_batch_v1_evidence": {
+        "status": "completed_verified_scoped_evidence",
+        "finding": "Existing volume-proxy5year expanding NovoOLS wins overanchor on88/74origins, not robustrolling/ridge; real liquidity and execution untested.",
+        "report": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/tree_productive_15316412",
+        "historical_status_preserved": true,
+        "causal_status_not_upgraded": true
+      }
     },
     {
       "id": "D01",
@@ -843,7 +896,15 @@
       "research_track": "LH4",
       "long_horizon_status": "Dated2015/2017policies identified; long-run delivery and investor-base effects untested",
       "long_horizon_next_action": "Compare policy eras and delivery over quarters/years; separate cash received from terminal discount and remove mechanical yield/price-ratio explanations.",
-      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition."
+      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition.",
+      "productive_batch_v1_evidence": {
+        "status": "completed_verified_scoped_evidence",
+        "finding": "Retrospective2010-2024cash panel,14annualchanges; jointpayoutp0.544 andwideCI. Credibility/clientele/FCFcompliance notcausallytested.",
+        "report": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/tree_productive_15316412",
+        "historical_status_preserved": true,
+        "causal_status_not_upgraded": true
+      }
     },
     {
       "id": "P01",
@@ -881,7 +942,23 @@
       "research_track": "LH4",
       "long_horizon_status": "Single descriptive dividend-decision case completed; payout mechanism unresolved",
       "long_horizon_next_action": "Compare policy eras and delivery over quarters/years; separate cash received from terminal discount and remove mechanical yield/price-ratio explanations.",
-      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition."
+      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition.",
+      "loop_lh4_evidence": {
+        "status": "completed_verified",
+        "finding": "VW 2019 proposal revision and Hyundai interim/final/proposed components retained; no proposal treated as paid cash or dividend-eligible stock as year-end supply.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+        "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "historical_status_preserved": true
+      },
+      "productive_batch_v1_evidence": {
+        "status": "completed_verified_scoped_evidence",
+        "finding": "Preferred-minus-common annualDPSconstantKRW1postsplit in15years; separateeffect notidentified.",
+        "report": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/tree_productive_15316412",
+        "historical_status_preserved": true,
+        "causal_status_not_upgraded": true
+      }
     },
     {
       "id": "P02",
@@ -992,7 +1069,14 @@
       "research_track": "LH4",
       "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
       "long_horizon_next_action": "Compare policy eras and delivery over quarters/years; separate cash received from terminal discount and remove mechanical yield/price-ratio explanations.",
-      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition."
+      "long_horizon_data": "Dated policy commitments and changes, actual class cash payments, earnings/free cash flow, payout coverage and investor composition.",
+      "loop_lh3_evidence": {
+        "status": "completed_verified",
+        "finding": "Six final-cash notice identities reconciled. Final announcement differs from settlement confirmation; preliminary notices, maxima and observed charges remain distinct.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "historical_status_preserved": true
+      }
     },
     {
       "id": "S07",
@@ -1067,7 +1151,22 @@
       "research_track": "LH5",
       "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
       "long_horizon_next_action": "Audit a credible legal/economic convergence route before assigning it value; distinguish an actual change from a hypothetical scenario.",
-      "long_horizon_data": "Historical class terms, conversion/unification proposals or implementation if any, receipt ratios/venues, access and ownership restrictions."
+      "long_horizon_data": "Historical class terms, conversion/unification proposals or implementation if any, receipt ratios/venues, access and ownership restrictions.",
+      "loop_lh5_evidence": {
+        "status": "completed_verified",
+        "finding": "Novo price-gap correction remains a retrospective candidate; new benchmark limits conditional-state interpretation.",
+        "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v5_15309415",
+        "historical_status_preserved": true
+      },
+      "active_loop_question": "Novo price-gap correction remains a retrospective candidate; new benchmark limits conditional-state interpretation.",
+      "active_loop_next_test": "Qualify exact claim/basis and event-time ratio before a stronger economic claim.",
+      "next02_feasibility_checkpoint": {
+        "review": "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md",
+        "new_observations": 0,
+        "venue_or_clock_gate_released": false,
+        "note": "Provider documentation maps possible routes; exact historical archive/entitlement and dated source provenance remain unverified."
+      }
     },
     {
       "id": "X02",
@@ -1137,7 +1236,37 @@
       "research_track": "LH5",
       "long_horizon_status": "untested for persistent 2/5/10-year Samsung effects",
       "long_horizon_next_action": "Audit a credible legal/economic convergence route before assigning it value; distinguish an actual change from a hypothetical scenario.",
-      "long_horizon_data": "Historical class terms, conversion/unification proposals or implementation if any, receipt ratios/venues, access and ownership restrictions."
+      "long_horizon_data": "Historical class terms, conversion/unification proposals or implementation if any, receipt ratios/venues, access and ownership restrictions.",
+      "loop_lh3_evidence": {
+        "status": "completed_verified",
+        "finding": "Observed March/August 2021 fees bound a payment-to-payment change; general effective day and holder-notice date remain unknown; embedded FX fees not deducted twice.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "historical_status_preserved": true
+      },
+      "loop_lh4_evidence": {
+        "status": "completed_verified",
+        "finding": "Novo general fee-effective/holder-notice dates remain unresolved; contract maxima, disclosure snapshots, final event charges and embedded FX fees remain distinct.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+        "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "historical_status_preserved": true
+      },
+      "loop_lh5_evidence": {
+        "status": "completed_verified",
+        "finding": "Cash costs and general fee-effective dates remain distinct from observed-price prediction.",
+        "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v5_15309415",
+        "historical_status_preserved": true
+      },
+      "active_loop_question": "Cash costs and general fee-effective dates remain distinct from observed-price prediction.",
+      "active_loop_next_test": "Do not let generic fee acquisition block price work; require event/investor cash basis before payoff claims.",
+      "next02_feasibility_checkpoint": {
+        "review": "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md",
+        "new_observations": 0,
+        "venue_or_clock_gate_released": false,
+        "note": "Provider documentation maps possible routes; exact historical archive/entitlement and dated source provenance remain unverified."
+      }
     },
     {
       "id": "L02",
@@ -1547,7 +1676,44 @@
           "updated_utc": "2026-11-12T18:17:48.298485+00:00",
           "result": "Pragmatic and strict baseline persistence-score signs agree in all 22 estimable sample/horizon comparisons; small cleaning differences do not explain the main mixed result."
         }
-      ]
+      ],
+      "loop_lh2_evidence": {
+        "status": "completed_verified",
+        "finding": "Two delivered ZIPs and all snapshot/inventory hashes verified; long-history v1 ZIP and JSON absent. No new intervals released.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V2_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v2_15307902",
+        "historical_status_preserved": true
+      },
+      "loop_lh3_evidence": {
+        "status": "completed_verified",
+        "finding": "Both newly supplied private archives and all 411 entries verified; 13 raw coverage rows reproduced. No new paired interval released because exact historical local quote provenance remains unresolved.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "historical_status_preserved": true
+      },
+      "loop_lh4_evidence": {
+        "status": "completed_verified",
+        "finding": "Complete outer hash/size and 66 entries verified; both installer commands passed; all 600 installed entries and 176 reference records verified. Legacy trading drawdown is log-score units, not portfolio percent drawdown.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+        "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "historical_status_preserved": true
+      },
+      "loop_lh5_evidence": {
+        "status": "completed_verified",
+        "finding": "All5026eligible origins reconstructed, no failures; calendar grids, source hashes and positivity passed.",
+        "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v5_15309415",
+        "historical_status_preserved": true
+      },
+      "active_loop_question": "All5026eligible origins reconstructed, no failures; calendar grids, source hashes and positivity passed.",
+      "active_loop_next_test": "Qualify targeted quote-source provenance and retain missing/invalid cases.",
+      "next02_feasibility_checkpoint": {
+        "review": "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md",
+        "new_observations": 0,
+        "venue_or_clock_gate_released": false,
+        "note": "Provider documentation maps possible routes; exact historical archive/entitlement and dated source provenance remain unverified."
+      }
     },
     {
       "id": "M02",
@@ -1596,7 +1762,44 @@
           "updated_utc": "2026-11-12T18:17:48.298485+00:00",
           "result": "Fourteen class-specific samples constructed across all nine comparisons using declared structural boundaries; FX/ratio/scale assumptions remain scoped."
         }
-      ]
+      ],
+      "loop_lh2_evidence": {
+        "status": "completed_verified",
+        "finding": "Retain exact venues, class transitions, quote scale and receipt-ratio assumptions, split clocks and raw actions. Unknown structural publication dates cannot enter forecasts.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V2_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v2_15307902",
+        "historical_status_preserved": true
+      },
+      "loop_lh3_evidence": {
+        "status": "completed_verified",
+        "finding": "Pre-Xetra VW, Novo predecessors/demerger/Nasdaq, HDFC metadata discrepancy, Hyundai third-preferred nonpositive prehistory and all ratio/split/unit/status/transition exclusions preserved.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "historical_status_preserved": true
+      },
+      "loop_lh4_evidence": {
+        "status": "completed_verified",
+        "finding": "Historical exact quote-source venues and dated identity/unit/status/split/corporate gates remain; zero new paired intervals. Retain all documented receipt/class transitions and source bases.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+        "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "historical_status_preserved": true
+      },
+      "loop_lh5_evidence": {
+        "status": "completed_verified",
+        "finding": "No new interval/basis assumption admitted; ratio and split-restated units remain gates.",
+        "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v5_15309415",
+        "historical_status_preserved": true
+      },
+      "active_loop_question": "No new interval/basis assumption admitted; ratio and split-restated units remain gates.",
+      "active_loop_next_test": "Novo1995–2004 identity/venue/unit/ratio qualification, preserving2000/2001transition intervals.",
+      "next02_feasibility_checkpoint": {
+        "review": "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md",
+        "new_observations": 0,
+        "venue_or_clock_gate_released": false,
+        "note": "Provider documentation maps possible routes; exact historical archive/entitlement and dated source provenance remain unverified."
+      }
     },
     {
       "id": "M03",
@@ -1632,7 +1835,31 @@
       "research_track": "FOUNDATION",
       "long_horizon_status": "documented foundation; historical completeness still scoped",
       "long_horizon_next_action": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity.",
-      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates.",
+      "loop_lh3_evidence": {
+        "status": "completed_verified",
+        "finding": "1,371 of 1,375 selected source facts have unknown publication dates. Four dated facts remain evidence only; no structural predictor admitted and no historical backfill.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "historical_status_preserved": true
+      },
+      "loop_lh4_evidence": {
+        "status": "completed_verified",
+        "finding": "1991 selected facts preserved;1981 have unknown first-publication dates. Four availability bounds and eight revision alerts remain separate. Zero structural forecast features admitted.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+        "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "historical_status_preserved": true
+      },
+      "loop_lh5_evidence": {
+        "status": "completed_verified",
+        "finding": "Terminal anchor uses identical matured training label endpoints; four report-availability bounds still do not release unknown annual features.",
+        "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v5_15309415",
+        "historical_status_preserved": true
+      },
+      "active_loop_question": "Terminal anchor uses identical matured training label endpoints; four report-availability bounds still do not release unknown annual features.",
+      "active_loop_next_test": "Record actual future delivery/issuance and qualified labels, no nominal first-of-month assumption."
     },
     {
       "id": "M04",
@@ -1670,7 +1897,22 @@
       "research_track": "FOUNDATION",
       "long_horizon_status": "Price-leg decomposition completed: preferred catch-up dominates observed short-horizon correction; mechanism remains noncausal",
       "long_horizon_next_action": "Validate monthly/quarterly aggregation and historical rights; use daily timing or ex-date tests only to resolve a material long-run ambiguity.",
-      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates."
+      "long_horizon_data": "Class identifiers, historical units/actions, independent calendar, entitlements and publication dates.",
+      "loop_lh5_evidence": {
+        "status": "completed_verified",
+        "finding": "Stable gap anchoring is compatible with economic integration or asynchronous/transitory price noise; neither cause is identified.",
+        "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v5_15309415",
+        "historical_status_preserved": true
+      },
+      "active_loop_question": "Stable gap anchoring is compatible with economic integration or asynchronous/transitory price noise; neither cause is identified.",
+      "active_loop_next_test": "Twenty predetermined synchronized-quote feasibility observations, not next-session strategy fitting.",
+      "next02_feasibility_checkpoint": {
+        "review": "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md",
+        "new_observations": 0,
+        "venue_or_clock_gate_released": false,
+        "note": "Provider documentation maps possible routes; exact historical archive/entitlement and dated source provenance remain unverified."
+      }
     },
     {
       "id": "M05",
@@ -1796,7 +2038,46 @@
           "updated_utc": "2026-11-12T18:17:48.298485+00:00",
           "result": "Persistence beats LH-LEVEL in 7/11 two-year and 7/11 five-year comparisons; this rejects a universal advantage for the present linear correction design, not all possible prediction."
         }
-      ]
+      ],
+      "loop_lh2_evidence": {
+        "status": "completed_verified",
+        "finding": "Fixed ridge changes persistence comparisons: LH-LEVEL wins 6/11 at 24 months, 3/11 at 60 months under both coverage rules; universal prediction unsupported.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V2_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v2_15307902",
+        "historical_status_preserved": true
+      },
+      "loop_lh3_evidence": {
+        "status": "completed_verified",
+        "finding": "Fixed 120-month training-origin memory does not yield universal correction; LH-LEVEL rolling OLS beats persistence in 3/11 two-year samples and 4/11 five-year samples under both coverage rules. Prior expanding results retained.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "historical_status_preserved": true
+      },
+      "loop_lh4_evidence": {
+        "status": "completed_verified",
+        "finding": "161 of 524 saved score rows beat the historical mean but not persistence. VW pragmatic five-year level expanding mean MSE is 8.226 times persistence; both benchmarks remain mandatory.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+        "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "historical_status_preserved": true
+      },
+      "loop_lh5_evidence": {
+        "status": "completed_verified",
+        "finding": "Stable terminal anchoring can predict changes as estimated center minus current discount; original persistence wins remain.",
+        "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v5_15309415",
+        "historical_status_preserved": true
+      },
+      "active_loop_question": "Stable terminal anchoring can predict changes as estimated center minus current discount; original persistence wins remain.",
+      "active_loop_next_test": "Prospectively test terminal anchor against zero change on frozen future origins.",
+      "productive_batch_v1_evidence": {
+        "status": "completed_verified_scoped_evidence",
+        "finding": "All original benchmarks retained; heterogeneous historical wins, no universal or prospective predictor.",
+        "report": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/tree_productive_15316412",
+        "historical_status_preserved": true,
+        "causal_status_not_upgraded": true
+      }
     },
     {
       "id": "B02",
@@ -1848,7 +2129,46 @@
           "updated_utc": "2026-11-12T18:17:48.298485+00:00",
           "result": "LH-LEVEL beats persistence in 4/11 at each evaluable horizon. Novo improves at both horizons; no feasible ten-year OOS evaluation. Results remain exposed-history exploratory evidence."
         }
-      ]
+      ],
+      "loop_lh2_evidence": {
+        "status": "completed_verified",
+        "finding": "Coefficient drift and all phases retained; VW 24-month slope changes sign; Novo remains candidate, five-year phases only 1–2 outcomes. No prospective validation.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V2_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v2_15307902",
+        "historical_status_preserved": true
+      },
+      "loop_lh3_evidence": {
+        "status": "completed_verified",
+        "finding": "All 27,374 rolling forecasts independently reconstructed. Novo remains positive under both methods/windows; VW still loses. Eight strict Ping An five-year activity origins lack the required rolling labels. Window/penalty not selected from losses.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "historical_status_preserved": true
+      },
+      "loop_lh4_evidence": {
+        "status": "completed_verified",
+        "finding": "316 saved OLS forecast-variant cases predict q>=100, outside the positive-price ratio support, in VW and Hyundai preferred comparisons. No clipping/refitting/selection. Novo remains a retrospective candidate with few independent spans.",
+        "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+        "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "historical_status_preserved": true
+      },
+      "loop_lh5_evidence": {
+        "status": "completed_verified",
+        "finding": "Registered positive mean respects support, but NovoOLS/ridge/PPML all lose to terminal anchor in both horizons/coverage rules. Extra conditional slope value is not established on exposed history.",
+        "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/v5_15309415",
+        "historical_status_preserved": true
+      },
+      "active_loop_question": "Registered positive mean respects support, but NovoOLS/ridge/PPML all lose to terminal anchor in both horizons/coverage rules. Extra conditional slope value is not established on exposed history.",
+      "active_loop_next_test": "No more link/window grid. Test stability/measurement of terminal center and retain all fixed candidates prospectively.",
+      "productive_batch_v1_evidence": {
+        "status": "completed_verified_scoped_evidence",
+        "finding": "Novo level/state models lose to identical-memory terminal anchors; fixed5year expanding activityOLS exception6.81%/5.11%, no historical short-horizon verdict changed.",
+        "report": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/tree_productive_15316412",
+        "historical_status_preserved": true,
+        "causal_status_not_upgraded": true
+      }
     },
     {
       "id": "B03",
@@ -1930,7 +2250,15 @@
       "research_track": "ARCHIVE",
       "long_horizon_status": "archived short-horizon finding; no long-run inference",
       "long_horizon_next_action": "Do not resume daily reversal/model selection under the active long-horizon objective. Preserve findings within their original scope.",
-      "long_horizon_data": "Preserved historical forecasts, reviews and run records."
+      "long_horizon_data": "Preserved historical forecasts, reviews and run records.",
+      "productive_batch_v1_evidence": {
+        "status": "completed_verified_scoped_evidence",
+        "finding": "Existing state/activity designs compared to matching terminal anchors; scoped activity exception, not a newly identified nonlinear mechanism.",
+        "report": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md",
+        "run": "runs/loop_long_horizon/tree_productive_15316412",
+        "historical_status_preserved": true,
+        "causal_status_not_upgraded": true
+      }
     }
   ],
   "legacy_hypothesis_map": {
@@ -1983,13 +2311,8 @@
     ]
   },
   "current_information_priority": [
-    "LH1: Public share supply and sustained trading capacity",
-    "LH2: Durable investor base, institutional demand and access",
-    "LH3: Control, minority rights and governance regimes",
-    "LH4: Multi-year payout policy, cash rights and income investors",
-    "LH5: Class structure, investor access and market integration",
-    "LH6: Cross-cutting constraints that allow a gap to last",
-    "LH7: Company and economic cycles through a class-specific channel"
+    "NEXT-02: Novo exact-source venue, units/ratio and clock-aligned measurement qualification",
+    "NEXT-03: actual-delivery prospective terminal-anchor versus persistence registry; no forecasts issued"
   ],
   "search_rules": [
     "Active scope is persistent discount level and structural change over 2/5/10 years, not next-session forecast error",
@@ -2005,7 +2328,7 @@
     "November 12 user authorization resumes new tree-guided 2/5/10-year research; checkpoint each batch, preserve exclusions and scoped negative results, and do not restart unrelated paused work"
   ],
   "active_objective": "Develop and test hypothesis-guided linear predictions of LOOP class-price discounts over 2, 5 and 10 years; preserve all prior scoped findings",
-  "active_plan": "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+  "active_plan": "docs/regressions/LOOP_ACTIVE_RESEARCH_PLAN_20261112.md",
   "literature_review": "docs/regressions/LONG_HORIZON_LITERATURE.md",
   "base_tree_commit": "26e8957",
   "horizon_years": [
@@ -2014,7 +2337,7 @@
     10
   ],
   "observation_frequency": "Monthly prices, quarterly mechanisms, annual checks; preserve actual publication frequency",
-  "execution_status": "LOOP-LH1 completed; job 15293344",
+  "execution_status": "LH5 completed; simple timeline saved; Novo product/field feasibility mapped but entitlement and actual quotes unverified; prospective registry unissued",
   "research_tracks": [
     {
       "id": "LH1",
@@ -2323,5 +2646,540 @@
   },
   "historical_search_rules": [
     "Preserve simple logged patches and recurring independent inspection; no new local empirical work or agent restart in this planning turn"
-  ]
+  ],
+  "loop_long_horizon_stability_batch": {
+    "id": "LOOP-LH2",
+    "status": "completed_verified",
+    "updated_utc": "2026-11-12T20:37:10.128764+00:00",
+    "config": "configs/loop_long_horizon_v2.json",
+    "protocol": "docs/regressions/LOOP_LONG_HORIZON_V2_PROTOCOL_20261112.md",
+    "purpose": "Existing-sample coefficient drift, fixed train-only ridge, all nonoverlapping phases and fixed calendar periods; receipt revalidation",
+    "baseline_run": "runs/loop_long_horizon/15293344",
+    "tree_nodes": [
+      "B01",
+      "B02",
+      "L01",
+      "M01",
+      "M02"
+    ],
+    "new_intervals_released": 0,
+    "validated_predictive_model": false,
+    "attempts": [
+      {
+        "job_id": "15307895",
+        "run": "runs/loop_long_horizon/v2_15307895",
+        "status": "failed_before_estimation",
+        "diagnosis": "Descriptor internal manifest uses Windows backslashes. Normalize only internal descriptor references; keep ZIP/delivery paths strict. Original snapshots untouched."
+      },
+      {
+        "job_id": "15307902",
+        "run": "runs/loop_long_horizon/v2_15307902",
+        "status": "completed"
+      }
+    ],
+    "job_id": "15307902",
+    "run": "runs/loop_long_horizon/v2_15307902",
+    "audit_job_id": "15308021",
+    "verification": {
+      "status": "passed",
+      "aggregate_score_rows_verified": 10608,
+      "drift_rows_verified": 784,
+      "incremental_rows_verified": 174,
+      "same_origins_verified": true,
+      "portable_daily_audit_matches_delivery": true,
+      "descriptor_review_passed": true,
+      "baseline_and_inputs_unchanged": true,
+      "independent_agent_review": false
+    },
+    "results": {
+      "status": "completed",
+      "baseline_forecasts_verified": 13695,
+      "ridge_forecasts": 13695,
+      "max_ols_reconstruction_error": 3.353761712787673e-12,
+      "max_ridge_reconstruction_error": 2.278177646530821e-13,
+      "synthetic_checks": 5,
+      "baseline_unchanged": true,
+      "new_intervals_released": 0,
+      "deliveries": [
+        {
+          "snapshot": "wrds_descriptor_review",
+          "status": "verified"
+        },
+        {
+          "snapshot": "wrds_daily_and_mapping",
+          "status": "verified"
+        },
+        {
+          "snapshot": "loop_long_horizon_followup",
+          "status": "missing_not_qualified"
+        }
+      ],
+      "completed_utc": "2026-11-12T20:32:07.027664+00:00",
+      "validated_predictive_model": false
+    },
+    "report": "docs/regressions/LOOP_LONG_HORIZON_V2_RESULTS_20261112.md",
+    "missing_delivery": "loop_long_horizon_followup_2026-11-12_v1.zip and separate delivery JSON",
+    "interval_release_status": "No new intervals; retain all exact-venue, identity, units, clock, action and publication gates",
+    "audit_attempts": [
+      {
+        "job_id": "15308001",
+        "status": "failed_after_aggregate_and_daily_controls",
+        "diagnosis": "Descriptor reviewer requires output inside bundle; retry uses isolated descriptor copy. Earlier outputs preserved."
+      },
+      {
+        "job_id": "15308021",
+        "status": "completed",
+        "run": "runs/loop_long_horizon/v2_15307902/verification_v2"
+      }
+    ]
+  },
+  "loop_long_horizon_v3_batch": {
+    "id": "LOOP-LH3",
+    "status": "completed_verified",
+    "job_id": "15308280",
+    "run": "runs/loop_long_horizon/v3_15308280",
+    "updated_utc": "2026-11-12T20:53:56.222255+00:00",
+    "purpose": "Verify delivered long history and structural supplement; qualify exact intervals; integrate only through a new specification",
+    "baseline_runs": [
+      "runs/loop_long_horizon/15293344",
+      "runs/loop_long_horizon/v2_15307902"
+    ],
+    "new_intervals_released": 0,
+    "validated_predictive_model": false,
+    "config": "configs/loop_long_horizon_v3.json",
+    "protocol": "docs/regressions/LOOP_LONG_HORIZON_V3_PROTOCOL_20261112.md",
+    "receipt_job_id": "15308123",
+    "receipt_run": "runs/loop_long_horizon/v3_receipt_15308123",
+    "attempts": [
+      {
+        "job_id": "15308230",
+        "run": "runs/loop_long_horizon/v3_15308230",
+        "status": "failed_before_estimation",
+        "diagnosis": "Follow-up fact source_file values are snapshot-relative; supplement fact paths are repository-relative. Resolve each documented namespace explicitly, preserving original fact paths."
+      },
+      {
+        "job_id": "15308280",
+        "run": "runs/loop_long_horizon/v3_15308280",
+        "status": "completed_verified"
+      }
+    ],
+    "audit_job_id": "15308326",
+    "results": {
+      "status": "completed",
+      "baseline_candidate_origins": 13695,
+      "matched_successful_origins": 13687,
+      "failed_rolling_origins": 8,
+      "rolling_forecasts": 27374,
+      "completed_groups": 131,
+      "synthetic_checks": 5,
+      "source_audit": {
+        "status": "passed",
+        "delivered_files_verified_at_use": 411,
+        "prerequisite_references_verified": 117,
+        "raw_global_rows": 56634,
+        "raw_crsp_rows": 6843,
+        "coverage_rows_reproduced": 13,
+        "raw_distribution_rows_preserved": true,
+        "annual_supply_rows": 378,
+        "annual_descriptor_rows": 402,
+        "annual_join_matches": 378,
+        "descriptor_only": 24,
+        "vendor_field_observations_verified": 1512,
+        "vendor_missing_field_observations": 502,
+        "fact_rows": 1375,
+        "fact_tables": [
+          {
+            "table": "dated_evidence_selected.csv",
+            "facts": 460,
+            "publication_date_unknown": 459
+          },
+          {
+            "table": "annual_structural_evidence.csv",
+            "facts": 775,
+            "publication_date_unknown": 775
+          },
+          {
+            "table": "additional_dated_structural_and_payout_evidence.csv",
+            "facts": 53,
+            "publication_date_unknown": 50
+          },
+          {
+            "table": "novo_fee_and_contract_dated_evidence.csv",
+            "facts": 87,
+            "publication_date_unknown": 87
+          }
+        ],
+        "cash_notices_reconciled": 6,
+        "vendor_basis_exceptions_retained": 4,
+        "source_inventories": [
+          {
+            "snapshot": "loop_long_horizon_followup",
+            "source_attempt_rows": 113,
+            "statuses": {
+              "downloaded": 89,
+              "failed": 12,
+              "downloaded_extraction_failed": 11,
+              "browser_verified_fact_summary": 1
+            }
+          },
+          {
+            "snapshot": "loop_gap_closure_supplement",
+            "source_attempt_rows": 55,
+            "statuses": {
+              "failed": 18,
+              "downloaded": 34,
+              "derived public-web-reader fact summary; original download failed": 3
+            }
+          }
+        ],
+        "new_paired_intervals_released": 0,
+        "structural_forecast_features_admitted": 0,
+        "certifies_all_transcription_values_against_original_page_layout": false,
+        "scope": "Source integrity, coverage and arithmetic; exact-venue/new-interval and feature gates retained"
+      },
+      "baseline_unchanged": true,
+      "validated_predictive_model": false
+    },
+    "verification": {
+      "status": "passed",
+      "rolling_forecasts_reconstructed": 27374,
+      "max_prediction_error_pp": 9.059419880941277e-14,
+      "aggregate_score_rows_verified": 21184,
+      "incremental_rows_verified": 348,
+      "all_candidate_origins_accounted_for": true,
+      "fact_rows_preserved_without_feature_admission": 1375,
+      "baseline_and_v2_and_inputs_unchanged": true,
+      "independent_agent_review": false
+    },
+    "receipts": [
+      {
+        "snapshot": "loop_long_horizon_followup",
+        "status": "verified",
+        "archive": "data/acquisition/2026-11-12_v1/loop_long_horizon_followup_2026-11-12_v1.zip",
+        "archive_sha256": "35a754dd094f50d611c0c95f4a5077a3aa45b43bb3917b9f3c84b950e8f8ae0a",
+        "archive_bytes": 648953971,
+        "entries_verified": 273,
+        "internal_files_verified": 272,
+        "delivery_sha256": "07ad29efddbc41a418d6fca5ed5ded94998eb91f8338962fa93c1f0305d3bc9a",
+        "extracted_directory": "data/acquisition/2026-11-12/loop_long_horizon_followup",
+        "overlaid_existing_snapshot": false
+      },
+      {
+        "snapshot": "loop_gap_closure_supplement",
+        "status": "verified",
+        "archive": "data/acquisition/2026-11-12_v1/loop_gap_closure_supplement_2026-11-12_v1.zip",
+        "archive_sha256": "a7ad04c4143bf5a7c4b99fe712daedd45d604eead99f5ea817e07a6e5809a5dc",
+        "archive_bytes": 267222781,
+        "entries_verified": 138,
+        "internal_files_verified": 137,
+        "delivery_sha256": "34fbd6227988ba82d7592c7c39d5cf601fa012aa059d88b46a5cd2d141e7cab6",
+        "extracted_directory": "data/acquisition/2026-11-12/loop_gap_closure_supplement",
+        "overlaid_existing_snapshot": false
+      }
+    ],
+    "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+    "structural_forecast_features_admitted": 0
+  },
+  "loop_long_horizon_v4_batch": {
+    "id": "LOOP-LH4",
+    "status": "completed_verified",
+    "config": "configs/loop_long_horizon_v4.json",
+    "protocol": "docs/regressions/LOOP_LONG_HORIZON_V4_PROTOCOL_20261112.md",
+    "receipt_job_id": "15308639",
+    "install_job_id": "15308656",
+    "receipt_run": "runs/loop_long_horizon/v4_receipt_15308639",
+    "stage": "data/acquisition/complete_transfer_v4_15308639",
+    "purpose": "Five-snapshot receipt, gated evidence and existing-forecast anomaly diagnostics; no new model fits",
+    "tree_nodes": [
+      "B01",
+      "B02",
+      "M01",
+      "M02",
+      "M03",
+      "L01",
+      "X03"
+    ],
+    "updated_utc": "2026-11-12T21:27:24.459107+00:00",
+    "new_intervals_released": 0,
+    "structural_forecast_features_admitted": 0,
+    "validated_predictive_model": false,
+    "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+    "attempts": [
+      {
+        "job_id": "15308757",
+        "run": "runs/loop_long_horizon/v4_15308757",
+        "status": "failed_before_price_diagnostics",
+        "diagnosis": "Availability clocks use the explicit string unknown; availability confirmed by this announcement. Recognize unknown-date annotations without changing source text or treating the bound as first publication."
+      },
+      {
+        "job_id": "15308800",
+        "run": "runs/loop_long_horizon/v4_15308800",
+        "status": "outputs_completed_and_verified_console_print_failed",
+        "diagnosis": "All artifacts and manifest saved successfully; final print(json.dumps(summary)) rejected NumPy int64. Future logger fixed; exact saved artifacts independently verified without recomputing analyses."
+      }
+    ],
+    "job_id": "15308800",
+    "run": "runs/loop_long_horizon/v4_15308800",
+    "audit_job_id": "15308863",
+    "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+    "results": {
+      "status": "completed",
+      "source_audit": {
+        "installed_snapshots": [
+          {
+            "snapshot": "wrds_descriptor_review",
+            "entries": 95,
+            "installed_bytes_verified": true
+          },
+          {
+            "snapshot": "wrds_daily_and_mapping",
+            "entries": 46,
+            "installed_bytes_verified": true
+          },
+          {
+            "snapshot": "loop_long_horizon_followup",
+            "entries": 273,
+            "installed_bytes_verified": true
+          },
+          {
+            "snapshot": "loop_gap_closure_supplement",
+            "entries": 138,
+            "installed_bytes_verified": true
+          },
+          {
+            "snapshot": "loop_public_report_additions",
+            "entries": 48,
+            "installed_bytes_verified": true
+          }
+        ],
+        "installed_entries_verified": 600,
+        "reused_reference_records_verified": 176,
+        "new_facts": 616,
+        "new_unknown_first_publication": 610,
+        "combined_facts": 1991,
+        "combined_unknown_first_publication": 1981,
+        "availability_bounds_retained_separately": 4,
+        "revision_alerts_retained": 8,
+        "source_inventory_rows": 59,
+        "extraction_checks": 47,
+        "prior_exact_transcriptions_excluded_by_delivery": 59,
+        "new_paired_intervals_admitted": 0,
+        "structural_forecast_features_admitted": 0
+      },
+      "forecast_score_rows": 524,
+      "forecast_origin_diagnostic_rows": 54748,
+      "mean_only_win_rows": 161,
+      "forecast_terminal_bound_violations": 316,
+      "drawdown_translation_rows": 14,
+      "synthetic_checks": 5,
+      "baseline_v2_v3_unchanged": true,
+      "new_model_fits": 0,
+      "validated_predictive_model": false
+    },
+    "verification": {
+      "status": "passed",
+      "score_diagnostics_verified": 524,
+      "origin_diagnostics_verified": 54748,
+      "drawdown_translations_verified": 14,
+      "evidence_rows_preserved": 1991,
+      "availability_bounds_and_alerts_preserved": true,
+      "prior_inputs_and_outputs_unchanged": true,
+      "new_model_fits": 0
+    },
+    "receipt": {
+      "status": "outer_verified_and_staged",
+      "archive": "data/acquisition/2026-11-12_v1/wrds_complete_transfer_2026-11-12_v1.zip",
+      "archive_bytes": 942656553,
+      "archive_sha256": "709b31f15d7935f651a37d8603143d949300f48abcf76381aa5c660d95396dc0",
+      "entries_verified": 66,
+      "delivery_sha256": "55dd55c169f6310d9dd0a476c61917f83d942f8cbd8c777510c61c1cc35130c8",
+      "stage": "data/acquisition/complete_transfer_v4_15308639",
+      "flattened_paths": false,
+      "installer_sha256": "fb3ccf90c2eef0d0275fbdd4b5ff27db5ced1c9ba01dc891bd039cf2daa98ad5"
+    },
+    "analyst_inventory": "docs/regressions/LOOP_ANALYST_REVIEW_INVENTORY_20261112.csv",
+    "analyst_scope": "63 aggregate tables across 16 completed families; primary literature comparison;13 tree-linked findings; no historical replay or exploitation claim",
+    "main_scheduler_status": "FAILED_after_saved_outputs_due_to_console_only_NumPy_JSON_serialization",
+    "new_model_fits": 0,
+    "audit_attempts": [
+      {
+        "job_id": "15308814",
+        "status": "failed_after_forecast_checks",
+        "diagnosis": "Missing VW quoted-net drawdown requires NaN-aware equality; not zero-filled."
+      },
+      {
+        "job_id": "15308863",
+        "status": "completed",
+        "run": "runs/loop_long_horizon/v4_15308800/verification_v2"
+      }
+    ]
+  },
+  "analyst_review_20261112": {
+    "report": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+    "inventory": "docs/regressions/LOOP_ANALYST_REVIEW_INVENTORY_20261112.csv",
+    "aggregate_tables": 63,
+    "completed_families": 16,
+    "tree_linked_findings": 13,
+    "new_model_fits": 0,
+    "executable_arbitrage_established": false,
+    "historical_verdicts_preserved": true
+  },
+  "loop_long_horizon_v5_batch": {
+    "id": "LOOP-LH5-MEAN",
+    "status": "completed_verified",
+    "updated_utc": "2026-11-12T21:53:54.010507+00:00",
+    "config": "configs/loop_long_horizon_v5.json",
+    "protocol": "docs/regressions/LOOP_LH5_MEAN_PROTOCOL_20261112.md",
+    "purpose": "One positive conditional mean versus persistence, mean change and a terminal-level anchor; original OLS/ridge retained",
+    "tree_nodes": [
+      "B01",
+      "B02",
+      "M01",
+      "M02"
+    ],
+    "new_price_intervals": 0,
+    "new_structural_features": 0,
+    "validated_predictive_model": false,
+    "job_id": "15309415",
+    "audit_job_id": "15309602",
+    "run": "runs/loop_long_horizon/v5_15309415",
+    "results": {
+      "status": "completed",
+      "requested_origins": 5026,
+      "successful_origins": 5026,
+      "failed_origins": 0,
+      "score_rows": 132,
+      "phase_rows": 5019,
+      "nonpositive_or_nonfinite_forecast_ratios": 0,
+      "terminal_q_rounded_to_100": 0,
+      "baseline_and_ridge_and_inputs_unchanged": true,
+      "new_intervals": 0,
+      "new_structural_features": 0,
+      "validated_predictive_model": false
+    },
+    "verification": {
+      "status": "passed",
+      "quasi_mean_forecasts_reconstructed": 5026,
+      "maximum_prediction_difference_pp": 8.595435474489932e-11,
+      "score_phase_period_rows_verified": 5514,
+      "three_benchmarks_same_matured_rows_verified": true,
+      "positive_ratio_support_verified": true,
+      "all_original_origins_accounted_for": true,
+      "baseline_and_ridge_and_inputs_unchanged": true,
+      "independent_agent_review": false,
+      "method": "Full two-parameter Newton mean scores versus profiled bisection"
+    },
+    "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+    "active_plan": "docs/regressions/LOOP_ACTIVE_RESEARCH_PLAN_20261112.md",
+    "adjudication": "Novo original persistence/mean-change wins preserved; no fitted method beats training-only terminal anchor under either horizon/coverage. Conditional-slope incremental information not established; stationarity/measurement and prospective anchor test next.",
+    "registered_artifact_sha256": {
+      "configs/loop_long_horizon_v5.json": "94444f021dcf6ab9c0c5a5906b8fd8783b3e33c9f28492583763dac26bbf9032",
+      "configs/loop_prospective_cohort_v1.json": "5b363466f36a876ef0a0d7553fa9c3ea81aceadd264119994dc3d5b85ec654d8",
+      "configs/loop_prospective_cohort_v2.json": "6d2930565e3306f16e4c7c771d67c5fdb4a203537a6ab5bc43c0f652a8b501b3",
+      "docs/regressions/LOOP_ACTIVE_RESEARCH_PLAN_20261112.md": "641b17f2924841b3b95048101e61c5f7df721fa2ccbd7e6d002a5fae326842c9",
+      "docs/regressions/LOOP_LH5_MEAN_PROTOCOL_20261112.md": "2d5187edd72eaa5fc9eef161d70a75fc993264e97af3e618da200da1ecd9b234",
+      "docs/regressions/LOOP_NOVO_TARGETED_DATA_REQUEST_20261112.md": "a2a26d61845f5510d8bbf62fbc0648d81482d2a35b57ebdf620b7375e1e4ddf0",
+      "docs/regressions/LOOP_PROSPECTIVE_REGISTRY_20261112.md": "f5c2a43937e08f06521fec57934aefeaf2bc1dec148aee0f676c9adc0fbd24fd",
+      "docs/regressions/LOOP_NEXT_EXPERIMENT_REVIEW_20261112.md": "353424c50f1c1a97f8ec85b50b36e7d33e1a967fd9516ccdeff65114f22f5f84"
+    }
+  },
+  "active_plan_history": [
+    {
+      "recorded_utc": "2026-11-12T21:53:54.010507+00:00",
+      "previous": "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+      "reason": "Analyst consultation and registered terminal-anchor falsification narrow the operational queue; foundational protocol retained"
+    }
+  ],
+  "foundational_protocol": "docs/regressions/LOOP_LONG_HORIZON_PROTOCOL_20261112.md",
+  "information_priority_history": [
+    {
+      "recorded_utc": "2026-11-12T21:53:54.010507+00:00",
+      "priorities": [
+        "LH1: Public share supply and sustained trading capacity",
+        "LH2: Durable investor base, institutional demand and access",
+        "LH3: Control, minority rights and governance regimes",
+        "LH4: Multi-year payout policy, cash rights and income investors",
+        "LH5: Class structure, investor access and market integration",
+        "LH6: Cross-cutting constraints that allow a gap to last",
+        "LH7: Company and economic cycles through a class-specific channel"
+      ],
+      "reason": "Preserve broad mechanism agenda; operational priorities now follow registered LH5 result"
+    }
+  ],
+  "active_research_queue": [
+    {
+      "id": "NEXT-01",
+      "status": "completed_verified",
+      "tree_nodes": [
+        "B01",
+        "B02",
+        "M01",
+        "M02"
+      ],
+      "test": "One positive conditional mean versus three anchors",
+      "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+      "run": "runs/loop_long_horizon/v5_15309415",
+      "decision": "Close method experiment; no additional link/window/predictor search from these losses"
+    },
+    {
+      "id": "NEXT-02",
+      "status": "product_routes_mapped_awaiting_authorized_access_and_coverage",
+      "tree_nodes": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "X01",
+        "X02",
+        "X03"
+      ],
+      "question": "Stable economic terminal-gap center versus quote/FX/ratio/source artifacts",
+      "data_request": "docs/regressions/LOOP_NOVO_TARGETED_DATA_REQUEST_20261112.md",
+      "scope": "Existing Novo1995–2004 interval provenance plus20fixed clock-aligned feasibility dates; no generic bulk acquisition",
+      "gate": "Exact source venue/identity/units/ratio and60-second event-time quotes; missing evidence keeps affected path unresolved",
+      "feasibility_review": "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md",
+      "acquisition_configuration": "configs/novo_measurement_acquisition_v1.json",
+      "selected_dates_status": "pending_independent_session_calendars",
+      "new_quote_observations_received": 0,
+      "artifact_sha256": {
+        "docs/regressions/LOOP_SIMPLE_TIMELINE_20261112.md": "4a718e91d10297493eee58f1c5d7bf993dc98e24c764c534c2abbce4ce9da089",
+        "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md": "1f68efaa1f99ec67310f81e4b59ad7ddfdb0cc624230c5b6ccb9695d21df1e0b",
+        "configs/novo_measurement_acquisition_v1.json": "49a04bd91a3689a7f09d2f18645c6887fbc557c32cf6d30f74b6a99c73e2b3a6"
+      }
+    },
+    {
+      "id": "NEXT-03",
+      "status": "registered_unissued_delivery_gated",
+      "tree_nodes": [
+        "B01",
+        "B02",
+        "M01",
+        "M02",
+        "M03"
+      ],
+      "registry": "configs/loop_prospective_cohort_v2.json",
+      "protocol": "docs/regressions/LOOP_PROSPECTIVE_REGISTRY_20261112.md",
+      "question": "Does a frozen terminal anchor beat persistence on new origins? Do conditional models improve it?",
+      "cohorts": "2026-12 through2027-11",
+      "primary_contrast": "Novo24-month terminal anchor versus zero change",
+      "gate": "Document source-specific latency before new cohort data; actual delivered qualified inputs, immutable issuance records and no interim selection",
+      "forecasts_issued": 0
+    }
+  ],
+  "active_scope_note": "Historical node status/long_horizon_status fields and baseline evidence are preserved. active_loop_question and active_loop_next_test describe the current LOOP program.",
+  "prospective_registry": {
+    "active": "configs/loop_prospective_cohort_v2.json",
+    "prior_preserved": "configs/loop_prospective_cohort_v1.json",
+    "status": "registered_unissued_delivery_gated",
+    "forecasts_issued": 0
+  },
+  "experiment_timeline": "docs/regressions/LOOP_SIMPLE_TIMELINE_20261112.md",
+  "productive_tree_batch_v1": {
+    "status": "completed_verified",
+    "report": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md",
+    "job_id": "15316412",
+    "audit_job_id": "15316459",
+    "historical_statuses_preserved": true
+  }
 }

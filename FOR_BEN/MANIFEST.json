@@ -1,0 +1,111 @@
+{
+  "snapshot_date_local": "2026-11-12",
+  "timezone": "America/Denver",
+  "files": [
+    {
+      "file": "ACCOMPLISHMENTS.html",
+      "bytes": 33266,
+      "sha256": "0b3104ecd5d9866d08bb25e7450ce0e45662b93be1b4f44feb0e98bb626d5e56"
+    },
+    {
+      "file": "ACCOMPLISHMENTS.pptx",
+      "bytes": 17933,
+      "sha256": "e288c764f5c8950ee478cfeab17896c29867b0bfc190b2adcee01f025cea6991"
+    },
+    {
+      "file": "HYPOTHESIS_TREE.json",
+      "bytes": 174427,
+      "sha256": "84eef372ce23bc86ef56f6dbc14467ea9e114006429e7acadd0603ef3f7df7b3"
+    },
+    {
+      "file": "HYPOTHESIS_TREE.md",
+      "bytes": 38195,
+      "sha256": "008074cbc45d1d6578a75a9e8d7022fca89b01908e26e709613a0e91a88d36fb"
+    },
+    {
+      "file": "LOCAL_AI_REVIEW_PROMPT.md",
+      "bytes": 3372,
+      "sha256": "a01090186ad67f770f29cf07f24a04a65511b1e2239d76531cdfc0a24d983478"
+    },
+    {
+      "file": "PAPER.md",
+      "bytes": 52008,
+      "sha256": "d404c0b6bd212d4dee444cf307c9346fe468a88408feb2ed577391be64e91e19"
+    },
+    {
+      "file": "PRESENTATION.md",
+      "bytes": 4307,
+      "sha256": "d011d11905cfe0e9922d226b103e477644f9212e48e2cc4bed2959e511ca34b0"
+    },
+    {
+      "file": "PRESENTATION_PREVIEW.png",
+      "bytes": 389204,
+      "sha256": "4c6fa53e0e37b1c788dd04a42106bd6384397756ed56c22477283d821c2c9b1f"
+    },
+    {
+      "file": "READ_ME_FIRST.md",
+      "bytes": 5479,
+      "sha256": "9d24c6a50bdc1fd6a34ec03ad53029a0a5f2d49d1693c3852966762518312efd"
+    },
+    {
+      "file": "SOURCE_SNAPSHOTS.json",
+      "bytes": 1454,
+      "sha256": "0eb9295ef2625fe8b3e2ba9626448da910ab95a78d0c1ac0bb910cdf7054295b"
+    },
+    {
+      "file": "TABLE_INPUTS/SOURCES.json",
+      "bytes": 1789,
+      "sha256": "2b54bbbd84dc48592860d949e4c63c0253eeddd71b72017dadbe5c44a4fbb46e"
+    },
+    {
+      "file": "TABLE_INPUTS/samsung_continuation_e.csv",
+      "bytes": 20784,
+      "sha256": "86d53769ea90b338cab6c527e2b07537cb47febd1538da4c46110735e52c0e1b"
+    },
+    {
+      "file": "TABLE_INPUTS/samsung_continuation_f.csv",
+      "bytes": 21161,
+      "sha256": "1b2863483e3b0ad91371f960516afec0d1f1f4dd440f3ba4cbf305743f7723f5"
+    },
+    {
+      "file": "TABLE_INPUTS/samsung_continuation_gh.csv",
+      "bytes": 43695,
+      "sha256": "566a07fe33f1b52939a54e8c63f4831a776f7a11723d1ec5dde1cecb9eff6096"
+    },
+    {
+      "file": "TABLE_INPUTS/samsung_locked_main.csv",
+      "bytes": 1961,
+      "sha256": "3f4febc7a1ed335f7df3a26036c34d9edfca69230c955c561b99270c492e591e"
+    },
+    {
+      "file": "TABLE_INPUTS/samsung_locked_strict.csv",
+      "bytes": 1961,
+      "sha256": "3f4febc7a1ed335f7df3a26036c34d9edfca69230c955c561b99270c492e591e"
+    },
+    {
+      "file": "TABLE_INPUTS/us_class_forecast_summary.csv",
+      "bytes": 740,
+      "sha256": "1c53b2f386427c949da0a005f96b400ec7d9e78944ca3472a24c68a953f7e4e0"
+    },
+    {
+      "file": "TIMELINE.md",
+      "bytes": 6442,
+      "sha256": "9307e1a6ed5a90eea0d6055074e9ea5be6b4c52ad2400700ba8abdb9dec72d8f"
+    },
+    {
+      "file": "VALIDATION.json",
+      "bytes": 775,
+      "sha256": "290b342081dcbf1738bf68ccef7b696a9c4e58c19ed0d9f5f2e764d94bef4c28"
+    },
+    {
+      "file": "WHAT_DID_NOT_WORK.csv",
+      "bytes": 261224,
+      "sha256": "20623ee93912412bd9c54b582b1e1e8658d5da8265a76c2629a2073f592e8279"
+    },
+    {
+      "file": "WHAT_DID_NOT_WORK.md",
+      "bytes": 202141,
+      "sha256": "6162bddc38714e22421d33b3d28c8891683cc4cf601d1f6ad330196147f73627"
+    }
+  ]
+}

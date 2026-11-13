@@ -1,0 +1,18 @@
+{
+  "validated_utc": "2026-11-13T04:26:51.714064+00:00",
+  "core_tree_nodes": 44,
+  "canonical_tree_copy_byte_identical": true,
+  "Markdown_local_links_checked": 111,
+  "failed_specification_cases": 543,
+  "situation_types": 9,
+  "matched_current_scorecard_losses": 465,
+  "positive_mean_losses": 38,
+  "other_daily_development_or_US_cases": 40,
+  "slide_count": 7,
+  "PPTX_XML_relationships_CRC": "passed",
+  "presentation_text_box_bounds": "checked during build",
+  "preview": "scene-model contact sheet visually inspected; not native Office rendering",
+  "licensed_raw_observations_or_crosswalks_included": false,
+  "new_regressions_run": false,
+  "folder_scope": "Snapshot in this repository; supporting evidence links intentionally point to original repository files"
+}

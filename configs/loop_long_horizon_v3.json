@@ -1,0 +1,31 @@
+{
+  "batch_id": "LOOP-LH3",
+  "baseline_run": "runs/loop_long_horizon/15293344",
+  "stability_run": "runs/loop_long_horizon/v2_15307902",
+  "receipt_run": "runs/loop_long_horizon/v3_receipt_15308123",
+  "history_snapshot": "data/acquisition/2026-11-12/loop_long_horizon_followup",
+  "supplement_snapshot": "data/acquisition/2026-11-12/loop_gap_closure_supplement",
+  "rolling_training_origin_months": 120,
+  "rolling_boundary": "origin-120 <= training origin < origin; training target <= completed origin month; calendar grid retained",
+  "minimum_training_observations": 36,
+  "observations_per_parameter": 10,
+  "ridge_penalty": 1.0,
+  "ridge_objective": "mean squared training error plus lambda times squared training-population-SD slopes; intercept unpenalized; fixed, no tuning",
+  "price_work": "OLS and fixed ridge rolling-window diagnostics on unchanged LH1 samples and candidate origins; compare expanding methods on exactly matched successful origins; record all rolling failures",
+  "new_interval_admission": "No local pre-2005 interval admitted until exact historical quote venue, stable identity, units/currency, status, splits/ratios and corporate continuity qualify; no venue relaxation",
+  "structural_integration": "Preserve every fact and vintage with source hash, dates, unit, status, class and qualification. Classify unknown publication dates as retrospective. No structural field is a forecast feature in this price-only v3 test.",
+  "exclusions": [
+    "Pre-Xetra VW and unverified post-launch quote source",
+    "Novo predecessor/demerger intervals and Nasdaq receipt are separate candidates",
+    "Hyundai third preferred has no positive pre-2005 price",
+    "HDFC first price versus metadata-begin discrepancy unresolved",
+    "Vendor CSHOI not uniformly net outstanding; issued-minus-treasury not public float",
+    "Unknown annual publication dates cannot be historical features",
+    "Fee maxima, disclosure snapshots, preliminary notices and final event charges remain distinct",
+    "No general Novo fee effective date inferred from payment-to-payment bracket"
+  ],
+  "nonoverlap_policy": "Report all origin-grid modulo horizon phases, without anchor selection; shared boundary observations and very small phase counts explicit",
+  "calendar_periods": [["through_2014", 0, 2014], ["2015_2019", 2015, 2019], ["2020_onward", 2020, 9999]],
+  "hypothesis_scope": "B02 regime/memory sensitivity of pre-existing price predictors; M01/M02 source and interval gates; no causal structural or prospective validation",
+  "baseline_policy": "All baseline and v2 results remain frozen; receipt does not upgrade a hypothesis verdict"
+}

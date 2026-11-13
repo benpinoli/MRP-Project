@@ -1,0 +1,33 @@
+{
+  "date_local": "2026-11-12",
+  "timezone": "America/Denver",
+  "core_snapshots": [
+    {
+      "file": "PAPER.md",
+      "source": "docs/regressions/LOOP_HYPOTHESIS_TESTS_PAPER_20261112.md",
+      "source_sha256": "0251c5d8437a2dfe24ae1e7d872f78771c571602da57d00939a98865b4c1ddda",
+      "note": "Snapshot; Markdown links rebased for repository-root folder. JSON unchanged."
+    },
+    {
+      "file": "TIMELINE.md",
+      "source": "docs/regressions/LOOP_SIMPLE_TIMELINE_20261112.md",
+      "source_sha256": "42e073cda8fd0743a27aacd9065ce9fdd46faed4c739b53ff084162b0162f33d",
+      "note": "Snapshot; Markdown links rebased for repository-root folder. JSON unchanged."
+    },
+    {
+      "file": "HYPOTHESIS_TREE.md",
+      "source": "docs/regressions/PREDICTION_MECHANISM_TREE.md",
+      "source_sha256": "fa059f0b2df986825f780bf0d9f1d823fddf34c286fbe2680ce2b3d485084e91",
+      "note": "Snapshot; Markdown links rebased for repository-root folder. JSON unchanged."
+    },
+    {
+      "file": "HYPOTHESIS_TREE.json",
+      "source": "docs/regressions/PREDICTION_MECHANISM_TREE.json",
+      "source_sha256": "84eef372ce23bc86ef56f6dbc14467ea9e114006429e7acadd0603ef3f7df7b3",
+      "note": "Snapshot; Markdown links rebased for repository-root folder. JSON unchanged."
+    }
+  ],
+  "failure_table_cases": 543,
+  "monthly_score_cases_screened": 524,
+  "scope": "Aggregate documentation only; no licensed raw rows, private crosswalks or UI captures"
+}

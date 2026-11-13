@@ -1,6 +1,6 @@
 {
   "active_objective": "Develop and test hypothesis-guided linear predictions of LOOP class-price discounts over 2, 5 and 10 years; preserve all prior scoped findings",
-  "updated_utc": "2026-11-12T18:17:48.298485+00:00",
+  "updated_utc": "2026-11-13T03:55:37.851188+00:00",
   "environment": {
     "host": "login03",
     "repo": "/home/bpinoli/MRP/MRP-Project",
@@ -141,6 +141,502 @@
         "causal_mechanisms_rejected": false,
         "validated_predictive_model": false
       }
+    },
+    {
+      "id": "LOOP-LH2",
+      "status": "completed_verified",
+      "updated_utc": "2026-11-12T20:37:10.128764+00:00",
+      "config": "configs/loop_long_horizon_v2.json",
+      "protocol": "docs/regressions/LOOP_LONG_HORIZON_V2_PROTOCOL_20261112.md",
+      "purpose": "Existing-sample coefficient drift, fixed train-only ridge, all nonoverlapping phases and fixed calendar periods; receipt revalidation",
+      "baseline_run": "runs/loop_long_horizon/15293344",
+      "tree_nodes": [
+        "B01",
+        "B02",
+        "L01",
+        "M01",
+        "M02"
+      ],
+      "new_intervals_released": 0,
+      "validated_predictive_model": false,
+      "attempts": [
+        {
+          "job_id": "15307895",
+          "run": "runs/loop_long_horizon/v2_15307895",
+          "status": "failed_before_estimation",
+          "diagnosis": "Descriptor internal manifest uses Windows backslashes. Normalize only internal descriptor references; keep ZIP/delivery paths strict. Original snapshots untouched."
+        },
+        {
+          "job_id": "15307902",
+          "run": "runs/loop_long_horizon/v2_15307902",
+          "status": "completed"
+        }
+      ],
+      "job_id": "15307902",
+      "run": "runs/loop_long_horizon/v2_15307902",
+      "audit_job_id": "15308021",
+      "verification": {
+        "status": "passed",
+        "aggregate_score_rows_verified": 10608,
+        "drift_rows_verified": 784,
+        "incremental_rows_verified": 174,
+        "same_origins_verified": true,
+        "portable_daily_audit_matches_delivery": true,
+        "descriptor_review_passed": true,
+        "baseline_and_inputs_unchanged": true,
+        "independent_agent_review": false
+      },
+      "results": {
+        "status": "completed",
+        "baseline_forecasts_verified": 13695,
+        "ridge_forecasts": 13695,
+        "max_ols_reconstruction_error": 3.353761712787673e-12,
+        "max_ridge_reconstruction_error": 2.278177646530821e-13,
+        "synthetic_checks": 5,
+        "baseline_unchanged": true,
+        "new_intervals_released": 0,
+        "deliveries": [
+          {
+            "snapshot": "wrds_descriptor_review",
+            "status": "verified"
+          },
+          {
+            "snapshot": "wrds_daily_and_mapping",
+            "status": "verified"
+          },
+          {
+            "snapshot": "loop_long_horizon_followup",
+            "status": "missing_not_qualified"
+          }
+        ],
+        "completed_utc": "2026-11-12T20:32:07.027664+00:00",
+        "validated_predictive_model": false
+      },
+      "report": "docs/regressions/LOOP_LONG_HORIZON_V2_RESULTS_20261112.md",
+      "missing_delivery": "loop_long_horizon_followup_2026-11-12_v1.zip and separate delivery JSON",
+      "interval_release_status": "No new intervals; retain all exact-venue, identity, units, clock, action and publication gates",
+      "audit_attempts": [
+        {
+          "job_id": "15308001",
+          "status": "failed_after_aggregate_and_daily_controls",
+          "diagnosis": "Descriptor reviewer requires output inside bundle; retry uses isolated descriptor copy. Earlier outputs preserved."
+        },
+        {
+          "job_id": "15308021",
+          "status": "completed",
+          "run": "runs/loop_long_horizon/v2_15307902/verification_v2"
+        }
+      ]
+    },
+    {
+      "id": "LOOP-LH3",
+      "status": "completed_verified",
+      "job_id": "15308280",
+      "run": "runs/loop_long_horizon/v3_15308280",
+      "updated_utc": "2026-11-12T20:53:56.222255+00:00",
+      "purpose": "Verify delivered long history and structural supplement; qualify exact intervals; integrate only through a new specification",
+      "baseline_runs": [
+        "runs/loop_long_horizon/15293344",
+        "runs/loop_long_horizon/v2_15307902"
+      ],
+      "new_intervals_released": 0,
+      "validated_predictive_model": false,
+      "config": "configs/loop_long_horizon_v3.json",
+      "protocol": "docs/regressions/LOOP_LONG_HORIZON_V3_PROTOCOL_20261112.md",
+      "receipt_job_id": "15308123",
+      "receipt_run": "runs/loop_long_horizon/v3_receipt_15308123",
+      "attempts": [
+        {
+          "job_id": "15308230",
+          "run": "runs/loop_long_horizon/v3_15308230",
+          "status": "failed_before_estimation",
+          "diagnosis": "Follow-up fact source_file values are snapshot-relative; supplement fact paths are repository-relative. Resolve each documented namespace explicitly, preserving original fact paths."
+        },
+        {
+          "job_id": "15308280",
+          "run": "runs/loop_long_horizon/v3_15308280",
+          "status": "completed_verified"
+        }
+      ],
+      "audit_job_id": "15308326",
+      "results": {
+        "status": "completed",
+        "baseline_candidate_origins": 13695,
+        "matched_successful_origins": 13687,
+        "failed_rolling_origins": 8,
+        "rolling_forecasts": 27374,
+        "completed_groups": 131,
+        "synthetic_checks": 5,
+        "source_audit": {
+          "status": "passed",
+          "delivered_files_verified_at_use": 411,
+          "prerequisite_references_verified": 117,
+          "raw_global_rows": 56634,
+          "raw_crsp_rows": 6843,
+          "coverage_rows_reproduced": 13,
+          "raw_distribution_rows_preserved": true,
+          "annual_supply_rows": 378,
+          "annual_descriptor_rows": 402,
+          "annual_join_matches": 378,
+          "descriptor_only": 24,
+          "vendor_field_observations_verified": 1512,
+          "vendor_missing_field_observations": 502,
+          "fact_rows": 1375,
+          "fact_tables": [
+            {
+              "table": "dated_evidence_selected.csv",
+              "facts": 460,
+              "publication_date_unknown": 459
+            },
+            {
+              "table": "annual_structural_evidence.csv",
+              "facts": 775,
+              "publication_date_unknown": 775
+            },
+            {
+              "table": "additional_dated_structural_and_payout_evidence.csv",
+              "facts": 53,
+              "publication_date_unknown": 50
+            },
+            {
+              "table": "novo_fee_and_contract_dated_evidence.csv",
+              "facts": 87,
+              "publication_date_unknown": 87
+            }
+          ],
+          "cash_notices_reconciled": 6,
+          "vendor_basis_exceptions_retained": 4,
+          "source_inventories": [
+            {
+              "snapshot": "loop_long_horizon_followup",
+              "source_attempt_rows": 113,
+              "statuses": {
+                "downloaded": 89,
+                "failed": 12,
+                "downloaded_extraction_failed": 11,
+                "browser_verified_fact_summary": 1
+              }
+            },
+            {
+              "snapshot": "loop_gap_closure_supplement",
+              "source_attempt_rows": 55,
+              "statuses": {
+                "failed": 18,
+                "downloaded": 34,
+                "derived public-web-reader fact summary; original download failed": 3
+              }
+            }
+          ],
+          "new_paired_intervals_released": 0,
+          "structural_forecast_features_admitted": 0,
+          "certifies_all_transcription_values_against_original_page_layout": false,
+          "scope": "Source integrity, coverage and arithmetic; exact-venue/new-interval and feature gates retained"
+        },
+        "baseline_unchanged": true,
+        "validated_predictive_model": false
+      },
+      "verification": {
+        "status": "passed",
+        "rolling_forecasts_reconstructed": 27374,
+        "max_prediction_error_pp": 9.059419880941277e-14,
+        "aggregate_score_rows_verified": 21184,
+        "incremental_rows_verified": 348,
+        "all_candidate_origins_accounted_for": true,
+        "fact_rows_preserved_without_feature_admission": 1375,
+        "baseline_and_v2_and_inputs_unchanged": true,
+        "independent_agent_review": false
+      },
+      "receipts": [
+        {
+          "snapshot": "loop_long_horizon_followup",
+          "status": "verified",
+          "archive": "data/acquisition/2026-11-12_v1/loop_long_horizon_followup_2026-11-12_v1.zip",
+          "archive_sha256": "35a754dd094f50d611c0c95f4a5077a3aa45b43bb3917b9f3c84b950e8f8ae0a",
+          "archive_bytes": 648953971,
+          "entries_verified": 273,
+          "internal_files_verified": 272,
+          "delivery_sha256": "07ad29efddbc41a418d6fca5ed5ded94998eb91f8338962fa93c1f0305d3bc9a",
+          "extracted_directory": "data/acquisition/2026-11-12/loop_long_horizon_followup",
+          "overlaid_existing_snapshot": false
+        },
+        {
+          "snapshot": "loop_gap_closure_supplement",
+          "status": "verified",
+          "archive": "data/acquisition/2026-11-12_v1/loop_gap_closure_supplement_2026-11-12_v1.zip",
+          "archive_sha256": "a7ad04c4143bf5a7c4b99fe712daedd45d604eead99f5ea817e07a6e5809a5dc",
+          "archive_bytes": 267222781,
+          "entries_verified": 138,
+          "internal_files_verified": 137,
+          "delivery_sha256": "34fbd6227988ba82d7592c7c39d5cf601fa012aa059d88b46a5cd2d141e7cab6",
+          "extracted_directory": "data/acquisition/2026-11-12/loop_gap_closure_supplement",
+          "overlaid_existing_snapshot": false
+        }
+      ],
+      "report": "docs/regressions/LOOP_LONG_HORIZON_V3_RESULTS_20261112.md",
+      "structural_forecast_features_admitted": 0
+    },
+    {
+      "id": "LOOP-LH4",
+      "status": "completed_verified",
+      "config": "configs/loop_long_horizon_v4.json",
+      "protocol": "docs/regressions/LOOP_LONG_HORIZON_V4_PROTOCOL_20261112.md",
+      "receipt_job_id": "15308639",
+      "install_job_id": "15308656",
+      "receipt_run": "runs/loop_long_horizon/v4_receipt_15308639",
+      "stage": "data/acquisition/complete_transfer_v4_15308639",
+      "purpose": "Five-snapshot receipt, gated evidence and existing-forecast anomaly diagnostics; no new model fits",
+      "tree_nodes": [
+        "B01",
+        "B02",
+        "M01",
+        "M02",
+        "M03",
+        "L01",
+        "X03"
+      ],
+      "updated_utc": "2026-11-12T21:27:24.459107+00:00",
+      "new_intervals_released": 0,
+      "structural_forecast_features_admitted": 0,
+      "validated_predictive_model": false,
+      "analyst_review": "docs/regressions/LOOP_ANALYST_REVIEW_20261112.md",
+      "attempts": [
+        {
+          "job_id": "15308757",
+          "run": "runs/loop_long_horizon/v4_15308757",
+          "status": "failed_before_price_diagnostics",
+          "diagnosis": "Availability clocks use the explicit string unknown; availability confirmed by this announcement. Recognize unknown-date annotations without changing source text or treating the bound as first publication."
+        },
+        {
+          "job_id": "15308800",
+          "run": "runs/loop_long_horizon/v4_15308800",
+          "status": "outputs_completed_and_verified_console_print_failed",
+          "diagnosis": "All artifacts and manifest saved successfully; final print(json.dumps(summary)) rejected NumPy int64. Future logger fixed; exact saved artifacts independently verified without recomputing analyses."
+        }
+      ],
+      "job_id": "15308800",
+      "run": "runs/loop_long_horizon/v4_15308800",
+      "audit_job_id": "15308863",
+      "report": "docs/regressions/LOOP_LONG_HORIZON_V4_RESULTS_20261112.md",
+      "results": {
+        "status": "completed",
+        "source_audit": {
+          "installed_snapshots": [
+            {
+              "snapshot": "wrds_descriptor_review",
+              "entries": 95,
+              "installed_bytes_verified": true
+            },
+            {
+              "snapshot": "wrds_daily_and_mapping",
+              "entries": 46,
+              "installed_bytes_verified": true
+            },
+            {
+              "snapshot": "loop_long_horizon_followup",
+              "entries": 273,
+              "installed_bytes_verified": true
+            },
+            {
+              "snapshot": "loop_gap_closure_supplement",
+              "entries": 138,
+              "installed_bytes_verified": true
+            },
+            {
+              "snapshot": "loop_public_report_additions",
+              "entries": 48,
+              "installed_bytes_verified": true
+            }
+          ],
+          "installed_entries_verified": 600,
+          "reused_reference_records_verified": 176,
+          "new_facts": 616,
+          "new_unknown_first_publication": 610,
+          "combined_facts": 1991,
+          "combined_unknown_first_publication": 1981,
+          "availability_bounds_retained_separately": 4,
+          "revision_alerts_retained": 8,
+          "source_inventory_rows": 59,
+          "extraction_checks": 47,
+          "prior_exact_transcriptions_excluded_by_delivery": 59,
+          "new_paired_intervals_admitted": 0,
+          "structural_forecast_features_admitted": 0
+        },
+        "forecast_score_rows": 524,
+        "forecast_origin_diagnostic_rows": 54748,
+        "mean_only_win_rows": 161,
+        "forecast_terminal_bound_violations": 316,
+        "drawdown_translation_rows": 14,
+        "synthetic_checks": 5,
+        "baseline_v2_v3_unchanged": true,
+        "new_model_fits": 0,
+        "validated_predictive_model": false
+      },
+      "verification": {
+        "status": "passed",
+        "score_diagnostics_verified": 524,
+        "origin_diagnostics_verified": 54748,
+        "drawdown_translations_verified": 14,
+        "evidence_rows_preserved": 1991,
+        "availability_bounds_and_alerts_preserved": true,
+        "prior_inputs_and_outputs_unchanged": true,
+        "new_model_fits": 0
+      },
+      "receipt": {
+        "status": "outer_verified_and_staged",
+        "archive": "data/acquisition/2026-11-12_v1/wrds_complete_transfer_2026-11-12_v1.zip",
+        "archive_bytes": 942656553,
+        "archive_sha256": "709b31f15d7935f651a37d8603143d949300f48abcf76381aa5c660d95396dc0",
+        "entries_verified": 66,
+        "delivery_sha256": "55dd55c169f6310d9dd0a476c61917f83d942f8cbd8c777510c61c1cc35130c8",
+        "stage": "data/acquisition/complete_transfer_v4_15308639",
+        "flattened_paths": false,
+        "installer_sha256": "fb3ccf90c2eef0d0275fbdd4b5ff27db5ced1c9ba01dc891bd039cf2daa98ad5"
+      },
+      "analyst_inventory": "docs/regressions/LOOP_ANALYST_REVIEW_INVENTORY_20261112.csv",
+      "analyst_scope": "63 aggregate tables across 16 completed families; primary literature comparison;13 tree-linked findings; no historical replay or exploitation claim",
+      "main_scheduler_status": "FAILED_after_saved_outputs_due_to_console_only_NumPy_JSON_serialization",
+      "new_model_fits": 0,
+      "audit_attempts": [
+        {
+          "job_id": "15308814",
+          "status": "failed_after_forecast_checks",
+          "diagnosis": "Missing VW quoted-net drawdown requires NaN-aware equality; not zero-filled."
+        },
+        {
+          "job_id": "15308863",
+          "status": "completed",
+          "run": "runs/loop_long_horizon/v4_15308800/verification_v2"
+        }
+      ]
+    },
+    {
+      "id": "LOOP-LH5-MEAN",
+      "status": "completed_verified",
+      "updated_utc": "2026-11-12T21:53:54.010507+00:00",
+      "config": "configs/loop_long_horizon_v5.json",
+      "protocol": "docs/regressions/LOOP_LH5_MEAN_PROTOCOL_20261112.md",
+      "purpose": "One positive conditional mean versus persistence, mean change and a terminal-level anchor; original OLS/ridge retained",
+      "tree_nodes": [
+        "B01",
+        "B02",
+        "M01",
+        "M02"
+      ],
+      "new_price_intervals": 0,
+      "new_structural_features": 0,
+      "validated_predictive_model": false,
+      "job_id": "15309415",
+      "audit_job_id": "15309602",
+      "run": "runs/loop_long_horizon/v5_15309415",
+      "results": {
+        "status": "completed",
+        "requested_origins": 5026,
+        "successful_origins": 5026,
+        "failed_origins": 0,
+        "score_rows": 132,
+        "phase_rows": 5019,
+        "nonpositive_or_nonfinite_forecast_ratios": 0,
+        "terminal_q_rounded_to_100": 0,
+        "baseline_and_ridge_and_inputs_unchanged": true,
+        "new_intervals": 0,
+        "new_structural_features": 0,
+        "validated_predictive_model": false
+      },
+      "verification": {
+        "status": "passed",
+        "quasi_mean_forecasts_reconstructed": 5026,
+        "maximum_prediction_difference_pp": 8.595435474489932e-11,
+        "score_phase_period_rows_verified": 5514,
+        "three_benchmarks_same_matured_rows_verified": true,
+        "positive_ratio_support_verified": true,
+        "all_original_origins_accounted_for": true,
+        "baseline_and_ridge_and_inputs_unchanged": true,
+        "independent_agent_review": false,
+        "method": "Full two-parameter Newton mean scores versus profiled bisection"
+      },
+      "report": "docs/regressions/LOOP_LH5_MEAN_RESULTS_20261112.md",
+      "active_plan": "docs/regressions/LOOP_ACTIVE_RESEARCH_PLAN_20261112.md",
+      "adjudication": "Novo original persistence/mean-change wins preserved; no fitted method beats training-only terminal anchor under either horizon/coverage. Conditional-slope incremental information not established; stationarity/measurement and prospective anchor test next.",
+      "registered_artifact_sha256": {
+        "configs/loop_long_horizon_v5.json": "94444f021dcf6ab9c0c5a5906b8fd8783b3e33c9f28492583763dac26bbf9032",
+        "configs/loop_prospective_cohort_v1.json": "5b363466f36a876ef0a0d7553fa9c3ea81aceadd264119994dc3d5b85ec654d8",
+        "configs/loop_prospective_cohort_v2.json": "6d2930565e3306f16e4c7c771d67c5fdb4a203537a6ab5bc43c0f652a8b501b3",
+        "docs/regressions/LOOP_ACTIVE_RESEARCH_PLAN_20261112.md": "641b17f2924841b3b95048101e61c5f7df721fa2ccbd7e6d002a5fae326842c9",
+        "docs/regressions/LOOP_LH5_MEAN_PROTOCOL_20261112.md": "2d5187edd72eaa5fc9eef161d70a75fc993264e97af3e618da200da1ecd9b234",
+        "docs/regressions/LOOP_NOVO_TARGETED_DATA_REQUEST_20261112.md": "a2a26d61845f5510d8bbf62fbc0648d81482d2a35b57ebdf620b7375e1e4ddf0",
+        "docs/regressions/LOOP_PROSPECTIVE_REGISTRY_20261112.md": "f5c2a43937e08f06521fec57934aefeaf2bc1dec148aee0f676c9adc0fbd24fd",
+        "docs/regressions/LOOP_NEXT_EXPERIMENT_REVIEW_20261112.md": "353424c50f1c1a97f8ec85b50b36e7d33e1a967fd9516ccdeff65114f22f5f84"
+      }
+    },
+    {
+      "id": "LOOP-TREE-PRODUCTIVE-1",
+      "status": "completed_verified",
+      "updated_utc": "2026-11-13T03:55:37.851188+00:00",
+      "authorization": "User requested all productive data-supported regressions answering hypothesis-tree questions",
+      "protocol": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_PROTOCOL_20261112.md",
+      "config": "configs/loop_tree_productive_batch_v1.json",
+      "tree_nodes": [
+        "B01",
+        "B02",
+        "B04",
+        "L01",
+        "P05",
+        "P01",
+        "S06"
+      ],
+      "job_id": "15316412",
+      "audit_job_id": "15316459",
+      "run": "runs/loop_long_horizon/tree_productive_15316412",
+      "report": "docs/regressions/LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md",
+      "results": {
+        "status": "completed",
+        "terminal_anchor": {
+          "source_groups": 131,
+          "refitted_forecast_cases": 54748,
+          "score_rows": 524,
+          "max_saved_prediction_abs_error": 2.842170943040401e-14,
+          "max_saved_mean_change_abs_error": 1.4210854715202004e-14,
+          "terminal_support_breaches": 316,
+          "inherited_failed_rolling_origins": 8,
+          "samples": 11
+        },
+        "annual_payout": {
+          "annual_levels": 15,
+          "annual_changes": 14,
+          "year_range": [
+            2011,
+            2024
+          ],
+          "special_sensitivity_n": 12,
+          "preferred_cash_gap_min": 1.0,
+          "preferred_cash_gap_max": 1.0,
+          "class_cash_difference_regression_status": "not_identified_constant_regressor",
+          "coefficient_rows": 26,
+          "covariance_checks": "QR estimates and independent HC1 sandwich passed; HAC1 uses only adjacent calendar years and t intervals",
+          "forecast_status": "retrospective annual association only; first-publication dates unknown"
+        },
+        "protected_sources_unchanged": true,
+        "prospectively_validated": false,
+        "canonical_verdicts_changed": false
+      },
+      "verification": {
+        "verified_utc": "2026-11-13T03:47:47.936370+00:00",
+        "status": "passed",
+        "terminal_cases_independently_checked": 54748,
+        "max_terminal_anchor_identity_error": 4.263256414560601e-14,
+        "aggregate_score_rows_checked": 524,
+        "annual_coefficient_rows_checked": 26,
+        "max_independent_covariance_SE_error": 1.8189894035458565e-12,
+        "saved_source_code_and_input_hashes_unchanged": true,
+        "annual_original_report_hashes_rechecked": 13,
+        "provenance_scope_clarification": "no_new_intervals_or_features in original provenance refers to monthly forecasting designs; annual retrospective payout covariates are new and explicitly authorized by the protocol",
+        "no_new_data_or_model_choices_from_verification": true
+      },
+      "new_monthly_forecast_features": 0,
+      "new_retrospective_annual_payout_covariates": true,
+      "historical_statuses_preserved": true,
+      "validated_predictive_model": false,
+      "adjudication": "Novo level/state matching anchors preferred; expanding5yearactivityOLS retains6.81%/5.11%historicalincrement notrobust torolling/ridge. Annualpayout/supplyweak,n14; differentialcashconstant,notidentified. No causal or prospective upgrade."
     }
   ],
   "source_coverage_matrix": "docs/regressions/LONG_HORIZON_SOURCE_COVERAGE.csv",
@@ -167,5 +663,29 @@
     }
   ],
   "source_coverage_notes": "docs/regressions/LONG_HORIZON_SOURCE_COVERAGE.json",
-  "environment_scope": "The environment block preserves the older Samsung setup; current LOOP input/code/config/environment records are in each run provenance.json"
+  "environment_scope": "The environment block preserves the older Samsung setup; current LOOP input/code/config/environment records are in each run provenance.json",
+  "next02_feasibility_checkpoint": {
+    "batch_id": "NEXT-02",
+    "timestamp_utc": "2026-11-12T22:04:57.519771+00:00",
+    "status": "public_source_feasibility_mapped_access_unverified",
+    "timeline": "docs/regressions/LOOP_SIMPLE_TIMELINE_20261112.md",
+    "feasibility_review": "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md",
+    "acquisition_configuration": "configs/novo_measurement_acquisition_v1.json",
+    "artifact_sha256": {
+      "docs/regressions/LOOP_SIMPLE_TIMELINE_20261112.md": "4a718e91d10297493eee58f1c5d7bf993dc98e24c764c534c2abbce4ce9da089",
+      "docs/regressions/LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md": "1f68efaa1f99ec67310f81e4b59ad7ddfdb0cc624230c5b6ccb9695d21df1e0b",
+      "configs/novo_measurement_acquisition_v1.json": "49a04bd91a3689a7f09d2f18645c6887fbc557c32cf6d30f74b6a99c73e2b3a6"
+    },
+    "benchmark_clarification": "V3 rolling120 historical-mean CHANGE is different from LH5 expanding terminal-LEVEL mean. Novo rollingOLS pragmatic MSE reductions vs meanchange are43.5454% at24m and20.9013% at60m; not prospective validation.",
+    "capability_findings": [
+      "Official NYSETAQ participant quotes and SIP timing documented; actual entitlement/date/schema checks still needed",
+      "Copenhagen2007predates2010INET rollout; current feed is not proof of historical archive coverage",
+      "LSEG TickHistory provides an FX extraction route, not proof of USD/DKK coverage or entitlement"
+    ],
+    "selected_pilot_dates": "pending_independent_session_calendars",
+    "new_quote_observations_received": 0,
+    "new_price_intervals_admitted": 0,
+    "new_model_fits": 0,
+    "remaining_gate": "Authorized product-specific entitlement/coverage response and exact requested quote/FX slices; no stale/daily substitutions"
+  }
 }

@@ -2,11 +2,13 @@
 
 Develop and test hypothesis-guided linear predictions of LOOP class-price discounts over 2, 5 and 10 years; preserve all prior scoped findings
 
-[Canonical JSON](PREDICTION_MECHANISM_TREE.json) · [Active protocol](LOOP_LONG_HORIZON_PROTOCOL_20261112.md) · [Prior structural plan](LONG_HORIZON_RESEARCH_PLAN.md)
+[Canonical JSON](PREDICTION_MECHANISM_TREE.json) · [Active plan](LOOP_ACTIVE_RESEARCH_PLAN_20261112.md) · [Foundational protocol](LOOP_LONG_HORIZON_PROTOCOL_20261112.md) · [Prior structural plan](LONG_HORIZON_RESEARCH_PLAN.md)
 
 Historical Samsung/daily verdicts retain their original scope. New LOOP assessments are recorded separately; an activity proxy is not a causal liquidity test, and exposed-history backtests are not prospective validation.
 
-Current execution: LOOP-LH1 completed; job 15293344
+Current execution: LH5 conditional-mean test completed and verified; Novo extra conditional slope did not beat the terminal anchor. Active next work: Novo measurement qualification and an unissued prospective anchor-versus-persistence registry.
+
+Subsequent user-authorized [productive batch](LOOP_TREE_PRODUCTIVE_BATCH_RESULTS_20261112.md) completed and independently verified: matching-memory anchors beat Novo level/state regressions; a five-year expanding activity-OLS exception gains 6.81%/5.11% MSE under pragmatic/strict coverage but fails rolling/ridge checks. Samsung's fourteen annual payout/supply changes give weak fit and broad uncertainty; the constant class-cash difference is not identified. New evidence is annotated separately in JSON; all historical statuses below retain their original scope. No prospective or causal upgrade is implied.
 
 ## LH1 Public share supply and sustained trading capacity
 
@@ -615,3 +617,79 @@ Next discriminating test: Advance one economic threshold only if stable developm
 - Peer evidence must match class rights and distinguish company-specific from common market changes
 - Accessible-data proxies are labeled; a proxy null does not reject its parent mechanism
 - November 12 user authorization resumes new tree-guided 2/5/10-year research; checkpoint each batch, preserve exclusions and scoped negative results, and do not restart unrelated paused work
+
+## Existing-sample continuation, LOOP-LH2
+
+Completed fixed train-only ridge, coefficient drift, every nonoverlapping phase, and fixed calendar-period diagnostics. LOOP-LH1 and historical verdicts remain the baseline. No new interval is released by receipt verification. [Protocol](LOOP_LONG_HORIZON_V2_PROTOCOL_20261112.md) · [Results](LOOP_LONG_HORIZON_V2_RESULTS_20261112.md).
+
+**B01**: Fixed ridge changes persistence comparisons: LH-LEVEL wins 6/11 at 24 months, 3/11 at 60 months under both coverage rules; universal prediction unsupported.
+
+**B02**: Coefficient drift and all phases retained; VW 24-month slope changes sign; Novo remains candidate, five-year phases only 1–2 outcomes. No prospective validation.
+
+**L01**: Original OLS two-year activity loss reproduced; fixed ridge activity helps 4/11 pragmatic, 5/11 strict comparisons. Specification dependence, no causal liquidity verdict.
+
+**M01**: Two delivered ZIPs and all snapshot/inventory hashes verified; long-history v1 ZIP and JSON absent. No new intervals released.
+
+**M02**: Retain exact venues, class transitions, quote scale and receipt-ratio assumptions, split clocks and raw actions. Unknown structural publication dates cannot enter forecasts.
+
+## LOOP-LH3 delivered-source integration
+
+Both new private archives are verified. Historical exact local quote venues and annual publication dates remain gated. The fixed 120-month training-origin check completed on the existing price samples, preserving LH1/LH2 and earlier statuses. [Protocol](LOOP_LONG_HORIZON_V3_PROTOCOL_20261112.md) · [Results](LOOP_LONG_HORIZON_V3_RESULTS_20261112.md).
+
+**B01**: Fixed 120-month training-origin memory does not yield universal correction; LH-LEVEL rolling OLS beats persistence in 3/11 two-year samples and 4/11 five-year samples under both coverage rules. Prior expanding results retained.
+
+**B02**: All 27,374 rolling forecasts independently reconstructed. Novo remains positive under both methods/windows; VW still loses. Eight strict Ping An five-year activity origins lack the required rolling labels. Window/penalty not selected from losses.
+
+**L01**: Rolling OLS activity improves 1/11 two-year matched state comparisons; ridge improves 4/11 pragmatic and 5/11 strict. Original expanding OLS negative activity result preserved, no causal liquidity verdict.
+
+**M01**: Both newly supplied private archives and all 411 entries verified; 13 raw coverage rows reproduced. No new paired interval released because exact historical local quote provenance remains unresolved.
+
+**M02**: Pre-Xetra VW, Novo predecessors/demerger/Nasdaq, HDFC metadata discrepancy, Hyundai third-preferred nonpositive prehistory and all ratio/split/unit/status/transition exclusions preserved.
+
+**M03**: 1,371 of 1,375 selected source facts have unknown publication dates. Four dated facts remain evidence only; no structural predictor admitted and no historical backfill.
+
+**S06**: 378 annual supply rows join descriptors; 1,512 field observations include 502 missing. Preserve four vendor/issuer basis exceptions, vintages, class/aggregate definitions and missing values; no new supply-mechanism verdict.
+
+**P03**: Six final-cash notice identities reconciled. Final announcement differs from settlement confirmation; preliminary notices, maxima and observed charges remain distinct.
+
+**X03**: Observed March/August 2021 fees bound a payment-to-payment change; general effective day and holder-notice date remain unknown; embedded FX fees not deducted twice.
+
+## LOOP-LH4 receipt and analyst diagnostics
+
+Complete package verified and five snapshots installed without differing-file overwrites. Existing-forecast benchmark, training-range and unit diagnostics passed verification. [V4 protocol](LOOP_LONG_HORIZON_V4_PROTOCOL_20261112.md) · [V4 results](LOOP_LONG_HORIZON_V4_RESULTS_20261112.md) · [Analyst review](LOOP_ANALYST_REVIEW_20261112.md). The separate analyst reviewed 63 aggregate tables across 16 completed families against the tree and primary literature; no model selection, executable-arbitrage claim or historical verdict change is implied.
+
+**B01**: 161 of 524 saved score rows beat the historical mean but not persistence. VW pragmatic five-year level expanding mean MSE is 8.226 times persistence; both benchmarks remain mandatory.
+
+**B02**: 316 saved OLS forecast-variant cases predict q>=100, outside the positive-price ratio support, in VW and Hyundai preferred comparisons. No clipping/refitting/selection. Novo remains a retrospective candidate with few independent spans.
+
+**M01**: Complete outer hash/size and 66 entries verified; both installer commands passed; all 600 installed entries and 176 reference records verified. Legacy trading drawdown is log-score units, not portfolio percent drawdown.
+
+**M02**: Historical exact quote-source venues and dated identity/unit/status/split/corporate gates remain; zero new paired intervals. Retain all documented receipt/class transitions and source bases.
+
+**M03**: 1991 selected facts preserved;1981 have unknown first-publication dates. Four availability bounds and eight revision alerts remain separate. Zero structural forecast features admitted.
+
+**L01**: Analyst flags News negative combined-spread coefficient as estimand-dependent tension with a naive universal liquidity story, not a causal result or established literature contradiction.
+
+**S06**: Definitions/nominal split bases, issued/net/treasury/aggregate holdings and vendor/issuer exceptions retained. Additional availability does not upgrade supply/ownership mechanisms.
+
+**P01**: VW 2019 proposal revision and Hyundai interim/final/proposed components retained; no proposal treated as paid cash or dividend-eligible stock as year-end supply.
+
+**X03**: Novo general fee-effective/holder-notice dates remain unresolved; contract maxima, disclosure snapshots, final event charges and embedded FX fees remain distinct.
+
+## Focused next test: conditional state versus terminal anchoring
+
+After analyst review, one positive-ratio conditional-mean challenger is registered against persistence, mean historical change and a training-only mean terminal discount, retaining original OLS/ridge. This is a nonlinear method/support diagnostic, not an economic mechanism verdict or deployment selection. See [registered protocol](LOOP_LH5_MEAN_PROTOCOL_20261112.md) and [analyst design](LOOP_NEXT_EXPERIMENT_REVIEW_20261112.md).
+
+## Active scientific queue after LH5
+
+[Operational plan](LOOP_ACTIVE_RESEARCH_PLAN_20261112.md) · [Verified result](LOOP_LH5_MEAN_RESULTS_20261112.md) · [Analyst adjudication](LOOP_NEXT_EXPERIMENT_REVIEW_20261112.md).
+
+- **NEXT-01 completed:** one positive conditional mean and terminal-anchor comparison, 5,026 origins; preserve every result and close the method experiment.
+- **NEXT-02 ready for source qualification:** [narrow Novo request](LOOP_NOVO_TARGETED_DATA_REQUEST_20261112.md); provenance plus twenty predetermined event-time quote probes, with no source/venue relaxation.
+- **NEXT-03 registered, unissued:** [prospective registry](LOOP_PROSPECTIVE_REGISTRY_20261112.md), December 2026–November 2027 cohorts; source delivery limits remain a preissuance gate.
+
+Original Novo persistence/mean-change wins stand. A stable terminal anchor can itself forecast changes; the fitted extra slope did not improve it on these exposed origins. Measurement/economic-center and future stability remain unresolved. No winner-stock pivot, new model grid, Berkshire strategy, or unqualified structural backfill is added to this active queue. Historical node statuses remain preserved; active LOOP questions are recorded separately.
+
+## Simple timeline and acquisition progress
+
+[Simple experiment timeline](LOOP_SIMPLE_TIMELINE_20261112.md) · [Novo source feasibility](LOOP_NOVO_ACQUISITION_FEASIBILITY_20261112.md). The rolling mean of historical **changes** and the expanding mean **terminal level** are different benchmarks; Novo has historical gains against the former. NEXT-02 now identifies TAQ/Nordic/FX product and field routes, but entitlement, exact archive coverage and official pilot session dates remain unverified. The 2007 local pilot needs a pre-INET archive. No new quotes, sample intervals or models were added.

@@ -1,0 +1,38 @@
+[
+  {
+    "original_path": "runs/samsung/prediction_final_15055345/metrics.csv",
+    "bundle_file": "TABLE_INPUTS/samsung_locked_main.csv",
+    "sha256": "3f4febc7a1ed335f7df3a26036c34d9edfca69230c955c561b99270c492e591e",
+    "kind": "aggregate forecast metrics only; no observation rows"
+  },
+  {
+    "original_path": "runs/samsung/prediction_final_15055345/metrics_strict.csv",
+    "bundle_file": "TABLE_INPUTS/samsung_locked_strict.csv",
+    "sha256": "3f4febc7a1ed335f7df3a26036c34d9edfca69230c955c561b99270c492e591e",
+    "kind": "aggregate forecast metrics only; no observation rows"
+  },
+  {
+    "original_path": "runs/samsung/continuation_e_15055790/metrics.csv",
+    "bundle_file": "TABLE_INPUTS/samsung_continuation_e.csv",
+    "sha256": "86d53769ea90b338cab6c527e2b07537cb47febd1538da4c46110735e52c0e1b",
+    "kind": "aggregate forecast metrics only; no observation rows"
+  },
+  {
+    "original_path": "runs/samsung/continuation_f_15055873/metrics.csv",
+    "bundle_file": "TABLE_INPUTS/samsung_continuation_f.csv",
+    "sha256": "1b2863483e3b0ad91371f960516afec0d1f1f4dd440f3ba4cbf305743f7723f5",
+    "kind": "aggregate forecast metrics only; no observation rows"
+  },
+  {
+    "original_path": "runs/samsung/continuation_gh_15055999/metrics.csv",
+    "bundle_file": "TABLE_INPUTS/samsung_continuation_gh.csv",
+    "sha256": "566a07fe33f1b52939a54e8c63f4831a776f7a11723d1ec5dde1cecb9eff6096",
+    "kind": "aggregate forecast metrics only; no observation rows"
+  },
+  {
+    "original_path": "runs/loop_exceptions/15208094/results/walk_forward_forecasts.csv",
+    "bundle_file": "TABLE_INPUTS/us_class_forecast_summary.csv",
+    "sha256": "1c53b2f386427c949da0a005f96b400ec7d9e78944ca3472a24c68a953f7e4e0",
+    "kind": "aggregate forecast metrics only; no observation rows"
+  }
+]

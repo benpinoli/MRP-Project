@@ -1,0 +1,14 @@
+{
+  "batch_id": "LOOP-LH2",
+  "baseline_run": "runs/loop_long_horizon/15293344",
+  "baseline_monthly_sha256": "0b561c8749f8dd52734a46eb288b78f6a2d41625a9801727be7bb3d985ae817c",
+  "baseline_forecasts_sha256": "97b4428c58318b23daf21f404e7cb456e71bbd875f5312b612d7bc73e9bbf5b3",
+  "ridge_penalty": 1.0,
+  "ridge_objective": "mean squared training error plus lambda times sum of squared standardized slopes; intercept unpenalized; training population SD; no selection on losses",
+  "calendar_periods": [["through_2014", 0, 2014], ["2015_2019", 2015, 2019], ["2020_onward", 2020, 9999]],
+  "sample_policy": "Unchanged LH1 monthly panels, missing calendar months, models, horizons, origins and matured-label training minimum; no new security/date intervals released",
+  "nonoverlap_policy": "Every origin_grid modulo horizon phase; never select a favorable anchor; periods may share endpoints, no interior overlap within phase",
+  "drift_policy": "Store raw and training-SD slopes at every LH1 origin; report first/last/range/sign transitions descriptively, without significance tests",
+  "evaluation": "Exposed-history retrospective sensitivity, no prospective or causal validation",
+  "new_history_policy": "Verify all three deliveries and qualify stable identity, exact venue, currency/units, status, split/ratio clocks and transitions before any extension; structural publication dates unknown remain retrospective"
+}
